@@ -130,3 +130,14 @@
 - [x] S4LeagueAutomatisierung.xlsx aus Repository entfernen
 - [x] LOCAL_DEVELOPMENT.md erstellen
 - [x] README.md aktualisieren mit Hinweis auf lokale Entwicklung
+
+## ELO String Parsing Problem (ROOT CAUSE GEFUNDEN!)
+- [x] ELO-Werte in data.json sind Strings mit Kommas ('1,516.00') statt Zahlen
+- [x] usePlayerData Hook parst jetzt Strings zu Floats mit .replace(/,/g, '')
+- [x] Alle Tab-Fixes + String-Parsing zu GitHub gepusht (Commit: 25f8e5bf)
+- [ ] Vercel Deployment testen (warte auf Auto-Deploy)
+
+## Verbleibende Bugs nach ELO-Fix
+- [ ] Goals Tab: Schwarzer Bildschirm beim Klick auf Spieler
+- [ ] Damage Tab: NaN-Werte werden angezeigt
+- [ ] Ursache: Wahrscheinlich gleiche String-Parsing Probleme wie bei ELO

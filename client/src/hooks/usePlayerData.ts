@@ -54,15 +54,57 @@ export function usePlayerData() {
     fetch('/data.json')
       .then((res) => res.json())
       .then((jsonData) => {
-        // Parse ELO-Daten: Konvertiere Strings mit Kommas zu Zahlen
+        // Parse numerische Felder: Konvertiere Strings mit Kommas zu Zahlen
+        // Helper function to parse number strings
+        const parseNum = (val: any): number => {
+          if (val === null || val === undefined || val === '') return 0;
+          return parseFloat(String(val).replace(/,/g, '').replace(/%/g, ''));
+        };
+
+        // Parse ELO-Daten
         if (jsonData.Elo_Player_All) {
           jsonData.Elo_Player_All = jsonData.Elo_Player_All.map((record: any) => ({
             ...record,
-            player_elo_before: parseFloat(String(record.player_elo_before || 0).replace(/,/g, '')),
-            player_elo_after: parseFloat(String(record.player_elo_after || 0).replace(/,/g, '')),
-            elo_change: parseFloat(String(record.elo_change || 0).replace(/,/g, '')),
+            player_elo_before: parseNum(record.player_elo_before),
+            player_elo_after: parseNum(record.player_elo_after),
+            elo_change: parseNum(record.elo_change),
           }));
         }
+
+        // Parse Player Stats (alle Sheets)
+        const statsSheets = [
+          'Player_Stats_All_Time',
+          'Player_Stats_All_Time_2v2',
+          'Player_Stats_All_Time_3v3',
+          'Player_Stats_S1_2v2',
+          'Player_Stats_S2_2v2',
+          'Player_Stats_S1_3v3',
+          'Player_Stats_S2_3v3',
+        ];
+
+        statsSheets.forEach(sheetName => {
+          if (jsonData[sheetName]) {
+            jsonData[sheetName] = jsonData[sheetName].map((record: any) => ({
+              ...record,
+              games_played: parseNum(record.games_played),
+              wins: parseNum(record.wins),
+              losses: parseNum(record.losses),
+              winrate: parseNum(record.winrate),
+              total_goals: parseNum(record.total_goals),
+              avg_goals: parseNum(record.avg_goals),
+              total_assists: parseNum(record.total_assists),
+              avg_assists: parseNum(record.avg_assists),
+              total_damage: parseNum(record.total_damage),
+              avg_damage: parseNum(record.avg_damage),
+              total_score: parseNum(record.total_score),
+              avg_score: parseNum(record.avg_score),
+              avg_dps: parseNum(record.avg_dps),
+              ELO_current: parseNum(record.ELO_current),
+              ELO_change_10_matches: parseNum(record.ELO_change_10_matches),
+              ELO_peak: parseNum(record.ELO_peak),
+            }));
+          }
+        });
         setData(jsonData);
         setLoading(false);
       })
