@@ -54,6 +54,15 @@ export function usePlayerData() {
     fetch('/data.json')
       .then((res) => res.json())
       .then((jsonData) => {
+        // Parse ELO-Daten: Konvertiere Strings mit Kommas zu Zahlen
+        if (jsonData.Elo_Player_All) {
+          jsonData.Elo_Player_All = jsonData.Elo_Player_All.map((record: any) => ({
+            ...record,
+            player_elo_before: parseFloat(String(record.player_elo_before || 0).replace(/,/g, '')),
+            player_elo_after: parseFloat(String(record.player_elo_after || 0).replace(/,/g, '')),
+            elo_change: parseFloat(String(record.elo_change || 0).replace(/,/g, '')),
+          }));
+        }
         setData(jsonData);
         setLoading(false);
       })

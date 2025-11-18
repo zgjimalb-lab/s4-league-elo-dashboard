@@ -57,13 +57,17 @@ def download_google_sheets():
             sheet_name = worksheet.title
             print(f"  Exporting sheet: {sheet_name}")
             
-            # Hole alle Werte
+            # Hole alle Werte (nicht Formeln!)
+            # get_all_values() gibt nur die berechneten Werte zurück, nicht die Formeln
             data = worksheet.get_all_values()
-            if not data:
+            if not data or len(data) < 2:
+                print(f"    ⚠ Skipping empty sheet: {sheet_name}")
                 continue
             
             # Konvertiere zu DataFrame
+            # Stelle sicher, dass leere Strings als None behandelt werden
             df = pd.DataFrame(data[1:], columns=data[0])
+            df = df.replace('', None)
             
             # Schreibe zu Excel
             df.to_excel(writer, sheet_name=sheet_name, index=False)
