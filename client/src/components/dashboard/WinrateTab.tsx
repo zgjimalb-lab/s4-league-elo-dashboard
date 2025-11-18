@@ -184,9 +184,9 @@ export default function WinrateTab({
                 {chartData.map((item, index) => (
                   <tr key={`winrate-${index}-${item.player}`} className="border-b border-border/30 hover:bg-muted/30 transition-colors">
                     <td className="py-4 px-6 font-medium text-base">{item.player}</td>
-                    <td className="text-right py-4 px-6 text-base">{item.games}</td>
-                    <td className="text-right py-4 px-6 text-base text-green-500">{item.wins}</td>
-                    <td className="text-right py-4 px-6 text-base text-red-500">{item.losses}</td>
+                    <td className="text-right py-4 px-6 text-base">{Math.floor(item.games)}</td>
+                    <td className="text-right py-4 px-6 text-base text-green-500">{Math.floor(item.wins)}</td>
+                    <td className="text-right py-4 px-6 text-base text-red-500">{Math.floor(item.losses)}</td>
                     <td className="text-right py-4 px-6 text-base font-semibold">{item.winrate}%</td>
                   </tr>
                 ))}

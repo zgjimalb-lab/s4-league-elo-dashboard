@@ -168,9 +168,14 @@ export default function EloTab({
       });
     });
 
+    // Falls keine gültigen ELO-Werte gefunden wurden, verwende Default
+    if (minElo === Infinity || maxElo === -Infinity) {
+      return [0, 2000];
+    }
+
     // Puffer hinzufügen (100 ELO oben und unten)
     const buffer = 100;
-    return [Math.floor(minElo - buffer), Math.ceil(maxElo + buffer)];
+    return [Math.floor(minElo - buffer), Math.ceil(maxElo + buffer)];;
   }, [chartData, selectedPlayers]);
 
   if (loading) {

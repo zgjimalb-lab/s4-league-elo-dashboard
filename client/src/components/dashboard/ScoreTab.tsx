@@ -144,8 +144,8 @@ export default function ScoreTab({
                   return (
                     <tr key={`score-${index}-${item.player}`} className="border-b border-border/30 hover:bg-muted/30 transition-colors">
                       <td className="py-4 px-6 font-medium text-base">{item.player}</td>
-                      <td className="text-right py-4 px-6 text-base">{stat.games_played}</td>
-                      <td className="text-right py-4 px-6 text-base">{stat.total_score.toLocaleString()}</td>
+                      <td className="text-right py-4 px-6 text-base">{Math.floor(stat.games_played || 0)}</td>
+                      <td className="text-right py-4 px-6 text-base">{(stat.total_score || 0).toLocaleString()}</td>
                       <td className="text-right py-4 px-6 text-base font-semibold">{item.avgScore.toLocaleString()}</td>
                     </tr>
                   );
