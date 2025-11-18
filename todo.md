@@ -138,6 +138,18 @@
 - [ ] Vercel Deployment testen (warte auf Auto-Deploy)
 
 ## Verbleibende Bugs nach ELO-Fix
-- [ ] Goals Tab: Schwarzer Bildschirm beim Klick auf Spieler
-- [ ] Damage Tab: NaN-Werte werden angezeigt
-- [ ] Ursache: Wahrscheinlich gleiche String-Parsing Probleme wie bei ELO
+- [x] Goals Tab: Schwarzer Bildschirm beim Klick auf Spieler - Fixed: parseNum für total_goals/avg_goals
+- [x] Damage Tab: NaN-Werte werden angezeigt - Fixed: parseNum für total_damage/avg_damage
+- [x] Ursache: Alle numerischen Felder waren Strings mit Kommas/Prozentzeichen
+- [x] Lösung: Erweiterte parseNum Funktion für alle Player_Stats Sheets
+- [ ] Vercel Deployment testen (warte auf Auto-Deploy)
+
+## Neue Features
+- [x] Team Performance Tab hinzufügen
+  - [x] Prüfen ob Team_Stats_All_Time_2v2 und Team_Stats_All_Time_3v3 in data.json vorhanden - Vorhanden!
+  - [x] Tab-Navigation erweitern (nach Damage Tab) - Teams Tab hinzugefügt
+  - [x] TeamPerformanceTab Komponente erstellt (TeamsTab.tsx)
+  - [x] Filter für 2v2/3v3 implementiert
+  - [x] TeamStats Interface und Parsing hinzugefügt
+  - [x] Workflow-Frequenz auf 30 Minuten geändert
+  - [ ] Zu GitHub pushen und auf Vercel testen

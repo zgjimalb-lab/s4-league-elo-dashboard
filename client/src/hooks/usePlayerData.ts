@@ -34,6 +34,16 @@ export interface EloRecord {
   elo_change: number;
 }
 
+export interface TeamStats {
+  team_key: string;
+  games_played: number;
+  wins: number;
+  losses: number;
+  winrate: number;
+  avg_team_goals: number;
+  avg_team_score: number;
+}
+
 export interface DashboardData {
   Player_Stats_All_Time: PlayerStats[];
   Player_Stats_All_Time_2v2: PlayerStats[];
@@ -43,6 +53,8 @@ export interface DashboardData {
   Player_Stats_S1_3v3: PlayerStats[];
   Player_Stats_S2_3v3: PlayerStats[];
   Elo_Player_All: EloRecord[];
+  Team_Stats_All_Time_2v2: TeamStats[];
+  Team_Stats_All_Time_3v3: TeamStats[];
 }
 
 export function usePlayerData() {
@@ -102,6 +114,22 @@ export function usePlayerData() {
               ELO_current: parseNum(record.ELO_current),
               ELO_change_10_matches: parseNum(record.ELO_change_10_matches),
               ELO_peak: parseNum(record.ELO_peak),
+            }));
+          }
+        });
+
+        // Parse Team Stats
+        const teamSheets = ['Team_Stats_All_Time_2v2', 'Team_Stats_All_Time_3v3'];
+        teamSheets.forEach(sheetName => {
+          if (jsonData[sheetName]) {
+            jsonData[sheetName] = jsonData[sheetName].map((record: any) => ({
+              ...record,
+              games_played: parseNum(record.games_played),
+              wins: parseNum(record.wins),
+              losses: parseNum(record.losses),
+              winrate: parseNum(record.winrate),
+              avg_team_goals: parseNum(record.avg_team_goals),
+              avg_team_score: parseNum(record.avg_team_score),
             }));
           }
         });

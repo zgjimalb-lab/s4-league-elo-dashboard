@@ -7,6 +7,7 @@ import DamageTab from '@/components/dashboard/DamageTab';
 import GoalsTab from '@/components/dashboard/GoalsTab';
 import ScoreTab from '@/components/dashboard/ScoreTab';
 import DpsTab from '@/components/dashboard/DpsTab';
+import TeamsTab from '@/components/dashboard/TeamsTab';
 
 export type FilterMode = 'all-time' | '2v2' | '3v3' | 'season';
 export type Season = 'S1' | 'S2';
@@ -32,7 +33,7 @@ export default function Dashboard() {
           <TabsTrigger value="score">Score</TabsTrigger>
           <TabsTrigger value="goals">Goals</TabsTrigger>
           <TabsTrigger value="damage">Damage</TabsTrigger>
-          <TabsTrigger value="dps" className="hidden">DPS</TabsTrigger>
+          <TabsTrigger value="teams">Teams</TabsTrigger>
         </TabsList>
 
         <TabsContent value="elo">
@@ -99,6 +100,10 @@ export default function Dashboard() {
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
           />
+        </TabsContent>
+
+        <TabsContent value="teams">
+          <TeamsTab />
         </TabsContent>
       </Tabs>
     </div>
