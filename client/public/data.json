@@ -2,21 +2,21 @@
   "Player_Stats_All_Time": [
     {
       "player_name": "Aferdita",
-      "games_played": "65",
+      "games_played": "67",
       "wins": "31",
-      "losses": "34",
-      "winrate": "47.69%",
-      "total_goals": "148",
-      "avg_goals": "2.28",
-      "total_assists": "35",
+      "losses": "36",
+      "winrate": "46.27%",
+      "total_goals": "152",
+      "avg_goals": "2.27",
+      "total_assists": "36",
       "avg_assists": "0.54",
-      "total_damage": "113326",
-      "avg_damage": "1,743.48",
-      "total_score": "7225",
-      "avg_score": "111.15",
-      "avg_dps": "1.84",
-      "ELO_current": "1487",
-      "ELO_change_10_matches": "-51",
+      "total_damage": "116722",
+      "avg_damage": "1,742.12",
+      "total_score": "7407",
+      "avg_score": "110.55",
+      "avg_dps": "1.85",
+      "ELO_current": "1458",
+      "ELO_change_10_matches": "-48",
       "ELO_peak": "1544"
     },
     {
@@ -40,22 +40,22 @@
     },
     {
       "player_name": "BickD4ckEnergy",
-      "games_played": "3",
-      "wins": "0",
+      "games_played": "5",
+      "wins": "2",
       "losses": "3",
-      "winrate": "0.00%",
-      "total_goals": "10",
-      "avg_goals": "3.33",
-      "total_assists": "0",
-      "avg_assists": "0.00",
-      "total_damage": "3320",
-      "avg_damage": "1,106.67",
-      "total_score": "236",
-      "avg_score": "78.67",
-      "avg_dps": "1.90",
-      "ELO_current": "1460",
-      "ELO_change_10_matches": "-40",
-      "ELO_peak": "1486"
+      "winrate": "40.00%",
+      "total_goals": "14",
+      "avg_goals": "2.80",
+      "total_assists": "1",
+      "avg_assists": "0.20",
+      "total_damage": "6076",
+      "avg_damage": "1,215.20",
+      "total_score": "417",
+      "avg_score": "83.40",
+      "avg_dps": "1.92",
+      "ELO_current": "1496",
+      "ELO_change_10_matches": "-4",
+      "ELO_peak": "1496"
     },
     {
       "player_name": "Kesny",
@@ -78,21 +78,21 @@
     },
     {
       "player_name": "Malena",
-      "games_played": "151",
+      "games_played": "153",
       "wins": "83",
-      "losses": "67",
-      "winrate": "54.97%",
-      "total_goals": "804",
-      "avg_goals": "5.32",
+      "losses": "69",
+      "winrate": "54.25%",
+      "total_goals": "816",
+      "avg_goals": "5.33",
       "total_assists": "50",
       "avg_assists": "0.33",
-      "total_damage": "334946",
-      "avg_damage": "2,218.19",
-      "total_score": "23852",
-      "avg_score": "157.96",
+      "total_damage": "338396",
+      "avg_damage": "2,211.74",
+      "total_score": "24149",
+      "avg_score": "157.84",
       "avg_dps": "2.60",
-      "ELO_current": "1582",
-      "ELO_change_10_matches": "60",
+      "ELO_current": "1545",
+      "ELO_change_10_matches": "50",
       "ELO_peak": "1633"
     },
     {
@@ -173,20 +173,20 @@
     },
     {
       "player_name": "ZeroO",
-      "games_played": "151",
-      "wins": "85",
+      "games_played": "153",
+      "wins": "87",
       "losses": "65",
-      "winrate": "56.29%",
-      "total_goals": "669",
-      "avg_goals": "4.43",
-      "total_assists": "97",
+      "winrate": "56.86%",
+      "total_goals": "683",
+      "avg_goals": "4.46",
+      "total_assists": "98",
       "avg_assists": "0.64",
-      "total_damage": "330564",
-      "avg_damage": "2,189.17",
-      "total_score": "22270",
-      "avg_score": "147.48",
-      "avg_dps": "2.58",
-      "ELO_current": "1551",
+      "total_damage": "335482",
+      "avg_damage": "2,192.69",
+      "total_score": "22632",
+      "avg_score": "147.92",
+      "avg_dps": "2.59",
+      "ELO_current": "1578",
       "ELO_change_10_matches": "16",
       "ELO_peak": "1617"
     }
@@ -194,35 +194,35 @@
   "Player_Stats_All_Time_2v2": [
     {
       "player_name": "Aferdita",
-      "games_played": "23",
+      "games_played": "25",
       "wins": "13",
-      "losses": "10",
-      "winrate": "56.52%",
-      "total_goals": "64",
-      "avg_goals": "2.78",
-      "total_assists": "13",
-      "avg_assists": "0.57",
-      "total_damage": "33478",
-      "avg_damage": "1,455.57",
-      "total_score": "2317",
-      "avg_score": "100.74",
-      "avg_dps": "1.99"
+      "losses": "12",
+      "winrate": "52.00%",
+      "total_goals": "68",
+      "avg_goals": "2.72",
+      "total_assists": "14",
+      "avg_assists": "0.56",
+      "total_damage": "36874",
+      "avg_damage": "1,474.96",
+      "total_score": "2499",
+      "avg_score": "99.96",
+      "avg_dps": "2.03"
     },
     {
       "player_name": "BickD4ckEnergy",
-      "games_played": "3",
-      "wins": "0",
+      "games_played": "5",
+      "wins": "2",
       "losses": "3",
-      "winrate": "0.00%",
-      "total_goals": "10",
-      "avg_goals": "3.33",
-      "total_assists": "0",
-      "avg_assists": "0.00",
-      "total_damage": "3320",
-      "avg_damage": "1,106.67",
-      "total_score": "236",
-      "avg_score": "78.67",
-      "avg_dps": "1.90"
+      "winrate": "40.00%",
+      "total_goals": "14",
+      "avg_goals": "2.80",
+      "total_assists": "1",
+      "avg_assists": "0.20",
+      "total_damage": "6076",
+      "avg_damage": "1,215.20",
+      "total_score": "417",
+      "avg_score": "83.40",
+      "avg_dps": "1.92"
     },
     {
       "player_name": "Kesny",
@@ -242,18 +242,18 @@
     },
     {
       "player_name": "Malena",
-      "games_played": "100",
+      "games_played": "102",
       "wins": "60",
-      "losses": "39",
-      "winrate": "60.00%",
-      "total_goals": "552",
-      "avg_goals": "5.52",
+      "losses": "41",
+      "winrate": "58.82%",
+      "total_goals": "564",
+      "avg_goals": "5.53",
       "total_assists": "31",
-      "avg_assists": "0.31",
-      "total_damage": "181202",
-      "avg_damage": "1,812.02",
-      "total_score": "14207",
-      "avg_score": "142.07",
+      "avg_assists": "0.30",
+      "total_damage": "184652",
+      "avg_damage": "1,810.31",
+      "total_score": "14504",
+      "avg_score": "142.20",
       "avg_dps": "2.42"
     },
     {
@@ -306,19 +306,19 @@
     },
     {
       "player_name": "ZeroO",
-      "games_played": "100",
-      "wins": "52",
+      "games_played": "102",
+      "wins": "54",
       "losses": "47",
-      "winrate": "52.00%",
-      "total_goals": "474",
-      "avg_goals": "4.74",
-      "total_assists": "60",
+      "winrate": "52.94%",
+      "total_goals": "488",
+      "avg_goals": "4.78",
+      "total_assists": "61",
       "avg_assists": "0.60",
-      "total_damage": "171839",
-      "avg_damage": "1,718.39",
-      "total_score": "13289",
-      "avg_score": "132.89",
-      "avg_dps": "2.32"
+      "total_damage": "176757",
+      "avg_damage": "1,732.91",
+      "total_score": "13651",
+      "avg_score": "133.83",
+      "avg_dps": "2.34"
     }
   ],
   "Player_Stats_All_Time_3v3": [
@@ -552,19 +552,19 @@
   "Player_Stats_S2_2v2": [
     {
       "player_name": "Aferdita",
-      "games_played": "20",
+      "games_played": "22",
       "wins": "12",
-      "losses": "8",
-      "winrate": "60.00%",
-      "total_goals": "58",
-      "avg_goals": "2.90",
-      "total_assists": "12",
-      "avg_assists": "0.60",
-      "total_damage": "28682",
-      "avg_damage": "1,434.10",
-      "total_score": "2052",
-      "avg_score": "102.60",
-      "avg_dps": "2.00"
+      "losses": "10",
+      "winrate": "54.55%",
+      "total_goals": "62",
+      "avg_goals": "2.82",
+      "total_assists": "13",
+      "avg_assists": "0.59",
+      "total_damage": "32078",
+      "avg_damage": "1,458.09",
+      "total_score": "2234",
+      "avg_score": "101.55",
+      "avg_dps": "2.03"
     },
     {
       "player_name": "Kesny",
@@ -584,18 +584,18 @@
     },
     {
       "player_name": "Malena",
-      "games_played": "39",
+      "games_played": "41",
       "wins": "24",
-      "losses": "14",
-      "winrate": "61.54%",
-      "total_goals": "213",
-      "avg_goals": "5.46",
+      "losses": "16",
+      "winrate": "58.54%",
+      "total_goals": "225",
+      "avg_goals": "5.49",
       "total_assists": "12",
-      "avg_assists": "0.31",
-      "total_damage": "72766",
-      "avg_damage": "1,865.79",
-      "total_score": "5590",
-      "avg_score": "143.33",
+      "avg_assists": "0.29",
+      "total_damage": "76216",
+      "avg_damage": "1,858.93",
+      "total_score": "5887",
+      "avg_score": "143.59",
       "avg_dps": "2.51"
     },
     {
@@ -632,19 +632,19 @@
     },
     {
       "player_name": "ZeroO",
-      "games_played": "39",
-      "wins": "17",
+      "games_played": "41",
+      "wins": "19",
       "losses": "21",
-      "winrate": "43.59%",
-      "total_goals": "157",
-      "avg_goals": "4.03",
-      "total_assists": "36",
-      "avg_assists": "0.92",
-      "total_damage": "64450",
-      "avg_damage": "1,652.56",
-      "total_score": "4904",
-      "avg_score": "125.74",
-      "avg_dps": "2.28"
+      "winrate": "46.34%",
+      "total_goals": "171",
+      "avg_goals": "4.17",
+      "total_assists": "37",
+      "avg_assists": "0.90",
+      "total_damage": "69368",
+      "avg_damage": "1,691.90",
+      "total_score": "5266",
+      "avg_score": "128.44",
+      "avg_dps": "2.34"
     }
   ],
   "Player_Stats_S1_3v3": [
@@ -913,12 +913,12 @@
     },
     {
       "team_key": "Aferdita + Malena",
-      "games_played": "13",
+      "games_played": "15",
       "wins": "8",
-      "losses": "5",
-      "winrate": "61.54%",
+      "losses": "7",
+      "winrate": "53.33%",
       "avg_team_goals": "6.60",
-      "avg_team_score": "251.55"
+      "avg_team_score": "249.69"
     },
     {
       "team_key": "Aferdita + Nebus.",
@@ -949,12 +949,12 @@
     },
     {
       "team_key": "BickD4ckEnergy + ZeroO",
-      "games_played": "1",
-      "wins": "0",
+      "games_played": "3",
+      "wins": "2",
       "losses": "1",
-      "winrate": "0.00%",
+      "winrate": "66.67%",
       "avg_team_goals": "10.00",
-      "avg_team_score": "994.00"
+      "avg_team_score": "512.33"
     },
     {
       "team_key": "Kesny + Malena",
@@ -14722,6 +14722,150 @@
       "player_elo_after": "1,460.00"
     },
     {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "player_name": "Aferdita",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "match_result": "loss",
+      "team_size": "2v2",
+      "opponent_1": "BickD4ckEnergy",
+      "opponent_2": "ZeroO",
+      "opponent_1_elo": "1460",
+      "opponent_2_elo": "1551",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1487",
+      "opponent_average_elo": "1505.5",
+      "elo_change": "-15",
+      "player_elo_after": "1,472.00"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "player_name": "Malena",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "match_result": "loss",
+      "team_size": "2v2",
+      "opponent_1": "BickD4ckEnergy",
+      "opponent_2": "ZeroO",
+      "opponent_1_elo": "1460",
+      "opponent_2_elo": "1551",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1582",
+      "opponent_average_elo": "1505.5",
+      "elo_change": "-19",
+      "player_elo_after": "1,563.00"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "player_name": "ZeroO",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "match_result": "win",
+      "team_size": "2v2",
+      "opponent_1": "Aferdita",
+      "opponent_2": "Malena",
+      "opponent_1_elo": "1472",
+      "opponent_2_elo": "1563",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1551",
+      "opponent_average_elo": "1517.5",
+      "elo_change": "14",
+      "player_elo_after": "1,565.00"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "player_name": "BickD4ckEnergy",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "match_result": "win",
+      "team_size": "2v2",
+      "opponent_1": "Aferdita",
+      "opponent_2": "Malena",
+      "opponent_1_elo": "1472",
+      "opponent_2_elo": "1563",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1460",
+      "opponent_average_elo": "1517.5",
+      "elo_change": "19",
+      "player_elo_after": "1,479.00"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "player_name": "Malena",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "match_result": "loss",
+      "team_size": "2v2",
+      "opponent_1": "BickD4ckEnergy",
+      "opponent_2": "ZeroO",
+      "opponent_1_elo": "1479",
+      "opponent_2_elo": "1565",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1563",
+      "opponent_average_elo": "1522",
+      "elo_change": "-18",
+      "player_elo_after": "1,545.00"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "player_name": "Aferdita",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "match_result": "loss",
+      "team_size": "2v2",
+      "opponent_1": "BickD4ckEnergy",
+      "opponent_2": "ZeroO",
+      "opponent_1_elo": "1479",
+      "opponent_2_elo": "1565",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1472",
+      "opponent_average_elo": "1522",
+      "elo_change": "-14",
+      "player_elo_after": "1,458.00"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "player_name": "ZeroO",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "match_result": "win",
+      "team_size": "2v2",
+      "opponent_1": "Aferdita",
+      "opponent_2": "Malena",
+      "opponent_1_elo": "1458",
+      "opponent_2_elo": "1545",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1565",
+      "opponent_average_elo": "1501.5",
+      "elo_change": "13",
+      "player_elo_after": "1,578.00"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "player_name": "BickD4ckEnergy",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "match_result": "win",
+      "team_size": "2v2",
+      "opponent_1": "Aferdita",
+      "opponent_2": "Malena",
+      "opponent_1_elo": "1458",
+      "opponent_2_elo": "1545",
+      "opponent_3_elo": "0",
+      "player_elo_before": "1479",
+      "opponent_average_elo": "1501.5",
+      "elo_change": "17",
+      "player_elo_after": "1,496.00"
+    },
+    {
       "opponent_1_elo": "0",
       "opponent_2_elo": "0",
       "opponent_3_elo": "0",
@@ -18004,78 +18148,6 @@
       "player_elo_before": "-719",
       "opponent_average_elo": "0",
       "elo_change": "-1",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
-      "player_elo_after": "-720.00"
-    },
-    {
-      "opponent_1_elo": "0",
-      "opponent_2_elo": "0",
-      "opponent_3_elo": "0",
-      "player_elo_before": "-720",
-      "opponent_average_elo": "0",
-      "elo_change": "0",
       "player_elo_after": "-720.00"
     },
     {
@@ -41339,7 +41411,8 @@
       "assists": "0",
       "damage": "1552",
       "score": "138",
-      "team_score": "266"
+      "team_score": "266",
+      "dps": "2.326836582"
     },
     {
       "match_id": "1Rh5HxbLx7cm23ipeU2Fh9kP2xT1zsb7C",
@@ -41359,7 +41432,8 @@
       "assists": "0",
       "damage": "2011",
       "score": "128",
-      "team_score": "266"
+      "team_score": "266",
+      "dps": "3.014992504"
     },
     {
       "match_id": "1Rh5HxbLx7cm23ipeU2Fh9kP2xT1zsb7C",
@@ -41379,7 +41453,8 @@
       "assists": "0",
       "damage": "1714",
       "score": "143",
-      "team_score": "238"
+      "team_score": "238",
+      "dps": "2.569715142"
     },
     {
       "match_id": "1Rh5HxbLx7cm23ipeU2Fh9kP2xT1zsb7C",
@@ -41399,7 +41474,8 @@
       "assists": "1",
       "damage": "1874",
       "score": "95",
-      "team_score": "238"
+      "team_score": "238",
+      "dps": "2.809595202"
     },
     {
       "match_id": "1Z8oTx7X0Nfd79ewVuH-84ywvUrdWdYJW",
@@ -41419,7 +41495,8 @@
       "assists": "1",
       "damage": "1748",
       "score": "177",
-      "team_score": "307"
+      "team_score": "307",
+      "dps": "2.397805213"
     },
     {
       "match_id": "1Z8oTx7X0Nfd79ewVuH-84ywvUrdWdYJW",
@@ -41439,7 +41516,8 @@
       "assists": "0",
       "damage": "2888",
       "score": "130",
-      "team_score": "307"
+      "team_score": "307",
+      "dps": "3.961591221"
     },
     {
       "match_id": "1Z8oTx7X0Nfd79ewVuH-84ywvUrdWdYJW",
@@ -41459,7 +41537,8 @@
       "assists": "0",
       "damage": "1694",
       "score": "121",
-      "team_score": "205"
+      "team_score": "205",
+      "dps": "2.323731139"
     },
     {
       "match_id": "1Z8oTx7X0Nfd79ewVuH-84ywvUrdWdYJW",
@@ -41479,7 +41558,8 @@
       "assists": "0",
       "damage": "1456",
       "score": "84",
-      "team_score": "205"
+      "team_score": "205",
+      "dps": "1.997256516"
     },
     {
       "match_id": "1Yf0SPKRvTDD2MmAmaQY52ZB7dt7wcq1f",
@@ -41499,7 +41579,8 @@
       "assists": "0",
       "damage": "4124",
       "score": "163",
-      "team_score": "313"
+      "team_score": "313",
+      "dps": "4.795348837"
     },
     {
       "match_id": "1Yf0SPKRvTDD2MmAmaQY52ZB7dt7wcq1f",
@@ -41519,7 +41600,8 @@
       "assists": "0",
       "damage": "1687",
       "score": "150",
-      "team_score": "313"
+      "team_score": "313",
+      "dps": "1.961627907"
     },
     {
       "match_id": "1Yf0SPKRvTDD2MmAmaQY52ZB7dt7wcq1f",
@@ -41539,7 +41621,8 @@
       "assists": "1",
       "damage": "2265",
       "score": "166",
-      "team_score": "327"
+      "team_score": "327",
+      "dps": "2.63372093"
     },
     {
       "match_id": "1Yf0SPKRvTDD2MmAmaQY52ZB7dt7wcq1f",
@@ -41559,7 +41642,8 @@
       "assists": "2",
       "damage": "1460",
       "score": "161",
-      "team_score": "327"
+      "team_score": "327",
+      "dps": "1.697674419"
     },
     {
       "match_id": "19qyaemhgriCL8d_TDNWoWsKEuxbMuCpd",
@@ -41579,7 +41663,8 @@
       "assists": "0",
       "damage": "2551",
       "score": "123",
-      "team_score": "229"
+      "team_score": "229",
+      "dps": "4.030015798"
     },
     {
       "match_id": "19qyaemhgriCL8d_TDNWoWsKEuxbMuCpd",
@@ -41599,7 +41684,8 @@
       "assists": "0",
       "damage": "1610",
       "score": "106",
-      "team_score": "229"
+      "team_score": "229",
+      "dps": "2.543443918"
     },
     {
       "match_id": "19qyaemhgriCL8d_TDNWoWsKEuxbMuCpd",
@@ -41619,7 +41705,8 @@
       "assists": "4",
       "damage": "1164",
       "score": "131",
-      "team_score": "247"
+      "team_score": "247",
+      "dps": "1.838862559"
     },
     {
       "match_id": "19qyaemhgriCL8d_TDNWoWsKEuxbMuCpd",
@@ -41639,7 +41726,8 @@
       "assists": "1",
       "damage": "920",
       "score": "116",
-      "team_score": "247"
+      "team_score": "247",
+      "dps": "1.453396524"
     },
     {
       "match_id": "1cSpykwq94W76JHxmYvCbBjr9CEcDq59e",
@@ -41659,7 +41747,8 @@
       "assists": "0",
       "damage": "3677",
       "score": "186",
-      "team_score": "355"
+      "team_score": "355",
+      "dps": "3.834202294"
     },
     {
       "match_id": "1cSpykwq94W76JHxmYvCbBjr9CEcDq59e",
@@ -41679,7 +41768,8 @@
       "assists": "0",
       "damage": "1803",
       "score": "169",
-      "team_score": "355"
+      "team_score": "355",
+      "dps": "1.88008342"
     },
     {
       "match_id": "1cSpykwq94W76JHxmYvCbBjr9CEcDq59e",
@@ -41699,7 +41789,8 @@
       "assists": "0",
       "damage": "2538",
       "score": "175",
-      "team_score": "314"
+      "team_score": "314",
+      "dps": "2.646506778"
     },
     {
       "match_id": "1cSpykwq94W76JHxmYvCbBjr9CEcDq59e",
@@ -41719,7 +41810,8 @@
       "assists": "0",
       "damage": "2345",
       "score": "139",
-      "team_score": "314"
+      "team_score": "314",
+      "dps": "2.445255474"
     },
     {
       "match_id": "1rIZ5cSORRaf0TEc5gTvrYnzLf4TrfHq5",
@@ -41739,7 +41831,8 @@
       "assists": "1",
       "damage": "1224",
       "score": "61",
-      "team_score": "94"
+      "team_score": "94",
+      "dps": "3"
     },
     {
       "match_id": "1rIZ5cSORRaf0TEc5gTvrYnzLf4TrfHq5",
@@ -41759,7 +41852,8 @@
       "assists": "0",
       "damage": "514",
       "score": "33",
-      "team_score": "94"
+      "team_score": "94",
+      "dps": "1.259803922"
     },
     {
       "match_id": "1rIZ5cSORRaf0TEc5gTvrYnzLf4TrfHq5",
@@ -41779,7 +41873,8 @@
       "assists": "0",
       "damage": "1229",
       "score": "133",
-      "team_score": "212"
+      "team_score": "212",
+      "dps": "3.012254902"
     },
     {
       "match_id": "1rIZ5cSORRaf0TEc5gTvrYnzLf4TrfHq5",
@@ -41799,7 +41894,8 @@
       "assists": "1",
       "damage": "912",
       "score": "79",
-      "team_score": "212"
+      "team_score": "212",
+      "dps": "2.235294118"
     },
     {
       "match_id": "1Xda9ZKiSOkzwCTvelOeNrsxvif-o8x5j",
@@ -41819,7 +41915,8 @@
       "assists": "0",
       "damage": "1442",
       "score": "131",
-      "team_score": "180"
+      "team_score": "180",
+      "dps": "3.035789474"
     },
     {
       "match_id": "1Xda9ZKiSOkzwCTvelOeNrsxvif-o8x5j",
@@ -41839,7 +41936,8 @@
       "assists": "0",
       "damage": "1414",
       "score": "49",
-      "team_score": "180"
+      "team_score": "180",
+      "dps": "2.976842105"
     },
     {
       "match_id": "1Xda9ZKiSOkzwCTvelOeNrsxvif-o8x5j",
@@ -41859,7 +41957,8 @@
       "assists": "1",
       "damage": "1174",
       "score": "152",
-      "team_score": "202"
+      "team_score": "202",
+      "dps": "2.471578947"
     },
     {
       "match_id": "1Xda9ZKiSOkzwCTvelOeNrsxvif-o8x5j",
@@ -41879,7 +41978,8 @@
       "assists": "0",
       "damage": "894",
       "score": "50",
-      "team_score": "202"
+      "team_score": "202",
+      "dps": "1.882105263"
     },
     {
       "match_id": "1rxCEeh37CDhX5QxQ7Bue-M8A2Y1EdjfP",
@@ -41899,7 +41999,8 @@
       "assists": "0",
       "damage": "2904",
       "score": "219",
-      "team_score": "211"
+      "team_score": "211",
+      "dps": "3.3728223"
     },
     {
       "match_id": "1rxCEeh37CDhX5QxQ7Bue-M8A2Y1EdjfP",
@@ -41919,7 +42020,8 @@
       "assists": "0",
       "damage": "1277",
       "score": "78",
-      "team_score": "211"
+      "team_score": "211",
+      "dps": "1.483159117"
     },
     {
       "match_id": "1rxCEeh37CDhX5QxQ7Bue-M8A2Y1EdjfP",
@@ -41939,7 +42041,8 @@
       "assists": "1",
       "damage": "1926",
       "score": "139",
-      "team_score": "994"
+      "team_score": "994",
+      "dps": "2.236933798"
     },
     {
       "match_id": "1rxCEeh37CDhX5QxQ7Bue-M8A2Y1EdjfP",
@@ -41959,7 +42062,172 @@
       "assists": "0",
       "damage": "1364",
       "score": "72",
-      "team_score": "994"
+      "team_score": "994",
+      "dps": "1.584204413"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "11m 35s",
+      "match_duration_seconds": "695",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "red",
+      "team_result": "loss",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "player_name": "Aferdita",
+      "goals": "3",
+      "team_goals": "6",
+      "assists": "0",
+      "damage": "1951",
+      "score": "105",
+      "team_score": "208",
+      "dps": "2.807194245"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "11m 35s",
+      "match_duration_seconds": "695",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "red",
+      "team_result": "loss",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "player_name": "Malena",
+      "goals": "3",
+      "team_goals": "6",
+      "assists": "0",
+      "damage": "1332",
+      "score": "103",
+      "team_score": "208",
+      "dps": "1.916546763"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "11m 35s",
+      "match_duration_seconds": "695",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "blue",
+      "team_result": "win",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "player_name": "ZeroO",
+      "goals": "8",
+      "team_goals": "10",
+      "assists": "1",
+      "damage": "2447",
+      "score": "196",
+      "team_score": "279",
+      "dps": "3.520863309"
+    },
+    {
+      "match_id": "1ZI7lnIf8S8slOqx2Y8kXXl_39HzUoYZF",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "11m 35s",
+      "match_duration_seconds": "695",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "blue",
+      "team_result": "win",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "player_name": "BickD4ckEnergy",
+      "goals": "2",
+      "team_goals": "10",
+      "assists": "0",
+      "damage": "1268",
+      "score": "83",
+      "team_score": "279",
+      "dps": "1.824460432"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "12m 5s",
+      "match_duration_seconds": "725",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "red",
+      "team_result": "loss",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "player_name": "Malena",
+      "goals": "9",
+      "team_goals": "8",
+      "assists": "0",
+      "damage": "2118",
+      "score": "194",
+      "team_score": "271"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "12m 5s",
+      "match_duration_seconds": "725",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "red",
+      "team_result": "loss",
+      "team_key": "Aferdita + Malena",
+      "opponent_team_key": "BickD4ckEnergy + ZeroO",
+      "player_name": "Aferdita",
+      "goals": "1",
+      "team_goals": "8",
+      "assists": "1",
+      "damage": "1445",
+      "score": "77",
+      "team_score": "271"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "12m 5s",
+      "match_duration_seconds": "725",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "blue",
+      "team_result": "win",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "player_name": "ZeroO",
+      "goals": "6",
+      "team_goals": "10",
+      "assists": "0",
+      "damage": "2471",
+      "score": "166",
+      "team_score": "264"
+    },
+    {
+      "match_id": "1zfFGlDobovcw5Md0G9Hpcorx_X-kL1Ef",
+      "date": "13.12.2025",
+      "season": "Season 2",
+      "match_duration": "12m 5s",
+      "match_duration_seconds": "725",
+      "team_size": "2v2",
+      "winner_team": "blue",
+      "team_name": "blue",
+      "team_result": "win",
+      "team_key": "BickD4ckEnergy + ZeroO",
+      "opponent_team_key": "Aferdita + Malena",
+      "player_name": "BickD4ckEnergy",
+      "goals": "2",
+      "team_goals": "10",
+      "assists": "1",
+      "damage": "1488",
+      "score": "98",
+      "team_score": "264"
     }
   ]
 }
