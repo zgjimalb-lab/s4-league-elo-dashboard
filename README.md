@@ -36,6 +36,20 @@ Xero API ──(stündlich, GitHub Action)──> data/matches.json ──(Commi
 
 Die Regeln stehen in `client/src/lib/s4/rules.ts` und `elo.ts` und sind getestet (`pnpm test`).
 
+## KI-Spieleranalyse (nach jeder Season)
+
+Jedes Spielerprofil zeigt eine Analyse mit Stärken, Schwächen, Entwicklung und Tipps –
+erstellt mit Claude, jede Aussage mit Zahlen belegt.
+
+1. `pnpm analysis:dossier` – rechnet alle Kennzahlen der letzten Season in
+   `analysis/dossier-season-<N>.json` (gleiche Logik wie das Dashboard).
+2. Claude bitten: „Erstelle die Spieleranalysen für Season N nach `analysis/PROMPT.md`.“
+   Ergebnis: `data/analyses/season-<N>.json`.
+3. Gegenlesen, committen – das Profil zeigt automatisch die neueste Analyse.
+
+Der Prompt (`analysis/PROMPT.md`) enthält Spielkontext, Prüfregeln (Stichprobe, Modus-Mix,
+Kausalität) und das Ausgabeformat. Analysiert werden Spieler ab 15 Spielen in der Season.
+
 ## Gruppe pflegen
 
 `data/players.json`:

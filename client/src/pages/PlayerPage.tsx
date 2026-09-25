@@ -3,6 +3,7 @@ import { useLocation, useParams, useSearch } from 'wouter';
 import { Delta, Empty, Form, PlayerName, Section, StatTile } from '@/components/Bits';
 import { EloChart } from '@/components/charts';
 import { MatchCard, useEloByMatch } from '@/components/MatchCard';
+import { PlayerAnalysis } from '@/components/PlayerAnalysis';
 import { PlayerSelect } from '@/components/PlayerSelect';
 import { SortableTable, type Column } from '@/components/SortableTable';
 import { fmt1, fmt2, fmtInt, fmtPct, fmtSigned, fmtSignedPct } from '@/lib/format';
@@ -35,7 +36,7 @@ export default function PlayerPage() {
   const params = useParams<{ name?: string }>();
   const [, navigate] = useLocation();
   const search = useSearch();
-  const { players, matches, elo } = useScope();
+  const { players, matches, elo, season } = useScope();
   const eloByMatch = useEloByMatch();
 
   const name = params.name ? decodeURIComponent(params.name) : players[0]?.name;
@@ -98,6 +99,8 @@ export default function PlayerPage() {
         <StatTile label="Form" value={<Form results={player.form} />} hint={`Beste Serie: ${player.bestWinStreak} Siege`} />
         <StatTile label="MVPs" value={player.mvps} hint={`in ${player.games} Spielen`} />
       </div>
+
+      <PlayerAnalysis player={player.name} season={season} />
 
       {player.elo && (
         <Section title="ELO-Verlauf">
