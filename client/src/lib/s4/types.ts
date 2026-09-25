@@ -54,4 +54,6 @@ export interface Match extends StoredMatch {
   number: number;
   mode: Mode;
   season: number;
+  /** nicht gewertete Spieler (unter 50 % Spielzeit) – stehen nicht in `players` */
+  benched: string[];
 }

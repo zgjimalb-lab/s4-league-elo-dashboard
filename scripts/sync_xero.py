@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import sys
 
+from datetime import timedelta
+
 from matchstore import (
     ROOT, assign_dates, from_xero, is_group_match, load_matches, load_players,
     merge_orders, now_local, save_matches,
@@ -61,7 +63,8 @@ def main() -> int:
 
     order = merge_orders(chains, priority={m["id"]: i for i, m in enumerate(stored)})
     merged = [by_id[uid] for uid in order]
-    assign_dates(merged, now.date().isoformat())
+    # Ein Match ist beim Sync bis zu einer Stunde alt – kurz nach Mitternacht gehört es noch zum Vortag
+    assign_dates(merged, (now - timedelta(hours=1)).date().isoformat())
     save_matches(merged)
 
     print(f"✓ {len(new_ids)} neue Matches ({len(merged)} gespeichert):")

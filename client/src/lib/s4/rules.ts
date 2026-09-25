@@ -1,6 +1,6 @@
-import type { Match, Mode, StoredMatch } from './types';
+import type { Match, Mode, PlayerLine, StoredMatch } from './types';
 
-/** Mindestanteil der Spielzeit, den jeder Spieler im Match gewesen sein muss. */
+/** Mindestanteil der Spielzeit, damit ein Spieler für ein Match gewertet wird (Nachzügler/Leaver darunter fallen raus). */
 export const MIN_PLAYTIME_SHARE = 0.5;
 /** Kleinste Teamgröße, die zählt (1v1 zählt nicht). */
 export const MIN_TEAM_SIZE = 2;
@@ -12,25 +12,29 @@ export type ExclusionReason = 'uneven' | 'size' | 'leaver' | 'no-winner';
 export const EXCLUSION_LABELS: Record<ExclusionReason, string> = {
   uneven: 'Ungleiche Teams (z.B. 3v2)',
   size: '1v1 oder leeres Team',
-  leaver: 'Spieler mit weniger als 50 % Spielzeit',
+  leaver: 'Nach Abzug von Spielern unter 50 % Spielzeit ungleiche Teams',
   'no-winner': 'Kein Sieger',
 };
 
 /**
- * Entscheidet, ob ein Match für die Statistik zählt: gleich große Teams ab 2v2 (2v2, 3v3, 4v4, …).
+ * Entscheidet, ob ein Match für die Statistik zählt, und mit welchen Spielern:
+ * Spieler mit weniger als MIN_PLAYTIME_SHARE der Spielzeit (Nachzügler, Leaver) werden nicht
+ * gewertet. Das Match zählt für die übrigen, wenn dann gleich große Teams ab 2v2 übrig bleiben.
  * Gespeichert werden ohnehin nur Touchdown-Matches der Gruppe.
  */
-export function classify(match: StoredMatch): { mode: Mode } | { excluded: ExclusionReason } {
-  const sizes = [0, 1].map((team) => match.players.filter((p) => p.team === team).length);
-  if (sizes[0] !== sizes[1]) return { excluded: 'uneven' };
-  if (sizes[0] < MIN_TEAM_SIZE) return { excluded: 'size' };
-
+export function classify(
+  match: StoredMatch,
+): { mode: Mode; players: PlayerLine[]; benched: string[] } | { excluded: ExclusionReason } {
   const duration = match.durationSec;
-  if (duration && match.players.some((p) => p.playtime !== null && p.playtime < duration * MIN_PLAYTIME_SHARE)) {
-    return { excluded: 'leaver' };
-  }
+  const isShort = (p: PlayerLine) => Boolean(duration && p.playtime !== null && p.playtime < duration * MIN_PLAYTIME_SHARE);
+  const players = match.players.filter((p) => !isShort(p));
+  const benched = match.players.filter(isShort).map((p) => p.name);
+
+  const sizes = [0, 1].map((team) => players.filter((p) => p.team === team).length);
+  if (sizes[0] !== sizes[1]) return { excluded: benched.length ? 'leaver' : 'uneven' };
+  if (sizes[0] < MIN_TEAM_SIZE) return { excluded: benched.length ? 'leaver' : 'size' };
   if (match.winner === null) return { excluded: 'no-winner' };
-  return { mode: `${sizes[0]}v${sizes[1]}` };
+  return { mode: `${sizes[0]}v${sizes[1]}`, players, benched };
 }
 
 const daysBetween = (a: string, b: string) => (Date.parse(b) - Date.parse(a)) / 86_400_000;
@@ -58,7 +62,7 @@ export function prepareMatches(stored: StoredMatch[]): {
       season += 1;
     }
     lastDate = match.date;
-    matches.push({ ...match, number: matches.length + 1, mode: result.mode, season });
+    matches.push({ ...match, players: result.players, benched: result.benched, number: matches.length + 1, mode: result.mode, season });
   }
   return { matches, excluded };
 }

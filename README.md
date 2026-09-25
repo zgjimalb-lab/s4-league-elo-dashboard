@@ -27,7 +27,7 @@ Xero API ──(stündlich, GitHub Action)──> data/matches.json ──(Commi
 | Thema | Regel |
 |---|---|
 | Was zählt | Touchdown, gleich große Teams ab 2v2 (2v2, 3v3, 4v4, …), nur Gruppenmitglieder |
-| Leaver | Hat ein Spieler weniger als 50 % der Spielzeit, zählt das ganze Match nicht |
+| Nachzügler & Leaver | Spieler unter 50 % Spielzeit werden für das Match nicht gewertet. Das Match zählt für die anderen, wenn danach gleich große Teams übrig bleiben |
 | Sieger | Offizielles Ergebnis der API (alte Daten: mehr Touchdowns, bei Gleichstand mehr Punkte) |
 | ELO | Start 1500, K = 32, jeder Spieler gegen den ELO-Schnitt des Gegnerteams. Eigene Wertungen für Gesamt und jede Teamgröße. Kein Reset – die ELO läuft über alle Seasons durch |
 | Seasons | Neue Season nach mehr als 90 Tagen ohne Match (Nov./Dez. 2025 = Season 1). Der Season-Filter zeigt Statistiken und ELO-Verlauf dieses Zeitraums |

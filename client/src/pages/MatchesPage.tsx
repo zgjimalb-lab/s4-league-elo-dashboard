@@ -20,7 +20,7 @@ export default function MatchesPage() {
   return (
     <Section
       title="Match-Historie"
-      description={`${filtered.length} Matches, neueste zuerst`}
+      description={`${filtered.length} ${filtered.length === 1 ? "Match" : "Matches"}, neueste zuerst`}
       action={
         <PlayerSelect
           value={player}

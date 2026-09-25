@@ -352,7 +352,7 @@ const dossier = {
     minGamesForTeammateOrOpponent: MIN_PAIR_GAMES,
     ranksAmong: qualified.map((s) => s.name),
     dataNotes: [
-      'Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Matches mit Leavern (<50 % Spielzeit) ausgeschlossen.',
+      'Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Spieler unter 50 % Spielzeit (Nachzügler/Leaver) werden nicht gewertet; das Match zählt für die übrigen, wenn gleich große Teams bleiben.',
       'apiDetails (Kills, Deaths, K/D, Defense, Offense, Rebounds) fehlen bei den alten Screenshot-Matches – games-Feld beachten, aber in den Texten nicht erwähnen.',
       'Defense, Offense und Rebounds zählt Xero ohne Dokumentation (Punkte oder Anzahl unklar) – nur relativ zur Liga deuten, siehe PROMPT.md.',
       'MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match.',

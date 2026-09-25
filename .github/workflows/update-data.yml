@@ -3,7 +3,7 @@ name: Sync Xero matches
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *' # stündlich (nicht zur vollen Stunde, da ist GitHub überlastet)
+    - cron: '23 * * * *' # stündlich (nicht zur vollen Stunde, da ist GitHub überlastet)
 
 concurrency:
   group: sync-xero

@@ -159,7 +159,7 @@ export default function PlayerPage() {
         </div>
       </div>
 
-      <Section title="Letzte Matches" description={`${own.length} Matches im Filter`}>
+      <Section title="Letzte Matches" description={`${own.length} ${own.length === 1 ? "Match" : "Matches"} im Filter`}>
         <div className="space-y-3">
           {own.slice(0, 5).map((m) => (
             <MatchCard key={m.id} match={m} elo={eloByMatch.get(m.id)} highlight={player.name} />

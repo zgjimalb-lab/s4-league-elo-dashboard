@@ -31,20 +31,28 @@ function match(
 
 describe('classify', () => {
   it('zählt 2v2 und 3v3', () => {
-    expect(classify(match([['a', 'b'], ['c', 'd']], 0))).toEqual({ mode: '2v2' });
-    expect(classify(match([['a', 'b', 'c'], ['d', 'e', 'f']], 0))).toEqual({ mode: '3v3' });
+    expect(classify(match([['a', 'b'], ['c', 'd']], 0))).toMatchObject({ mode: '2v2', benched: [] });
+    expect(classify(match([['a', 'b', 'c'], ['d', 'e', 'f']], 0))).toMatchObject({ mode: '3v3' });
   });
   it('zählt 4v4', () => {
-    expect(classify(match([['a', 'b', 'c', 'd'], ['e', 'f', 'g', 'h']], 0))).toEqual({ mode: '4v4' });
+    expect(classify(match([['a', 'b', 'c', 'd'], ['e', 'f', 'g', 'h']], 0))).toMatchObject({ mode: '4v4' });
   });
-  it('ignoriert 3v2, 1v1 und Leaver', () => {
+  it('ignoriert 3v2 und 1v1', () => {
     expect(classify(match([['a', 'b', 'c'], ['d', 'e']], 0))).toEqual({ excluded: 'uneven' });
     expect(classify(match([['a'], ['b']], 0))).toEqual({ excluded: 'size' });
+  });
+  it('wertet Nachzügler nicht, das Match zählt für die anderen', () => {
+    const lateJoiner = match([['a', 'b', 'c', 'x'], ['d', 'e', 'f']], 0, {}, (n) => (n === 'x' ? { playtime: 200 } : {}));
+    const result = classify(lateJoiner);
+    expect(result).toMatchObject({ mode: '3v3', benched: ['x'] });
+    expect('players' in result && result.players.map((p) => p.name)).toEqual(['a', 'b', 'c', 'd', 'e', 'f']);
+  });
+  it('schließt ein Match aus, wenn nach Abzug ungleiche Teams bleiben', () => {
     const leaver = match([['a', 'b'], ['c', 'd']], 0, {}, (n) => (n === 'c' ? { playtime: 200 } : {}));
     expect(classify(leaver)).toEqual({ excluded: 'leaver' });
   });
   it('alte Sheet-Matches ohne Spielzeit zählen', () => {
-    expect(classify(match([['a', 'b'], ['c', 'd']], 1, {}, () => ({ playtime: null })))).toEqual({ mode: '2v2' });
+    expect(classify(match([['a', 'b'], ['c', 'd']], 1, {}, () => ({ playtime: null })))).toMatchObject({ mode: '2v2' });
   });
 });
 
