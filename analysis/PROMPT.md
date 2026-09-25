@@ -74,7 +74,7 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 | Feld | Inhalt |
 |---|---|
 | `season`, `career` | Bilanz, Werte pro Spiel und pro Minute, Anteile am Team, MVP-Rate, ELO (Start, Ende, Peak, Tief) |
-| `season.apiDetails` | Kills, Deaths, K/D (fehlen bei alten Matches – `games` beachten) |
+| `season.apiDetails` | Kills, Deaths, K/D, Defense, Offense, Rebounds pro Spiel (fehlen bei alten Matches – `games` beachten) |
 | `groupComparisonSeason` | je Kennzahl: Wert, Rang (1 = bester), Anzahl Spieler, Gruppenmedian |
 | `trendWithinSeason` | frühes/mittleres/spätes Drittel der Season und letzte 20 Spiele – inkl. `modeMixPct` |
 | `byMode` | 2v2 vs. 3v3 (und weitere Teamgrößen) mit eigener ELO |
@@ -85,9 +85,16 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 | `opponents` | Bilanz gegen einzelne Spieler (≥ 5 Duelle), schlechteste zuerst |
 | `bestGames` | Spiel mit den meisten Punkten bzw. Touchdowns |
 
-Xero liefert noch weitere Zähler (Defense, Offense, Rebounds). Laut Wiki gehören sie zu den
-Scoreboard-Kategorien oben, aber ob Xero Punkte oder Aktionen zählt, ist unklar. Sie fehlen im
-Dossier absichtlich – **nicht erwähnen**.
+**Defense, Offense und Rebounds** dokumentiert Xero nicht. Laut S4-Wiki bedeuten sie:
+- **Defense:** Kill am gegnerischen Fumbi-Träger oder seinem Nebenmann – also Angriffe stoppen.
+- **Offense:** Kill, während man selbst oder der Nebenmann den Fumbi hat – also den Träger schützen.
+- **Rebounds:** sehr wahrscheinlich das Aufnehmen des Fumbis (Scoreboard-Kategorie „Fumbi points“).
+
+Ob Xero dabei Punkte oder Aktionen zählt, ist unklar (Anbuu hat z.B. mehr Defense als Kills pro Spiel).
+Deshalb **nur relativ deuten**: Ränge und Vergleiche innerhalb der Liga („meiste Defense der Liga“,
+„doppelt so viele Rebounds wie die Ligamitte“), aber keine absoluten Aussagen wie „stoppt 4 Träger
+pro Spiel“. In den Texten sportlich umschreiben: Defense = „Angriffe stoppen“, Offense = „den
+Fumbi-Träger freikämpfen“, Rebounds = „Fumbi aufnehmen“.
 
 ## Vorgehen (erst denken, dann schreiben)
 

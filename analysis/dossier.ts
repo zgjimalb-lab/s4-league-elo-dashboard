@@ -56,6 +56,9 @@ function block(stats: PlayerStats) {
           killsPerGame: r2(d.kills / d.games),
           deathsPerGame: r2(d.deaths / d.games),
           kd: r2(d.kd),
+          defensePerGame: r2(d.defense / d.games),
+          offensePerGame: r2(d.offense / d.games),
+          reboundsPerGame: r2(d.rebounds / d.games),
         }
       : null,
   };
@@ -74,8 +77,11 @@ const metricPickers: Record<string, (s: PlayerStats) => number | null> = {
   kd: (s) => (s.detailed.games ? s.detailed.kd : null),
   killsPerGame: (s) => (s.detailed.games ? s.detailed.kills / s.detailed.games : null),
   deathsPerGame: (s) => (s.detailed.games ? s.detailed.deaths / s.detailed.games : null),
+  // Xero dokumentiert diese Zähler nicht; Bedeutung laut S4-Wiki siehe analysis/PROMPT.md
+  defensePerGame: (s) => (s.detailed.games ? s.detailed.defense / s.detailed.games : null),
+  offensePerGame: (s) => (s.detailed.games ? s.detailed.offense / s.detailed.games : null),
+  reboundsPerGame: (s) => (s.detailed.games ? s.detailed.rebounds / s.detailed.games : null),
 };
-// Defense, Offense und Rebounds liefert Xero ohne Erklärung, was sie zählen – bewusst nicht im Dossier.
 /** Kennzahlen, bei denen weniger besser ist */
 const lowerIsBetter = new Set(['deathsPerGame']);
 
@@ -224,7 +230,8 @@ const dossier = {
     ranksAmong: qualified.map((s) => s.name),
     dataNotes: [
       'Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Matches mit Leavern (<50 % Spielzeit) ausgeschlossen.',
-      'apiDetails (Kills, Deaths, K/D) fehlen bei den alten Screenshot-Matches – games-Feld beachten, aber in den Texten nicht erwähnen.',
+      'apiDetails (Kills, Deaths, K/D, Defense, Offense, Rebounds) fehlen bei den alten Screenshot-Matches – games-Feld beachten, aber in den Texten nicht erwähnen.',
+      'Defense, Offense und Rebounds zählt Xero ohne Dokumentation (Punkte oder Anzahl unklar) – nur relativ zur Liga deuten, siehe PROMPT.md.',
       'MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match.',
       'Die Teams werden zufällig gebildet; Synergie = Winrate zusammen minus Durchschnitt der beiden Einzel-Winrates.',
       'ELO: Start 1500, K = 32, individuell gegen den ELO-Schnitt des Gegnerteams, kein Reset zwischen Seasons.',
