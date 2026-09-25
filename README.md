@@ -68,6 +68,10 @@ Kausalität) und das Ausgabeformat. Analysiert werden Spieler ab 15 Spielen in d
 Den Key gibt es unter xero.gg → Settings → API → Access Keys. Der Workflow
 „Sync Xero matches“ läuft stündlich und lässt sich unter *Actions* auch manuell starten.
 
+**Nach langen Spielpausen:** GitHub pausiert geplante Workflows, wenn 60 Tage lang nichts im Repo
+passiert ist. Dann unter *Actions → Sync Xero matches* auf „Enable workflow“ und einmal
+„Run workflow“ klicken – danach läuft der Sync wieder stündlich.
+
 **Vercel** baut automatisch bei jedem Push (Konfiguration in `vercel.json`).
 
 ## Lokal entwickeln

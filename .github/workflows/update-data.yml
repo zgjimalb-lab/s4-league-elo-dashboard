@@ -11,7 +11,6 @@ concurrency:
 
 permissions:
   contents: write
-  actions: write # für den Keepalive
 
 jobs:
   sync:
@@ -41,9 +40,3 @@ jobs:
           git add data/matches.json
           git commit -m "data: neue Matches von Xero"
           git push
-
-      # GitHub deaktiviert geplante Workflows nach 60 Tagen ohne Repo-Aktivität –
-      # in Spielpausen würde der Sync sonst still stehen bleiben (wie Feb. 2026 passiert).
-      - uses: gautamkrishnar/keepalive-workflow@v2
-        with:
-          use_api: true
