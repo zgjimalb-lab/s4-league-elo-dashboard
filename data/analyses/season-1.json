@@ -2,460 +2,271 @@
   "season": 1,
   "createdAt": "2026-09-25",
   "dossier": "analysis/dossier-season-1.json",
-  "range": {
-    "from": "2025-11-15",
-    "to": "2025-12-18",
-    "matches": 197
-  },
+  "range": { "from": "2025-11-15", "to": "2025-12-18", "matches": 197 },
   "players": {
     "ZeroO": {
       "nickname": "Der Alleinunterhalter",
-      "headline": "Der Motor, der besser nicht allein zieht",
-      "summary": "56,3 % Siege in 192 Spielen (Platz 2) und 4,55 Touchdowns pro Spiel – neben Malena bist du der gefährlichste Fumbi-Träger der Liga. Die eigentliche Pointe steckt woanders: Je mehr du allein machst, desto seltener gewinnt dein Team.",
+      "headline": "Carry-Maschine mit Solo-Problem",
+      "summary": "56,3 % Winrate in 192 Spielen (Platz 2) und 4,55 Touchdowns pro Spiel – neben Malena der gefährlichste Runner der Liga. Die Pointe: Je mehr du solo carrist, desto seltener gewinnt dein Team.",
       "archetype": {
         "label": "Striker",
-        "explanation": "Striker wie aus dem Lehrbuch: 53,2 % der Team-Touchdowns (Platz 2, Median 36,6 %), nur 3 von 192 Spielen ohne Touchdown in 127 Spielen bester Scorer deines Teams und Platz 3 beim Fumbi-Aufnehmen (16,55 Rebounds pro Spiel)."
+        "explanation": "53,2 % der Team-Touchdowns (Platz 2, Median 36,6 %), nur 3 von 192 Spielen ohne Touchdown und Platz 3 bei den Rebounds (16,55 pro Spiel)."
       },
       "strengths": [
-        {
-          "title": "Immer am Ball",
-          "evidence": "Nur 1,6 % deiner Spiele ohne Touchdown, dafür 35,4 % mit sechs oder mehr. Bei dir ist die Frage nie ob, sondern wie viele."
-        },
-        {
-          "title": "3v3 ist dein Revier",
-          "evidence": "Im 3v3 gewinnst du 62,7 % (59 Spiele) und stehst bei 1.627 3v3-ELO (+127) – im 2v2 sind es 53,4 % und 1.562."
-        },
-        {
-          "title": "Tempo und Vorlagen",
-          "evidence": "10,51 Punkte pro Minute (Platz 2, Median 8,45) und 0,64 TD-Assists pro Spiel (Platz 2) – du trägst den Fumbi auch dann weit, wenn am Ende ein anderer vollendet."
-        }
+        { "title": "Immer am Fumbi", "evidence": "Nur 1,6 % deiner Spiele ohne Touchdown, dafür 35,4 % mit sechs oder mehr." },
+        { "title": "3v3 ist dein Revier", "evidence": "62,7 % Winrate im 3v3 (59 Spiele) und 1.627 3v3-ELO (+127) – im 2v2 sind es 53,4 % und 1.562." },
+        { "title": "Tempo und Assists", "evidence": "10,51 Punkte pro Minute (Platz 2, Median 8,45) und 0,64 TD-Assists pro Spiel (Platz 2)." }
       ],
       "weaknesses": [
-        {
-          "title": "Solo-Shows zahlen sich nicht aus",
-          "evidence": "In den 96 Spielen, in denen du mehr als die Hälfte der Team-Touchdowns machst, gewinnt ihr nur 49,0 % – in den übrigen 96 sind es 63,5 %."
-        },
-        {
-          "title": "Nebus. liegt dir nicht",
-          "evidence": "91 Duelle gegen Nebus., nur 42,9 % gewonnen – gegen keinen anderen Spieler stehst du schlechter da."
-        },
-        {
-          "title": "Dünne Haut im 2v2",
-          "evidence": "Im 2v2 kommst du auf 2,51 Kills bei 15,97 Deaths pro Spiel – K/D 0,16, im 3v3 ist es doppelt so viel (0,32). Insgesamt Platz 7 von 9."
-        }
+        { "title": "Solo-Carry lohnt sich nicht", "evidence": "Machst du mehr als die Hälfte der Team-Touchdowns (96 Spiele), liegt die Winrate bei 49,0 % – sonst bei 63,5 %." },
+        { "title": "Schwach als Underdog", "evidence": "War dein Team laut ELO Außenseiter, hast du nur 9 von 41 Spielen gewonnen (22,0 %) – Malena schafft in derselben Lage 33,9 %." },
+        { "title": "Nemesis Nebus.", "evidence": "42,9 % in 91 Duellen – gegen keinen anderen Spieler stehst du schlechter da." }
       ],
-      "development": "Die Touchdowns sind über die Season leicht gesunken (4,88 → 4,47 → 4,31 pro Spiel) – obwohl später mehr 2v2 gespielt wurde, wo du eigentlich mehr scorst (4,80 statt 3,98 im 3v3). Die Siegquote hat das nicht gestört: 59,4 % im letzten Drittel, 60 % in den letzten 20 Spielen. Die ELO kletterte bis 1.643 und endete bei 1.587 – zum Schluss mit drei Niederlagen am Stück.",
-      "modes": "Im 2v2 trägst du 56,4 % der Team-Touchdowns und gewinnst 53,4 %. Im 3v3 sinkt dein Anteil auf 46,1 % – und die Siegquote steigt auf 62,7 %. Dazu passt: Im 3v3 kämpfst du viel mehr mit – 7,82 Kills statt 2,51 und fast doppelt so viele gestoppte Angriffe (Defense 11,58 statt 6,00 pro Spiel).",
-      "clutch": "Knappe Spiele (höchstens zwei Touchdowns Unterschied) gewinnst du zu 56,6 % (76 Spiele) – genau dein Schnitt. Richtig stark wirst du, wenn es klar wird: 71,4 % Siege in 42 Spielen mit fünf oder mehr Touchdowns Unterschied.",
-      "consistency": "Einer der berechenbarsten Spieler der Liga (Platz 3 bei der Konstanz) – dazu die längste Siegesserie aller Spieler (9 in Folge) und als schlimmste Phase nur 5 Niederlagen am Stück.",
-      "teamRole": "In 127 von 192 Spielen warst du bester Touchdown-Scorer deines Teams – dann gewinnt ihr aber nur 50,4 %. Du trägst oft; die Siege kommen vor allem, wenn dir jemand einen Teil der Last abnimmt.",
-      "chemistry": {
-        "bestPartner": "Mit Malena gewinnst du 76,1 % (46 Spiele, +20 Synergie) – zwei Striker, die sich offenbar nicht im Weg stehen. Mit Nebus. sind es 73,5 % in 83 Spielen.",
-        "nemesis": "Nebus.: 42,9 % in 91 Duellen – und gleichzeitig dein zweitbester Partner. Den willst du im Team haben, nicht gegenüber."
-      },
+      "insights": [
+        { "value": "63,5 %", "label": "Winrate ohne Solo-Carry", "detail": "Mit Solo-Carry (über die Hälfte der Team-Touchdowns) sind es nur 49,0 % – das Team gewinnt, wenn du nicht alles allein machst." },
+        { "value": "9", "label": "Längste Win-Streak der Liga", "detail": "Neun Siege am Stück – kein anderer Spieler kommt über sieben." },
+        { "value": "71,4 %", "label": "Winrate in klaren Spielen", "detail": "In 42 Spielen mit fünf oder mehr Touchdowns Unterschied – in knappen Spielen liegst du genau bei deinem Schnitt (56,6 %)." },
+        { "value": "76,1 %", "label": "Winrate im Duo mit Malena", "detail": "46 Spiele, +20 Synergie – zwei Striker, die sich nicht im Weg stehen." },
+        { "value": "26,5 %", "label": "Fumbi-Conversion", "detail": "Mehr als jeder vierte Rebound wird bei dir zum eigenen Touchdown – Platz 3 hinter Malena und BickD4ckEnergy." }
+      ],
       "tips": [
-        "Mehr Vorlagen, weniger Solo-Läufe: deine 0,64 TD-Assists pro Spiel Richtung Kesnys Ligabestwert von 0,81 bringen – ohne Solo-Anteil gewinnt ihr 63,5 % statt 49,0 %.",
-        "Im 2v2 länger leben: 15,97 Deaths pro 2v2-Spiel auf Malenas 14,51 drücken – jeder Tod weniger ist ein Fumbi weniger, der dem Gegner vor die Füße fällt."
+        "Weniger Solo, mehr Assists: TD-Assists von 0,64 Richtung Kesnys 0,81 bringen – ohne Solo-Carry liegt eure Winrate bei 63,5 %.",
+        "Im 2v2 seltener down gehen: 15,97 Deaths pro 2v2-Spiel auf Malenas 14,51 drücken – dein K/D im 2v2 liegt bei 0,16, im 3v3 bei 0,32."
       ]
     },
     "Malena": {
       "nickname": "Die Fumbi-Flüsterin",
       "headline": "Die Touchdown-Maschine mit 2v2-Vorliebe",
-      "summary": "5,26 Touchdowns und 157,8 Punkte pro Spiel, dazu 11,06 Punkte pro Minute – alles Platz 1 der Liga. In 35,1 % der Spiele warst du MVP, auch das Bestwert. Mit 55,9 % Siegen (Platz 3) und 1.593 ELO gehörst du klar zur Spitze.",
+      "summary": "5,26 Touchdowns und 157,8 Punkte pro Spiel, 11,06 Punkte pro Minute und 35,1 % MVP-Rate – alles Platz 1. Dazu 55,9 % Winrate (Platz 3) und 1.593 ELO: klar Top 3 der Liga.",
       "archetype": {
         "label": "Vollstreckerin",
-        "explanation": "61,7 % aller Touchdowns deines Teams gehen auf dein Konto – Platz 1, der Median liegt bei 36,6 %. Und nur Kesny nimmt den Fumbi öfter auf als du (16,77 Rebounds pro Spiel, Platz 2)."
+        "explanation": "61,7 % aller Team-Touchdowns gehen auf dein Konto (Platz 1, Median 36,6 %) – und niemand macht aus einem Rebound öfter einen eigenen Touchdown."
       },
       "strengths": [
-        {
-          "title": "Torgarantie",
-          "evidence": "In nur einem von 188 Spielen kein Touchdown, dafür in 44,1 % sechs oder mehr – beides Bestwert der Liga."
-        },
-        {
-          "title": "Schnellste Punktesammlerin",
-          "evidence": "11,06 Punkte pro Minute (Platz 1, Median 8,45) – niemand macht in derselben Zeit mehr."
-        },
-        {
-          "title": "Fast immer die Hauptscorerin",
-          "evidence": "In 158 von 188 Spielen (84 %) warst du beste Touchdown-Scorerin deines Teams – öfter als jeder andere (ZeroO: 127 von 192)."
-        }
+        { "title": "Torgarantie", "evidence": "Nur ein Spiel ohne Touchdown, dafür 44,1 % mit sechs oder mehr – beides Bestwert der Liga." },
+        { "title": "Beste Conversion", "evidence": "32,0 % deiner Rebounds werden zum eigenen Touchdown – Bestwert der Liga (ZeroO: 26,5 %)." },
+        { "title": "Upset-Queen", "evidence": "21 Siege als Underdog (33,9 % in 62 Spielen) – mehr Upsets als jeder andere." }
       ],
       "weaknesses": [
-        {
-          "title": "3v3 bremst dich",
-          "evidence": "Im 2v2 gewinnst du 58,1 % (129 Spiele), im 3v3 nur 50,8 % (59 Spiele). Die 3v3-ELO steht bei 1.522, die 2v2-ELO bei 1.574."
-        },
-        {
-          "title": "Vorlagen nur Mittelmaß",
-          "evidence": "0,39 TD-Assists pro Spiel – genau der Median (Platz 5). Die Touchdowns machst du selbst, den Fumbi vorher abgeben tust du selten."
-        },
-        {
-          "title": "Nebus. als Endgegner",
-          "evidence": "121 Duelle gegen Nebus., nur 42,1 % gewonnen – dein häufigster und unangenehmster Gegner."
-        }
+        { "title": "3v3 bremst dich", "evidence": "58,1 % Winrate im 2v2 (129 Spiele), nur 50,8 % im 3v3 (59) – 3v3-ELO 1.522, 2v2-ELO 1.574." },
+        { "title": "Im 3v3 zu oft down", "evidence": "25,72 Deaths pro 3v3-Spiel – im 2v2 sind es nur 14,51." },
+        { "title": "Nemesis Nebus.", "evidence": "121 Duelle gegen Nebus., nur 42,1 % gewonnen – dein häufigster und unangenehmster Gegner." }
       ],
-      "development": "Bemerkenswert stabil: Die Siegquote lag in allen drei Season-Abschnitten zwischen 55,6 % und 56,5 %, die Touchdowns zwischen 5,03 und 5,54 pro Spiel. Dass Punkte und Damage nach dem ersten Drittel sanken, liegt daran, dass anfangs viel mehr 3v3 gespielt wurde (53 % statt später 18–24 %) – kein Leistungsabfall. Die ELO kletterte bis 1.645 und endete bei 1.593.",
-      "modes": "Im 2v2 trägst du 63,1 % der Team-Touchdowns und gewinnst 58,1 %. Im 3v3 bist du mit 4,88 Touchdowns und 192,6 Punkten pro Spiel zwar die gefährlichste Scorerin, gewinnst aber nur 50,8 % – und stirbst mit 25,72 Deaths pro Spiel deutlich öfter als im 2v2 (14,51). Dafür bist du im 3v3 überall dabei: 20,44 Rebounds und 11,22 Defense pro Spiel. Und die letzten zehn 3v3-Spiele brachten +43 ELO.",
-      "clutch": "Knappe Spiele gewinnst du zu 56,4 % (78 Spiele), deutliche zu 62,2 % (37) – beides nah an deinem Schnitt. Keine Nervenschwäche, aber auch kein Extra-Gang, wenn es eng wird.",
-      "consistency": "Du kennst beide Extreme: 7 Siege am Stück und 7 Niederlagen am Stück. Dein Rekordspiel: 325 Punkte und 6.037 Damage in Match #35 – verloren, ausgerechnet gegen Nebus. mit 314 Punkten.",
-      "teamRole": "Du bist fast immer die Hauptscorerin – in 130 Spielen hast du mehr als die Hälfte der Team-Touchdowns gemacht. Dann gewinnt ihr 53,8 %, in den übrigen 58 Spielen 60,3 %.",
-      "chemistry": {
-        "bestPartner": "Malena + Nebus. ist das erfolgreichste Duo der Liga: 81,6 % Siege in 49 Spielen (+21 Synergie). Mit ZeroO sind es 76,1 % in 46 Spielen.",
-        "nemesis": "Nebus. als Gegner (42,1 % in 121 Duellen). Und im eigenen Team klappt es mit Tess1509 kaum: 26,2 % in 42 Spielen."
-      },
+      "insights": [
+        { "value": "84 %", "label": "Spiele als Top-Scorerin", "detail": "158 von 188 Spielen warst du beste Touchdown-Scorerin deines Teams – öfter als jeder andere (ZeroO: 127 von 192)." },
+        { "value": "+10,9", "label": "Siege über ELO-Erwartung", "detail": "Laut ELO wären rund 94 Siege drin gewesen, es wurden 105 – Platz 2 hinter Nebus." },
+        { "value": "81,6 %", "label": "Winrate im Duo mit Nebus.", "detail": "49 Spiele – das erfolgreichste Duo der Liga." },
+        { "value": "58,5 %", "label": "Winrate in Speedruns", "detail": "In Matches bis 15 Minuten (118) – in Marathons über 15 Minuten nur 51,4 % (70)." },
+        { "value": "325", "label": "Punkte-Rekord in Match #35", "detail": "Mit 6.037 Damage – und trotzdem verloren, ausgerechnet gegen Nebus. mit 314." }
+      ],
       "tips": [
-        "Im 3v3 länger überleben: 25,72 Deaths pro 3v3-Spiel Richtung Nebus.' 21,68 – dein Scoring im 3v3 ist schon top, dort kostet dich die Sterberate Siege.",
-        "Den Fumbi öfter weitergeben: TD-Assists von 0,39 auf ZeroOs 0,64 – wenn du weniger als die Hälfte der Team-Touchdowns machst, gewinnt ihr 60,3 % statt 53,8 %."
+        "Im 3v3 seltener down gehen: 25,72 Deaths pro 3v3-Spiel Richtung Nebus.' 21,68 – dein 3v3-Scoring ist schon top, die Deaths kosten dich dort Siege.",
+        "Öfter abgeben: TD-Assists von 0,39 auf ZeroOs 0,64 – ohne Solo-Carry gewinnt ihr 60,3 % statt 53,8 %."
       ]
     },
     "Nebus.": {
       "nickname": "Der Endgegner",
       "headline": "Gewinnt immer, egal wer die Tore macht",
-      "summary": "65,4 % Siege in 179 Spielen und 1.659 ELO – Platz 1 in beiden Wertungen. Du machst dabei „nur“ 36,6 % der Team-Touchdowns (genau Median), aber 48,9 % des Team-Damage (Platz 1) und stirbst deutlich seltener als der Rest.",
+      "summary": "65,4 % Winrate und 1.659 ELO – beides Platz 1. Nur 36,6 % der Team-Touchdowns (genau Median), dafür 48,9 % des Team-Damage (Platz 1) und kaum Deaths.",
       "archetype": {
         "label": "Backer",
-        "explanation": "Wie ein Backer aus dem Lehrbuch: Platz 2 beim Freikämpfen des Fumbi-Trägers (Offense 2,17, Median 1,25) und beim Stoppen gegnerischer Angriffe (Defense 11,23), dazu der höchste Damage-Anteil im Team (48,9 %)."
+        "explanation": "Platz 2 bei Offense (2,17, Median 1,25) und Defense (11,23), dazu der höchste Damage-Anteil im Team (48,9 %) – du machst dem Runner den Weg frei."
       },
       "strengths": [
-        {
-          "title": "Der Sieggarant",
-          "evidence": "65,4 % Siege, ELO +159 auf 1.659 und als schlimmste Serie nur 3 Niederlagen am Stück – der beste Wert aller Stammspieler."
-        },
-        {
-          "title": "Kämpft, ohne zu fallen",
-          "evidence": "14,42 Deaths pro Spiel (Platz 2, Median 18,37) bei 6,17 Kills – im 2v2 sogar nur 10,25 Deaths, weniger als alle anderen Stammspieler."
-        },
-        {
-          "title": "Die 2v2-Wand",
-          "evidence": "Im 2v2 machst du 60,1 % des Team-Damage und bist in 39,2 % der Spiele MVP – dazu +52 ELO in den letzten zehn 2v2-Spielen."
-        }
+        { "title": "Der Sieggarant", "evidence": "65,4 % Winrate, +159 ELO und als längste Lose-Streak nur 3 – bester Wert aller Stammspieler." },
+        { "title": "Kaum zu killen", "evidence": "14,42 Deaths pro Spiel (Platz 2, Median 18,37), im 2v2 sogar nur 10,25 – weniger als alle anderen Stammspieler." },
+        { "title": "Underdog-König", "evidence": "Als Außenseiter gewinnst du 45,5 % (10 von 22) – die beste Underdog-Winrate der Liga." }
       ],
       "weaknesses": [
-        {
-          "title": "Knappe Spiele sind Normalmaß",
-          "evidence": "In Spielen mit höchstens zwei Touchdowns Unterschied gewinnst du 54,9 % (71 Spiele) – über zehn Punkte unter deinen 65,4 % insgesamt."
-        },
-        {
-          "title": "Wenig Vorlagen",
-          "evidence": "0,34 TD-Assists pro Spiel, Platz 6 von 9 (Median 0,39) – du räumst den Weg frei, den Fumbi tragen meist andere."
-        },
-        {
-          "title": "Im 3v3 Nebenrolle beim Scoren",
-          "evidence": "Im 3v3 sinkt dein Touchdown-Anteil auf 25,6 % (2,29 pro Spiel), und die 3v3-ELO fiel vom Peak 1.672 auf 1.616 (letzte zehn: −21)."
-        }
+        { "title": "Clutch nur Durchschnitt", "evidence": "In knappen Spielen 54,9 % (71) – über zehn Punkte unter deiner Gesamt-Winrate." },
+        { "title": "Wenig Assists", "evidence": "0,34 TD-Assists pro Spiel, Platz 6 (Median 0,39) – den Fumbi runnen meist andere." },
+        { "title": "Im 3v3 kaum Scoring", "evidence": "Im 3v3 nur 25,6 % der Team-Touchdowns (2,29 pro Spiel), und die 3v3-ELO fiel vom Peak 1.672 auf 1.616." }
       ],
-      "development": "Die Siegquote war in allen drei Season-Abschnitten fast identisch (64,4 % / 66,7 % / 65,0 %) – so konstant gewinnt sonst niemand. Im mittleren Drittel sprangen deine Touchdowns auf 4,07 pro Spiel – dort wurde auch fast nur 2v2 gespielt (82 %), das erklärt einen Teil. Zum Season-Ende drei Siege in Serie und +24 ELO in den letzten zehn Spielen.",
-      "modes": "Stark in beiden Modi: 64,2 % im 2v2, 67,8 % im 3v3. Die Rolle wechselt aber: Im 2v2 bist du Scorer und Kämpfer zugleich (42,1 % der Team-Touchdowns, 60,1 % des Damage), im 3v3 fast reiner Kämpfer (25,6 % der Touchdowns, 10,0 Kills pro Spiel).",
-      "clutch": "Knappe Spiele: 54,9 % (71). Deutliche Spiele: 62,5 % (40). Deine hohe Siegquote entsteht vor allem in Spielen, die gar nicht erst eng werden.",
-      "consistency": "Deine Punkte schwanken stark, in 9,5 % der Spiele bleibst du ohne Touchdown – aber die Siege schwanken nicht. Rekord: 314 Punkte in Match #35, gewonnen gegen Malenas 325.",
-      "teamRole": "Du musst nicht scoren, um zu gewinnen: Als bester Touchdown-Scorer deines Teams (58 Spiele) gewinnt ihr 63,8 %, insgesamt 65,4 %. Und du bist der Angstgegner der Liga – ZeroO, Malena, Kesny, Aferdita und Tess1509 gewinnen gegen niemanden seltener als gegen dich.",
-      "chemistry": {
-        "bestPartner": "Mit Malena 81,6 % in 49 Spielen – das erfolgreichste Duo der Liga. Die größte Synergie hast du aber mit Aferdita: 77,8 % in 18 Spielen, +21,6 Synergie.",
-        "nemesis": "Anbuu: Gegen niemanden gewinnst du seltener (50,0 % in 12 Duellen) – bei wenigen Spielen, aber der Einzige, der dich auf Augenhöhe hält."
-      },
+      "insights": [
+        { "value": "+16,8", "label": "Siege über ELO-Erwartung", "detail": "Mehr als jeder andere – die ELO kommt dir kaum hinterher." },
+        { "value": "5", "label": "Spieler mit dir als Nemesis", "detail": "ZeroO, Malena, Kesny, Aferdita und Tess1509 gewinnen gegen niemanden seltener als gegen dich." },
+        { "value": "64–67 %", "label": "Winrate in jedem Season-Drittel", "detail": "64,4 %, 66,7 %, 65,0 % – so konstant gewinnt sonst niemand." },
+        { "value": "60,1 %", "label": "Damage-Anteil im 2v2", "detail": "Im 2v2 machst du mehr als die Hälfte des Team-Damage – und bist in 39,2 % der Spiele MVP." },
+        { "value": "77,8 %", "label": "Winrate im Duo mit Aferdita", "detail": "18 Spiele, +21,6 Synergie – das Duo mit der größten Synergie der Liga." }
+      ],
       "tips": [
-        "Enge Spiele zumachen: die Siegquote in knappen Spielen von 54,9 % Richtung deiner 62,5 % aus den klaren Spielen bringen – das ist der letzte große Hebel, der dir fehlt.",
-        "Im 3v3 öfter selbst abschließen: 2,29 Touchdowns pro 3v3-Spiel Richtung Kesnys 2,95 – den Damage dafür (3.629 pro 3v3-Spiel) hast du längst."
+        "Knappe Spiele zumachen: Winrate in engen Matches von 54,9 % Richtung deiner 62,5 % aus den klaren Spielen – der letzte große Hebel, der dir fehlt.",
+        "Im 3v3 öfter selbst scoren: 2,29 Touchdowns pro 3v3-Spiel Richtung Kesnys 2,95 – den Damage dafür (3.629 pro 3v3-Spiel) hast du längst."
       ]
     },
     "Kesny": {
       "nickname": "Der Paketbote",
-      "headline": "Der Vorbereiter, dem das Glück fehlt",
-      "summary": "Kein Spieler sammelt mehr TD-Assists (0,81 pro Spiel, Platz 1) – du trägst den Fumbi oft weit nach vorne, den Touchdown machen dann andere. Dazu 3,55 eigene Touchdowns (Platz 3), und niemand nimmt den Fumbi öfter auf (19,29 Rebounds pro Spiel). Trotzdem nur 36,3 % Siege und 1.480 ELO.",
+      "headline": "Liefert den Fumbi, andere kassieren",
+      "summary": "Platz 1 bei TD-Assists (0,81), Rebounds (19,29) und Offense (2,29) – wo der Fumbi ist, bist du. Nur landet die Arbeit selten beim Sieg: 36,3 % Winrate, 1.480 ELO.",
       "archetype": {
         "label": "Spielmacher",
-        "explanation": "Platz 1 bei TD-Assists, beim Fumbi-Aufnehmen (19,29 Rebounds) und beim Freikämpfen des Trägers (Offense 2,29) – wo der Fumbi ist, bist du."
+        "explanation": "An 4,36 Touchdowns pro Spiel beteiligt (eigene plus Assists) – Platz 3 hinter Malena und ZeroO, noch vor Nebus. (3,59)."
       },
       "strengths": [
-        {
-          "title": "Bester Vorbereiter der Liga",
-          "evidence": "0,81 TD-Assists pro Spiel – mehr als doppelt so viele wie der Median (0,39)."
-        },
-        {
-          "title": "An vielen Toren beteiligt",
-          "evidence": "Touchdowns plus Vorlagen ergeben 4,36 pro Spiel – Platz 3 hinter Malena (5,65) und ZeroO (5,19), noch vor Nebus. (3,59)."
-        },
-        {
-          "title": "Der Konstanteste",
-          "evidence": "Deine Punkte schwanken so wenig wie bei niemandem sonst, und nur in 4 % der Spiele gehst du ohne Touchdown vom Platz."
-        }
+        { "title": "Bester Assist-Geber", "evidence": "0,81 TD-Assists pro Spiel – mehr als doppelt so viel wie der Median (0,39)." },
+        { "title": "Fumbi-Magnet", "evidence": "19,29 Rebounds pro Spiel, Platz 1 (Median 12,36)." },
+        { "title": "Konstant", "evidence": "Die stabilste Punktekurve der Liga, nur 4 % der Spiele ohne Touchdown." }
       ],
       "weaknesses": [
-        {
-          "title": "Zu viele Tode",
-          "evidence": "23,61 Deaths pro Spiel, Platz 8 von 9 (Median 18,37). Im 3v3 sind es 28,88 – nur Aferdita stirbt dort öfter."
-        },
-        {
-          "title": "Knappe Spiele gehen verloren",
-          "evidence": "In Spielen mit höchstens zwei Touchdowns Unterschied gewinnst du nur 32,8 % (61 Spiele) – weniger als deine ohnehin niedrigen 36,3 %."
-        },
-        {
-          "title": "Das 2v2-Paradox",
-          "evidence": "Im 2v2 machst du mehr Touchdowns (4,08 statt 2,95) und 51 % der Team-Touchdowns – gewinnst aber nur 31,8 % gegenüber 41,4 % im 3v3. Die 2v2-ELO steht bei 1.430."
-        }
+        { "title": "Schwache Conversion", "evidence": "Aus deinen Rebounds werden nur 17,5 % eigene Touchdowns – Malena schafft 32,0 %." },
+        { "title": "Zu oft down", "evidence": "23,61 Deaths pro Spiel (Platz 8, Median 18,37), im 3v3 sogar 28,88." },
+        { "title": "Kein Clutch", "evidence": "In knappen Spielen nur 32,8 % Winrate (61 Spiele) – noch unter deinen 36,3 % insgesamt." }
       ],
-      "development": "Der beste Trend unter den Stammspielern: Die Siegquote stieg von 34,1 % und 31,7 % auf 42,9 % im letzten Drittel. Der Damage wuchs von 1.777 auf 2.384 pro Spiel – obwohl zuletzt weniger 3v3 gespielt wurde (33 % statt 56 %), wo es eigentlich mehr Damage gibt. Das ist echter Fortschritt.",
-      "modes": "Im 3v3 bist du der erfolgreichere Teamspieler (41,4 % Siege, 3v3-ELO 1.491), im 2v2 der auffälligere Scorer (4,08 Touchdowns) mit schlechterer Bilanz (31,8 %). Die TD-Assists sind in beiden Modi gleich hoch (0,82 und 0,81) – das Vorbereiten steckt einfach in dir.",
-      "clutch": "Knapp: 32,8 % (61 Spiele). Deutlich: 36,8 % (19 Spiele). Knappe Spiele sind dein größtes Loch – fast jedes zweite deiner Spiele ist eng, und da fehlt am Ende der eine Touchdown.",
-      "consistency": "Die ruhigste Punktekurve der Liga, aber auch die kürzeste Glückssträhne: Die beste Siegesserie waren drei Spiele, die längste Pechsträhne sieben Niederlagen.",
-      "teamRole": "In 64 Spielen warst du bester Touchdown-Scorer deines Teams – dann gewinnt ihr 37,5 %, praktisch wie immer. Tore und Vorlagen bringst du mit; was fehlt, zeigt sich in den knappen Spielen.",
-      "chemistry": {
-        "bestPartner": "Nebus. ist dein einziger Partner mit positiver Bilanz: 52,9 % in 51 Spielen (+2,1 Synergie).",
-        "nemesis": "Gegen Nebus. gewinnst du nur 24,6 % (65 Duelle). Und mit Tess1509 im Team steht es 0 zu 11 – das Duo wartet noch auf den ersten Sieg."
-      },
+      "insights": [
+        { "value": "17,5 %", "label": "Fumbi-Conversion", "detail": "Die meisten Rebounds der Liga, aber nur Platz 5 bei der Conversion – passt zu deinen vielen TD-Assists, denn die bekommt der letzte Runner vor dem Tor." },
+        { "value": "41,4 %", "label": "Winrate in Marathons", "detail": "In Matches über 15 Minuten (58) – in Speedruns nur 31,8 % (66)." },
+        { "value": "−10,7", "label": "Siege unter ELO-Erwartung", "detail": "Laut ELO wären rund 56 Siege drin gewesen, es wurden 45 – die knappen Spiele kosten dich." },
+        { "value": "1.777 → 2.384", "label": "Damage pro Spiel", "detail": "Vom ersten zum letzten Season-Drittel – echter Fortschritt, denn zuletzt wurde sogar weniger 3v3 gespielt." },
+        { "value": "52,9 %", "label": "Winrate im Duo mit Nebus.", "detail": "51 Spiele – dein einziges Duo mit positiver Synergie." }
+      ],
       "tips": [
-        "Weniger sterben: 23,61 Deaths pro Spiel auf den Median von 18,37 senken – im 3v3 (28,88) ist der Abstand am größten.",
-        "Den Damage-Trend halten: die 2.384 Damage pro Spiel aus dem letzten Drittel als neue Untergrenze nehmen – in diesem Abschnitt kam auch deine beste Siegquote (42,9 %)."
+        "Aus Rebounds öfter selbst scoren: Conversion von 17,5 % Richtung ZeroOs 26,5 % – die Fumbis hast du ja schon.",
+        "Seltener down gehen: 23,61 Deaths pro Spiel auf den Median von 18,37 – im 3v3 (28,88) ist der Abstand am größten."
       ]
     },
     "Aferdita": {
       "nickname": "Die Crunchtime-Queen",
       "headline": "Wird besser, je enger es wird",
-      "summary": "47,0 % Siege in 83 Spielen, 1.482 ELO. Beim Scoring und Damage liegst du im hinteren Drittel – aber in knappen Spielen gewinnst du öfter als sonst, und mit Nebus. bildest du das Duo mit der größten Synergie der Liga.",
+      "summary": "47,0 % Winrate in 83 Spielen, 1.482 ELO. Beim Scoring und Damage eher hinten – aber in knappen Spielen drehst du auf, und mit Nebus. hast du das Duo mit der größten Synergie der Liga.",
       "archetype": {
-        "label": "Die Nervenstarke",
-        "explanation": "52,6 % Siege in knappen Spielen (38) gegenüber 47,0 % insgesamt, dazu 0,59 TD-Assists (Platz 3) – du wirkst eher im Zusammenspiel als über eigene Zahlen."
+        "label": "Clutch-Spielerin",
+        "explanation": "52,6 % Winrate in knappen Spielen gegenüber 47,0 % insgesamt, dazu 0,59 TD-Assists (Platz 3)."
       },
       "strengths": [
-        {
-          "title": "Stark, wenn es eng wird",
-          "evidence": "52,6 % Siege in Spielen mit höchstens zwei Touchdowns Unterschied (38 Spiele), aber nur 41,2 % in deutlichen. Außer dir legt nur Tess1509 in engen Spielen so deutlich zu."
-        },
-        {
-          "title": "Gute Vorlagen",
-          "evidence": "0,59 TD-Assists pro Spiel, Platz 3 (Median 0,39) – mehr als Malena oder Nebus."
-        },
-        {
-          "title": "Starker 3v3-Start",
-          "evidence": "Deine ersten 27 Spiele – alle 3v3 – hast du zu 59,3 % gewonnen, mit einer ELO bis 1.590."
-        }
+        { "title": "Clutch", "evidence": "52,6 % in knappen Spielen (38), nur 41,2 % in klaren – außer dir legt nur Tess1509 in engen Matches so zu." },
+        { "title": "Gute Assists", "evidence": "0,59 TD-Assists pro Spiel (Platz 3, Median 0,39) – mehr als Malena oder Nebus." },
+        { "title": "Oft am Fumbi", "evidence": "14,90 Rebounds pro Spiel, Platz 4 (Median 12,36)." }
       ],
       "weaknesses": [
-        {
-          "title": "Zu viele Tode",
-          "evidence": "24,12 Deaths pro Spiel, der höchste Wert der Liga (Median 18,37). Im 3v3 sind es 29,63 – auch dort Platz 9."
-        },
-        {
-          "title": "Wenig Damage-Anteil",
-          "evidence": "27,6 % des Team-Damage, Platz 9 von 9 (Median 39,2 %). Im 3v3 sind es nur 22,8 %."
-        },
-        {
-          "title": "Tragen klappt noch nicht",
-          "evidence": "In den 16 Spielen, in denen du beste Touchdown-Scorerin deines Teams warst, habt ihr nur 25,0 % gewonnen."
-        }
+        { "title": "Zu oft down", "evidence": "24,12 Deaths pro Spiel – der höchste Wert der Liga; im 3v3 sind es 29,63." },
+        { "title": "Wenig Damage-Anteil", "evidence": "27,6 % des Team-Damage (Platz 9, Median 39,2 %), im 3v3 nur 22,8 %." },
+        { "title": "Solo-Carry klappt noch nicht", "evidence": "In 16 Spielen als Top-Scorerin deines Teams nur 25,0 % Winrate." }
       ],
-      "development": "Nach dem starken Start (59,3 % in den ersten 27 Spielen, alle 3v3) ging es abwärts: 42,9 % im mittleren und 39,3 % im letzten Drittel, 40 % in den letzten 20 Spielen. Ein Teil davon liegt daran, dass später mehr 2v2 gespielt wurde, wo du 44,4 % gewinnst – aber auch im 3v3 stehst du insgesamt nur bei 48,9 %. Die ELO fiel vom Peak 1.590 auf 1.482.",
-      "modes": "Im 3v3 etwas erfolgreicher (48,9 % in 47 Spielen) als im 2v2 (44,4 % in 36). Im 2v2 übernimmst du mehr: 34,9 % der Team-Touchdowns und 42,3 % des Damage, im 3v3 nur 23,5 % und 22,8 %.",
-      "clutch": "Das ist dein Profil: 52,6 % in knappen Spielen, 41,2 % in deutlichen (17). Wenn es eng ist, bist du da – wenn ein Spiel kippt, dann meistens deutlich gegen dich.",
-      "consistency": "In 9,6 % der Spiele bleibst du ohne Touchdown; die beste Serie waren 6 Siege am Stück, die längste Pechsträhne 6 Niederlagen. Highlight: 8 Touchdowns in Match #124 – gewonnen gegen Tess1509, die im selben Spiel ihr bestes Touchdown-Spiel hatte.",
-      "teamRole": "Du bist selten die Hauptscorerin (16 Spiele als beste Touchdown-Scorerin deines Teams) und warst nur zweimal MVP eines Matches. Dein Beitrag steckt in Vorlagen, engen Spielen und am Ball: Den Fumbi nimmst du öfter auf als der Median (14,90 Rebounds pro Spiel, Platz 4).",
-      "chemistry": {
-        "bestPartner": "Aferdita + Nebus. hat die größte Synergie der ganzen Liga: 77,8 % Siege in 18 Spielen, +21,6 Synergie.",
-        "nemesis": "Gegen Nebus. gewinnst du nur 34,0 % (53 Duelle) – mit ihm top, gegen ihn schwer. Und mit Tess1509 im Team: 14,3 % in 14 Spielen."
-      },
+      "insights": [
+        { "value": "52,6 %", "label": "Winrate in knappen Spielen", "detail": "Gegenüber 41,2 % in klaren Spielen – enge Matches sind dein Ding." },
+        { "value": "77,8 %", "label": "Winrate im Duo mit Nebus.", "detail": "18 Spiele, +21,6 Synergie – die größte Synergie der ganzen Liga." },
+        { "value": "59,3 %", "label": "Winrate zum Season-Start", "detail": "In deinen ersten 27 Spielen (alle 3v3), danach 42,9 % und 39,3 %." },
+        { "value": "8", "label": "Touchdowns in Match #124", "detail": "Dein Rekord – gewonnen gegen Tess1509, die im selben Spiel ihr bestes Touchdown-Spiel hatte." }
+      ],
       "tips": [
-        "Im 3v3 länger leben: 29,63 Deaths pro 3v3-Spiel Richtung ZeroOs 24,60 – mit weniger Toden steigt dein Anteil am Kampf automatisch.",
-        "Im 3v3 mehr mitkämpfen: den Damage-Anteil von 22,8 % auf Kesnys 29,8 % heben – im 2v2 zeigst du mit 42,3 %, dass du das kannst."
+        "Im 3v3 seltener down gehen: 29,63 Deaths pro 3v3-Spiel Richtung ZeroOs 24,60 – mit weniger Deaths steigt dein Anteil an den Fights automatisch.",
+        "Im 3v3 mehr mitfighten: Damage-Anteil von 22,8 % auf Kesnys 29,8 % heben – im 2v2 zeigst du mit 42,3 %, dass du das kannst."
       ]
     },
     "Tess1509": {
       "nickname": "Die Spätzünderin",
       "headline": "Die Aufsteigerin der Season",
-      "summary": "25,3 % Siege und 1.389 ELO sind noch nicht die Zahlen, die du willst – aber kein Spieler hat sich über die Season so deutlich gesteigert. Deine Touchdowns haben sich verdoppelt, und beim K/D stehst du schon jetzt auf Platz 3.",
+      "summary": "25,3 % Winrate und 1.389 ELO sind noch nicht deine Zahlen – aber niemand hat sich über die Season so gesteigert: Touchdowns verdoppelt, Winrate verdoppelt, K/D schon Platz 3.",
       "archetype": {
-        "label": "Kämpferin im Aufbau",
-        "explanation": "2.313 Damage pro Spiel (Platz 3) und K/D 0,35 (Platz 3), aber erst 18,3 % der Team-Touchdowns – du kämpfst stark und lernst gerade, daraus Tore zu machen."
+        "label": "Fighterin im Aufbau",
+        "explanation": "2.313 Damage (Platz 3) und K/D 0,35 (Platz 3), aber erst 18,3 % der Team-Touchdowns – die Fights sitzen, das Scoring kommt."
       },
       "strengths": [
-        {
-          "title": "Klare Aufwärtskurve",
-          "evidence": "Touchdowns pro Spiel: 0,92 → 1,24 → 1,84 über die drei Season-Abschnitte, in den letzten 20 Spielen 2,05. Die Siegquote stieg dabei von 16 % auf 35 %."
-        },
-        {
-          "title": "Solide im Kampf",
-          "evidence": "K/D 0,35 (Platz 3, Median 0,26) und nur 16,79 Deaths pro Spiel (Platz 4) – besser als ZeroO, Malena oder Kesny."
-        },
-        {
-          "title": "Viel Damage",
-          "evidence": "2.313 Damage pro Spiel, Platz 3 der Liga – in den letzten 20 Spielen sogar 2.905."
-        }
+        { "title": "Klare Aufwärtskurve", "evidence": "Touchdowns pro Spiel: 0,92 → 1,24 → 1,84 über die drei Season-Drittel, in den letzten 20 Spielen 2,05." },
+        { "title": "Solide Fights", "evidence": "K/D 0,35 (Platz 3, Median 0,26) und nur 16,79 Deaths pro Spiel (Platz 4) – besser als ZeroO, Malena oder Kesny." },
+        { "title": "Viel Damage", "evidence": "2.313 Damage pro Spiel (Platz 3), in den letzten 20 Spielen sogar 2.905." }
       ],
       "weaknesses": [
-        {
-          "title": "Wenig Torgefahr",
-          "evidence": "1,33 Touchdowns pro Spiel (Platz 7, Median 2,68), und in 30,7 % deiner Spiele gar keiner."
-        },
-        {
-          "title": "Deutliche Niederlagen",
-          "evidence": "Von 14 Spielen mit fünf oder mehr Touchdowns Unterschied hast du eins gewonnen, dazu eine Pechsträhne von 11 Niederlagen am Stück."
-        },
-        {
-          "title": "Wenig Vorlagen",
-          "evidence": "0,33 TD-Assists pro Spiel (Platz 7, Median 0,39) – im 2v2 sogar nur 0,18."
-        }
+        { "title": "Wenig Torgefahr", "evidence": "1,33 Touchdowns pro Spiel (Platz 7, Median 2,68), in 30,7 % der Spiele keiner." },
+        { "title": "Selten am Fumbi", "evidence": "8,36 Rebounds pro Spiel (Platz 7, Median 12,36) und die wenigste Offense der Liga." },
+        { "title": "Klare Niederlagen", "evidence": "1 Sieg in 14 Spielen mit fünf oder mehr Touchdowns Unterschied, dazu eine Lose-Streak von 11." }
       ],
-      "development": "Das ist deine Geschichte der Season: Siegquote 16 % → 28 % → 32 %, Touchdowns 0,92 → 1,84, Punkte 99,5 → 121,3 pro Spiel. Und das liegt nicht am Modus – im ersten wie im letzten Drittel waren rund zwei Drittel deiner Spiele 3v3, wo Touchdowns eher seltener sind. Die letzten 20 Spiele (35 % Siege, 2,05 Touchdowns, 134,7 Punkte) sind dein bestes Stück der Season.",
-      "modes": "Im 3v3 gewinnst du öfter (29,7 % gegenüber 21,1 % im 2v2) und kämpfst mehr (8,61 Kills pro Spiel gegenüber 3,30). Im 2v2 scorst du mehr (1,71 Touchdowns statt 0,95) und machst 52,8 % des Team-Damage.",
-      "clutch": "Knappe Spiele gewinnst du zu 36,4 % (33) – deutlich mehr als dein Schnitt. Deutliche Spiele fast nie (1 von 14). Wenn es eng bleibt, bist du voll im Spiel.",
-      "consistency": "Die größten Punkte-Schwankungen der Liga – passt zu jemandem, der gerade besser wird: Die guten Spiele werden häufiger, die schwachen gibt es noch.",
-      "teamRole": "Du warst in 9 Spielen beste Touchdown-Scorerin deines Teams. Deine Stärke ist bisher der Kampf: Beim Stoppen gegnerischer Angriffe liegst du im oberen Mittelfeld (Defense 8,22, Platz 4). Am Fumbi selbst bist du dagegen noch selten – 8,36 Rebounds pro Spiel (Platz 7) und die wenigsten Offense-Aktionen der Liga.",
-      "chemistry": {
-        "bestPartner": "Mit Nebus. klappt es am besten: 44,0 % in 25 Spielen – ziemlich genau das, was man von euch beiden erwarten würde.",
-        "nemesis": "Nebus. als Gegner: 16,3 % in 49 Duellen. Im Team hakt es mit Kesny (0 von 11) und Aferdita (14,3 % in 14)."
-      },
+      "insights": [
+        { "value": "16 → 35 %", "label": "Winrate im Season-Verlauf", "detail": "Vom ersten Drittel bis zu den letzten 20 Spielen – und das nicht durch den Modus, der 3v3-Anteil war am Anfang wie am Ende hoch." },
+        { "value": "35,5 %", "label": "Winrate in Marathons", "detail": "In Matches über 15 Minuten (31) – in Speedruns nur 18,2 % (44)." },
+        { "value": "36,4 %", "label": "Winrate in knappen Spielen", "detail": "Deutlich über deinem Schnitt – wenn es eng bleibt, bist du voll im Game." },
+        { "value": "8,61", "label": "Kills pro 3v3-Spiel", "detail": "Im 3v3 fightest du richtig mit (2v2: 3,30) – und gewinnst dort auch öfter (29,7 % gegenüber 21,1 %)." }
+      ],
       "tips": [
         "Die letzten 20 Spiele sind die neue Messlatte: 2,05 Touchdowns pro Spiel halten und Richtung Median 2,68 ausbauen.",
-        "Den Fumbi öfter aufnehmen: 8,36 Rebounds pro Spiel Richtung Median 12,36 – ohne Fumbi keine Touchdowns und keine TD-Assists, und dein Scoring-Trend zeigt, dass du mehr draus machst."
+        "Öfter den Fumbi holen: Rebounds von 8,36 Richtung Median 12,36 – ohne Fumbi keine Touchdowns und keine TD-Assists."
       ]
     },
     "Anbuu": {
       "nickname": "Der Scharfschütze",
-      "headline": "Die Artillerie aus der letzten Reihe",
-      "summary": "Nur 22 Spiele, aber was für Zahlen: 4.043 Damage pro Spiel, K/D 0,89, nur 10,95 Deaths und die meisten gestoppten Angriffe der Liga (Defense 17,36, Median 7,81) – alles mit Abstand Platz 1. Touchdowns überlässt du den anderen (0,59 pro Spiel), gewonnen hast du trotzdem 54,5 %.",
+      "headline": "Die Artillerie aus der Backline",
+      "summary": "Nur 22 Spiele, aber was für Zahlen: 4.043 Damage, K/D 0,89, nur 10,95 Deaths und die meiste Defense der Liga – alles mit Abstand Platz 1. Touchdowns überlässt du den anderen, trotzdem 54,5 % Winrate.",
       "archetype": {
         "label": "Defender",
-        "explanation": "In S4-Sprache ein klassischer Defender – die Rolle, die hinten bleibt und auf Distanz aufräumt: 7,0 % der Team-Touchdowns, aber 42,9 % des Team-Damage und die wenigsten Deaths der Liga."
+        "explanation": "In S4 die Sniper-Rolle: hinten bleiben und auf Distanz aufräumen – 42,9 % des Team-Damage bei nur 7,0 % der Team-Touchdowns."
       },
       "strengths": [
-        {
-          "title": "Damage-König",
-          "evidence": "4.043 Damage pro Spiel – fast doppelt so viel wie der Median (2.210). In Match #35 waren es 6.060, mehr als Malena (6.037) im selben Spiel."
-        },
-        {
-          "title": "Überlebenskünstler",
-          "evidence": "K/D 0,89 bei nur 10,95 Deaths pro Spiel – beides Platz 1. Der Median liegt bei 0,26 und 18,37."
-        },
-        {
-          "title": "Punkte ohne Tore",
-          "evidence": "148,6 Punkte pro Spiel (Platz 2) – obwohl du in 59,1 % deiner Spiele keinen Touchdown machst."
-        }
+        { "title": "Damage-König", "evidence": "4.043 Damage pro Spiel – fast doppelt so viel wie der Median (2.210)." },
+        { "title": "Kaum zu killen", "evidence": "K/D 0,89 und nur 10,95 Deaths pro Spiel – beides Platz 1 (Median 0,26 und 18,37)." },
+        { "title": "Defense-Wall", "evidence": "17,36 Defense pro Spiel (Median 7,81) – selbst im reinen 3v3-Vergleich (18,58) kommt niemand in deine Nähe (Nebus.: 13,84)." }
       ],
       "weaknesses": [
-        {
-          "title": "Kaum Vorlagen",
-          "evidence": "0,18 TD-Assists pro Spiel, Platz 9 (Median 0,39) – und du nimmst den Fumbi am seltensten auf (6,00 Rebounds pro Spiel, Platz 9)."
-        },
-        {
-          "title": "Touchdowns sind Nebensache",
-          "evidence": "0,59 pro Spiel (Platz 8) und in 59,1 % deiner Spiele gar keiner – kein einziges Mal bester Scorer deines Teams."
-        },
-        {
-          "title": "Kaum 2v2-Erfahrung",
-          "evidence": "19 deiner 22 Spiele waren 3v3. Für das 2v2 (3 Spiele) gibt es noch keine belastbaren Zahlen."
-        }
+        { "title": "Selten am Fumbi", "evidence": "6,00 Rebounds (Platz 9, Median 12,36) und 0,18 TD-Assists pro Spiel (Platz 9)." },
+        { "title": "Touchdowns Nebensache", "evidence": "0,59 pro Spiel (Platz 8), in 59,1 % der Spiele keiner." },
+        { "title": "Kaum 2v2", "evidence": "Nur 3 deiner 22 Spiele waren 2v2 – dort gibt es noch keine belastbaren Zahlen." }
       ],
-      "development": "Mit 7 bis 8 Spielen pro Season-Abschnitt sind das wenige Spiele – die Siegquote lag zwischen 50 % und 57,1 %, der Damage durchgehend bei 3.500 bis 4.500. Die ELO stieg auf 1.518 (+18), in den letzten zehn Spielen +14.",
-      "modes": "Fast nur 3v3 (19 Spiele, 52,6 % Siege, K/D 0,92). Die 3 Spiele im 2v2 (2 Siege) reichen für keine Aussage.",
-      "clutch": "Knappe Spiele 44,4 % (9), deutliche 57,1 % (7) – zu wenige Spiele für eine Aussage.",
-      "consistency": "Sehr berechenbar: Der Damage liegt in jedem Season-Abschnitt über 3.500 pro Spiel, und deine längste Pechsträhne waren zwei Niederlagen am Stück.",
-      "teamRole": "Du trägst über den Kampf, nicht über Tore: Niemand stoppt so viele gegnerische Angriffe wie du – selbst gegen die reinen 3v3-Werte der anderen (höchstens 13,84) liegst du mit 18,58 klar vorne. Kein einziges Mal bester Scorer deines Teams und trotzdem 54,5 % Siege. Und Nebus., der Beste der Liga, gewinnt gegen niemanden seltener als gegen dich (50,0 % in 12 Duellen).",
-      "chemistry": {
-        "bestPartner": "Mit Malena und mit ZeroO jeweils 63,6 % in 11 Spielen (+8 Synergie) – ein Striker vorne, du hinten: das passt.",
-        "nemesis": "ZeroO und Malena als Gegner: je 45,5 % in 11 Duellen. Mit Kesny im Team nur 33,3 % (6 Spiele)."
-      },
+      "insights": [
+        { "value": "6.060", "label": "Damage in Match #35", "detail": "Mehr als Malena (6.037) im selben Spiel." },
+        { "value": "50,0 %", "label": "Nebus.' Winrate gegen dich", "detail": "Gegen niemanden gewinnt der Beste der Liga seltener (12 Duelle)." },
+        { "value": "148,6", "label": "Punkte pro Spiel", "detail": "Platz 2 der Liga – fast ohne Touchdowns." },
+        { "value": "63,6 %", "label": "Winrate mit Malena oder ZeroO", "detail": "Je 11 Spiele, +8 Synergie – ein Striker vorne, du in der Backline: passt." }
+      ],
       "tips": [
-        "Den Fumbi ab und zu selbst aufnehmen: TD-Assists gibt es nur für den letzten Träger vor dem Tor – 0,18 pro Spiel auf den Median 0,39 zu bringen, wäre schon ein großer Schritt.",
+        "Ab und zu den Fumbi mitnehmen: TD-Assists gibt es nur für den letzten Runner vor dem Tor – 0,18 pro Spiel auf den Median 0,39 wäre schon ein großer Schritt.",
         "Mehr 2v2 spielen: Mit 3 Spielen weiß noch niemand, wie gut dein Stil dort funktioniert – ab 10 Spielen gibt es eine echte 2v2-Bewertung."
       ]
     },
     "BickD4ckEnergy": {
       "nickname": "Road Runner",
-      "headline": "Scorer mit wenig Rückendeckung",
-      "summary": "In 19 Spielen (18 davon 2v2) machst du 47,2 % der Team-Touchdowns – Platz 3 der Liga. Beim Kämpfen fehlt es aber: wenigster Damage, wenigste Kills, schlechtestes K/D. Ergebnis: 21,1 % Siege und 1.431 ELO.",
+      "headline": "Runner ohne Rückendeckung",
+      "summary": "19 Spiele, fast nur 2v2: 47,2 % der Team-Touchdowns (Platz 3) und eine starke Conversion. In den Fights liegst du aber hinten – wenigster Damage, wenigste Kills, wenigste Defense. Ergebnis: 21,1 % Winrate, 1.431 ELO.",
       "archetype": {
-        "label": "Der Sprinter",
-        "explanation": "Hoher Touchdown-Anteil (47,2 %) und wenige Deaths (14,74, Platz 3), aber nur 2,16 Kills und 1.318 Damage pro Spiel – du läufst lieber, als dich zu prügeln."
+        "label": "Runner",
+        "explanation": "Hoher Touchdown-Anteil (47,2 %) und wenig Deaths (14,74, Platz 3), aber nur 2,16 Kills pro Spiel – du läufst lieber, als zu fighten."
       },
       "strengths": [
-        {
-          "title": "Torgefahr",
-          "evidence": "2,68 Touchdowns pro Spiel und 47,2 % der Team-Touchdowns (Platz 3). In 21,1 % deiner Spiele machst du sechs oder mehr – nur Malena und ZeroO häufiger."
-        },
-        {
-          "title": "Schwer zu erwischen",
-          "evidence": "14,74 Deaths pro Spiel, Platz 3 (Median 18,37) – du stirbst seltener als ZeroO, Malena oder Kesny."
-        },
-        {
-          "title": "Kann Spiele allein drehen",
-          "evidence": "In den 5 Spielen, in denen du mehr als die Hälfte der Team-Touchdowns gemacht hast, habt ihr 3 gewonnen – wenige Spiele, aber deine beste Bilanz."
-        }
+        { "title": "Torgefahr", "evidence": "2,68 Touchdowns pro Spiel; in 21,1 % der Spiele sechs oder mehr – nur Malena und ZeroO häufiger." },
+        { "title": "Starke Conversion", "evidence": "27,6 % deiner Rebounds werden zum eigenen Touchdown – Platz 2 hinter Malena." },
+        { "title": "Schwer zu erwischen", "evidence": "14,74 Deaths pro Spiel, Platz 3 (Median 18,37)." }
       ],
       "weaknesses": [
-        {
-          "title": "Wenig Damage",
-          "evidence": "1.318 Damage pro Spiel – Platz 9 von 9, der Median liegt bei 2.210."
-        },
-        {
-          "title": "Kaum Kills",
-          "evidence": "2,16 Kills pro Spiel und K/D 0,15 – beides Platz 9 der Liga. Auch beim Stoppen gegnerischer Angriffe liegst du ganz hinten (Defense 4,63, Median 7,81)."
-        },
-        {
-          "title": "Wenn es kippt, dann richtig",
-          "evidence": "Von 9 Spielen mit fünf oder mehr Touchdowns Unterschied hast du eins gewonnen."
-        }
+        { "title": "Wenig Damage", "evidence": "1.318 Damage pro Spiel – Platz 9, der Median liegt bei 2.210." },
+        { "title": "Kaum Kills und Defense", "evidence": "2,16 Kills pro Spiel und K/D 0,15 (beides Platz 9), dazu die wenigste Defense der Liga (4,63, Median 7,81)." },
+        { "title": "Wenn es kippt, dann richtig", "evidence": "1 Sieg in 9 Spielen mit fünf oder mehr Touchdowns Unterschied." }
       ],
-      "development": "Mit 6 bis 7 Spielen pro Season-Abschnitt sind das wenige Spiele: 16,7 % → 16,7 % → 28,6 % Siege, die Touchdowns stabil zwischen 2,33 und 2,86 pro Spiel. Die ELO fiel von 1.500 auf 1.431.",
-      "modes": "Fast nur 2v2 (18 Spiele, 22,2 % Siege, 2v2-ELO 1.439). Ein einziges 3v3-Spiel – dazu gibt es noch nichts zu sagen.",
-      "clutch": "Nur 2 knappe Spiele (1 Sieg) – zu wenig für eine Aussage. Die deutlichen Spiele (9) gingen fast alle verloren.",
-      "consistency": "Die zweitgrößten Punkte-Schwankungen der Liga: Zwischen 0 und 7 Touchdowns ist bei dir alles drin, in 10,5 % der Spiele bleibst du ohne.",
-      "teamRole": "Du scorst wie ein Striker, beim Kämpfen liegst du dagegen hinten. Dein bestes Spiel: 6 Touchdowns und 160 Punkte in Match #171 – gewonnen.",
-      "chemistry": {
-        "bestPartner": "Mit -Darkstar 1 von 5 Spielen gewonnen (+9,5 Synergie) – so schlecht es klingt, rechnerisch trotzdem dein bester Partner.",
-        "nemesis": "ZeroO: 1 Sieg in 9 Duellen. Auch mit ZeroO im Team nur 30,0 % (10 Spiele)."
-      },
+      "insights": [
+        { "value": "27,6 %", "label": "Fumbi-Conversion", "detail": "Platz 2 der Liga – wenn du den Fumbi hast, wird es gefährlich." },
+        { "value": "3 von 5", "label": "Siege mit Solo-Carry", "detail": "Wenn du mehr als die Hälfte der Team-Touchdowns machst – wenige Spiele, aber deine beste Bilanz." },
+        { "value": "0", "label": "Spiele als Favorit", "detail": "Laut ELO warst du nie Favorit, aber in 15 Spielen klar Underdog – 3 davon hast du trotzdem gewonnen." },
+        { "value": "160", "label": "Punkte in Match #171", "detail": "6 Touchdowns und ein Sieg – dein bestes Spiel der Season." }
+      ],
       "tips": [
-        "Mehr mitkämpfen: den Damage im 2v2 von 1.268 auf rund 1.600 pro Spiel heben – so viel machen Kesny (1.634) und ZeroO (1.688) im 2v2.",
-        "Mehr Kills im 2v2: von 2,11 auf Malenas 2,84 pro 2v2-Spiel – beim Kämpfen liegt dein größter Rückstand zur Liga."
+        "Mehr mitfighten: Damage im 2v2 von 1.268 auf rund 1.600 pro Spiel heben – so viel machen Kesny (1.634) und ZeroO (1.688) im 2v2.",
+        "Mehr Kills im 2v2: von 2,11 auf Malenas 2,84 pro 2v2-Spiel – in den Fights liegt dein größter Rückstand zur Liga."
       ]
     },
     "Troniix": {
       "nickname": "Comeback-Kandidat",
-      "headline": "Guter Kämpfer, die Tore müssen noch kommen",
-      "summary": "17 Spiele, 17,6 % Siege, 1.374 ELO – die Bilanz ist hart, auch wegen 12 Niederlagen in Folge zum Season-Ende. Die Kampfwerte sind aber besser, als die Tabelle vermuten lässt: Damage genau im Median und im 3v3 weniger Deaths als die meisten Stammspieler.",
+      "headline": "Guter Fighter, die Tore müssen noch kommen",
+      "summary": "17 Spiele, 17,6 % Winrate, 1.374 ELO – hart, auch wegen einer Lose-Streak von 12 zum Season-Ende. Die Fight-Werte sind aber besser als die Tabelle: Damage genau im Median und im 3v3 weniger Deaths als die meisten Stammspieler.",
       "archetype": {
-        "label": "Der Zuarbeiter",
-        "explanation": "0,53 TD-Assists (Platz 4) bei nur 0,18 Touchdowns pro Spiel und 2.211 Damage (Platz 4) – du trägst den Fumbi öfter vor, als du selbst abschließt."
+        "label": "Zuarbeiter",
+        "explanation": "0,53 TD-Assists (Platz 4) bei 0,18 eigenen Touchdowns und 2.211 Damage (Platz 4) – du bringst den Fumbi öfter nach vorne, als du selbst scorst."
       },
       "strengths": [
-        {
-          "title": "Damage stimmt",
-          "evidence": "2.211 Damage pro Spiel, Platz 4 – exakt der Median (2.210)."
-        },
-        {
-          "title": "Überlebt im 3v3",
-          "evidence": "Im 3v3 stirbst du 21,64-mal pro Spiel – seltener als ZeroO (24,60), Malena (25,72) oder Kesny (28,88)."
-        },
-        {
-          "title": "Gute Vorlagen",
-          "evidence": "0,53 TD-Assists pro Spiel, Platz 4 (Median 0,39) – mehr als Malena oder Nebus."
-        }
+        { "title": "Damage stimmt", "evidence": "2.211 Damage pro Spiel, Platz 4 – exakt der Median (2.210)." },
+        { "title": "Überlebt im 3v3", "evidence": "21,64 Deaths pro 3v3-Spiel – weniger als ZeroO (24,60), Malena (25,72) oder Kesny (28,88)." },
+        { "title": "Gute Assists", "evidence": "0,53 TD-Assists pro Spiel, Platz 4 (Median 0,39) – mehr als Malena oder Nebus." }
       ],
       "weaknesses": [
-        {
-          "title": "Kaum eigene Touchdowns",
-          "evidence": "0,18 pro Spiel (Platz 9) und in 82,4 % deiner Spiele keiner."
-        },
-        {
-          "title": "Wenig Punkte pro Minute",
-          "evidence": "4,90 Punkte pro Minute, Platz 9 (Median 8,45)."
-        },
-        {
-          "title": "Wenig Damage-Anteil",
-          "evidence": "32,2 % des Team-Damage (Platz 8, Median 39,2 %) – im 3v3 sind es 29,8 %."
-        }
+        { "title": "Kaum eigene Touchdowns", "evidence": "0,18 pro Spiel (Platz 9), in 82,4 % der Spiele keiner." },
+        { "title": "Wenig Punkte pro Minute", "evidence": "4,90 Punkte pro Minute, Platz 9 (Median 8,45)." },
+        { "title": "Wenig Damage-Anteil", "evidence": "32,2 % des Team-Damage (Platz 8, Median 39,2 %), im 3v3 29,8 %." }
       ],
-      "development": "Gestartet mit 3 Siegen in 5 Spielen, danach 12 Niederlagen in Folge – alle im 3v3, 7 davon mit fünf oder mehr Touchdowns Unterschied. Wenige Spiele, aber der Knick ist deutlich: −117 ELO in den letzten zehn Spielen.",
-      "modes": "Fast nur 3v3 (14 Spiele, 14,3 % Siege, K/D 0,31 – auf ZeroOs 3v3-Niveau von 0,32). Im 2v2 nur 3 Spiele, dazu gibt es noch nichts zu sagen.",
-      "clutch": "Knappe Spiele: 3 Siege in 4 – wenige Spiele, aber immerhin. Die deutlichen Spiele (7) gingen alle verloren.",
-      "consistency": "Touchdowns gibt es selten (0 bis 1 pro Spiel), der Damage ist dagegen verlässlich.",
-      "teamRole": "Du warst noch nie bester Touchdown-Scorer deines Teams; dein Beitrag steckt im Damage und in den Vorlagen.",
-      "chemistry": {
-        "bestPartner": "Mit Malena im Team 42,9 % in 7 Spielen (+6,1 Synergie) – dein bester Wert.",
-        "nemesis": "Gegen Malena noch kein Sieg in 10 Duellen. Und mit Kesny im Team 0 von 8."
-      },
+      "insights": [
+        { "value": "0,31", "label": "K/D im 3v3", "detail": "Auf ZeroOs 3v3-Niveau (0,32) – in den Fights hältst du mit." },
+        { "value": "3 von 4", "label": "Siege in knappen Spielen", "detail": "Wenige Spiele – aber wenn es eng bleibt, bist du dabei." },
+        { "value": "8 von 17", "label": "Spiele als Underdog", "detail": "In fast der Hälfte deiner Spiele war dein Team laut ELO klar Außenseiter." },
+        { "value": "3 von 5", "label": "Siege zum Season-Start", "detail": "Bevor die Lose-Streak kam – der Beweis, dass es geht." }
+      ],
       "tips": [
         "Selbst abschließen: von 0,18 auf Anbuus 0,59 Touchdowns pro Spiel – also etwa ein Touchdown alle zwei Spiele statt alle fünf bis sechs.",
-        "Im 3v3 mehr Anteil am Kampf: den Damage-Anteil von 29,8 % Richtung ZeroOs 35,0 % im 3v3 heben."
+        "Im 3v3 mehr Anteil an den Fights: Damage-Anteil von 29,8 % Richtung ZeroOs 35,0 % im 3v3 heben."
       ]
     }
   }

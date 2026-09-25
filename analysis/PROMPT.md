@@ -84,6 +84,9 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 | `teammates` | Duos mit ≥ 5 gemeinsamen Spielen, Synergie = Winrate zusammen − Schnitt der Einzel-Winrates |
 | `opponents` | Bilanz gegen einzelne Spieler (≥ 5 Duelle), schlechteste zuerst |
 | `bestGames` | Spiel mit den meisten Punkten bzw. Touchdowns |
+| `underdog` | Bilanz als Außenseiter (laut ELO ≤ 45 % Siegchance) und als Favorit; `winsAboveExpected` = Siege über/unter der ELO-Erwartung |
+| `fumbiConversion` | eigene Touchdowns pro Rebound – wie oft aus einer Fumbi-Aufnahme ein eigener Touchdown wird |
+| `matchLength` | Marathon (über 15 Minuten) vs. Speedrun: Winrate, Touchdowns, Punkte pro Minute |
 
 **Defense, Offense und Rebounds** dokumentiert Xero nicht. Laut S4-Wiki bedeuten sie:
 - **Defense:** Kill am gegnerischen Fumbi-Träger oder seinem Nebenmann – also Angriffe stoppen.
@@ -111,6 +114,10 @@ Fumbi-Träger freikämpfen“, Rebounds = „Fumbi aufnehmen“.
    - *Kausalität:* Du siehst Zusammenhänge, keine Ursachen. „gewinnt seltener, wenn …“ statt
      „verliert, weil …“.
    - *Rolle:* Wenig Touchdowns bei viel Damage ist Stil, keine Schwäche.
+   - *Marathon vs. Speedrun:* Lange Matches sind oft die engen – nicht dieselbe Erkenntnis zweimal
+     als „knappe Spiele“ und „Marathon“ verkaufen. Punkte pro Minute sind in langen Matches für alle
+     niedriger; nur Vergleiche zwischen Spielern oder Winrates deuten.
+   - *Conversion:* Rebounds sind vermutlich Fumbi-Aufnahmen – Conversion nur relativ zur Liga deuten.
    - *Superlative* („als Einzige“, „Bestwert der Liga“) nur, wenn du es gegen **alle** Spieler im
      Dossier geprüft hast.
 4. **Auswählen:** Nimm pro Abschnitt den aussagekräftigsten Befund – lieber ein überraschendes
@@ -123,10 +130,12 @@ Fumbi-Träger freikämpfen“, Rebounds = „Fumbi aufnehmen“.
 - **Jede Aussage mit Zahl und Vergleichsmaßstab** (Median der Liga, Platz, frühere Season-Phase, anderer
   Modus, Mitspieler). ❌ „Starker Scorer.“ ✅ „4,55 Touchdowns pro Spiel – Platz 2 von 9, der
   Median liegt bei 2,68.“
-- **Sportlich und verständlich.** Die meisten Leser sind Mitspieler, keine Statistiker. Keine
-  Technik- oder Statistikbegriffe: nicht „API“, „Dossier“, „Tag“, „Datensatz“, „Stichprobe“ (sag „bei wenigen Spielen“), „Variationskoeffizient“, „Modus-Mix“,
-  „Prozentpunkte“ (Synergie einfach als „+20 Synergie“). Erlaubt und erwünscht: Spielbegriffe wie
-  Fumbi, Striker, Backer, K/D, MVP, Carry im normalen Wortsinn.
+- **Gamer-Sprache.** Die Leser sind Gamer – schreib wie im Voice-Chat, nicht wie ein Statistik-Bericht:
+  carry/carrien, Solo-Carry, Runner (statt „Fumbi-Träger“), Winrate (statt „Siegquote“), Win-Streak,
+  Lose-Streak, clutch, down gehen, Fights, Backline/Frontline, Duo, Nemesis, Underdog, Upset,
+  Conversion, MVP, K/D, Defense, Offense, Rebounds. „Median“ ist als Vergleichswert erwünscht.
+  Keine Technik- oder Statistikbegriffe: nicht „API“, „Dossier“, „Tag“, „Datensatz“, „Stichprobe“
+  (sag „bei wenigen Spielen“), „Variationskoeffizient“, „Modus-Mix“, „Prozentpunkte“ (Synergie als „+20 Synergie“).
 - **Keine Floskeln.** Verboten: „mehr üben“, „an der Konstanz arbeiten“, „Kommunikation
   verbessern“, „weiter so“ und alles, was auf jeden Spieler passen würde.
 - **Tipps sind konkret und messbar:** aus einer gemessenen Schwäche abgeleitet, mit Zielwert aus den
@@ -161,12 +170,7 @@ Gib **nur** gültiges JSON in genau dieser Struktur aus (Datei `data/analyses/se
       "archetype": { "label": "Spielertyp in 1–3 Wörtern", "explanation": "1–2 Sätze, woran man den Typ in den Zahlen erkennt" },
       "strengths": [{ "title": "max. 5 Wörter", "evidence": "1–2 Sätze mit Zahlen" }],
       "weaknesses": [{ "title": "max. 5 Wörter", "evidence": "1–2 Sätze mit Zahlen" }],
-      "development": "Verlauf innerhalb der Season und, ab der zweiten Season, im Vergleich zur Karriere",
-      "modes": "2v2 vs. 3v3",
-      "clutch": "knappe Spiele vs. deutliche Ergebnisse",
-      "consistency": "Wie berechenbar ist die Leistung?",
-      "teamRole": "Was passiert mit dem Team, wenn der Spieler trägt?",
-      "chemistry": { "bestPartner": "1 Satz mit Zahlen", "nemesis": "1 Satz mit Zahlen oder null" },
+      "insights": [{ "value": "63,5 %", "label": "max. 5 Wörter", "detail": "1 Satz mit Vergleich" }],
       "tips": ["2 konkrete, messbare Tipps"]
     }
   }
@@ -174,5 +178,10 @@ Gib **nur** gültiges JSON in genau dieser Struktur aus (Datei `data/analyses/se
 ```
 
 - `strengths` und `weaknesses`: genau je 3 Einträge.
+- `insights`: 4–6 Karten mit den **überraschendsten** Befunden, die nicht schon in Stärken/Schwächen
+  stehen. `value` ist die große Zahl auf der Karte (kurz: „63,5 %“, „+16,8“, „0 → 2,05“, „3 von 5“),
+  `label` sagt, was die Zahl ist, `detail` liefert den Vergleich, der sie spannend macht. Keine festen
+  Themen – nur, was bei diesem Spieler wirklich heraussticht (Entwicklung, 2v2 vs. 3v3, Clutch,
+  Underdog, Conversion, Marathon, Duo, Nemesis, Rekorde …). Lieber 4 starke als 6 mittelmäßige.
 - Nur Spieler aus `players` des Dossiers (die mit genug Spielen). `notAnalysed` bekommen keine Analyse.
 - Wenn für einen Abschnitt die Zahlen nicht reichen, schreib das kurz und ehrlich statt zu raten.

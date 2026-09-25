@@ -15,12 +15,8 @@ export interface Analysis {
   archetype: { label: string; explanation: string };
   strengths: Point[];
   weaknesses: Point[];
-  development: string;
-  modes: string;
-  clutch: string;
-  consistency: string;
-  teamRole: string;
-  chemistry: { bestPartner: string; nemesis: string | null };
+  /** 4–6 Highlights: große Zahl + was sie bedeutet */
+  insights: { value: string; label: string; detail: string }[];
   tips: string[];
 }
 interface SeasonAnalyses {
@@ -55,14 +51,6 @@ function Points({ items, icon, tone }: { items: Point[]; icon: ReactNode; tone: 
     </ul>
   );
 }
-
-const DETAILS: { key: keyof Pick<Analysis, 'development' | 'modes' | 'clutch' | 'consistency' | 'teamRole'>; label: string }[] = [
-  { key: 'development', label: 'Entwicklung' },
-  { key: 'modes', label: '2v2 vs. 3v3' },
-  { key: 'clutch', label: 'Knappe Spiele' },
-  { key: 'consistency', label: 'Konstanz' },
-  { key: 'teamRole', label: 'Rolle im Team' },
-];
 
 export function PlayerAnalysis({ player, season }: { player: string; season: number | 'all' }) {
   const found = findAnalysis(player, season);
@@ -105,20 +93,15 @@ export function PlayerAnalysis({ player, season }: { player: string; season: num
           </div>
         </div>
 
-        <dl className="grid gap-x-6 gap-y-4 border-t border-border pt-5 md:grid-cols-2">
-          {DETAILS.map((d) => (
-            <div key={d.key}>
-              <dt className="text-sm font-medium">{d.label}</dt>
-              <dd className="text-sm text-muted-foreground">{a[d.key]}</dd>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {a.insights.map((insight) => (
+            <div key={insight.label} className="rounded-lg border border-border bg-secondary/30 p-4">
+              <div className="text-2xl font-semibold tabular-nums">{insight.value}</div>
+              <div className="mt-0.5 text-sm font-medium">{insight.label}</div>
+              <p className="mt-2 text-sm text-muted-foreground">{insight.detail}</p>
             </div>
           ))}
-          <div>
-            <dt className="text-sm font-medium">Mitspieler & Gegner</dt>
-            <dd className="text-sm text-muted-foreground">
-              {a.chemistry.bestPartner} {a.chemistry.nemesis}
-            </dd>
-          </div>
-        </dl>
+        </div>
 
         <div className="rounded-lg border border-border bg-secondary/40 p-4">
           <h4 className="mb-2 inline-flex items-center gap-2 text-sm font-semibold">

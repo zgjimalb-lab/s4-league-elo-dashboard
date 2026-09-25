@@ -16,6 +16,8 @@ import type { Match, PlayerLine, StoredMatch } from '../client/src/lib/s4/types'
 const MIN_GAMES = 15;
 const MIN_PAIR_GAMES = 5;
 const CLOSE_MARGIN = 2; // knappes Spiel: höchstens 2 Touchdowns Unterschied
+const UNDERDOG_MAX_WIN_CHANCE = 0.45; // Außenseiter: laut ELO höchstens 45 % Siegchance
+const MARATHON_SEC = 15 * 60; // lange Matches: über 15 Minuten
 const BLOWOUT_MARGIN = 5;
 
 const root = new URL('..', import.meta.url);
@@ -131,6 +133,16 @@ function teamShare(match: Match, line: PlayerLine, pick: (l: PlayerLine) => numb
   return team ? pick(line) / team : 0;
 }
 
+// ELO-Stand vor jedem Match (Gesamtwertung, läuft über Seasons durch)
+const eloBefore = new Map(computeElo(all).entries.map((e) => [e.match.id, e.changes]));
+
+/** Siegchance des Teams laut ELO-Schnitt beider Teams vor dem Match */
+function winChance(match: Match, team: number) {
+  const before = eloBefore.get(match.id)!;
+  const avg = (t: number) => mean(match.players.filter((p) => p.team === t).map((p) => before.get(p.name)!.before));
+  return 1 / (1 + 10 ** ((avg(1 - team) - avg(team)) / 400));
+}
+
 function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]) {
   const own = seasonMatches.filter((m) => lineOf(m, name));
   const lines = own.map((m) => lineOf(m, name)!);
@@ -169,6 +181,29 @@ function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]
     const m = own.reduce((a, b) => (pick(lineOf(b, name)!) > pick(lineOf(a, name)!) ? b : a));
     const l = lineOf(m, name)!;
     return { match: m.number, date: m.date, mode: m.mode, touchdowns: l.goals, points: l.score, damage: l.damage, result: resultOf(m, l) };
+  };
+
+  // Underdog: Spiele, in denen das eigene Team laut ELO klar Außenseiter war
+  const chances = own.map((m) => ({ m, chance: winChance(m, lineOf(m, name)!.team), won: resultOf(m, lineOf(m, name)!) === 'W' }));
+  const underdog = chances.filter((c) => c.chance <= UNDERDOG_MAX_WIN_CHANCE);
+  const favorite = chances.filter((c) => c.chance >= 1 - UNDERDOG_MAX_WIN_CHANCE);
+  const expectedWins = chances.reduce((sum, c) => sum + c.chance, 0);
+
+  // Fumbi-Conversion: eigene Touchdowns pro Rebound (nur Matches mit Rebound-Daten)
+  const withRebounds = lines.filter((l) => l.rebounds !== undefined);
+  const rebounds = withRebounds.reduce((sum, l) => sum + (l.rebounds ?? 0), 0);
+  const conversionTouchdowns = withRebounds.reduce((sum, l) => sum + l.goals, 0);
+
+  // Marathon vs. Speedrun
+  const lengthSplit = (filter: (m: Match) => boolean) => {
+    const ms = own.filter((m) => m.durationSec && filter(m));
+    const ls = ms.map((m) => lineOf(m, name)!);
+    const minutes = ms.reduce((sum, m, i) => sum + (ls[i].playtime ?? m.durationSec!) / 60, 0);
+    return {
+      ...recordOf(ms, name),
+      touchdownsPerGame: r2(mean(ls.map((l) => l.goals))),
+      pointsPerMinute: minutes ? r2(ls.reduce((sum, l) => sum + l.score, 0) / minutes) : null,
+    };
   };
 
   let worstLossStreak = 0;
@@ -210,6 +245,20 @@ function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]
       matchMvpHighestScore: own.filter((m) => mvpsOf(m).includes(name)).length,
     },
     streaks: { bestWinStreak: seasonStats.bestWinStreak, worstLossStreak, current: seasonStats.streak },
+    underdog: {
+      note: `Außenseiter = laut ELO-Schnitt beider Teams höchstens ${UNDERDOG_MAX_WIN_CHANCE * 100} % Siegchance; Favorit = mindestens ${(1 - UNDERDOG_MAX_WIN_CHANCE) * 100} %`,
+      asUnderdog: { games: underdog.length, wins: underdog.filter((c) => c.won).length, winratePct: underdog.length ? pct(underdog.filter((c) => c.won).length / underdog.length) : null },
+      asFavorite: { games: favorite.length, wins: favorite.filter((c) => c.won).length, winratePct: favorite.length ? pct(favorite.filter((c) => c.won).length / favorite.length) : null },
+      winsAboveExpected: r1(chances.filter((c) => c.won).length - expectedWins),
+    },
+    fumbiConversion: rebounds
+      ? { games: withRebounds.length, rebounds, touchdowns: conversionTouchdowns, touchdownsPerReboundPct: pct(conversionTouchdowns / rebounds) }
+      : null,
+    matchLength: {
+      note: `Marathon = über ${MARATHON_SEC / 60} Minuten, Speedrun = höchstens ${MARATHON_SEC / 60} Minuten`,
+      marathon: lengthSplit((m) => m.durationSec! > MARATHON_SEC),
+      speedrun: lengthSplit((m) => m.durationSec! <= MARATHON_SEC),
+    },
     teammates: duos,
     opponents,
     bestGames: { mostPoints: best((l) => l.score), mostTouchdowns: best((l) => l.goals) },

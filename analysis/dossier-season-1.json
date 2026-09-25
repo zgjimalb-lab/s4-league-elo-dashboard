@@ -391,6 +391,43 @@
           "length": 3
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 41,
+          "wins": 9,
+          "winratePct": 22
+        },
+        "asFavorite": {
+          "games": 84,
+          "wins": 59,
+          "winratePct": 70.2
+        },
+        "winsAboveExpected": 7
+      },
+      "fumbiConversion": {
+        "games": 154,
+        "rebounds": 2549,
+        "touchdowns": 675,
+        "touchdownsPerReboundPct": 26.5
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 69,
+          "wins": 39,
+          "winratePct": 56.5,
+          "touchdownsPerGame": 4.55,
+          "pointsPerMinute": 9.8
+        },
+        "speedrun": {
+          "games": 123,
+          "wins": 69,
+          "winratePct": 56.1,
+          "touchdownsPerGame": 4.55,
+          "pointsPerMinute": 11.15
+        }
+      },
       "teammates": [
         {
           "with": "Malena",
@@ -863,6 +900,43 @@
           "length": 1
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 62,
+          "wins": 21,
+          "winratePct": 33.9
+        },
+        "asFavorite": {
+          "games": 59,
+          "wins": 46,
+          "winratePct": 78
+        },
+        "winsAboveExpected": 10.9
+      },
+      "fumbiConversion": {
+        "games": 145,
+        "rebounds": 2432,
+        "touchdowns": 779,
+        "touchdownsPerReboundPct": 32
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 70,
+          "wins": 36,
+          "winratePct": 51.4,
+          "touchdownsPerGame": 5.43,
+          "pointsPerMinute": 10.54
+        },
+        "speedrun": {
+          "games": 118,
+          "wins": 69,
+          "winratePct": 58.5,
+          "touchdownsPerGame": 5.16,
+          "pointsPerMinute": 11.56
+        }
+      },
       "teammates": [
         {
           "with": "Nebus.",
@@ -1328,6 +1402,43 @@
           "length": 3
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 22,
+          "wins": 10,
+          "winratePct": 45.5
+        },
+        "asFavorite": {
+          "games": 95,
+          "wins": 73,
+          "winratePct": 76.8
+        },
+        "winsAboveExpected": 16.8
+      },
+      "fumbiConversion": {
+        "games": 137,
+        "rebounds": 1694,
+        "touchdowns": 442,
+        "touchdownsPerReboundPct": 26.1
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 65,
+          "wins": 41,
+          "winratePct": 63.1,
+          "touchdownsPerGame": 2.91,
+          "pointsPerMinute": 9.81
+        },
+        "speedrun": {
+          "games": 114,
+          "wins": 76,
+          "winratePct": 66.7,
+          "touchdownsPerGame": 3.45,
+          "pointsPerMinute": 11.09
+        }
+      },
       "teammates": [
         {
           "with": "Aferdita",
@@ -1784,6 +1895,43 @@
         "current": {
           "result": "W",
           "length": 1
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 60,
+          "wins": 17,
+          "winratePct": 28.3
+        },
+        "asFavorite": {
+          "games": 12,
+          "wins": 8,
+          "winratePct": 66.7
+        },
+        "winsAboveExpected": -10.7
+      },
+      "fumbiConversion": {
+        "games": 89,
+        "rebounds": 1717,
+        "touchdowns": 300,
+        "touchdownsPerReboundPct": 17.5
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 58,
+          "wins": 24,
+          "winratePct": 41.4,
+          "touchdownsPerGame": 3.21,
+          "pointsPerMinute": 8.88
+        },
+        "speedrun": {
+          "games": 66,
+          "wins": 21,
+          "winratePct": 31.8,
+          "touchdownsPerGame": 3.85,
+          "pointsPerMinute": 10.23
         }
       },
       "teammates": [
@@ -2244,6 +2392,43 @@
           "length": 1
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 23,
+          "wins": 8,
+          "winratePct": 34.8
+        },
+        "asFavorite": {
+          "games": 24,
+          "wins": 18,
+          "winratePct": 75
+        },
+        "winsAboveExpected": -2.6
+      },
+      "fumbiConversion": {
+        "games": 68,
+        "rebounds": 1013,
+        "touchdowns": 167,
+        "touchdownsPerReboundPct": 16.5
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 40,
+          "wins": 20,
+          "winratePct": 50,
+          "touchdownsPerGame": 2.08,
+          "pointsPerMinute": 6.6
+        },
+        "speedrun": {
+          "games": 43,
+          "wins": 19,
+          "winratePct": 44.2,
+          "touchdownsPerGame": 2.56,
+          "pointsPerMinute": 7.96
+        }
+      },
       "teammates": [
         {
           "with": "Nebus.",
@@ -2689,6 +2874,43 @@
           "length": 1
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 47,
+          "wins": 8,
+          "winratePct": 17
+        },
+        "asFavorite": {
+          "games": 3,
+          "wins": 0,
+          "winratePct": 0
+        },
+        "winsAboveExpected": -12.5
+      },
+      "fumbiConversion": {
+        "games": 58,
+        "rebounds": 485,
+        "touchdowns": 82,
+        "touchdownsPerReboundPct": 16.9
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 31,
+          "wins": 11,
+          "winratePct": 35.5,
+          "touchdownsPerGame": 1.1,
+          "pointsPerMinute": 6.65
+        },
+        "speedrun": {
+          "games": 44,
+          "wins": 8,
+          "winratePct": 18.2,
+          "touchdownsPerGame": 1.5,
+          "pointsPerMinute": 7.42
+        }
+      },
       "teammates": [
         {
           "with": "Nebus.",
@@ -3120,6 +3342,43 @@
           "length": 2
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 3,
+          "wins": 1,
+          "winratePct": 33.3
+        },
+        "asFavorite": {
+          "games": 8,
+          "wins": 5,
+          "winratePct": 62.5
+        },
+        "winsAboveExpected": 0.4
+      },
+      "fumbiConversion": {
+        "games": 22,
+        "rebounds": 132,
+        "touchdowns": 13,
+        "touchdownsPerReboundPct": 9.8
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 18,
+          "wins": 9,
+          "winratePct": 50,
+          "touchdownsPerGame": 0.56,
+          "pointsPerMinute": 7.83
+        },
+        "speedrun": {
+          "games": 4,
+          "wins": 3,
+          "winratePct": 75,
+          "touchdownsPerGame": 0.75,
+          "pointsPerMinute": 8.07
+        }
+      },
       "teammates": [
         {
           "with": "Malena",
@@ -3544,6 +3803,43 @@
           "length": 2
         }
       },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 15,
+          "wins": 3,
+          "winratePct": 20
+        },
+        "asFavorite": {
+          "games": 0,
+          "wins": 0,
+          "winratePct": null
+        },
+        "winsAboveExpected": -3.3
+      },
+      "fumbiConversion": {
+        "games": 19,
+        "rebounds": 185,
+        "touchdowns": 51,
+        "touchdownsPerReboundPct": 27.6
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 3,
+          "wins": 1,
+          "winratePct": 33.3,
+          "touchdownsPerGame": 3,
+          "pointsPerMinute": 7.19
+        },
+        "speedrun": {
+          "games": 16,
+          "wins": 3,
+          "winratePct": 18.8,
+          "touchdownsPerGame": 2.63,
+          "pointsPerMinute": 8.87
+        }
+      },
       "teammates": [
         {
           "with": "-Darkstar",
@@ -3946,6 +4242,43 @@
         "current": {
           "result": "L",
           "length": 12
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 8,
+          "wins": 0,
+          "winratePct": 0
+        },
+        "asFavorite": {
+          "games": 3,
+          "wins": 1,
+          "winratePct": 33.3
+        },
+        "winsAboveExpected": -4.6
+      },
+      "fumbiConversion": {
+        "games": 17,
+        "rebounds": 108,
+        "touchdowns": 3,
+        "touchdownsPerReboundPct": 2.8
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 13,
+          "wins": 3,
+          "winratePct": 23.1,
+          "touchdownsPerGame": 0.23,
+          "pointsPerMinute": 5.12
+        },
+        "speedrun": {
+          "games": 4,
+          "wins": 0,
+          "winratePct": 0,
+          "touchdownsPerGame": 0,
+          "pointsPerMinute": 3.67
         }
       },
       "teammates": [
