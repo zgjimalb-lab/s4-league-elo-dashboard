@@ -22,7 +22,7 @@
     ],
     "dataNotes": [
       "Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Matches mit Leavern (<50 % Spielzeit) ausgeschlossen.",
-      "apiDetails/apiTags (Kills, Deaths, Defense, Rebounds, Carry/MVP-Tag) gibt es nur für Matches aus der Xero API, nicht für die alten Screenshot-Matches – games-Feld beachten.",
+      "apiDetails/apiTags (Kills, Deaths, K/D, Carry/MVP-Tag) gibt es nur für Matches aus der Xero API, nicht für die alten Screenshot-Matches – games-Feld beachten.",
       "MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match; mvpTagPct = offizieller MVP-Tag von Xero.",
       "Die Teams werden zufällig gebildet; Synergie = Winrate zusammen minus Durchschnitt der beiden Einzel-Winrates.",
       "ELO: Start 1500, K = 32, individuell gegen den ELO-Schnitt des Gegnerteams, kein Reset zwischen Seasons.",
@@ -40,10 +40,8 @@
     "damageShare": 38.3,
     "mvpRate": 13.5,
     "kd": 0.33,
-    "deathsPerGame": 18.07,
-    "defensePerGame": 8.82,
-    "offensePerGame": 1.36,
-    "reboundsPerGame": 12.26
+    "killsPerGame": 5.35,
+    "deathsPerGame": 18.07
   },
   "players": [
     {
@@ -74,11 +72,7 @@
           "games": 154,
           "killsPerGame": 4.23,
           "deathsPerGame": 18.77,
-          "kd": 0.23,
-          "reboundsPerGame": 16.55,
-          "offensePerGame": 1.46,
-          "defensePerGame": 7.81,
-          "healingPerGame": 0
+          "kd": 0.23
         },
         "elo": {
           "start": 1500,
@@ -115,11 +109,7 @@
           "games": 154,
           "killsPerGame": 4.23,
           "deathsPerGame": 18.77,
-          "kd": 0.23,
-          "reboundsPerGame": 16.55,
-          "offensePerGame": 1.46,
-          "defensePerGame": 7.81,
-          "healingPerGame": 0
+          "kd": 0.23
         },
         "elo": {
           "start": 1500,
@@ -191,29 +181,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 4.23,
+          "rank": 7,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 18.77,
           "rank": 6,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 7.81,
-          "rank": 5,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 1.46,
-          "rank": 4,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 16.55,
-          "rank": 3,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -294,11 +272,7 @@
             "games": 104,
             "killsPerGame": 2.51,
             "deathsPerGame": 15.97,
-            "kd": 0.16,
-            "reboundsPerGame": 15.46,
-            "offensePerGame": 1.24,
-            "defensePerGame": 6,
-            "healingPerGame": 0
+            "kd": 0.16
           },
           "elo": {
             "start": 1500,
@@ -335,11 +309,7 @@
             "games": 50,
             "killsPerGame": 7.82,
             "deathsPerGame": 24.6,
-            "kd": 0.32,
-            "reboundsPerGame": 18.82,
-            "offensePerGame": 1.92,
-            "defensePerGame": 11.58,
-            "healingPerGame": 0
+            "kd": 0.32
           },
           "elo": {
             "start": 1500,
@@ -549,11 +519,7 @@
           "games": 145,
           "killsPerGame": 4.86,
           "deathsPerGame": 18.37,
-          "kd": 0.26,
-          "reboundsPerGame": 16.77,
-          "offensePerGame": 1.66,
-          "defensePerGame": 8.57,
-          "healingPerGame": 0
+          "kd": 0.26
         },
         "elo": {
           "start": 1500,
@@ -590,11 +556,7 @@
           "games": 145,
           "killsPerGame": 4.86,
           "deathsPerGame": 18.37,
-          "kd": 0.26,
-          "reboundsPerGame": 16.77,
-          "offensePerGame": 1.66,
-          "defensePerGame": 8.57,
-          "healingPerGame": 0
+          "kd": 0.26
         },
         "elo": {
           "start": 1500,
@@ -666,29 +628,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 4.86,
+          "rank": 6,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 18.37,
           "rank": 5,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 8.57,
-          "rank": 3,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 1.66,
-          "rank": 3,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 16.77,
-          "rank": 2,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -769,11 +719,7 @@
             "games": 95,
             "killsPerGame": 2.84,
             "deathsPerGame": 14.51,
-            "kd": 0.2,
-            "reboundsPerGame": 14.84,
-            "offensePerGame": 1.33,
-            "defensePerGame": 7.17,
-            "healingPerGame": 0
+            "kd": 0.2
           },
           "elo": {
             "start": 1500,
@@ -810,11 +756,7 @@
             "games": 50,
             "killsPerGame": 8.7,
             "deathsPerGame": 25.72,
-            "kd": 0.34,
-            "reboundsPerGame": 20.44,
-            "offensePerGame": 2.3,
-            "defensePerGame": 11.22,
-            "healingPerGame": 0
+            "kd": 0.34
           },
           "elo": {
             "start": 1500,
@@ -1017,11 +959,7 @@
           "games": 137,
           "killsPerGame": 6.17,
           "deathsPerGame": 14.42,
-          "kd": 0.43,
-          "reboundsPerGame": 12.36,
-          "offensePerGame": 2.17,
-          "defensePerGame": 11.23,
-          "healingPerGame": 0
+          "kd": 0.43
         },
         "elo": {
           "start": 1500,
@@ -1058,11 +996,7 @@
           "games": 137,
           "killsPerGame": 6.17,
           "deathsPerGame": 14.42,
-          "kd": 0.43,
-          "reboundsPerGame": 12.36,
-          "offensePerGame": 2.17,
-          "defensePerGame": 11.23,
-          "healingPerGame": 0
+          "kd": 0.43
         },
         "elo": {
           "start": 1500,
@@ -1134,29 +1068,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 6.17,
+          "rank": 2,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 14.42,
           "rank": 2,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 11.23,
-          "rank": 2,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 2.17,
-          "rank": 2,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 12.36,
-          "rank": 5,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -1237,11 +1159,7 @@
             "games": 87,
             "killsPerGame": 3.97,
             "deathsPerGame": 10.25,
-            "kd": 0.39,
-            "reboundsPerGame": 10.6,
-            "offensePerGame": 1.99,
-            "defensePerGame": 9.74,
-            "healingPerGame": 0
+            "kd": 0.39
           },
           "elo": {
             "start": 1500,
@@ -1278,11 +1196,7 @@
             "games": 50,
             "killsPerGame": 10,
             "deathsPerGame": 21.68,
-            "kd": 0.46,
-            "reboundsPerGame": 15.44,
-            "offensePerGame": 2.48,
-            "defensePerGame": 13.84,
-            "healingPerGame": 0
+            "kd": 0.46
           },
           "elo": {
             "start": 1500,
@@ -1478,11 +1392,7 @@
           "games": 89,
           "killsPerGame": 5.64,
           "deathsPerGame": 23.61,
-          "kd": 0.24,
-          "reboundsPerGame": 19.29,
-          "offensePerGame": 2.29,
-          "defensePerGame": 7.57,
-          "healingPerGame": 0
+          "kd": 0.24
         },
         "elo": {
           "start": 1500,
@@ -1519,11 +1429,7 @@
           "games": 89,
           "killsPerGame": 5.64,
           "deathsPerGame": 23.61,
-          "kd": 0.24,
-          "reboundsPerGame": 19.29,
-          "offensePerGame": 2.29,
-          "defensePerGame": 7.57,
-          "healingPerGame": 0
+          "kd": 0.24
         },
         "elo": {
           "start": 1500,
@@ -1595,29 +1501,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 5.64,
+          "rank": 5,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 23.61,
           "rank": 8,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 7.57,
-          "rank": 6,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 2.29,
-          "rank": 1,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 19.29,
-          "rank": 1,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -1698,11 +1592,7 @@
             "games": 40,
             "killsPerGame": 2.8,
             "deathsPerGame": 17.15,
-            "kd": 0.16,
-            "reboundsPerGame": 16.68,
-            "offensePerGame": 2,
-            "defensePerGame": 6.9,
-            "healingPerGame": 0
+            "kd": 0.16
           },
           "elo": {
             "start": 1500,
@@ -1739,11 +1629,7 @@
             "games": 49,
             "killsPerGame": 7.96,
             "deathsPerGame": 28.88,
-            "kd": 0.28,
-            "reboundsPerGame": 21.43,
-            "offensePerGame": 2.53,
-            "defensePerGame": 8.12,
-            "healingPerGame": 0
+            "kd": 0.28
           },
           "elo": {
             "start": 1500,
@@ -1940,11 +1826,7 @@
           "games": 68,
           "killsPerGame": 3.66,
           "deathsPerGame": 24.12,
-          "kd": 0.15,
-          "reboundsPerGame": 14.9,
-          "offensePerGame": 1.25,
-          "defensePerGame": 7.25,
-          "healingPerGame": 0
+          "kd": 0.15
         },
         "elo": {
           "start": 1500,
@@ -1981,11 +1863,7 @@
           "games": 68,
           "killsPerGame": 3.66,
           "deathsPerGame": 24.12,
-          "kd": 0.15,
-          "reboundsPerGame": 14.9,
-          "offensePerGame": 1.25,
-          "defensePerGame": 7.25,
-          "healingPerGame": 0
+          "kd": 0.15
         },
         "elo": {
           "start": 1500,
@@ -2057,29 +1935,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 3.66,
+          "rank": 8,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 24.12,
           "rank": 9,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 7.25,
-          "rank": 7,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 1.25,
-          "rank": 5,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 14.9,
-          "rank": 4,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -2159,11 +2025,7 @@
             "games": 38,
             "killsPerGame": 4.71,
             "deathsPerGame": 29.63,
-            "kd": 0.16,
-            "reboundsPerGame": 16.71,
-            "offensePerGame": 1.26,
-            "defensePerGame": 8.03,
-            "healingPerGame": 0
+            "kd": 0.16
           },
           "elo": {
             "start": 1500,
@@ -2200,11 +2062,7 @@
             "games": 30,
             "killsPerGame": 2.33,
             "deathsPerGame": 17.13,
-            "kd": 0.14,
-            "reboundsPerGame": 12.6,
-            "offensePerGame": 1.23,
-            "defensePerGame": 6.27,
-            "healingPerGame": 0
+            "kd": 0.14
           },
           "elo": {
             "start": 1500,
@@ -2387,11 +2245,7 @@
           "games": 58,
           "killsPerGame": 5.86,
           "deathsPerGame": 16.79,
-          "kd": 0.35,
-          "reboundsPerGame": 8.36,
-          "offensePerGame": 0.67,
-          "defensePerGame": 8.22,
-          "healingPerGame": 0
+          "kd": 0.35
         },
         "elo": {
           "start": 1500,
@@ -2428,11 +2282,7 @@
           "games": 58,
           "killsPerGame": 5.86,
           "deathsPerGame": 16.79,
-          "kd": 0.35,
-          "reboundsPerGame": 8.36,
-          "offensePerGame": 0.67,
-          "defensePerGame": 8.22,
-          "healingPerGame": 0
+          "kd": 0.35
         },
         "elo": {
           "start": 1500,
@@ -2504,29 +2354,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 5.86,
+          "rank": 3,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 16.79,
           "rank": 4,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 8.22,
-          "rank": 4,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 0.67,
-          "rank": 9,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 8.36,
-          "rank": 7,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -2607,11 +2445,7 @@
             "games": 30,
             "killsPerGame": 3.3,
             "deathsPerGame": 11.03,
-            "kd": 0.3,
-            "reboundsPerGame": 6.6,
-            "offensePerGame": 0.67,
-            "defensePerGame": 5.7,
-            "healingPerGame": 0
+            "kd": 0.3
           },
           "elo": {
             "start": 1500,
@@ -2648,11 +2482,7 @@
             "games": 28,
             "killsPerGame": 8.61,
             "deathsPerGame": 22.96,
-            "kd": 0.37,
-            "reboundsPerGame": 10.25,
-            "offensePerGame": 0.68,
-            "defensePerGame": 10.93,
-            "healingPerGame": 0
+            "kd": 0.37
           },
           "elo": {
             "start": 1500,
@@ -2823,11 +2653,7 @@
           "games": 22,
           "killsPerGame": 9.73,
           "deathsPerGame": 10.95,
-          "kd": 0.89,
-          "reboundsPerGame": 6,
-          "offensePerGame": 1,
-          "defensePerGame": 17.36,
-          "healingPerGame": 0
+          "kd": 0.89
         },
         "elo": {
           "start": 1500,
@@ -2864,11 +2690,7 @@
           "games": 22,
           "killsPerGame": 9.73,
           "deathsPerGame": 10.95,
-          "kd": 0.89,
-          "reboundsPerGame": 6,
-          "offensePerGame": 1,
-          "defensePerGame": 17.36,
-          "healingPerGame": 0
+          "kd": 0.89
         },
         "elo": {
           "start": 1500,
@@ -2940,29 +2762,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 9.73,
+          "rank": 1,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 10.95,
           "rank": 1,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 17.36,
-          "rank": 1,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 1,
-          "rank": 7,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 6,
-          "rank": 9,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -3041,11 +2851,7 @@
             "games": 19,
             "killsPerGame": 9.79,
             "deathsPerGame": 10.63,
-            "kd": 0.92,
-            "reboundsPerGame": 5.47,
-            "offensePerGame": 0.68,
-            "defensePerGame": 18.58,
-            "healingPerGame": 0
+            "kd": 0.92
           },
           "elo": {
             "start": 1500,
@@ -3082,11 +2888,7 @@
             "games": 3,
             "killsPerGame": 9.33,
             "deathsPerGame": 13,
-            "kd": 0.72,
-            "reboundsPerGame": 9.33,
-            "offensePerGame": 3,
-            "defensePerGame": 9.67,
-            "healingPerGame": 0
+            "kd": 0.72
           },
           "elo": {
             "start": 1500,
@@ -3250,11 +3052,7 @@
           "games": 19,
           "killsPerGame": 2.16,
           "deathsPerGame": 14.74,
-          "kd": 0.15,
-          "reboundsPerGame": 9.74,
-          "offensePerGame": 1.05,
-          "defensePerGame": 4.63,
-          "healingPerGame": 0
+          "kd": 0.15
         },
         "elo": {
           "start": 1500,
@@ -3291,11 +3089,7 @@
           "games": 19,
           "killsPerGame": 2.16,
           "deathsPerGame": 14.74,
-          "kd": 0.15,
-          "reboundsPerGame": 9.74,
-          "offensePerGame": 1.05,
-          "defensePerGame": 4.63,
-          "healingPerGame": 0
+          "kd": 0.15
         },
         "elo": {
           "start": 1500,
@@ -3367,29 +3161,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 2.16,
+          "rank": 9,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 14.74,
           "rank": 3,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 4.63,
-          "rank": 9,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 1.05,
-          "rank": 6,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 9.74,
-          "rank": 6,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -3468,11 +3250,7 @@
             "games": 18,
             "killsPerGame": 2.11,
             "deathsPerGame": 14.06,
-            "kd": 0.15,
-            "reboundsPerGame": 9.83,
-            "offensePerGame": 0.94,
-            "defensePerGame": 4.44,
-            "healingPerGame": 0
+            "kd": 0.15
           },
           "elo": {
             "start": 1500,
@@ -3509,11 +3287,7 @@
             "games": 1,
             "killsPerGame": 3,
             "deathsPerGame": 27,
-            "kd": 0.11,
-            "reboundsPerGame": 8,
-            "offensePerGame": 3,
-            "defensePerGame": 8,
-            "healingPerGame": 0
+            "kd": 0.11
           },
           "elo": {
             "start": 1500,
@@ -3657,11 +3431,7 @@
           "games": 17,
           "killsPerGame": 5.82,
           "deathsPerGame": 20.88,
-          "kd": 0.28,
-          "reboundsPerGame": 6.35,
-          "offensePerGame": 0.71,
-          "defensePerGame": 6.76,
-          "healingPerGame": 0
+          "kd": 0.28
         },
         "elo": {
           "start": 1500,
@@ -3698,11 +3468,7 @@
           "games": 17,
           "killsPerGame": 5.82,
           "deathsPerGame": 20.88,
-          "kd": 0.28,
-          "reboundsPerGame": 6.35,
-          "offensePerGame": 0.71,
-          "defensePerGame": 6.76,
-          "healingPerGame": 0
+          "kd": 0.28
         },
         "elo": {
           "start": 1500,
@@ -3774,29 +3540,17 @@
           "of": 9,
           "groupMedian": 0.26
         },
+        "killsPerGame": {
+          "value": 5.82,
+          "rank": 4,
+          "of": 9,
+          "groupMedian": 5.64
+        },
         "deathsPerGame": {
           "value": 20.88,
           "rank": 7,
           "of": 9,
           "groupMedian": 18.37
-        },
-        "defensePerGame": {
-          "value": 6.76,
-          "rank": 8,
-          "of": 9,
-          "groupMedian": 7.81
-        },
-        "offensePerGame": {
-          "value": 0.71,
-          "rank": 8,
-          "of": 9,
-          "groupMedian": 1.25
-        },
-        "reboundsPerGame": {
-          "value": 6.35,
-          "rank": 8,
-          "of": 9,
-          "groupMedian": 12.36
         }
       },
       "trendWithinSeason": {
@@ -3875,11 +3629,7 @@
             "games": 3,
             "killsPerGame": 2,
             "deathsPerGame": 17.33,
-            "kd": 0.12,
-            "reboundsPerGame": 6.67,
-            "offensePerGame": 1.33,
-            "defensePerGame": 8.67,
-            "healingPerGame": 0
+            "kd": 0.12
           },
           "elo": {
             "start": 1500,
@@ -3916,11 +3666,7 @@
             "games": 14,
             "killsPerGame": 6.64,
             "deathsPerGame": 21.64,
-            "kd": 0.31,
-            "reboundsPerGame": 6.29,
-            "offensePerGame": 0.57,
-            "defensePerGame": 6.36,
-            "healingPerGame": 0
+            "kd": 0.31
           },
           "elo": {
             "start": 1500,

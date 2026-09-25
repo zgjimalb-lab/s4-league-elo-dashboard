@@ -49,7 +49,7 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 | Feld | Inhalt |
 |---|---|
 | `season`, `career` | Bilanz, Werte pro Spiel und pro Minute, Anteile am Team, MVP-Rate, ELO (Start, Ende, Peak, Tief) |
-| `season.apiDetails` | Kills, Deaths, K/D, Defense, Offense, Rebounds – **nur** aus `games` API-Matches |
+| `season.apiDetails` | Kills, Deaths, K/D – **nur** aus `games` API-Matches |
 | `groupComparisonSeason` | je Kennzahl: Wert, Rang (1 = bester), Anzahl Spieler, Gruppenmedian |
 | `trendWithinSeason` | frühes/mittleres/spätes Drittel der Season und letzte 20 Spiele – inkl. `modeMixPct` |
 | `byMode` | 2v2 vs. 3v3 (und weitere Teamgrößen) mit eigener ELO |
@@ -96,6 +96,8 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 - **Abwechslung:** Kein Satzbau, keine Pointe und kein Spielertyp-Label darf sich zwischen
   Spielern wiederholen.
 - Nichts erfinden: Was nicht im Dossier steht, gibt es nicht.
+- Xero kennt noch weitere Zähler (Defense, Offense, Rebounds), deren Bedeutung nicht dokumentiert
+  ist. Sie fehlen im Dossier absichtlich – nicht erwähnen und nicht darüber spekulieren.
 
 ## Ausgabe
 
