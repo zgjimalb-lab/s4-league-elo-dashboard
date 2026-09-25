@@ -34,6 +34,8 @@ export interface StoredMatch {
   /** YYYY-MM-DD; bei API-Matches der Tag, an dem der Sync das Match zuerst gesehen hat */
   date: string;
   seenAt?: string;
+  /** Datum nur geschätzt (Match lag vor dem Sync-Start und fehlte in der alten Auswertung) */
+  dateEstimated?: boolean;
   legacySeason?: number;
   legacyId?: string;
   map: string | null;

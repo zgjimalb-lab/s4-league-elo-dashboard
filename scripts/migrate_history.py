@@ -20,8 +20,7 @@ from datetime import datetime
 from pathlib import Path
 
 from matchstore import (
-    ROOT, assign_dates, from_xero, is_group_match, load_players, merge_orders,
-    now_local, save_matches,
+    ROOT, assign_dates, from_xero, is_group_match, load_players, merge_orders, save_matches,
 )
 from xero import XeroClient, load_env_file
 
@@ -141,11 +140,8 @@ def main() -> None:
     order = merge_orders(chains + [sheet_chain], priority={i: n for n, i in enumerate(sheet_chain)})
     merged = [by_id[i] for i in order]
 
-    now = now_local()
-    for m in merged:
-        if not m.get("date"):
-            m["seenAt"] = now.isoformat()
-    assign_dates(merged, now.date().isoformat())
+    # Alle API-Matches wurden vor dem Start des Syncs gespielt: kein Datum → Datum des Vorgängers (geschätzt)
+    assign_dates(merged, today=None)
     save_matches(merged)
 
     from_api = sum(1 for m in merged if m["source"] == "xero")

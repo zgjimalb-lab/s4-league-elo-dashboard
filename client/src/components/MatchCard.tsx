@@ -22,7 +22,8 @@ export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEn
     <article className="rounded-lg border border-border bg-card">
       <header className="flex flex-wrap items-center justify-between gap-2 border-b border-border px-4 py-2.5 text-sm">
         <span className="text-muted-foreground">
-          <span className="font-medium text-foreground">#{match.number}</span> · {fmtDate(match.date)} · {match.mode} · Season{' '}
+          <span className="font-medium text-foreground">#{match.number}</span> ·{' '}
+          {match.dateEstimated ? <span title="Datum geschätzt: Die Xero API liefert kein Datum">ca. {fmtDate(match.date)}</span> : fmtDate(match.date)} · {match.mode} · Season{' '}
           {match.season}
           {match.map && ` · ${match.map}`} · {fmtDuration(match.durationSec)}
         </span>

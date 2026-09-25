@@ -156,19 +156,24 @@ def merge_orders(chains: list[list[str]], priority: dict[str, float] | None = No
     return order
 
 
-def assign_dates(ordered: list[dict], today: str) -> None:
+def assign_dates(ordered: list[dict], today: str | None) -> None:
     """
-    Matches ohne Datum bekommen das Datum des vorherigen datierten Matches –
-    außer sie liegen hinter dem letzten datierten Match: dann sind sie neu (heute).
+    Setzt das Datum für Matches ohne Datum (die API liefert keins):
+    - hinter dem letzten datierten Match und `today` gesetzt (laufender Sync): heute –
+      der Sync läuft stündlich, das Match ist also gerade erst gespielt worden;
+    - sonst das Datum des vorherigen Matches, markiert mit `dateEstimated`.
     """
     dated = [m["date"] for m in ordered if m.get("date")]
     last_dated = max((i for i, m in enumerate(ordered) if m.get("date")), default=-1)
-    previous = dated[0] if dated else None  # undatierte Matches ganz am Anfang: Datum des ersten datierten
+    previous = dated[0] if dated else today  # undatierte Matches ganz am Anfang: Datum des ersten datierten
     for i, match in enumerate(ordered):
         if match.get("date"):
             previous = match["date"]
+        elif i > last_dated and today:
+            match["date"] = today
         else:
-            match["date"] = previous if i < last_dated else today
+            match["date"] = previous
+            match["dateEstimated"] = True
     # Daten dürfen nicht rückwärts laufen (Sheet-Daten waren teils nur der Verarbeitungstag)
     for earlier, later in zip(reversed(ordered[:-1]), reversed(ordered[1:])):
         earlier["date"] = min(earlier["date"], later["date"])

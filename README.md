@@ -16,7 +16,8 @@ Xero API ──(stündlich, GitHub Action)──> data/matches.json ──(Commi
 - Gespeichert werden alle **Touchdown-Matches, in denen nur Gruppenmitglieder spielen**.
   Die API hält nur die letzten ~200 Matches vor und liefert kein Datum – deshalb ist
   `data/matches.json` das dauerhafte Archiv (chronologisch, als Datum gilt der Tag, an dem
-  der Sync das Match zuerst gesehen hat).
+  der Sync das Match zuerst gesehen hat). Bei Altdaten aus der API ohne passenden Screenshot
+  ist das Datum geschätzt (Datum des vorherigen Matches, auf der Seite als „ca.“ markiert).
 - Die Historie von Nov./Dez. 2025 stammt aus der alten Screenshot-Auswertung
   (`data/legacy/`). Wo möglich wurde sie durch exakte API-Daten ersetzt
   (`scripts/migrate_history.py`, einmalig ausgeführt).
