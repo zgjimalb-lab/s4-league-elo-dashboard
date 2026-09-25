@@ -1,4 +1,4 @@
-import { Sparkles, ThumbsDown, ThumbsUp, Target } from 'lucide-react';
+import { ThumbsDown, ThumbsUp, Target, Trophy } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { Section } from '@/components/Bits';
 import { fmtDate } from '@/lib/format';
@@ -9,6 +9,7 @@ interface Point {
   evidence: string;
 }
 export interface Analysis {
+  nickname: string;
   headline: string;
   summary: string;
   archetype: { label: string; explanation: string };
@@ -71,12 +72,17 @@ export function PlayerAnalysis({ player, season }: { player: string; season: num
   return (
     <Section
       title={
-        <span className="inline-flex items-center gap-2">
-          <Sparkles className="size-4 text-[#9085e9]" aria-hidden />
-          KI-Analyse · Season {meta.season}
+        <span className="inline-flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span className="inline-flex items-center gap-2">
+            <Trophy className="size-4 text-[#c98500]" aria-hidden />
+            Performance-Analyse · Season {meta.season}
+          </span>
+          <span className="rounded-full border border-[#c98500]/40 bg-[#c98500]/10 px-3 py-0.5 text-sm font-medium text-[#e0b04a]">
+            „{a.nickname}“
+          </span>
         </span>
       }
-      description={`Stand ${fmtDate(meta.createdAt)} · ausgewertet: ${meta.range.matches} Matches vom ${fmtDate(meta.range.from)} bis ${fmtDate(meta.range.to)}`}
+      description={`${fmtDate(meta.range.from)} – ${fmtDate(meta.range.to)} · ${meta.range.matches} Matches`}
     >
       <div className="space-y-6">
         <div className="space-y-2">
@@ -125,10 +131,6 @@ export function PlayerAnalysis({ player, season }: { player: string; season: num
           </ol>
         </div>
 
-        <p className="text-xs text-muted-foreground">
-          Erstellt mit Claude aus den Match-Daten dieser Season (Prompt: analysis/PROMPT.md). Die Zahlen beziehen sich auf das
-          Season-Ende und können von den Live-Werten oben abweichen.
-        </p>
       </div>
     </Section>
   );

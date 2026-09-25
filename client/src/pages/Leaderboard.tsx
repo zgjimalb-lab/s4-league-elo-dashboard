@@ -47,16 +47,16 @@ const styleColumns: Column<PlayerRow>[] = [
   { key: 'dpm', header: 'DMG/min', align: 'right', cell: (p) => fmtInt(p.perMinute.damage), sort: (p) => p.perMinute.damage },
   { key: 'spm', header: 'PTS/min', align: 'right', cell: (p) => fmt2(p.perMinute.score), sort: (p) => p.perMinute.score },
   {
-    key: 'kd', header: 'K/D', align: 'right', title: 'Nur Matches aus der Xero API (ab Nov. 2025, ohne alte Screenshot-Daten)',
+    key: 'kd', header: 'K/D', align: 'right', title: 'Kills pro Death – für die ältesten Matches gibt es keine Kill-Daten',
     cell: (p) => (p.detailed.games ? fmt2(p.detailed.kd) : '–'), sort: (p) => (p.detailed.games ? p.detailed.kd : -1),
   },
   {
-    key: 'defense', header: 'Ø Defense', align: 'right', title: 'Defense-Aktionen pro Spiel (nur API-Matches)',
+    key: 'defense', header: 'Ø Defense', align: 'right', title: 'Defense pro Spiel, wie Xero es zählt (laut Wiki: Kills am gegnerischen Fumbi-Träger)',
     cell: (p) => (p.detailed.games ? fmt1(p.detailed.defense / p.detailed.games) : '–'),
     sort: (p) => (p.detailed.games ? p.detailed.defense / p.detailed.games : -1),
   },
   {
-    key: 'rebounds', header: 'Ø Rebounds', align: 'right', title: 'Ball-Rebounds pro Spiel (nur API-Matches)',
+    key: 'rebounds', header: 'Ø Rebounds', align: 'right', title: 'Rebounds pro Spiel, wie Xero es zählt (vermutlich: Fumbi aufgenommen)',
     cell: (p) => (p.detailed.games ? fmt1(p.detailed.rebounds / p.detailed.games) : '–'),
     sort: (p) => (p.detailed.games ? p.detailed.rebounds / p.detailed.games : -1),
   },

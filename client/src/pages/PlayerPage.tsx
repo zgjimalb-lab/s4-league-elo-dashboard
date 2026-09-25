@@ -100,13 +100,13 @@ export default function PlayerPage() {
         <StatTile label="MVPs" value={player.mvps} hint={`in ${player.games} Spielen`} />
       </div>
 
-      <PlayerAnalysis player={player.name} season={season} />
-
       {player.elo && (
         <Section title="ELO-Verlauf">
           <EloChart entries={elo.filter((e) => e.changes.has(player.name))} players={[player.name]} height={280} />
         </Section>
       )}
+
+      <PlayerAnalysis player={player.name} season={season} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Spielstil" description="Im Vergleich zum Schnitt aller Spieler im Filter" flush>
@@ -133,7 +133,7 @@ export default function PlayerPage() {
               })}
               {player.detailed.games > 0 && (
                 <tr className="border-t border-border">
-                  <td className="px-4 py-2">K/D <span className="text-xs text-muted-foreground">({player.detailed.games} API-Matches)</span></td>
+                  <td className="px-4 py-2">K/D <span className="text-xs text-muted-foreground">(Kills / Deaths)</span></td>
                   <td className="px-4 py-2 text-right tabular-nums">{fmt2(player.detailed.kd)}</td>
                   <td className="px-4 py-2 text-right text-muted-foreground">
                     {fmtInt(player.detailed.kills)} / {fmtInt(player.detailed.deaths)}

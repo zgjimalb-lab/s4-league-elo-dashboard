@@ -22,8 +22,8 @@
     ],
     "dataNotes": [
       "Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Matches mit Leavern (<50 % Spielzeit) ausgeschlossen.",
-      "apiDetails/apiTags (Kills, Deaths, K/D, Carry/MVP-Tag) gibt es nur für Matches aus der Xero API, nicht für die alten Screenshot-Matches – games-Feld beachten.",
-      "MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match; mvpTagPct = offizieller MVP-Tag von Xero.",
+      "apiDetails (Kills, Deaths, K/D) fehlen bei den alten Screenshot-Matches – games-Feld beachten, aber in den Texten nicht erwähnen.",
+      "MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match.",
       "Die Teams werden zufällig gebildet; Synergie = Winrate zusammen minus Durchschnitt der beiden Einzel-Winrates.",
       "ELO: Start 1500, K = 32, individuell gegen den ELO-Schnitt des Gegnerteams, kein Reset zwischen Seasons.",
       "Daten einiger Matches sind geschätzt (API liefert kein Datum); die Reihenfolge stimmt aber."
@@ -347,12 +347,7 @@
         "gamesAsTeamTopTouchdownScorer": 127,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 49,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 96,
-        "matchMvpHighestScore": 50,
-        "apiTags": {
-          "games": 154,
-          "carryTagPct": 76.6,
-          "mvpTagPct": 23.4
-        }
+        "matchMvpHighestScore": 50
       },
       "streaks": {
         "bestWinStreak": 9,
@@ -794,12 +789,7 @@
         "gamesAsTeamTopTouchdownScorer": 158,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 53.8,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 130,
-        "matchMvpHighestScore": 66,
-        "apiTags": {
-          "games": 145,
-          "carryTagPct": 84.8,
-          "mvpTagPct": 36.6
-        }
+        "matchMvpHighestScore": 66
       },
       "streaks": {
         "bestWinStreak": 7,
@@ -1234,12 +1224,7 @@
         "gamesAsTeamTopTouchdownScorer": 58,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 60,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 35,
-        "matchMvpHighestScore": 61,
-        "apiTags": {
-          "games": 137,
-          "carryTagPct": 80.3,
-          "mvpTagPct": 36.5
-        }
+        "matchMvpHighestScore": 61
       },
       "streaks": {
         "bestWinStreak": 7,
@@ -1667,12 +1652,7 @@
         "gamesAsTeamTopTouchdownScorer": 64,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 36.6,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 41,
-        "matchMvpHighestScore": 16,
-        "apiTags": {
-          "games": 89,
-          "carryTagPct": 44.9,
-          "mvpTagPct": 12.4
-        }
+        "matchMvpHighestScore": 16
       },
       "streaks": {
         "bestWinStreak": 3,
@@ -2100,12 +2080,7 @@
         "gamesAsTeamTopTouchdownScorer": 16,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 25,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 8,
-        "matchMvpHighestScore": 2,
-        "apiTags": {
-          "games": 68,
-          "carryTagPct": 30.9,
-          "mvpTagPct": 2.9
-        }
+        "matchMvpHighestScore": 2
       },
       "streaks": {
         "bestWinStreak": 6,
@@ -2520,12 +2495,7 @@
         "gamesAsTeamTopTouchdownScorer": 9,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 33.3,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 3,
-        "matchMvpHighestScore": 0,
-        "apiTags": {
-          "games": 58,
-          "carryTagPct": 55.2,
-          "mvpTagPct": 0
-        }
+        "matchMvpHighestScore": 0
       },
       "streaks": {
         "bestWinStreak": 2,
@@ -2926,12 +2896,7 @@
         "gamesAsTeamTopTouchdownScorer": 0,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": null,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 0,
-        "matchMvpHighestScore": 0,
-        "apiTags": {
-          "games": 22,
-          "carryTagPct": 63.6,
-          "mvpTagPct": 0
-        }
+        "matchMvpHighestScore": 0
       },
       "streaks": {
         "bestWinStreak": 4,
@@ -3325,12 +3290,7 @@
         "gamesAsTeamTopTouchdownScorer": 9,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 60,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 5,
-        "matchMvpHighestScore": 2,
-        "apiTags": {
-          "games": 19,
-          "carryTagPct": 63.2,
-          "mvpTagPct": 10.5
-        }
+        "matchMvpHighestScore": 2
       },
       "streaks": {
         "bestWinStreak": 1,
@@ -3704,12 +3664,7 @@
         "gamesAsTeamTopTouchdownScorer": 0,
         "winrateWhenMoreThanHalfOfTeamTouchdownsPct": null,
         "gamesWithMoreThanHalfOfTeamTouchdowns": 0,
-        "matchMvpHighestScore": 0,
-        "apiTags": {
-          "games": 17,
-          "carryTagPct": 17.6,
-          "mvpTagPct": 0
-        }
+        "matchMvpHighestScore": 0
       },
       "streaks": {
         "bestWinStreak": 2,

@@ -147,7 +147,6 @@ function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]
     return Math.max(...m.players.filter((p) => p.team === line.team).map((p) => p.goals)) === line.goals;
   });
   const carryGames = own.filter((m) => teamShare(m, lineOf(m, name)!, (l) => l.goals) > 0.5);
-  const apiGames = own.filter((m) => lineOf(m, name)!.tags !== undefined);
 
   const duos = duoStats(seasonMatches, pool)
     .filter((d) => d.players.includes(name) && d.games >= MIN_PAIR_GAMES)
@@ -203,13 +202,6 @@ function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]
       winrateWhenMoreThanHalfOfTeamTouchdownsPct: recordOf(carryGames, name).winratePct,
       gamesWithMoreThanHalfOfTeamTouchdowns: carryGames.length,
       matchMvpHighestScore: own.filter((m) => mvpsOf(m).includes(name)).length,
-      apiTags: apiGames.length
-        ? {
-            games: apiGames.length,
-            carryTagPct: pct(apiGames.filter((m) => lineOf(m, name)!.tags!.includes('carry')).length / apiGames.length),
-            mvpTagPct: pct(apiGames.filter((m) => lineOf(m, name)!.tags!.includes('mvp')).length / apiGames.length),
-          }
-        : null,
     },
     streaks: { bestWinStreak: seasonStats.bestWinStreak, worstLossStreak, current: seasonStats.streak },
     teammates: duos,
@@ -232,8 +224,8 @@ const dossier = {
     ranksAmong: qualified.map((s) => s.name),
     dataNotes: [
       'Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Matches mit Leavern (<50 % Spielzeit) ausgeschlossen.',
-      'apiDetails/apiTags (Kills, Deaths, K/D, Carry/MVP-Tag) gibt es nur für Matches aus der Xero API, nicht für die alten Screenshot-Matches – games-Feld beachten.',
-      'MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match; mvpTagPct = offizieller MVP-Tag von Xero.',
+      'apiDetails (Kills, Deaths, K/D) fehlen bei den alten Screenshot-Matches – games-Feld beachten, aber in den Texten nicht erwähnen.',
+      'MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match.',
       'Die Teams werden zufällig gebildet; Synergie = Winrate zusammen minus Durchschnitt der beiden Einzel-Winrates.',
       'ELO: Start 1500, K = 32, individuell gegen den ELO-Schnitt des Gegnerteams, kein Reset zwischen Seasons.',
       'Daten einiger Matches sind geschätzt (API liefert kein Datum); die Reihenfolge stimmt aber.',
