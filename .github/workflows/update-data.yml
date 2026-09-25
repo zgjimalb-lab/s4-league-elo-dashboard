@@ -1,60 +1,49 @@
-name: Update Player Stats Data
+name: Sync Xero matches
 
 on:
-  # Manueller Trigger über GitHub UI
   workflow_dispatch:
-  
-  # Automatisch alle 10 Minuten (optional - kann angepasst werden )
   schedule:
-    - cron: '*/10 * * * *'  # Alle 10 Minuten
-    # Alternative Zeitpläne:
-    # - cron: '0 * * * *'    # Jede Stunde
-    # - cron: '*/30 * * * *' # Alle 30 Minuten
+    - cron: '17 * * * *' # stündlich (nicht zur vollen Stunde, da ist GitHub überlastet)
+
+concurrency:
+  group: sync-xero
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write # für den Keepalive
 
 jobs:
-  update-data:
+  sync:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 10
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
-      
-      - name: Download Google Sheets as Excel
+          python-version: '3.12'
+
+      - name: Neue Matches von der Xero API holen
         env:
-          GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          XERO_ACCESS_KEY_ID: ${{ secrets.XERO_ACCESS_KEY_ID }}
+          XERO_SECRET_ACCESS_KEY: ${{ secrets.XERO_SECRET_ACCESS_KEY }}
+        run: python scripts/sync_xero.py
+
+      - name: Commit & Push (löst das Vercel-Deployment aus)
         run: |
-          python scripts/download_sheets.py
-      
-      - name: Convert Excel to JSON
-        run: |
-          python convert_excel.py
-      
-      - name: Check for Changes
-        id: check_changes
-        run: |
-          if git diff --quiet client/public/data.json; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
+          if git diff --quiet data/matches.json; then
+            echo "Keine neuen Matches."
+            exit 0
           fi
-      
-      - name: Commit and Push Changes
-        if: steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add client/public/data.json
-          git commit -m "chore: update player stats data [skip ci]"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/matches.json
+          git commit -m "data: neue Matches von Xero"
           git push
+
+      # GitHub deaktiviert geplante Workflows nach 60 Tagen ohne Repo-Aktivität –
+      # in Spielpausen würde der Sync sonst still stehen bleiben (wie Feb. 2026 passiert).
+      - uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          use_api: true

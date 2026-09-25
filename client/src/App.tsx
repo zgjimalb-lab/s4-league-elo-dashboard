@@ -1,14 +1,35 @@
 import { Route, Switch } from 'wouter';
-import Dashboard from '@/pages/Dashboard';
+import ErrorBoundary from '@/components/ErrorBoundary';
+import Layout from '@/components/Layout';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { ScopeProvider } from '@/lib/s4/scope';
+import DuelPage from '@/pages/DuelPage';
+import DuosPage from '@/pages/DuosPage';
+import EloPage from '@/pages/EloPage';
+import Leaderboard from '@/pages/Leaderboard';
+import MatchesPage from '@/pages/MatchesPage';
 import NotFound from '@/pages/NotFound';
+import PlayerPage from '@/pages/PlayerPage';
 
-function App() {
+export default function App() {
   return (
-    <Switch>
-      <Route path="/" component={Dashboard} />
-      <Route component={NotFound} />
-    </Switch>
+    <ErrorBoundary>
+      <TooltipProvider delayDuration={200}>
+        <ScopeProvider>
+          <Layout>
+            <Switch>
+              <Route path="/" component={Leaderboard} />
+              <Route path="/elo" component={EloPage} />
+              <Route path="/spieler" component={PlayerPage} />
+              <Route path="/spieler/:name" component={PlayerPage} />
+              <Route path="/matches" component={MatchesPage} />
+              <Route path="/duell" component={DuelPage} />
+              <Route path="/duos" component={DuosPage} />
+              <Route component={NotFound} />
+            </Switch>
+          </Layout>
+        </ScopeProvider>
+      </TooltipProvider>
+    </ErrorBoundary>
   );
 }
-
-export default App;

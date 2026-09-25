@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+service-account*.json
+
+# Zwischendateien des alten Excel-Workflows
+*.xlsx
+docs/*.pdf
+__pycache__/
