@@ -206,6 +206,63 @@ function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]
     };
   };
 
+  // Siegfaktor: Winrate, wenn eine eigene Kennzahl über bzw. unter dem eigenen Median liegt
+  const factor = (pick: (l: PlayerLine) => number | undefined, lowerIsBetter = false) => {
+    const rows = own.map((m) => ({ v: pick(lineOf(m, name)!), won: resultOf(m, lineOf(m, name)!) === 'W' })).filter((r): r is { v: number; won: boolean } => r.v !== undefined);
+    if (rows.length < 10) return null;
+    const mid = median(rows.map((r) => r.v));
+    const good = rows.filter((r) => (lowerIsBetter ? r.v < mid : r.v > mid));
+    const bad = rows.filter((r) => (lowerIsBetter ? r.v >= mid : r.v <= mid));
+    const rate = (xs: typeof rows) => (xs.length ? pct(xs.filter((r) => r.won).length / xs.length) : null);
+    return { ownMedian: r2(mid), goodSide: lowerIsBetter ? 'unter Median' : 'über Median', gamesGood: good.length, winrateGood: rate(good), gamesBad: bad.length, winrateBad: rate(bad), deltaPts: r1((rate(good) ?? 0) - (rate(bad) ?? 0)) };
+  };
+  const winFactors = {
+    touchdowns: factor((l) => l.goals),
+    tdAssists: factor((l) => l.assists),
+    damage: factor((l) => l.damage),
+    kills: factor((l) => l.kills),
+    deaths: factor((l) => l.deaths, true),
+    rebounds: factor((l) => l.rebounds),
+    defense: factor((l) => l.defense),
+  };
+
+  // Output in Siegen vs. Niederlagen
+  const byResult = (r: 'W' | 'L') => {
+    const ms = own.filter((m) => resultOf(m, lineOf(m, name)!) === r);
+    const ls = ms.map((m) => lineOf(m, name)!);
+    const api = ls.filter((l) => l.deaths !== undefined);
+    return {
+      games: ms.length,
+      touchdownsPerGame: r2(mean(ls.map((l) => l.goals))),
+      damagePerGame: Math.round(mean(ls.map((l) => l.damage))),
+      touchdownSharePct: pct(mean(ms.map((m, i) => teamShare(m, ls[i], (l) => l.goals)))),
+      deathsPerGame: api.length ? r2(mean(api.map((l) => l.deaths!))) : null,
+    };
+  };
+
+  // Big-Game-Faktor: eigener Output je nach Stärke des Gegners laut ELO
+  const outputWhen = (filter: (c: (typeof chances)[number]) => boolean) => {
+    const cs = chances.filter(filter);
+    const ls = cs.map((c) => lineOf(c.m, name)!);
+    return { games: cs.length, touchdownsPerGame: cs.length ? r2(mean(ls.map((l) => l.goals))) : null, pointsPerGame: cs.length ? r1(mean(ls.map((l) => l.score))) : null, damagePerGame: cs.length ? Math.round(mean(ls.map((l) => l.damage))) : null };
+  };
+
+  // Teammate-Effekt: gewinnen Mitspieler mit diesem Spieler öfter als ohne ihn?
+  const teammateEffect = pool
+    .filter((s) => s.name !== name)
+    .map((mate) => {
+      const mateGames = seasonMatches.filter((m) => lineOf(m, mate.name));
+      const withMe = mateGames.filter((m) => lineOf(m, name)?.team === lineOf(m, mate.name)!.team);
+      const withoutMe = mateGames.filter((m) => !lineOf(m, name));
+      const rate = (ms: Match[]) => ms.filter((m) => resultOf(m, lineOf(m, mate.name)!) === 'W').length / ms.length;
+      return withMe.length >= MIN_PAIR_GAMES && withoutMe.length >= MIN_PAIR_GAMES
+        ? { mate: mate.name, gamesWith: withMe.length, winrateWith: pct(rate(withMe)), gamesWithout: withoutMe.length, winrateWithout: pct(rate(withoutMe)), deltaPts: r1(pct(rate(withMe)) - pct(rate(withoutMe))) }
+        : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => x !== null)
+    .sort((a, b) => b.deltaPts - a.deltaPts);
+  const weight = teammateEffect.reduce((sum, t) => sum + t.gamesWith, 0);
+
   let worstLossStreak = 0;
   let run = 0;
   for (const m of own) {
@@ -254,6 +311,23 @@ function dossierFor(name: string, pool: PlayerStats[], careerPool: PlayerStats[]
     fumbiConversion: rebounds
       ? { games: withRebounds.length, rebounds, touchdowns: conversionTouchdowns, touchdownsPerReboundPct: pct(conversionTouchdowns / rebounds) }
       : null,
+    winFactors: {
+      note: 'Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.',
+      ...winFactors,
+    },
+    winsVsLosses: { wins: byResult('W'), losses: byResult('L') },
+    bigGame: {
+      note: 'Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)',
+      asUnderdog: outputWhen((c) => c.chance <= UNDERDOG_MAX_WIN_CHANCE),
+      even: outputWhen((c) => c.chance > UNDERDOG_MAX_WIN_CHANCE && c.chance < 1 - UNDERDOG_MAX_WIN_CHANCE),
+      asFavorite: outputWhen((c) => c.chance >= 1 - UNDERDOG_MAX_WIN_CHANCE),
+    },
+    teammateEffect: {
+      note: 'Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt',
+      weightedDeltaPts: weight ? r1(teammateEffect.reduce((sum, t) => sum + t.deltaPts * t.gamesWith, 0) / weight) : null,
+      perMate: teammateEffect,
+    },
+    plusMinus: { note: 'durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel', value: r2(mean(own.map((m) => { const t = lineOf(m, name)!.team; return m.score[t] - m.score[1 - t]; }))) },
     matchLength: {
       note: `Marathon = über ${MARATHON_SEC / 60} Minuten, Speedrun = höchstens ${MARATHON_SEC / 60} Minuten`,
       marathon: lengthSplit((m) => m.durationSec! > MARATHON_SEC),

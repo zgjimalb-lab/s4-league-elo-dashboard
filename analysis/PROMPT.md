@@ -87,6 +87,11 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 | `underdog` | Bilanz als Außenseiter (laut ELO ≤ 45 % Siegchance) und als Favorit; `winsAboveExpected` = Siege über/unter der ELO-Erwartung |
 | `fumbiConversion` | eigene Touchdowns pro Rebound – wie oft aus einer Fumbi-Aufnahme ein eigener Touchdown wird |
 | `matchLength` | Marathon (über 15 Minuten) vs. Speedrun: Winrate, Touchdowns, Punkte pro Minute |
+| `winFactors` | **Siegfaktor:** Winrate, wenn eine eigene Kennzahl besser bzw. schlechter als der eigene Median ist – zeigt, woran Siege bei diesem Spieler hängen (und woran nicht) |
+| `winsVsLosses` | eigener Output in Siegen vs. Niederlagen (Touchdowns, Damage, TD-Anteil, Deaths) |
+| `bigGame` | eigener Output als Underdog, in ausgeglichenen Spielen und als Favorit |
+| `teammateEffect` | Winrate der Mitspieler mit diesem Spieler vs. ohne ihn – wen macht er besser? |
+| `plusMinus` | durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel |
 
 **Defense, Offense und Rebounds** dokumentiert Xero nicht. Laut S4-Wiki bedeuten sie:
 - **Defense:** Kill am gegnerischen Fumbi-Träger oder seinem Nebenmann – also Angriffe stoppen.
@@ -178,10 +183,23 @@ Gib **nur** gültiges JSON in genau dieser Struktur aus (Datei `data/analyses/se
 ```
 
 - `strengths` und `weaknesses`: genau je 3 Einträge.
-- `insights`: 4–6 Karten mit den **überraschendsten** Befunden, die nicht schon in Stärken/Schwächen
-  stehen. `value` ist die große Zahl auf der Karte (kurz: „63,5 %“, „+16,8“, „0 → 2,05“, „3 von 5“),
-  `label` sagt, was die Zahl ist, `detail` liefert den Vergleich, der sie spannend macht. Keine festen
-  Themen – nur, was bei diesem Spieler wirklich heraussticht (Entwicklung, 2v2 vs. 3v3, Clutch,
-  Underdog, Conversion, Marathon, Duo, Nemesis, Rekorde …). Lieber 4 starke als 6 mittelmäßige.
+- `insights`: **genau 6 Karten** – echte Erkenntnisse, die man erst beim tieferen Blick in die Daten
+  findet, nicht Fakten, die man in der Tabelle sieht. `value` ist die große Zahl auf der Karte (kurz:
+  „63,5 %“, „+16,8“, „0 → 2,05“, „3 von 3“), `label` sagt, was die Zahl ist, `detail` liefert den
+  Vergleich, der sie zur Erkenntnis macht. Nichts doppeln, was schon in Stärken/Schwächen steht.
+  - **Gute Karte = ein Zusammenhang:** „Wenn X, dann Y“ oder „anders, als die Tabelle vermuten lässt“.
+    Beste Quellen: `winFactors` (woran hängen die Siege – und woran überraschend nicht?),
+    `winsVsLosses`, `teammateEffect`, `bigGame`, Solo-Carry vs. Team, 2v2 vs. 3v3, Entwicklung,
+    Conversion, Underdog, Marathon.
+  - ✅ „81,9 % – Winrate ab 6 Touchdowns. Darunter 35,2 %; dein Damage spielt für Siege keine Rolle.“
+  - ✅ „+21,8 – Winrate-Boost für Mitspieler. Kesny gewinnt mit dir 52,9 %, ohne dich 25,0 %.“
+  - ❌ „6.060 – Damage in Match #35. Mehr als Malena im selben Spiel.“ (Einzelspiel-Trivia, erzwungener Vergleich)
+  - ❌ „9 – längste Win-Streak.“ (steht so in jeder Tabelle, keine Erkenntnis)
+  - Einzelspiel-Rekorde nur, wenn sie ein Muster belegen. Vergleiche mit anderen Spielern nur, wenn
+    sie wirklich etwas erklären – sonst lieber mit dem eigenen Schnitt, Median oder anderem Modus.
+  - Negativer `teammateEffect` nicht als Karte (wirkt wie „mit dir verlieren alle“) – er folgt meist
+    ohnehin aus der eigenen Winrate. Positive Effekte sind Gold.
+  - Bei wenigen Spielen (unter ~10 pro Seite eines Vergleichs) den Hinweis „bei wenigen Spielen“ in
+    `detail` – oder eine andere Karte wählen.
 - Nur Spieler aus `players` des Dossiers (die mit genug Spielen). `notAnalysed` bekommen keine Analyse.
 - Wenn für einen Abschnitt die Zahlen nicht reichen, schreib das kurz und ehrlich statt zu raten.

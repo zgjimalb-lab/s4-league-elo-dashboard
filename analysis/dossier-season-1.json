@@ -411,6 +411,151 @@
         "touchdowns": 675,
         "touchdownsPerReboundPct": 26.5
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 4,
+          "goodSide": "über Median",
+          "gamesGood": 95,
+          "winrateGood": 66.3,
+          "gamesBad": 97,
+          "winrateBad": 46.4,
+          "deltaPts": 19.9
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 80,
+          "winrateGood": 67.5,
+          "gamesBad": 112,
+          "winrateBad": 48.2,
+          "deltaPts": 19.3
+        },
+        "damage": {
+          "ownMedian": 1850.5,
+          "goodSide": "über Median",
+          "gamesGood": 96,
+          "winrateGood": 59.4,
+          "gamesBad": 96,
+          "winrateBad": 53.1,
+          "deltaPts": 6.3
+        },
+        "kills": {
+          "ownMedian": 3,
+          "goodSide": "über Median",
+          "gamesGood": 75,
+          "winrateGood": 58.7,
+          "gamesBad": 79,
+          "winrateBad": 51.9,
+          "deltaPts": 6.8
+        },
+        "deaths": {
+          "ownMedian": 19,
+          "goodSide": "unter Median",
+          "gamesGood": 73,
+          "winrateGood": 58.9,
+          "gamesBad": 81,
+          "winrateBad": 51.9,
+          "deltaPts": 7
+        },
+        "rebounds": {
+          "ownMedian": 16.5,
+          "goodSide": "über Median",
+          "gamesGood": 77,
+          "winrateGood": 58.4,
+          "gamesBad": 77,
+          "winrateBad": 51.9,
+          "deltaPts": 6.5
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 67,
+          "winrateGood": 58.2,
+          "gamesBad": 87,
+          "winrateBad": 52.9,
+          "deltaPts": 5.3
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 108,
+          "touchdownsPerGame": 4.95,
+          "damagePerGame": 2158,
+          "touchdownSharePct": 49.7,
+          "deathsPerGame": 18.11
+        },
+        "losses": {
+          "games": 84,
+          "touchdownsPerGame": 4.04,
+          "damagePerGame": 2114,
+          "touchdownSharePct": 58.9,
+          "deathsPerGame": 19.59
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 41,
+          "touchdownsPerGame": 3.83,
+          "pointsPerGame": 143.8,
+          "damagePerGame": 2277
+        },
+        "even": {
+          "games": 67,
+          "touchdownsPerGame": 4.49,
+          "pointsPerGame": 156.1,
+          "damagePerGame": 2368
+        },
+        "asFavorite": {
+          "games": 84,
+          "touchdownsPerGame": 4.95,
+          "pointsPerGame": 144.2,
+          "damagePerGame": 1888
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 6.9,
+        "perMate": [
+          {
+            "mate": "Malena",
+            "gamesWith": 46,
+            "winrateWith": 76.1,
+            "gamesWithout": 5,
+            "winrateWithout": 40,
+            "deltaPts": 36.1
+          },
+          {
+            "mate": "Aferdita",
+            "gamesWith": 20,
+            "winrateWith": 55,
+            "gamesWithout": 5,
+            "winrateWithout": 40,
+            "deltaPts": 15
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 51,
+            "winrateWith": 39.2,
+            "gamesWithout": 5,
+            "winrateWithout": 40,
+            "deltaPts": -0.8
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 83,
+            "winrateWith": 73.5,
+            "gamesWithout": 5,
+            "winrateWithout": 80,
+            "deltaPts": -6.5
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 0.61
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -920,6 +1065,151 @@
         "touchdowns": 779,
         "touchdownsPerReboundPct": 32
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 83,
+          "winrateGood": 81.9,
+          "gamesBad": 105,
+          "winrateBad": 35.2,
+          "deltaPts": 46.7
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 64,
+          "winrateGood": 64.1,
+          "gamesBad": 124,
+          "winrateBad": 51.6,
+          "deltaPts": 12.5
+        },
+        "damage": {
+          "ownMedian": 2005.5,
+          "goodSide": "über Median",
+          "gamesGood": 94,
+          "winrateGood": 54.3,
+          "gamesBad": 94,
+          "winrateBad": 57.4,
+          "deltaPts": -3.1
+        },
+        "kills": {
+          "ownMedian": 3,
+          "goodSide": "über Median",
+          "gamesGood": 71,
+          "winrateGood": 60.6,
+          "gamesBad": 74,
+          "winrateBad": 56.8,
+          "deltaPts": 3.8
+        },
+        "deaths": {
+          "ownMedian": 17,
+          "goodSide": "unter Median",
+          "gamesGood": 68,
+          "winrateGood": 64.7,
+          "gamesBad": 77,
+          "winrateBad": 53.2,
+          "deltaPts": 11.5
+        },
+        "rebounds": {
+          "ownMedian": 16,
+          "goodSide": "über Median",
+          "gamesGood": 65,
+          "winrateGood": 58.5,
+          "gamesBad": 80,
+          "winrateBad": 58.8,
+          "deltaPts": -0.3
+        },
+        "defense": {
+          "ownMedian": 8,
+          "goodSide": "über Median",
+          "gamesGood": 69,
+          "winrateGood": 59.4,
+          "gamesBad": 76,
+          "winrateBad": 57.9,
+          "deltaPts": 1.5
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 105,
+          "touchdownsPerGame": 6.04,
+          "damagePerGame": 2216,
+          "touchdownSharePct": 60.8,
+          "deathsPerGame": 17.61
+        },
+        "losses": {
+          "games": 83,
+          "touchdownsPerGame": 4.28,
+          "damagePerGame": 2204,
+          "touchdownSharePct": 65,
+          "deathsPerGame": 19.45
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 62,
+          "touchdownsPerGame": 4.98,
+          "pointsPerGame": 147.3,
+          "damagePerGame": 2088
+        },
+        "even": {
+          "games": 67,
+          "touchdownsPerGame": 5.37,
+          "pointsPerGame": 165.6,
+          "damagePerGame": 2348
+        },
+        "asFavorite": {
+          "games": 59,
+          "touchdownsPerGame": 5.42,
+          "pointsPerGame": 160,
+          "damagePerGame": 2183
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 2.2,
+        "perMate": [
+          {
+            "mate": "ZeroO",
+            "gamesWith": 46,
+            "winrateWith": 76.1,
+            "gamesWithout": 9,
+            "winrateWithout": 44.4,
+            "deltaPts": 31.7
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 49,
+            "winrateWith": 81.6,
+            "gamesWithout": 9,
+            "winrateWithout": 77.8,
+            "deltaPts": 3.8
+          },
+          {
+            "mate": "Aferdita",
+            "gamesWith": 54,
+            "winrateWith": 48.1,
+            "gamesWithout": 5,
+            "winrateWithout": 60,
+            "deltaPts": -11.9
+          },
+          {
+            "mate": "Tess1509",
+            "gamesWith": 42,
+            "winrateWith": 26.2,
+            "gamesWithout": 5,
+            "winrateWithout": 40,
+            "deltaPts": -13.8
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 0.42
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -1422,6 +1712,151 @@
         "touchdowns": 442,
         "touchdownsPerReboundPct": 26.1
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 3,
+          "goodSide": "über Median",
+          "gamesGood": 80,
+          "winrateGood": 77.5,
+          "gamesBad": 99,
+          "winrateBad": 55.6,
+          "deltaPts": 21.9
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 52,
+          "winrateGood": 76.9,
+          "gamesBad": 127,
+          "winrateBad": 60.6,
+          "deltaPts": 16.3
+        },
+        "damage": {
+          "ownMedian": 2657,
+          "goodSide": "über Median",
+          "gamesGood": 89,
+          "winrateGood": 64,
+          "gamesBad": 90,
+          "winrateBad": 66.7,
+          "deltaPts": -2.7
+        },
+        "kills": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 61,
+          "winrateGood": 70.5,
+          "gamesBad": 76,
+          "winrateBad": 59.2,
+          "deltaPts": 11.3
+        },
+        "deaths": {
+          "ownMedian": 13,
+          "goodSide": "unter Median",
+          "gamesGood": 68,
+          "winrateGood": 69.1,
+          "gamesBad": 69,
+          "winrateBad": 59.4,
+          "deltaPts": 9.7
+        },
+        "rebounds": {
+          "ownMedian": 12,
+          "goodSide": "über Median",
+          "gamesGood": 59,
+          "winrateGood": 64.4,
+          "gamesBad": 78,
+          "winrateBad": 64.1,
+          "deltaPts": 0.3
+        },
+        "defense": {
+          "ownMedian": 11,
+          "goodSide": "über Median",
+          "gamesGood": 62,
+          "winrateGood": 64.5,
+          "gamesBad": 75,
+          "winrateBad": 64,
+          "deltaPts": 0.5
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 117,
+          "touchdownsPerGame": 3.58,
+          "damagePerGame": 2845,
+          "touchdownSharePct": 36,
+          "deathsPerGame": 13.52
+        },
+        "losses": {
+          "games": 62,
+          "touchdownsPerGame": 2.63,
+          "damagePerGame": 2686,
+          "touchdownSharePct": 38.5,
+          "deathsPerGame": 16.04
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 22,
+          "touchdownsPerGame": 3.64,
+          "pointsPerGame": 171.1,
+          "damagePerGame": 3124
+        },
+        "even": {
+          "games": 62,
+          "touchdownsPerGame": 3.08,
+          "pointsPerGame": 157.4,
+          "damagePerGame": 3071
+        },
+        "asFavorite": {
+          "games": 95,
+          "touchdownsPerGame": 3.27,
+          "pointsPerGame": 137.3,
+          "damagePerGame": 2529
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 21.8,
+        "perMate": [
+          {
+            "mate": "ZeroO",
+            "gamesWith": 83,
+            "winrateWith": 73.5,
+            "gamesWithout": 18,
+            "winrateWithout": 44.4,
+            "deltaPts": 29.1
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 51,
+            "winrateWith": 52.9,
+            "gamesWithout": 8,
+            "winrateWithout": 25,
+            "deltaPts": 27.9
+          },
+          {
+            "mate": "Aferdita",
+            "gamesWith": 18,
+            "winrateWith": 77.8,
+            "gamesWithout": 12,
+            "winrateWithout": 58.3,
+            "deltaPts": 19.5
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 49,
+            "winrateWith": 81.6,
+            "gamesWithout": 18,
+            "winrateWithout": 77.8,
+            "deltaPts": 3.8
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 1.32
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -1916,6 +2351,159 @@
         "rebounds": 1717,
         "touchdowns": 300,
         "touchdownsPerReboundPct": 17.5
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 3,
+          "goodSide": "über Median",
+          "gamesGood": 58,
+          "winrateGood": 46.6,
+          "gamesBad": 66,
+          "winrateBad": 27.3,
+          "deltaPts": 19.3
+        },
+        "tdAssists": {
+          "ownMedian": 1,
+          "goodSide": "über Median",
+          "gamesGood": 26,
+          "winrateGood": 42.3,
+          "gamesBad": 98,
+          "winrateBad": 34.7,
+          "deltaPts": 7.6
+        },
+        "damage": {
+          "ownMedian": 1843,
+          "goodSide": "über Median",
+          "gamesGood": 62,
+          "winrateGood": 41.9,
+          "gamesBad": 62,
+          "winrateBad": 30.6,
+          "deltaPts": 11.3
+        },
+        "kills": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 35,
+          "winrateGood": 48.6,
+          "gamesBad": 54,
+          "winrateBad": 27.8,
+          "deltaPts": 20.8
+        },
+        "deaths": {
+          "ownMedian": 21,
+          "goodSide": "unter Median",
+          "gamesGood": 40,
+          "winrateGood": 40,
+          "gamesBad": 49,
+          "winrateBad": 32.7,
+          "deltaPts": 7.3
+        },
+        "rebounds": {
+          "ownMedian": 19,
+          "goodSide": "über Median",
+          "gamesGood": 33,
+          "winrateGood": 39.4,
+          "gamesBad": 56,
+          "winrateBad": 33.9,
+          "deltaPts": 5.5
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 38,
+          "winrateGood": 31.6,
+          "gamesBad": 51,
+          "winrateBad": 39.2,
+          "deltaPts": -7.6
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 45,
+          "touchdownsPerGame": 4.47,
+          "damagePerGame": 2101,
+          "touchdownSharePct": 44.7,
+          "deathsPerGame": 22.16
+        },
+        "losses": {
+          "games": 79,
+          "touchdownsPerGame": 3.03,
+          "damagePerGame": 2066,
+          "touchdownSharePct": 43.9,
+          "deathsPerGame": 24.42
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 60,
+          "touchdownsPerGame": 3.43,
+          "pointsPerGame": 138.2,
+          "damagePerGame": 1905
+        },
+        "even": {
+          "games": 52,
+          "touchdownsPerGame": 3.48,
+          "pointsPerGame": 150.4,
+          "damagePerGame": 2205
+        },
+        "asFavorite": {
+          "games": 12,
+          "touchdownsPerGame": 4.42,
+          "pointsPerGame": 168.6,
+          "damagePerGame": 2397
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -16.2,
+        "perMate": [
+          {
+            "mate": "Aferdita",
+            "gamesWith": 19,
+            "winrateWith": 36.8,
+            "gamesWithout": 25,
+            "winrateWithout": 44,
+            "deltaPts": -7.2
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 51,
+            "winrateWith": 52.9,
+            "gamesWithout": 63,
+            "winrateWithout": 65.1,
+            "deltaPts": -12.2
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 51,
+            "winrateWith": 39.2,
+            "gamesWithout": 73,
+            "winrateWithout": 58.9,
+            "deltaPts": -19.7
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 36,
+            "winrateWith": 36.1,
+            "gamesWithout": 64,
+            "winrateWithout": 56.3,
+            "deltaPts": -20.2
+          },
+          {
+            "mate": "Tess1509",
+            "gamesWith": 11,
+            "winrateWith": 0,
+            "gamesWithout": 37,
+            "winrateWithout": 21.6,
+            "deltaPts": -21.6
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -0.78
       },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
@@ -2412,6 +3000,159 @@
         "touchdowns": 167,
         "touchdownsPerReboundPct": 16.5
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 38,
+          "winrateGood": 50,
+          "gamesBad": 45,
+          "winrateBad": 44.4,
+          "deltaPts": 5.6
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 35,
+          "winrateGood": 57.1,
+          "gamesBad": 48,
+          "winrateBad": 39.6,
+          "deltaPts": 17.5
+        },
+        "damage": {
+          "ownMedian": 1737,
+          "goodSide": "über Median",
+          "gamesGood": 41,
+          "winrateGood": 46.3,
+          "gamesBad": 42,
+          "winrateBad": 47.6,
+          "deltaPts": -1.3
+        },
+        "kills": {
+          "ownMedian": 3,
+          "goodSide": "über Median",
+          "gamesGood": 31,
+          "winrateGood": 54.8,
+          "gamesBad": 37,
+          "winrateBad": 40.5,
+          "deltaPts": 14.3
+        },
+        "deaths": {
+          "ownMedian": 22,
+          "goodSide": "unter Median",
+          "gamesGood": 33,
+          "winrateGood": 54.5,
+          "gamesBad": 35,
+          "winrateBad": 40,
+          "deltaPts": 14.5
+        },
+        "rebounds": {
+          "ownMedian": 14,
+          "goodSide": "über Median",
+          "gamesGood": 32,
+          "winrateGood": 53.1,
+          "gamesBad": 36,
+          "winrateBad": 41.7,
+          "deltaPts": 11.4
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 28,
+          "winrateGood": 39.3,
+          "gamesBad": 40,
+          "winrateBad": 52.5,
+          "deltaPts": -13.2
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 39,
+          "touchdownsPerGame": 2.54,
+          "damagePerGame": 1727,
+          "touchdownSharePct": 26,
+          "deathsPerGame": 22.97
+        },
+        "losses": {
+          "games": 44,
+          "touchdownsPerGame": 2.14,
+          "damagePerGame": 1773,
+          "touchdownSharePct": 30.8,
+          "deathsPerGame": 25.14
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 23,
+          "touchdownsPerGame": 2.35,
+          "pointsPerGame": 113.3,
+          "damagePerGame": 1787
+        },
+        "even": {
+          "games": 36,
+          "touchdownsPerGame": 2.17,
+          "pointsPerGame": 110.8,
+          "damagePerGame": 1772
+        },
+        "asFavorite": {
+          "games": 24,
+          "touchdownsPerGame": 2.54,
+          "pointsPerGame": 110.9,
+          "damagePerGame": 1687
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -2.5,
+        "perMate": [
+          {
+            "mate": "Nebus.",
+            "gamesWith": 18,
+            "winrateWith": 77.8,
+            "gamesWithout": 108,
+            "winrateWithout": 63,
+            "deltaPts": 14.8
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 19,
+            "winrateWith": 36.8,
+            "gamesWithout": 66,
+            "winrateWithout": 30.3,
+            "deltaPts": 6.5
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 20,
+            "winrateWith": 55,
+            "gamesWithout": 114,
+            "winrateWithout": 57,
+            "deltaPts": -2
+          },
+          {
+            "mate": "Tess1509",
+            "gamesWith": 14,
+            "winrateWith": 14.3,
+            "gamesWithout": 37,
+            "winrateWithout": 18.9,
+            "deltaPts": -4.6
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 54,
+            "winrateWith": 48.1,
+            "gamesWithout": 110,
+            "winrateWithout": 59.1,
+            "deltaPts": -11
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -0.33
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -2894,6 +3635,159 @@
         "touchdowns": 82,
         "touchdownsPerReboundPct": 16.9
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 1,
+          "goodSide": "über Median",
+          "gamesGood": 31,
+          "winrateGood": 32.3,
+          "gamesBad": 44,
+          "winrateBad": 20.5,
+          "deltaPts": 11.8
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 20,
+          "winrateGood": 25,
+          "gamesBad": 55,
+          "winrateBad": 25.5,
+          "deltaPts": -0.5
+        },
+        "damage": {
+          "ownMedian": 2339,
+          "goodSide": "über Median",
+          "gamesGood": 37,
+          "winrateGood": 32.4,
+          "gamesBad": 38,
+          "winrateBad": 18.4,
+          "deltaPts": 14
+        },
+        "kills": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 28,
+          "winrateGood": 32.1,
+          "gamesBad": 30,
+          "winrateBad": 23.3,
+          "deltaPts": 8.8
+        },
+        "deaths": {
+          "ownMedian": 16,
+          "goodSide": "unter Median",
+          "gamesGood": 29,
+          "winrateGood": 20.7,
+          "gamesBad": 29,
+          "winrateBad": 34.5,
+          "deltaPts": -13.8
+        },
+        "rebounds": {
+          "ownMedian": 8,
+          "goodSide": "über Median",
+          "gamesGood": 26,
+          "winrateGood": 38.5,
+          "gamesBad": 32,
+          "winrateBad": 18.8,
+          "deltaPts": 19.7
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 26,
+          "winrateGood": 30.8,
+          "gamesBad": 32,
+          "winrateBad": 25,
+          "deltaPts": 5.8
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 19,
+          "touchdownsPerGame": 1.74,
+          "damagePerGame": 2499,
+          "touchdownSharePct": 18.1,
+          "deathsPerGame": 18.63
+        },
+        "losses": {
+          "games": 56,
+          "touchdownsPerGame": 1.2,
+          "damagePerGame": 2250,
+          "touchdownSharePct": 19.1,
+          "deathsPerGame": 16.1
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 47,
+          "touchdownsPerGame": 1.15,
+          "pointsPerGame": 97.1,
+          "damagePerGame": 2224
+        },
+        "even": {
+          "games": 25,
+          "touchdownsPerGame": 1.72,
+          "pointsPerGame": 112.4,
+          "damagePerGame": 2405
+        },
+        "asFavorite": {
+          "games": 3,
+          "touchdownsPerGame": 1,
+          "pointsPerGame": 121,
+          "damagePerGame": 2923
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -28.4,
+        "perMate": [
+          {
+            "mate": "Nebus.",
+            "gamesWith": 25,
+            "winrateWith": 44,
+            "gamesWithout": 105,
+            "winrateWithout": 61.9,
+            "deltaPts": -17.9
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 19,
+            "winrateWith": 31.6,
+            "gamesWithout": 117,
+            "winrateWithout": 50.4,
+            "deltaPts": -18.8
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 11,
+            "winrateWith": 0,
+            "gamesWithout": 86,
+            "winrateWithout": 33.7,
+            "deltaPts": -33.7
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 42,
+            "winrateWith": 26.2,
+            "gamesWithout": 118,
+            "winrateWithout": 61,
+            "deltaPts": -34.8
+          },
+          {
+            "mate": "Aferdita",
+            "gamesWith": 14,
+            "winrateWith": 14.3,
+            "gamesWithout": 45,
+            "winrateWithout": 51.1,
+            "deltaPts": -36.8
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -2.07
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -3362,6 +4256,151 @@
         "touchdowns": 13,
         "touchdownsPerReboundPct": 9.8
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 9,
+          "winrateGood": 66.7,
+          "gamesBad": 13,
+          "winrateBad": 46.2,
+          "deltaPts": 20.5
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 3,
+          "winrateGood": 100,
+          "gamesBad": 19,
+          "winrateBad": 47.4,
+          "deltaPts": 52.6
+        },
+        "damage": {
+          "ownMedian": 4236.5,
+          "goodSide": "über Median",
+          "gamesGood": 11,
+          "winrateGood": 36.4,
+          "gamesBad": 11,
+          "winrateBad": 72.7,
+          "deltaPts": -36.3
+        },
+        "kills": {
+          "ownMedian": 10,
+          "goodSide": "über Median",
+          "gamesGood": 10,
+          "winrateGood": 70,
+          "gamesBad": 12,
+          "winrateBad": 41.7,
+          "deltaPts": 28.3
+        },
+        "deaths": {
+          "ownMedian": 11,
+          "goodSide": "unter Median",
+          "gamesGood": 9,
+          "winrateGood": 44.4,
+          "gamesBad": 13,
+          "winrateBad": 61.5,
+          "deltaPts": -17.1
+        },
+        "rebounds": {
+          "ownMedian": 5.5,
+          "goodSide": "über Median",
+          "gamesGood": 11,
+          "winrateGood": 54.5,
+          "gamesBad": 11,
+          "winrateBad": 54.5,
+          "deltaPts": 0
+        },
+        "defense": {
+          "ownMedian": 16,
+          "goodSide": "über Median",
+          "gamesGood": 11,
+          "winrateGood": 36.4,
+          "gamesBad": 11,
+          "winrateBad": 72.7,
+          "deltaPts": -36.3
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 12,
+          "touchdownsPerGame": 0.75,
+          "damagePerGame": 3469,
+          "touchdownSharePct": 7.5,
+          "deathsPerGame": 10.83
+        },
+        "losses": {
+          "games": 10,
+          "touchdownsPerGame": 0.4,
+          "damagePerGame": 4732,
+          "touchdownSharePct": 5.3,
+          "deathsPerGame": 11.1
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 3,
+          "touchdownsPerGame": 0.33,
+          "pointsPerGame": 140.3,
+          "damagePerGame": 4111
+        },
+        "even": {
+          "games": 11,
+          "touchdownsPerGame": 0.73,
+          "pointsPerGame": 164.5,
+          "damagePerGame": 4409
+        },
+        "asFavorite": {
+          "games": 8,
+          "touchdownsPerGame": 0.5,
+          "pointsPerGame": 129.9,
+          "damagePerGame": 3515
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 2.5,
+        "perMate": [
+          {
+            "mate": "Malena",
+            "gamesWith": 11,
+            "winrateWith": 63.6,
+            "gamesWithout": 166,
+            "winrateWithout": 55.4,
+            "deltaPts": 8.2
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 11,
+            "winrateWith": 63.6,
+            "gamesWithout": 170,
+            "winrateWithout": 55.9,
+            "deltaPts": 7.7
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 6,
+            "winrateWith": 33.3,
+            "gamesWithout": 105,
+            "winrateWithout": 36.2,
+            "deltaPts": -2.9
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 7,
+            "winrateWith": 57.1,
+            "gamesWithout": 160,
+            "winrateWithout": 66.9,
+            "deltaPts": -9.8
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 0.77
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -3823,6 +4862,127 @@
         "touchdowns": 51,
         "touchdownsPerReboundPct": 27.6
       },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 7,
+          "winrateGood": 42.9,
+          "gamesBad": 12,
+          "winrateBad": 8.3,
+          "deltaPts": 34.6
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 4,
+          "winrateGood": 25,
+          "gamesBad": 15,
+          "winrateBad": 20,
+          "deltaPts": 5
+        },
+        "damage": {
+          "ownMedian": 1364,
+          "goodSide": "über Median",
+          "gamesGood": 9,
+          "winrateGood": 11.1,
+          "gamesBad": 10,
+          "winrateBad": 30,
+          "deltaPts": -18.9
+        },
+        "kills": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 8,
+          "winrateGood": 25,
+          "gamesBad": 11,
+          "winrateBad": 18.2,
+          "deltaPts": 6.8
+        },
+        "deaths": {
+          "ownMedian": 14,
+          "goodSide": "unter Median",
+          "gamesGood": 9,
+          "winrateGood": 22.2,
+          "gamesBad": 10,
+          "winrateBad": 20,
+          "deltaPts": 2.2
+        },
+        "rebounds": {
+          "ownMedian": 9,
+          "goodSide": "über Median",
+          "gamesGood": 9,
+          "winrateGood": 33.3,
+          "gamesBad": 10,
+          "winrateBad": 10,
+          "deltaPts": 23.3
+        },
+        "defense": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 6,
+          "winrateGood": 33.3,
+          "gamesBad": 13,
+          "winrateBad": 15.4,
+          "deltaPts": 17.9
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 4,
+          "touchdownsPerGame": 5.25,
+          "damagePerGame": 1262,
+          "touchdownSharePct": 52.5,
+          "deathsPerGame": 14.5
+        },
+        "losses": {
+          "games": 15,
+          "touchdownsPerGame": 2,
+          "damagePerGame": 1333,
+          "touchdownSharePct": 40.5,
+          "deathsPerGame": 14.8
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 15,
+          "touchdownsPerGame": 2.8,
+          "pointsPerGame": 89.1,
+          "damagePerGame": 1308
+        },
+        "even": {
+          "games": 4,
+          "touchdownsPerGame": 2.25,
+          "pointsPerGame": 87.3,
+          "damagePerGame": 1359
+        },
+        "asFavorite": {
+          "games": 0,
+          "touchdownsPerGame": null,
+          "pointsPerGame": null,
+          "damagePerGame": null
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -26.1,
+        "perMate": [
+          {
+            "mate": "ZeroO",
+            "gamesWith": 10,
+            "winrateWith": 30,
+            "gamesWithout": 173,
+            "winrateWithout": 56.1,
+            "deltaPts": -26.1
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -3.58
+      },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
         "marathon": {
@@ -4263,6 +5423,143 @@
         "rebounds": 108,
         "touchdowns": 3,
         "touchdownsPerReboundPct": 2.8
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 3,
+          "winrateGood": 100,
+          "gamesBad": 14,
+          "winrateBad": 0,
+          "deltaPts": 100
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 6,
+          "winrateGood": 16.7,
+          "gamesBad": 11,
+          "winrateBad": 18.2,
+          "deltaPts": -1.5
+        },
+        "damage": {
+          "ownMedian": 2320,
+          "goodSide": "über Median",
+          "gamesGood": 8,
+          "winrateGood": 25,
+          "gamesBad": 9,
+          "winrateBad": 11.1,
+          "deltaPts": 13.9
+        },
+        "kills": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 8,
+          "winrateGood": 25,
+          "gamesBad": 9,
+          "winrateBad": 11.1,
+          "deltaPts": 13.9
+        },
+        "deaths": {
+          "ownMedian": 22,
+          "goodSide": "unter Median",
+          "gamesGood": 8,
+          "winrateGood": 12.5,
+          "gamesBad": 9,
+          "winrateBad": 22.2,
+          "deltaPts": -9.7
+        },
+        "rebounds": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 5,
+          "winrateGood": 20,
+          "gamesBad": 12,
+          "winrateBad": 16.7,
+          "deltaPts": 3.3
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 7,
+          "winrateGood": 0,
+          "gamesBad": 10,
+          "winrateBad": 30,
+          "deltaPts": -30
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 3,
+          "touchdownsPerGame": 1,
+          "damagePerGame": 2373,
+          "touchdownSharePct": 10.8,
+          "deathsPerGame": 22.67
+        },
+        "losses": {
+          "games": 14,
+          "touchdownsPerGame": 0,
+          "damagePerGame": 2176,
+          "touchdownSharePct": 0,
+          "deathsPerGame": 20.5
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 8,
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 70.3,
+          "damagePerGame": 1842
+        },
+        "even": {
+          "games": 6,
+          "touchdownsPerGame": 0.33,
+          "pointsPerGame": 97.2,
+          "damagePerGame": 2469
+        },
+        "asFavorite": {
+          "games": 3,
+          "touchdownsPerGame": 0.33,
+          "pointsPerGame": 107,
+          "damagePerGame": 2679
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -31.1,
+        "perMate": [
+          {
+            "mate": "Malena",
+            "gamesWith": 7,
+            "winrateWith": 42.9,
+            "gamesWithout": 171,
+            "winrateWithout": 53.8,
+            "deltaPts": -10.9
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 8,
+            "winrateWith": 0,
+            "gamesWithout": 110,
+            "winrateWithout": 37.3,
+            "deltaPts": -37.3
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 11,
+            "winrateWith": 18.2,
+            "gamesWithout": 175,
+            "winrateWithout": 57.7,
+            "deltaPts": -39.5
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -3.94
       },
       "matchLength": {
         "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
