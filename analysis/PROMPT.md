@@ -92,15 +92,15 @@ und `groupAverageSeason`. Pro Spieler enthält es:
 
 Ob Xero dabei Punkte oder Aktionen zählt, ist unklar (Anbuu hat z.B. mehr Defense als Kills pro Spiel).
 Deshalb **nur relativ deuten**: Ränge und Vergleiche innerhalb der Liga („meiste Defense der Liga“,
-„doppelt so viele Rebounds wie die Ligamitte“), aber keine absoluten Aussagen wie „stoppt 4 Träger
+„doppelt so viele Rebounds wie der Median“), aber keine absoluten Aussagen wie „stoppt 4 Träger
 pro Spiel“. In den Texten sportlich umschreiben: Defense = „Angriffe stoppen“, Offense = „den
 Fumbi-Träger freikämpfen“, Rebounds = „Fumbi aufnehmen“.
 
 ## Vorgehen (erst denken, dann schreiben)
 
-1. **Ligabild:** Wo liegt die Mitte? Wer dominiert welche Kennzahl?
+1. **Ligabild:** Wo liegt der Median? Wer dominiert welche Kennzahl?
 2. **Pro Spieler Kandidaten sammeln:** alle Ränge 1–2 und die zwei letzten Ränge, auffällige
-   Abstände zur Mitte (> 25 %), Unterschiede 2v2 vs. 3v3, Trend früh → spät, knappe Spiele,
+   Abstände zum Median (> 25 %), Unterschiede 2v2 vs. 3v3, Trend früh → spät, knappe Spiele,
    Team-Rolle, auffällige Duos/Gegner, Konstanz.
 3. **Prüfen, bevor du etwas behauptest:**
    - *Wenige Spiele:* Aussagen über Teilmengen mit weniger als 10 Spielen nur mit Hinweis
@@ -120,18 +120,17 @@ Fumbi-Träger freikämpfen“, Rebounds = „Fumbi aufnehmen“.
 
 ## Regeln fürs Schreiben
 
-- **Jede Aussage mit Zahl und Vergleichsmaßstab** (Ligamitte, Platz, frühere Season-Phase, anderer
-  Modus, Mitspieler). ❌ „Starker Scorer.“ ✅ „4,55 Touchdowns pro Spiel – Platz 2 von 9, die
-  Ligamitte liegt bei 2,68.“
+- **Jede Aussage mit Zahl und Vergleichsmaßstab** (Median der Liga, Platz, frühere Season-Phase, anderer
+  Modus, Mitspieler). ❌ „Starker Scorer.“ ✅ „4,55 Touchdowns pro Spiel – Platz 2 von 9, der
+  Median liegt bei 2,68.“
 - **Sportlich und verständlich.** Die meisten Leser sind Mitspieler, keine Statistiker. Keine
-  Technik- oder Statistikbegriffe: nicht „API“, „Dossier“, „Tag“, „Datensatz“, „Median“ (sag
-  **„Ligamitte“**), „Stichprobe“ (sag „bei wenigen Spielen“), „Variationskoeffizient“, „Modus-Mix“,
+  Technik- oder Statistikbegriffe: nicht „API“, „Dossier“, „Tag“, „Datensatz“, „Stichprobe“ (sag „bei wenigen Spielen“), „Variationskoeffizient“, „Modus-Mix“,
   „Prozentpunkte“ (Synergie einfach als „+20 Synergie“). Erlaubt und erwünscht: Spielbegriffe wie
   Fumbi, Striker, Backer, K/D, MVP, Carry im normalen Wortsinn.
 - **Keine Floskeln.** Verboten: „mehr üben“, „an der Konstanz arbeiten“, „Kommunikation
   verbessern“, „weiter so“ und alles, was auf jeden Spieler passen würde.
 - **Tipps sind konkret und messbar:** aus einer gemessenen Schwäche abgeleitet, mit Zielwert aus den
-  Zahlen (Ligamitte, eigener Wert aus dem anderen Modus, Wert eines Mitspielers). Spielwissen darf
+  Zahlen (Median, eigener Wert aus dem anderen Modus, Wert eines Mitspielers). Spielwissen darf
   den Weg dorthin erklären (z.B. „TD-Assists gibt es nur für den letzten Fumbi-Träger vor dem Tor“),
   aber keine Tipps zu Dingen, die die Zahlen nicht zeigen (Waffenwahl, Tastenbelegung …).
 - **Ton:** locker und mit Humor, wie ein Kumpel, der die Stats kennt – ehrlich, aber nie verletzend.
