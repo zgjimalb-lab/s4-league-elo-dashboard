@@ -40,8 +40,8 @@ export default function EloPage() {
         title={eloLabel}
         description={
           season === 'all'
-            ? 'Ewige ELO: läuft über alle Seasons ohne Reset.'
-            : `Jede Season startet für alle bei ${fmtInt(ELO_START)}. X-Achse: Matches in dieser Season.`
+            ? 'Alle Matches seit Beginn der Aufzeichnung.'
+            : 'Ausschnitt dieser Season – die ELO läuft über Seasons hinweg weiter, ohne Reset. X-Achse: Matches in dieser Season.'
         }
       >
         <div className="mb-4 flex flex-wrap gap-2">

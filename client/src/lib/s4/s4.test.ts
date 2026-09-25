@@ -51,12 +51,12 @@ describe('classify', () => {
 describe('prepareMatches', () => {
   it('startet nach mehr als 90 Tagen Pause eine neue Season', () => {
     const { matches } = prepareMatches([
-      match([['a', 'b'], ['c', 'd']], 0, { legacySeason: 2, date: '2025-12-18' }),
+      match([['a', 'b'], ['c', 'd']], 0, { date: '2025-12-18' }),
       match([['a', 'b'], ['c', 'd']], 0, { date: '2026-02-01' }),
       match([['a', 'b'], ['c', 'd']], 0, { date: '2026-09-25' }),
       match([['a', 'b'], ['c', 'd']], 0, { date: '2026-09-26' }),
     ]);
-    expect(matches.map((m) => m.season)).toEqual([2, 2, 3, 3]);
+    expect(matches.map((m) => m.season)).toEqual([1, 1, 2, 2]);
     expect(matches.map((m) => m.number)).toEqual([1, 2, 3, 4]);
   });
 });
@@ -65,37 +65,36 @@ describe('computeElo', () => {
   const prepared = (stored: StoredMatch[]) => prepareMatches(stored).matches;
 
   it('gibt bei gleicher ELO ±16', () => {
-    const { ratings } = computeElo(prepared([match([['a', 'b'], ['c', 'd']], 0)]), { resetEachSeason: false });
+    const { ratings } = computeElo(prepared([match([['a', 'b'], ['c', 'd']], 0)]));
     expect(Object.fromEntries(ratings)).toEqual({ a: 1516, b: 1516, c: 1484, d: 1484 });
   });
 
   it('rechnet alle Spieler eines Matches vom Stand vor dem Match', () => {
     const stored = [match([['a', 'b'], ['c', 'd']], 0), match([['a', 'c'], ['b', 'd']], 0)];
-    const { entries } = computeElo(prepared(stored), { resetEachSeason: false });
+    const { entries } = computeElo(prepared(stored));
     // a (1516) + c (1484) gegen b (1516) + d (1484): Gegner-Schnitt ist für alle 1500
     expect(entries[1].changes.get('b')!.before).toBe(1516);
     expect(entries[1].changes.get('d')!.delta).toBe(-15);
   });
 
   it('wertet Unentschieden als 0,5', () => {
-    const { ratings } = computeElo(prepared([match([['a', 'b'], ['c', 'd']], 1)]), { resetEachSeason: false });
+    const { ratings } = computeElo(prepared([match([['a', 'b'], ['c', 'd']], 1)]));
     // Matches ohne Sieger filtert prepareMatches aus – die Formel selbst kann Unentschieden
     const drawn = { ...prepared([match([['a', 'b'], ['c', 'd']], 1)])[0], winner: null };
-    const draw = computeElo([drawn], { resetEachSeason: false });
+    const draw = computeElo([drawn]);
     expect(ratings.get('a')).toBe(1484);
     expect(draw.ratings.get('a')).toBe(1500);
   });
 
-  it('setzt pro Season zurück, die ewige ELO nicht', () => {
+  it('läuft über eine neue Season hinweg ohne Reset weiter', () => {
     const stored = [
       match([['a', 'b'], ['c', 'd']], 0, { date: '2026-01-01' }),
       match([['a', 'b'], ['c', 'd']], 0, { date: '2026-06-01' }),
     ];
-    const season = computeElo(prepared(stored), { resetEachSeason: true });
-    const eternal = computeElo(prepared(stored), { resetEachSeason: false });
-    expect(season.entries[1].changes.get('a')!.before).toBe(1500);
-    expect(eternal.entries[1].changes.get('a')!.before).toBe(1516);
-    expect(eloSummary(eternal.entries, 'a')).toMatchObject({ current: 1531, peak: 1531, games: 2 });
+    const { entries } = computeElo(prepared(stored));
+    expect(entries.map((e) => e.match.season)).toEqual([1, 2]);
+    expect(entries[1].changes.get('a')!.before).toBe(1516);
+    expect(eloSummary(entries, 'a')).toMatchObject({ current: 1531, peak: 1531, games: 2 });
   });
 });
 

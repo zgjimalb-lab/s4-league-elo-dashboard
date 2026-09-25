@@ -37,8 +37,7 @@ const daysBetween = (a: string, b: string) => (Date.parse(b) - Date.parse(a)) / 
 
 /**
  * Filtert die gezählten Matches, nummeriert sie und ordnet Seasons zu:
- * Alte Sheet-Matches behalten ihre Season, danach beginnt nach mehr als
- * SEASON_GAP_DAYS Tagen ohne Match automatisch eine neue Season.
+ * Nach mehr als SEASON_GAP_DAYS Tagen ohne Match beginnt automatisch eine neue Season.
  */
 export function prepareMatches(stored: StoredMatch[]): {
   matches: Match[];
@@ -55,9 +54,7 @@ export function prepareMatches(stored: StoredMatch[]): {
       excluded.push({ match, reason: result.excluded });
       continue;
     }
-    if (match.legacySeason) {
-      season = match.legacySeason;
-    } else if (lastDate && daysBetween(lastDate, match.date) > SEASON_GAP_DAYS) {
+    if (lastDate && daysBetween(lastDate, match.date) > SEASON_GAP_DAYS) {
       season += 1;
     }
     lastDate = match.date;

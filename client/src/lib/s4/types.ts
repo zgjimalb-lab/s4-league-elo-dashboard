@@ -36,7 +36,6 @@ export interface StoredMatch {
   seenAt?: string;
   /** Datum nur geschätzt (Match lag vor dem Sync-Start und fehlte in der alten Auswertung) */
   dateEstimated?: boolean;
-  legacySeason?: number;
   legacyId?: string;
   map: string | null;
   durationSec: number | null;

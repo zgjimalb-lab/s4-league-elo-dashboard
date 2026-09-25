@@ -86,7 +86,7 @@ export default function Leaderboard() {
         <StatTile label="Längste Siegesserie" value={streaker ? `${streaker.bestWinStreak} Siege` : '–'} hint={streaker?.name} />
       </div>
 
-      <Section title="Rangliste" description={`Sortiert nach ${eloLabel}. Spieler mit weniger als 10 Spielen stehen als „vorläufig“ hinten.`} flush>
+      <Section title="Rangliste" description={`Sortiert nach aktueller ${eloLabel}. Spieler mit weniger als 10 Spielen stehen als „vorläufig“ hinten.`} flush>
         <SortableTable columns={rankColumns} rows={players} rowKey={(p) => p.name} rowClassName={(p) => (p.provisional ? 'opacity-70' : undefined)} />
       </Section>
 

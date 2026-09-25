@@ -5,8 +5,8 @@ Einmalige Migration: baut data/matches.json aus
   2. allem, was die Xero API noch hergibt (eigene 200 Matches + je 25 pro Gruppenmitglied).
 
 Sheet-Matches, die sich einem API-Match zuordnen lassen (gleiche Spieler, gleicher
-Damage), werden durch die exakten API-Daten ersetzt und behalten ihr Datum und ihre
-Season. Nicht zuordenbare Sheet-Matches bleiben mit den Sheet-Werten erhalten.
+Damage), werden durch die exakten API-Daten ersetzt und behalten ihr
+Datum. Nicht zuordenbare Sheet-Matches bleiben mit den Sheet-Werten erhalten.
 
     python scripts/migrate_history.py [--cache DIR]
 """
@@ -69,7 +69,6 @@ def legacy_matches(aliases: dict[str, str], overrides: dict) -> list[dict]:
             "id": match_id,
             "source": "sheet",
             "date": datetime.strptime(first["date"], "%d.%m.%Y").date().isoformat(),
-            "legacySeason": to_int(first["season"].split()[-1]),
             "map": None,
             "durationSec": to_int(first.get("match_duration_seconds")) or None,
             "score": goals,
@@ -132,7 +131,7 @@ def main() -> None:
         candidates = [a for a in api.values() if a["id"] not in replaced.values() and same_match(legacy, a)]
         if len(candidates) == 1:
             replaced[legacy["id"]] = candidates[0]["id"]
-            candidates[0].update(date=legacy["date"], legacySeason=legacy["legacySeason"], legacyId=legacy["id"])
+            candidates[0].update(date=legacy["date"], legacyId=legacy["id"])
 
     by_id = {**api, **{m["id"]: m for m in sheet if m["id"] not in replaced}}
     sheet_chain = [replaced.get(m["id"], m["id"]) for m in sheet]

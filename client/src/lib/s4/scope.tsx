@@ -20,7 +20,7 @@ interface Scope {
   setFilter: (next: { season?: SeasonFilter; mode?: ModeFilter }) => void;
   /** Matches im gewählten Zeitraum und Modus, chronologisch */
   matches: Match[];
-  /** ELO-Verlauf passend zum Filter: Season-ELO (mit Reset) oder ewige ELO bei „Alle Seasons“ */
+  /** ELO-Verlauf im gewählten Zeitraum (die ELO selbst läuft über alle Seasons durch) */
   elo: EloEntry[];
   eloLabel: string;
   players: PlayerRow[];
@@ -57,10 +57,10 @@ export function ScopeProvider({ children }: { children: ReactNode }) {
   const value = useMemo<Scope>(() => {
     const byMode = mode === 'all' ? ALL_MATCHES : ALL_MATCHES.filter((m) => m.mode === mode);
     const matches = season === 'all' ? byMode : byMode.filter((m) => m.season === season);
-    const timeline = computeElo(byMode, { resetEachSeason: season !== 'all' });
+    const timeline = computeElo(byMode);
     const elo = season === 'all' ? timeline.entries : timeline.entries.filter((e) => e.match.season === season);
     const modeLabel = mode === 'all' ? 'Gesamt' : mode;
-    const eloLabel = season === 'all' ? `Ewige ELO · ${modeLabel}` : `Season-ELO · ${modeLabel}`;
+    const eloLabel = `ELO · ${modeLabel}`;
 
     const players = playerStats(matches).map((stats) => ({
       ...stats,
