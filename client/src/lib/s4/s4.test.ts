@@ -122,7 +122,10 @@ describe('Statistiken', () => {
   it('wertet Duos, Aufstellungen und Head-to-Head aus', () => {
     const duo = duoStats(matches, stats).find((d) => d.players.join() === 'a,b')!;
     expect(duo).toMatchObject({ games: 2, wins: 2 });
-    expect(lineupStats(matches).find((l) => l.key === 'c + d')).toMatchObject({ games: 2, wins: 0, goalsAgainst: 20 });
+    const cd = lineupStats(matches, stats).find((l) => l.key === 'c + d')!;
+    expect(cd).toMatchObject({ games: 2, wins: 0, goalsAgainst: 20 });
+    // einzeln: c 0 von 3, d 1 von 3 (Schnitt 1/6) – zusammen 0 von 2
+    expect(cd.synergy).toBeCloseTo(-1 / 6);
     const h2h = headToHead(matches, 'a', 'b');
     expect(h2h.against).toMatchObject({ games: 1, wins: 0, losses: 1 });
     expect(h2h.together).toMatchObject({ games: 2, wins: 2 });

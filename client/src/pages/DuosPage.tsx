@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
 import { Empty, PlayerDot, PlayerName, Section } from '@/components/Bits';
 import { DivergingBar } from '@/components/charts';
 import { SortableTable, type Column } from '@/components/SortableTable';
@@ -9,15 +9,27 @@ import { duoStats, lineupStats, type DuoStats, type LineupStats } from '@/lib/s4
 
 const MIN_GAMES_OPTIONS = [1, 3, 5, 10];
 
+function synergyCell(value: number, max: number) {
+  return (
+    <span className="inline-flex items-center justify-end gap-3">
+      <span className="tabular-nums">{fmtSignedPct(value)}</span>
+      <DivergingBar value={value} max={max} />
+    </span>
+  );
+}
+
 export default function DuosPage() {
-  const { matches, players } = useScope();
+  const { matches, players, mode } = useScope();
   const [minGames, setMinGames] = useState(3);
 
   const duos = useMemo(() => duoStats(matches, players), [matches, players]);
-  const lineups = useMemo(() => lineupStats(matches), [matches]);
+  // Aufstellungen ab drei Spielern: bei 2v2 sind sie identisch mit den Duos
+  const teams = useMemo(() => lineupStats(matches, players).filter((l) => l.players.length >= 3), [matches, players]);
   const shownDuos = duos.filter((d) => d.games >= minGames);
-  const shownLineups = lineups.filter((l) => l.games >= minGames);
-  const maxSynergy = Math.max(0.01, ...shownDuos.map((d) => Math.abs(d.synergy)));
+  const shownTeams = teams.filter((l) => l.games >= minGames);
+  const maxDuoSynergy = Math.max(0.01, ...shownDuos.map((d) => Math.abs(d.synergy)));
+  const maxTeamSynergy = Math.max(0.01, ...shownTeams.map((l) => Math.abs(l.synergy)));
+  const onlyTrios = teams.every((l) => l.players.length === 3);
 
   const duoColumns: Column<DuoStats>[] = [
     {
@@ -34,18 +46,13 @@ export default function DuosPage() {
     {
       key: 'synergy', header: 'Synergie', align: 'right', sort: (d) => d.synergy,
       title: 'Winrate zusammen minus Durchschnitt der beiden Einzel-Winrates',
-      cell: (d) => (
-        <span className="inline-flex items-center justify-end gap-3">
-          <span className="tabular-nums">{fmtSignedPct(d.synergy)}</span>
-          <DivergingBar value={d.synergy} max={maxSynergy} />
-        </span>
-      ),
+      cell: (d) => synergyCell(d.synergy, maxDuoSynergy),
     },
   ];
 
-  const lineupColumns: Column<LineupStats>[] = [
+  const teamColumns: Column<LineupStats>[] = [
     {
-      key: 'lineup', header: 'Aufstellung', sort: (l) => l.key,
+      key: 'lineup', header: onlyTrios ? 'Trio' : 'Team', sort: (l) => l.key,
       cell: (l) => (
         <span className="inline-flex flex-wrap items-center gap-x-3">
           {l.players.map((p) => (
@@ -54,13 +61,18 @@ export default function DuosPage() {
         </span>
       ),
     },
-    { key: 'size', header: 'Modus', cell: (l) => `${l.players.length}v${l.players.length}`, sort: (l) => l.players.length },
+    ...(onlyTrios ? [] : [{ key: 'size', header: 'Modus', cell: (l: LineupStats) => `${l.players.length}v${l.players.length}`, sort: (l: LineupStats) => l.players.length }]),
     { key: 'games', header: 'Spiele', align: 'right', cell: (l) => l.games, sort: (l) => l.games },
     { key: 'record', header: 'S–N', align: 'right', cell: (l) => `${l.wins}–${l.losses}`, sort: (l) => l.wins - l.losses },
     { key: 'winrate', header: 'Winrate', align: 'right', cell: (l) => fmtPct(l.winrate), sort: (l) => l.winrate },
     {
       key: 'goals', header: 'Ø TD für : gegen', align: 'right', sort: (l) => (l.goalsFor - l.goalsAgainst) / l.games,
       cell: (l) => `${fmt1(l.goalsFor / l.games)} : ${fmt1(l.goalsAgainst / l.games)}`,
+    },
+    {
+      key: 'synergy', header: 'Synergie', align: 'right', sort: (l) => l.synergy,
+      title: 'Winrate zusammen minus Durchschnitt der Einzel-Winrates',
+      cell: (l) => synergyCell(l.synergy, maxTeamSynergy),
     },
   ];
 
@@ -75,28 +87,42 @@ export default function DuosPage() {
     </div>
   );
 
-  return (
-    <>
-      <Section
-        title="Duo-Synergien"
-        description="Welche Paare gewinnen zusammen öfter, als ihre Einzel-Winrates erwarten lassen? Die Teams sind zufällig, deshalb ist das ein fairer Vergleich."
-        action={filter}
-        flush
-      >
-        {shownDuos.length ? (
-          <SortableTable columns={duoColumns} rows={shownDuos} rowKey={(d) => d.players.join('|')} initialSort={{ key: 'synergy', desc: true }} />
-        ) : (
-          <Empty>Keine Duos mit so vielen gemeinsamen Spielen.</Empty>
-        )}
-      </Section>
-
-      <Section title="Aufstellungen" description="Exakte Team-Zusammensetzungen" flush>
-        {shownLineups.length ? (
-          <SortableTable columns={lineupColumns} rows={shownLineups} rowKey={(l) => l.key} initialSort={{ key: 'games', desc: true }} />
-        ) : (
-          <Empty>Keine Aufstellungen mit so vielen Spielen.</Empty>
-        )}
-      </Section>
-    </>
+  const duoSection: ReactNode = (
+    <Section
+      key="duos"
+      title="Duo-Synergien"
+      description={
+        mode === '3v3'
+          ? 'Welche zwei harmonieren im 3er-Team – egal, wer der Dritte ist?'
+          : 'Welche Paare gewinnen zusammen öfter, als ihre Einzel-Winrates erwarten lassen? Die Teams sind zufällig, deshalb ist das ein fairer Vergleich.'
+      }
+      action={mode === '3v3' ? undefined : filter}
+      flush
+    >
+      {shownDuos.length ? (
+        <SortableTable columns={duoColumns} rows={shownDuos} rowKey={(d) => d.players.join('|')} initialSort={{ key: 'synergy', desc: true }} />
+      ) : (
+        <Empty>Keine Duos mit so vielen gemeinsamen Spielen.</Empty>
+      )}
+    </Section>
   );
+
+  const teamSection: ReactNode = teams.length > 0 && (
+    <Section
+      key="teams"
+      title={onlyTrios ? 'Trio-Synergien' : 'Team-Synergien'}
+      description="Exakt diese Aufstellung zusammen – im Vergleich zu den Einzel-Winrates. Trios kommen seltener zustande als Duos, achte auf die Spielzahl."
+      action={mode === '3v3' ? filter : undefined}
+      flush
+    >
+      {shownTeams.length ? (
+        <SortableTable columns={teamColumns} rows={shownTeams} rowKey={(l) => l.key} initialSort={{ key: 'synergy', desc: true }} />
+      ) : (
+        <Empty>Keine Aufstellungen mit so vielen gemeinsamen Spielen.</Empty>
+      )}
+    </Section>
+  );
+
+  // Im 3v3 zuerst die Trios, sonst zuerst die Duos
+  return <>{mode === '3v3' ? [teamSection, duoSection] : [duoSection, teamSection]}</>;
 }

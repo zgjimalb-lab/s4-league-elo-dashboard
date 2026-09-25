@@ -162,23 +162,30 @@ export interface LineupStats extends WinRecord {
   players: string[];
   goalsFor: number;
   goalsAgainst: number;
+  /** Winrate zusammen minus Durchschnitt der Einzel-Winrates */
+  synergy: number;
 }
 
-/** Statistik pro exakter Team-Aufstellung. */
-export function lineupStats(matches: Match[]): LineupStats[] {
+/** Statistik pro exakter Team-Aufstellung (bei 3v3 also pro Trio). */
+export function lineupStats(matches: Match[], individual: PlayerStats[]): LineupStats[] {
+  const winrate = new Map(individual.map((p) => [p.name, p.winrate]));
   const lineups = new Map<string, Omit<LineupStats, 'winrate'>>();
   for (const match of matches) {
     for (const team of [0, 1] as const) {
       const players = match.players.filter((p) => p.team === team).map((p) => p.name);
       const key = teamKey(players);
-      if (!lineups.has(key)) lineups.set(key, { key, players: key.split(' + '), goalsFor: 0, goalsAgainst: 0, ...emptyRecord() });
+      if (!lineups.has(key)) lineups.set(key, { key, players: key.split(' + '), goalsFor: 0, goalsAgainst: 0, synergy: 0, ...emptyRecord() });
       const lineup = lineups.get(key)!;
       addResult(lineup, match.winner === null ? 'D' : match.winner === team ? 'W' : 'L');
       lineup.goalsFor += match.score[team];
       lineup.goalsAgainst += match.score[1 - team];
     }
   }
-  return Array.from(lineups.values(), finish);
+  return Array.from(lineups.values(), (lineup) => {
+    const done = finish(lineup);
+    const expected = lineup.players.reduce((sum, p) => sum + (winrate.get(p) ?? 0), 0) / lineup.players.length;
+    return { ...done, synergy: done.winrate - expected };
+  });
 }
 
 export interface DuoStats extends WinRecord {
