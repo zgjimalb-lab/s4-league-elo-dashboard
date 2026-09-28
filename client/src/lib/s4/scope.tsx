@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useMemo, type ReactNode } from 'react';
 import { useSearch } from 'wouter';
 import { navigate } from 'wouter/use-browser-location';
-import { ALL_MATCHES, CURRENT_SEASON, MODES, PROVISIONAL_GAMES, SEASONS } from './data';
+import { ALL_MATCHES, CURRENT_SEASON, isMember, MODES, PROVISIONAL_GAMES, SEASONS } from './data';
 import { computeElo, eloSummary, type EloEntry, type PlayerEloSummary } from './elo';
 import { playerStats, type PlayerStats } from './stats';
 import type { Match, Mode } from './types';
@@ -62,7 +62,7 @@ export function ScopeProvider({ children }: { children: ReactNode }) {
     const modeLabel = mode === 'all' ? 'Gesamt' : mode;
     const eloLabel = `ELO · ${modeLabel}`;
 
-    const players = playerStats(matches).map((stats) => ({
+    const players = playerStats(matches).filter((stats) => isMember(stats.name)).map((stats) => ({
       ...stats,
       elo: eloSummary(elo, stats.name),
       provisional: stats.games < PROVISIONAL_GAMES,

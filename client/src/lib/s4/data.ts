@@ -9,6 +9,9 @@ export const { matches: ALL_MATCHES, excluded: EXCLUDED } = prepareMatches(store
 
 export const GROUP: string[] = players.group;
 
+/** Nur Gruppenmitglieder erscheinen in Ranglisten und Auswahlen; alte Matches mit Ehemaligen zählen trotzdem weiter. */
+export const isMember = (name: string) => GROUP.includes(name);
+
 export const SEASONS: number[] = Array.from(new Set(ALL_MATCHES.map((m) => m.season)));
 export const CURRENT_SEASON = SEASONS[SEASONS.length - 1] ?? 1;
 

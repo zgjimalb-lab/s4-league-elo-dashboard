@@ -7,6 +7,7 @@ import { PlayerAnalysis } from '@/components/PlayerAnalysis';
 import { PlayerSelect } from '@/components/PlayerSelect';
 import { SortableTable, type Column } from '@/components/SortableTable';
 import { fmt1, fmt2, fmtInt, fmtPct, fmtSigned, fmtSignedPct } from '@/lib/format';
+import { isMember } from '@/lib/s4/data';
 import { useScope, type PlayerRow } from '@/lib/s4/scope';
 import { duoStats, headToHead, lineOf, type WinRecord } from '@/lib/s4/stats';
 
@@ -45,7 +46,7 @@ export default function PlayerPage() {
   const relations = useMemo(() => {
     if (!player) return { mates: [], rivals: [] };
     const mates = duoStats(matches, players)
-      .filter((d) => d.players.includes(player.name))
+      .filter((d) => d.players.includes(player.name) && d.players.every(isMember))
       .map((d) => ({ ...d, name: d.players[0] === player.name ? d.players[1] : d.players[0] }));
     const rivals = players
       .filter((p) => p.name !== player.name)

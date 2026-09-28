@@ -4,6 +4,7 @@ import { DivergingBar } from '@/components/charts';
 import { SortableTable, type Column } from '@/components/SortableTable';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { fmt1, fmtPct, fmtSignedPct } from '@/lib/format';
+import { isMember } from '@/lib/s4/data';
 import { useScope } from '@/lib/s4/scope';
 import { duoStats, lineupStats, type DuoStats, type LineupStats } from '@/lib/s4/stats';
 
@@ -22,9 +23,9 @@ export default function DuosPage() {
   const { matches, players, mode } = useScope();
   const [minGames, setMinGames] = useState(3);
 
-  const duos = useMemo(() => duoStats(matches, players), [matches, players]);
+  const duos = useMemo(() => duoStats(matches, players).filter((d) => d.players.every(isMember)), [matches, players]);
   // Aufstellungen ab drei Spielern: bei 2v2 sind sie identisch mit den Duos
-  const teams = useMemo(() => lineupStats(matches, players).filter((l) => l.players.length >= 3), [matches, players]);
+  const teams = useMemo(() => lineupStats(matches, players).filter((l) => l.players.length >= 3 && l.players.every(isMember)), [matches, players]);
   const shownDuos = duos.filter((d) => d.games >= minGames);
   const shownTeams = teams.filter((l) => l.games >= minGames);
   const maxDuoSynergy = Math.max(0.01, ...shownDuos.map((d) => Math.abs(d.synergy)));
