@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLocation, useParams, useSearch } from 'wouter';
-import { Delta, Empty, Form, PlayerName, Section, StatTile } from '@/components/Bits';
+import { Delta, Empty, Form, PlayerName, RoleBadge, Section, StatTile } from '@/components/Bits';
 import { EloChart } from '@/components/charts';
 import { MatchCard, useEloByMatch } from '@/components/MatchCard';
 import { PlayerAnalysis } from '@/components/PlayerAnalysis';
@@ -8,6 +8,7 @@ import { PlayerSelect } from '@/components/PlayerSelect';
 import { SortableTable, type Column } from '@/components/SortableTable';
 import { fmt1, fmt2, fmtInt, fmtPct, fmtSigned, fmtSignedPct } from '@/lib/format';
 import { isMember } from '@/lib/s4/data';
+import { ROLE_INFO, roleStats, type RoleMetric, type RoleStats } from '@/lib/s4/roles';
 import { useScope, type PlayerRow } from '@/lib/s4/scope';
 import { duoStats, headToHead, lineOf, type WinRecord } from '@/lib/s4/stats';
 
@@ -33,6 +34,65 @@ const PROFILE_METRICS: { label: string; value: (p: PlayerRow) => number; format:
   { label: 'Damage pro Minute', value: (p) => p.perMinute.damage, format: fmtInt },
 ];
 
+/** Rollen-Kennzahlen; bei Toden ist weniger besser. */
+const ROLE_METRICS: { key: RoleMetric; label: string; title?: string; higherIsBetter: boolean }[] = [
+  { key: 'goals', label: 'Touchdowns', higherIsBetter: true },
+  { key: 'rebounds', label: 'Rebounds', title: 'Fumbi aufnehmen', higherIsBetter: true },
+  { key: 'offense', label: 'Offense', title: 'Den eigenen Fumbi-Träger freikämpfen', higherIsBetter: true },
+  { key: 'defense', label: 'Defense', title: 'Gegnerische Angriffe stoppen', higherIsBetter: true },
+  { key: 'kills', label: 'Kills', higherIsBetter: true },
+  { key: 'killAssists', label: 'Kill-Assists', higherIsBetter: true },
+  { key: 'deaths', label: 'Tode', higherIsBetter: false },
+];
+
+/** Balken ab der Mitte: rechts mehr als der Teamschnitt, links weniger (±60 % füllen die Hälfte). */
+function IndexBar({ index, higherIsBetter }: { index: number; higherIsBetter: boolean }) {
+  const diff = index - 1;
+  const width = Math.min(Math.abs(diff) / 0.6, 1) * 50;
+  const good = higherIsBetter ? diff >= 0 : diff <= 0;
+  return (
+    <div className="relative h-2 w-full rounded-full bg-secondary" aria-hidden>
+      <div className="absolute inset-y-0 left-1/2 w-px bg-muted-foreground/40" />
+      <div
+        className={good ? 'absolute inset-y-0 rounded-full bg-[#5fd35f]/70' : 'absolute inset-y-0 rounded-full bg-[#f08080]/70'}
+        style={diff >= 0 ? { left: '50%', width: `${width}%` } : { right: '50%', width: `${width}%` }}
+      />
+    </div>
+  );
+}
+
+function RoleSection({ stats }: { stats: RoleStats }) {
+  return (
+    <Section
+      title={
+        <span className="inline-flex items-center gap-3">
+          Rolle <RoleBadge role={stats.role} />
+        </span>
+      }
+      description={`${stats.role ? ROLE_INFO[stats.role] : 'Noch zu wenige Matches für eine Rolle.'} Verglichen mit den eigenen Mitspielern im selben Match, aus ${stats.games} Matches mit Xero-Details.`}
+    >
+      <div className="space-y-3">
+        {ROLE_METRICS.map((m) => {
+          const diff = stats.index[m.key] - 1;
+          return (
+            <div key={m.key} className="grid grid-cols-[minmax(0,1fr)_5rem] items-center gap-x-4 gap-y-1 sm:grid-cols-[10rem_minmax(0,1fr)_5rem]">
+              <div className="text-sm" title={m.title}>
+                {m.label} <span className="text-muted-foreground">· Ø {fmt1(stats.perGame[m.key])}</span>
+              </div>
+              <div className="order-last col-span-2 sm:order-none sm:col-span-1">
+                <IndexBar index={stats.index[m.key]} higherIsBetter={m.higherIsBetter} />
+              </div>
+              <div className="text-right text-sm" title="im Vergleich zum Schnitt des eigenen Teams">
+                <Delta value={m.higherIsBetter ? diff : -diff}>{fmtSignedPct(diff)}</Delta>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </Section>
+  );
+}
+
 export default function PlayerPage() {
   const params = useParams<{ name?: string }>();
   const [, navigate] = useLocation();
@@ -54,6 +114,8 @@ export default function PlayerPage() {
       .filter((r) => r.games > 0);
     return { mates, rivals };
   }, [matches, players, player]);
+  const roles = useMemo(() => (player ? roleStats(matches.filter((m) => lineOf(m, player.name))) : []), [matches, player]);
+  const role = roles.find((r) => r.name === player?.name);
 
   const select = (
     <PlayerSelect
@@ -85,7 +147,10 @@ export default function PlayerPage() {
     <>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h2 className="text-xl font-semibold">
-          <PlayerName name={player.name} provisional={player.provisional} link={false} />
+          <span className="inline-flex items-center gap-3">
+            <PlayerName name={player.name} provisional={player.provisional} link={false} />
+            {role?.role && <RoleBadge role={role.role} />}
+          </span>
         </h2>
         {select}
       </div>
@@ -110,41 +175,44 @@ export default function PlayerPage() {
       <PlayerAnalysis player={player.name} season={season} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Spielstil" description="Im Vergleich zum Schnitt aller Spieler im Filter" flush>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-xs uppercase tracking-wide text-muted-foreground">
-                <th className="px-4 py-2 text-left font-medium">Kennzahl</th>
-                <th className="px-4 py-2 text-right font-medium">{player.name}</th>
-                <th className="px-4 py-2 text-right font-medium">Schnitt</th>
-                <th className="px-4 py-2 text-right font-medium">Diff.</th>
-              </tr>
-            </thead>
-            <tbody>
-              {averages.map((a) => {
-                const diff = a.group ? a.mine / a.group - 1 : 0;
-                return (
-                  <tr key={a.label} className="border-t border-border">
-                    <td className="px-4 py-2">{a.label}</td>
-                    <td className="px-4 py-2 text-right tabular-nums">{a.format(a.mine)}</td>
-                    <td className="px-4 py-2 text-right tabular-nums text-muted-foreground">{a.format(a.group)}</td>
-                    <td className="px-4 py-2 text-right"><Delta value={diff}>{fmtSignedPct(diff)}</Delta></td>
-                  </tr>
-                );
-              })}
-              {player.detailed.games > 0 && (
-                <tr className="border-t border-border">
-                  <td className="px-4 py-2">K/D <span className="text-xs text-muted-foreground">(Kills / Deaths)</span></td>
-                  <td className="px-4 py-2 text-right tabular-nums">{fmt2(player.detailed.kd)}</td>
-                  <td className="px-4 py-2 text-right text-muted-foreground">
-                    {fmtInt(player.detailed.kills)} / {fmtInt(player.detailed.deaths)}
-                  </td>
-                  <td />
+        <div className="grid content-start gap-6">
+          <Section title="Spielstil" description="Im Vergleich zum Schnitt aller Spieler im Filter" flush>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-xs uppercase tracking-wide text-muted-foreground">
+                  <th className="px-4 py-2 text-left font-medium">Kennzahl</th>
+                  <th className="px-4 py-2 text-right font-medium">{player.name}</th>
+                  <th className="px-4 py-2 text-right font-medium">Schnitt</th>
+                  <th className="px-4 py-2 text-right font-medium">Diff.</th>
                 </tr>
-              )}
-            </tbody>
-          </table>
-        </Section>
+              </thead>
+              <tbody>
+                {averages.map((a) => {
+                  const diff = a.group ? a.mine / a.group - 1 : 0;
+                  return (
+                    <tr key={a.label} className="border-t border-border">
+                      <td className="px-4 py-2">{a.label}</td>
+                      <td className="px-4 py-2 text-right tabular-nums">{a.format(a.mine)}</td>
+                      <td className="px-4 py-2 text-right tabular-nums text-muted-foreground">{a.format(a.group)}</td>
+                      <td className="px-4 py-2 text-right"><Delta value={diff}>{fmtSignedPct(diff)}</Delta></td>
+                    </tr>
+                  );
+                })}
+                {player.detailed.games > 0 && (
+                  <tr className="border-t border-border">
+                    <td className="px-4 py-2">K/D <span className="text-xs text-muted-foreground">(Kills / Deaths)</span></td>
+                    <td className="px-4 py-2 text-right tabular-nums">{fmt2(player.detailed.kd)}</td>
+                    <td className="px-4 py-2 text-right text-muted-foreground">
+                      {fmtInt(player.detailed.kills)} / {fmtInt(player.detailed.deaths)}
+                    </td>
+                    <td />
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </Section>
+          {role && <RoleSection stats={role} />}
+        </div>
 
         <div className="grid gap-6">
           <div className="grid grid-cols-2 gap-4">

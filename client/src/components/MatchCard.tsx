@@ -1,8 +1,8 @@
 import { Star } from 'lucide-react';
 import { useMemo } from 'react';
 import { Delta, PlayerName } from '@/components/Bits';
-import { fmtDate, fmtDuration, fmtInt, fmtSigned } from '@/lib/format';
-import type { EloEntry } from '@/lib/s4/elo';
+import { fmtDate, fmtDuration, fmtInt, fmtPct, fmtSigned } from '@/lib/format';
+import { UPSET_CHANCE, winnerChance, type EloEntry } from '@/lib/s4/elo';
 import { useScope } from '@/lib/s4/scope';
 import { mvpsOf } from '@/lib/s4/stats';
 import type { Match } from '@/lib/s4/types';
@@ -17,6 +17,8 @@ export function useEloByMatch(): Map<string, EloEntry> {
 export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEntry; highlight?: string }) {
   const mvps = mvpsOf(match);
   const detailed = match.players.some((p) => p.kills !== undefined);
+  const chance = elo && winnerChance(elo);
+  const upset = chance !== null && chance !== undefined && chance < UPSET_CHANCE;
 
   return (
     <article className="rounded-lg border border-border bg-card">
@@ -27,6 +29,14 @@ export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEn
           {match.season}
           {match.map && ` · ${match.map}`} · {fmtDuration(match.durationSec)}
         </span>
+        {upset && (
+          <span
+            className="rounded-full border border-[#c98500]/40 bg-[#c98500]/10 px-2 py-0.5 text-xs font-medium text-[#e0b04a]"
+            title={`Das Siegerteam hatte laut ELO vorher nur ${fmtPct(chance)} Siegchance`}
+          >
+            Überraschung
+          </span>
+        )}
         {match.source === 'sheet' && (
           <span className="text-xs text-muted-foreground" title="Aus der alten Screenshot-Auswertung übernommen">
             Screenshot-Daten
@@ -42,6 +52,11 @@ export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEn
               <div className="mb-2 flex items-baseline justify-between">
                 <span className={cn('text-sm font-semibold', won ? 'text-foreground' : 'text-muted-foreground')}>
                   {won ? 'Sieg' : match.winner === null ? 'Unentschieden' : 'Niederlage'}
+                  {elo && (
+                    <span className="ml-2 text-xs font-normal text-muted-foreground" title="Siegchance laut ELO vor dem Match">
+                      Prognose {fmtPct(elo.chance[team])}
+                    </span>
+                  )}
                 </span>
                 <span className={cn('text-2xl font-bold tabular-nums', !won && 'text-muted-foreground')}>{match.score[team]}</span>
               </div>

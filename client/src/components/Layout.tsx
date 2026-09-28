@@ -11,6 +11,7 @@ const NAV = [
   { href: '/elo', label: 'ELO-Verlauf' },
   { href: '/spieler', label: 'Spieler' },
   { href: '/matches', label: 'Matches' },
+  { href: '/abende', label: 'Spielabende' },
   { href: '/duell', label: 'Head-to-Head' },
   { href: '/duos', label: 'Duos & Teams' },
 ];

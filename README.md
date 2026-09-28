@@ -1,7 +1,7 @@
 # S4 League · Touchdown Stats
 
-Dashboard für unsere S4-League-Runden (nur **Touchdown**): ELO, Rangliste, Spielerprofile,
-Match-Historie, Head-to-Head und Duo-Synergien.
+Dashboard für unsere S4-League-Runden (nur **Touchdown**): ELO mit Siegchance und Überraschungen,
+Rangliste, Rollen, Spielerprofile, Match-Historie, Spielabende, Head-to-Head und Duo-Synergien.
 
 ## So kommen die Daten rein
 
@@ -100,6 +100,6 @@ scripts/
   migrate_history.py   einmalige Migration Sheet → API
 client/src/
   lib/s4/              Regeln, ELO, Statistiken (reine Funktionen + Tests)
-  pages/               Rangliste, ELO, Spieler, Matches, Head-to-Head, Duos
+  pages/               Rangliste, ELO, Spieler, Matches, Spielabende, Head-to-Head, Duos
   components/          Layout, Diagramme, Match-Karte, Tabellen
 ```

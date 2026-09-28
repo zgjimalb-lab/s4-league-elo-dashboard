@@ -3,6 +3,7 @@ import { ScopedLink } from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { playerColor } from '@/lib/s4/colors';
+import { ROLE_INFO, type Role } from '@/lib/s4/roles';
 import type { Result } from '@/lib/s4/stats';
 import { cn } from '@/lib/utils';
 
@@ -121,5 +122,18 @@ export function Delta({ value, children }: { value: number; children: ReactNode 
     <span className={cn('tabular-nums', value > 0 ? 'text-[#5fd35f]' : value < 0 ? 'text-[#f08080]' : 'text-muted-foreground')}>
       {children}
     </span>
+  );
+}
+
+/** Rolle aus den Xero-Details, Erklärung im Tooltip. */
+export function RoleBadge({ role }: { role: Role | null }) {
+  if (!role) return <span className="text-muted-foreground">–</span>;
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-xs font-medium">{role}</span>
+      </TooltipTrigger>
+      <TooltipContent className="max-w-64">{ROLE_INFO[role]}</TooltipContent>
+    </Tooltip>
   );
 }

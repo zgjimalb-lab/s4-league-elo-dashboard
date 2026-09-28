@@ -6,6 +6,7 @@ import { ScopeProvider } from '@/lib/s4/scope';
 import DuelPage from '@/pages/DuelPage';
 import DuosPage from '@/pages/DuosPage';
 import EloPage from '@/pages/EloPage';
+import EveningsPage from '@/pages/EveningsPage';
 import Leaderboard from '@/pages/Leaderboard';
 import MatchesPage from '@/pages/MatchesPage';
 import NotFound from '@/pages/NotFound';
@@ -23,6 +24,7 @@ export default function App() {
               <Route path="/spieler" component={PlayerPage} />
               <Route path="/spieler/:name" component={PlayerPage} />
               <Route path="/matches" component={MatchesPage} />
+              <Route path="/abende" component={EveningsPage} />
               <Route path="/duell" component={DuelPage} />
               <Route path="/duos" component={DuosPage} />
               <Route component={NotFound} />

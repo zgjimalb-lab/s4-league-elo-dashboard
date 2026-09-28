@@ -1,6 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { computeElo, eloSummary } from './elo';
+import { computeElo, eloSummary, winnerChance } from './elo';
+import { eloDeltas, eveningOf, groupEvenings } from './evenings';
+import { roleOf, roleStats } from './roles';
 import { classify, prepareMatches } from './rules';
 import { duoStats, headToHead, lineupStats, playerStats } from './stats';
 import type { PlayerLine, StoredMatch, TeamIndex } from './types';
@@ -103,6 +105,68 @@ describe('computeElo', () => {
     expect(entries.map((e) => e.match.season)).toEqual([1, 2]);
     expect(entries[1].changes.get('a')!.before).toBe(1516);
     expect(eloSummary(entries, 'a')).toMatchObject({ current: 1531, peak: 1531, games: 2 });
+  });
+
+  it('berechnet die Siegchance aus dem Team-Schnitt vor dem Match', () => {
+    const stored = [match([['a', 'b'], ['c', 'd']], 0), match([['a', 'b'], ['c', 'd']], 1)];
+    const { entries } = computeElo(prepared(stored));
+    expect(entries[0].chance).toEqual([0.5, 0.5]);
+    // a+b stehen bei 1516, c+d bei 1484: 32 Punkte Vorsprung
+    expect(entries[1].chance[0]).toBeCloseTo(1 / (1 + 10 ** (-32 / 400)));
+    expect(entries[1].chance[0] + entries[1].chance[1]).toBeCloseTo(1);
+    expect(winnerChance(entries[1])).toBeCloseTo(entries[1].chance[1]);
+  });
+});
+
+describe('Spielabende', () => {
+  const at = (seenAt: string | undefined, date: string) => prepareMatches([match([['a', 'b'], ['c', 'd']], 0, { date, seenAt })]).matches[0];
+
+  it('zählt Matches nach Mitternacht zum Abend davor', () => {
+    expect(eveningOf(at('2026-09-27T23:40:00+02:00', '2026-09-27'))).toBe('2026-09-27');
+    expect(eveningOf(at('2026-09-28T01:20:00+02:00', '2026-09-28'))).toBe('2026-09-27');
+    expect(eveningOf(at('2026-09-28T19:00:00+02:00', '2026-09-28'))).toBe('2026-09-28');
+    expect(eveningOf(at(undefined, '2025-12-18'))).toBe('2025-12-18');
+  });
+
+  it('gruppiert neueste zuerst und summiert die ELO pro Abend', () => {
+    const { matches } = prepareMatches([
+      match([['a', 'b'], ['c', 'd']], 0, { date: '2026-09-26' }),
+      match([['a', 'b'], ['c', 'd']], 0, { date: '2026-09-27' }),
+      match([['a', 'c'], ['b', 'd']], 0, { date: '2026-09-27' }),
+    ]);
+    const evenings = groupEvenings(matches);
+    expect(evenings.map((e) => [e.date, e.matches.length])).toEqual([['2026-09-27', 2], ['2026-09-26', 1]]);
+    const { entries } = computeElo(matches);
+    const deltas = eloDeltas(evenings[0].matches, entries);
+    const a = entries.slice(1).reduce((sum, e) => sum + e.changes.get('a')!.delta, 0);
+    expect(deltas.get('a')).toBe(a);
+  });
+});
+
+describe('Rollen', () => {
+  const index = (overrides: Partial<Record<string, number>>) =>
+    ({ offense: 1, defense: 1, rebounds: 1, goals: 1, kills: 1, deaths: 1, killAssists: 1, damageReceived: 1, ...overrides });
+
+  it('nimmt den stärksten Schwerpunkt, sonst Allrounder', () => {
+    expect(roleOf(index({ rebounds: 1.3, goals: 1.4 }))).toBe('Runner');
+    expect(roleOf(index({ defense: 1.3 }))).toBe('Verteidiger');
+    expect(roleOf(index({ offense: 1.2, defense: 1.15 }))).toBe('Bodyguard');
+    expect(roleOf(index({ kills: 1.3, killAssists: 1.2 }))).toBe('Fragger');
+    expect(roleOf(index({ defense: 1.05 }))).toBe('Allrounder');
+  });
+
+  it('vergleicht mit dem Schnitt des eigenen Teams und ignoriert Matches ohne Details', () => {
+    const detailed = (defense: Record<string, number>) => (n: string) => ({ kills: 1, deaths: 1, defense: defense[n] ?? 0 });
+    const { matches } = prepareMatches([
+      ...Array.from({ length: 5 }, () => match([['a', 'b'], ['c', 'd']], 0, {}, detailed({ a: 6, b: 2, c: 4, d: 4 }))),
+      match([['a', 'b'], ['c', 'd']], 0),
+    ]);
+    const a = roleStats(matches).find((r) => r.name === 'a')!;
+    expect(a.games).toBe(5);
+    expect(a.perGame.defense).toBe(6);
+    expect(a.index.defense).toBeCloseTo(1.5); // 6 gegen Teamschnitt 4
+    expect(a.role).toBe('Verteidiger');
+    expect(roleStats(matches.slice(0, 2)).find((r) => r.name === 'a')!.role).toBeNull();
   });
 });
 

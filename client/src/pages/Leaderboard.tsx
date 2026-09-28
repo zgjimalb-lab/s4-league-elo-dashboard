@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import { Delta, Empty, Form, PlayerName, Section, StatTile } from '@/components/Bits';
+import { useMemo, useState } from 'react';
+import { Delta, Empty, Form, PlayerName, RoleBadge, Section, StatTile } from '@/components/Bits';
 import { PlayerBarChart } from '@/components/charts';
 import { SortableTable, type Column } from '@/components/SortableTable';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { fmt1, fmt2, fmtDate, fmtInt, fmtPct, fmtSigned } from '@/lib/format';
-import { EXCLUDED } from '@/lib/s4/data';
+import { EXCLUDED, isMember } from '@/lib/s4/data';
+import { MIN_ROLE_GAMES, roleStats, type RoleStats } from '@/lib/s4/roles';
 import { EXCLUSION_LABELS, type ExclusionReason } from '@/lib/s4/rules';
 import { seasonLabel, useScope, type PlayerRow } from '@/lib/s4/scope';
 
@@ -50,22 +51,38 @@ const styleColumns: Column<PlayerRow>[] = [
     key: 'kd', header: 'K/D', align: 'right', title: 'Kills pro Death – für die ältesten Matches gibt es keine Kill-Daten',
     cell: (p) => (p.detailed.games ? fmt2(p.detailed.kd) : '–'), sort: (p) => (p.detailed.games ? p.detailed.kd : -1),
   },
+];
+
+const roleColumns: Column<RoleStats>[] = [
+  { key: 'name', header: 'Spieler', cell: (r) => <PlayerName name={r.name} />, sort: (r) => r.name },
+  { key: 'role', header: 'Rolle', cell: (r) => <RoleBadge role={r.role} />, sort: (r) => r.role ?? '' },
+  { key: 'games', header: 'Spiele', align: 'right', title: 'Matches mit Xero-Details', cell: (r) => r.games, sort: (r) => r.games },
   {
-    key: 'defense', header: 'Ø Defense', align: 'right', title: 'Defense pro Spiel, wie Xero es zählt (laut Wiki: Kills am gegnerischen Fumbi-Träger)',
-    cell: (p) => (p.detailed.games ? fmt1(p.detailed.defense / p.detailed.games) : '–'),
-    sort: (p) => (p.detailed.games ? p.detailed.defense / p.detailed.games : -1),
+    key: 'offense', header: 'Ø Offense', align: 'right', title: 'Den eigenen Fumbi-Träger freikämpfen (laut Wiki: Kills, während das eigene Team den Fumbi hat)',
+    cell: (r) => fmt1(r.perGame.offense), sort: (r) => r.perGame.offense,
   },
   {
-    key: 'rebounds', header: 'Ø Rebounds', align: 'right', title: 'Rebounds pro Spiel, wie Xero es zählt (vermutlich: Fumbi aufgenommen)',
-    cell: (p) => (p.detailed.games ? fmt1(p.detailed.rebounds / p.detailed.games) : '–'),
-    sort: (p) => (p.detailed.games ? p.detailed.rebounds / p.detailed.games : -1),
+    key: 'defense', header: 'Ø Defense', align: 'right', title: 'Angriffe stoppen (laut Wiki: Kills am gegnerischen Fumbi-Träger oder seinem Nebenmann)',
+    cell: (r) => fmt1(r.perGame.defense), sort: (r) => r.perGame.defense,
   },
+  {
+    key: 'rebounds', header: 'Ø Rebounds', align: 'right', title: 'Fumbi aufnehmen (wie Xero es zählt)',
+    cell: (r) => fmt1(r.perGame.rebounds), sort: (r) => r.perGame.rebounds,
+  },
+  {
+    key: 'conversion', header: 'Conversion', align: 'right', title: 'Eigene Touchdowns pro Rebound – wie oft aus einer Fumbi-Aufnahme ein Touchdown wird',
+    cell: (r) => fmtPct(r.conversion), sort: (r) => r.conversion,
+  },
+  { key: 'kills', header: 'Ø Kills', align: 'right', cell: (r) => fmt1(r.perGame.kills), sort: (r) => r.perGame.kills },
+  { key: 'killAssists', header: 'Ø Kill-Assists', align: 'right', cell: (r) => fmt1(r.perGame.killAssists), sort: (r) => r.perGame.killAssists },
+  { key: 'deaths', header: 'Ø Tode', align: 'right', cell: (r) => fmt1(r.perGame.deaths), sort: (r) => r.perGame.deaths },
 ];
 
 export default function Leaderboard() {
   const { players, matches, season, eloLabel } = useScope();
   const [metric, setMetric] = useState(METRICS[0].key);
   const active = METRICS.find((m) => m.key === metric)!;
+  const roles = useMemo(() => roleStats(matches).filter((r) => isMember(r.name)), [matches]);
 
   if (!matches.length) return <Empty>Keine Matches für diesen Filter.</Empty>;
 
@@ -116,6 +133,16 @@ export default function Leaderboard() {
       >
         <SortableTable columns={styleColumns} rows={players} rowKey={(p) => p.name} initialSort={{ key: 'goalShare', desc: true }} />
       </Section>
+
+      {roles.length > 0 && (
+        <Section
+          title="Rollen"
+          description={`Wer macht was im Team? Die Rolle ergibt sich aus dem Vergleich mit den eigenen Mitspielern im selben Match – so sind 2v2 und 4v4 vergleichbar. Nur Matches mit Xero-Details, eine Rolle gibt es ab ${MIN_ROLE_GAMES} Matches.`}
+          flush
+        >
+          <SortableTable columns={roleColumns} rows={roles} rowKey={(r) => r.name} initialSort={{ key: 'games', desc: true }} />
+        </Section>
+      )}
 
       {EXCLUDED.length > 0 && (
         <p className="text-xs text-muted-foreground">
