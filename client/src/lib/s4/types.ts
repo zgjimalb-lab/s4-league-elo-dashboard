@@ -43,6 +43,8 @@ export interface StoredMatch {
   score: [number, number];
   winner: TeamIndex | null;
   players: PlayerLine[];
+  /** von Hand nicht gewertete Spieler, z.B. Nachzügler, denen die API zu viel Spielzeit meldet */
+  benchedManually?: string[];
 }
 
 /** Teamgröße, z.B. '2v2', '3v3', '4v4' */
@@ -54,6 +56,6 @@ export interface Match extends StoredMatch {
   number: number;
   mode: Mode;
   season: number;
-  /** nicht gewertete Spieler (unter 50 % Spielzeit) – stehen nicht in `players` */
+  /** nicht gewertete Spieler (unter 50 % Spielzeit oder `benchedManually`) – stehen nicht in `players` */
   benched: string[];
 }

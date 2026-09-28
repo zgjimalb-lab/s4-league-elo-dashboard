@@ -104,7 +104,7 @@ export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEn
       </div>
       {match.benched.length > 0 && (
         <footer className="border-t border-border px-4 py-2 text-xs text-muted-foreground">
-          Nicht gewertet (unter 50 % Spielzeit): {match.benched.join(', ')}
+          Nicht gewertet (Nachzügler/Leaver): {match.benched.join(', ')}
         </footer>
       )}
     </article>

@@ -53,6 +53,10 @@ describe('classify', () => {
     const leaver = match([['a', 'b'], ['c', 'd']], 0, {}, (n) => (n === 'c' ? { playtime: 200 } : {}));
     expect(classify(leaver)).toEqual({ excluded: 'leaver' });
   });
+  it('wertet von Hand markierte Spieler nicht, auch mit voller Spielzeit', () => {
+    const manual = match([['a', 'b', 'x'], ['c', 'd']], 0, { benchedManually: ['x'] });
+    expect(classify(manual)).toMatchObject({ mode: '2v2', benched: ['x'] });
+  });
   it('alte Sheet-Matches ohne Spielzeit zählen', () => {
     expect(classify(match([['a', 'b'], ['c', 'd']], 1, {}, () => ({ playtime: null })))).toMatchObject({ mode: '2v2' });
   });

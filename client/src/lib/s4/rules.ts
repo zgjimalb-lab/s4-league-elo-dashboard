@@ -19,14 +19,16 @@ export const EXCLUSION_LABELS: Record<ExclusionReason, string> = {
 /**
  * Entscheidet, ob ein Match für die Statistik zählt, und mit welchen Spielern:
  * Spieler mit weniger als MIN_PLAYTIME_SHARE der Spielzeit (Nachzügler, Leaver) werden nicht
- * gewertet. Das Match zählt für die übrigen, wenn dann gleich große Teams ab 2v2 übrig bleiben.
+ * gewertet, ebenso Spieler in `benchedManually`. Das Match zählt für die übrigen, wenn dann gleich große Teams ab 2v2 übrig bleiben.
  * Gespeichert werden ohnehin nur Touchdown-Matches der Gruppe.
  */
 export function classify(
   match: StoredMatch,
 ): { mode: Mode; players: PlayerLine[]; benched: string[] } | { excluded: ExclusionReason } {
   const duration = match.durationSec;
-  const isShort = (p: PlayerLine) => Boolean(duration && p.playtime !== null && p.playtime < duration * MIN_PLAYTIME_SHARE);
+  const isShort = (p: PlayerLine) =>
+    Boolean(duration && p.playtime !== null && p.playtime < duration * MIN_PLAYTIME_SHARE) ||
+    Boolean(match.benchedManually?.includes(p.name));
   const players = match.players.filter((p) => !isShort(p));
   const benched = match.players.filter(isShort).map((p) => p.name);
 
