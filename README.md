@@ -6,7 +6,7 @@ Rangliste, Rollen, Spielerprofile, Match-Historie, Spielabende, Head-to-Head und
 ## So kommen die Daten rein
 
 ```
-Xero API ──(stündlich, GitHub Action)──> data/matches.json ──(Commit)──> Vercel baut die Seite neu
+Xero API ──(alle 30 Min., GitHub Action)──> data/matches.json ──(Commit)──> Vercel baut die Seite neu
 ```
 
 - `scripts/sync_xero.py` fragt die [Xero API](https://xero.gg/settings/api/documentation) ab:
@@ -66,11 +66,20 @@ Kausalität) und das Ausgabeformat. Analysiert werden Spieler ab 15 Spielen in d
 - `XERO_SECRET_ACCESS_KEY`
 
 Den Key gibt es unter xero.gg → Settings → API → Access Keys. Der Workflow
-„Sync Xero matches“ läuft stündlich und lässt sich unter *Actions* auch manuell starten.
+„Sync Xero matches“ läuft alle 30 Minuten und lässt sich unter *Actions* auch manuell starten.
+
+**Externer Auslöser:** Auf den GitHub-Zeitplan ist kein Verlass – geplante Läufe kommen oft nur
+alle 3–6 Stunden. Deshalb startet [cron-job.org](https://cron-job.org) den Workflow alle 30 Minuten
+über die API (der GitHub-Zeitplan bleibt als Rückfallebene):
+
+- `POST https://api.github.com/repos/zgjimalb-lab/s4-league-elo-dashboard/actions/workflows/update-data.yml/dispatches`
+- Header `Authorization: Bearer <Token>`, `Accept: application/vnd.github+json`
+- Body `{"ref":"main"}`, Antwort `204`
+- Token: Fine-grained Personal Access Token, nur dieses Repo, Berechtigung *Actions: Read and write*
 
 **Nach langen Spielpausen:** GitHub pausiert geplante Workflows, wenn 60 Tage lang nichts im Repo
 passiert ist. Dann unter *Actions → Sync Xero matches* auf „Enable workflow“ und einmal
-„Run workflow“ klicken – danach läuft der Sync wieder stündlich.
+„Run workflow“ klicken – danach läuft der Sync wieder.
 
 **Vercel** baut automatisch bei jedem Push (Konfiguration in `vercel.json`).
 
@@ -94,7 +103,7 @@ data/
   players.json         Gruppe + Aliase
   legacy/              alte Screenshot-Daten (Nov./Dez. 2025)
 scripts/
-  sync_xero.py         stündlicher Sync
+  sync_xero.py         Sync (alle 30 Min.)
   xero.py              API-Client (mit Rate-Limit-Handling)
   matchstore.py        Umwandlung, Reihenfolge, Speichern
   migrate_history.py   einmalige Migration Sheet → API
