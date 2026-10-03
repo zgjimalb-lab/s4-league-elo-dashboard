@@ -68,18 +68,18 @@ Kausalität) und das Ausgabeformat. Analysiert werden Spieler ab 15 Spielen in d
 Den Key gibt es unter xero.gg → Settings → API → Access Keys. Der Workflow
 „Sync Xero matches“ läuft alle 30 Minuten und lässt sich unter *Actions* auch manuell starten.
 
-**Externer Auslöser:** Auf den GitHub-Zeitplan ist kein Verlass – geplante Läufe kommen oft nur
-alle 3–6 Stunden. Deshalb startet [cron-job.org](https://cron-job.org) den Workflow alle 30 Minuten
-über die API (der GitHub-Zeitplan bleibt als Rückfallebene):
+**Externer Auslöser:** Auf den GitHub-Zeitplan ist kein Verlass – geplante Läufe kamen oft nur
+alle 3–6 Stunden, und nach 60 Tagen ohne Commits schaltet GitHub ihn ab. Deshalb hat der Workflow
+keinen eigenen Zeitplan, sondern [cron-job.org](https://cron-job.org) startet ihn alle 30 Minuten
+über die API:
 
 - `POST https://api.github.com/repos/zgjimalb-lab/s4-league-elo-dashboard/actions/workflows/update-data.yml/dispatches`
 - Header `Authorization: Bearer <Token>`, `Accept: application/vnd.github+json`
 - Body `{"ref":"main"}`, Antwort `204`
 - Token: Fine-grained Personal Access Token, nur dieses Repo, Berechtigung *Actions: Read and write*
 
-**Nach langen Spielpausen:** GitHub pausiert geplante Workflows, wenn 60 Tage lang nichts im Repo
-passiert ist. Dann unter *Actions → Sync Xero matches* auf „Enable workflow“ und einmal
-„Run workflow“ klicken – danach läuft der Sync wieder.
+Schlägt der Aufruf fehl (z.B. Token abgelaufen), meldet sich cron-job.org per Mail – dann einen
+neuen Token anlegen und im Cron-Job beim Header `Authorization` eintragen.
 
 **Vercel** baut automatisch bei jedem Push (Konfiguration in `vercel.json`).
 

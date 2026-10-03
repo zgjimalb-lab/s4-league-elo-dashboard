@@ -1,9 +1,9 @@
 name: Sync Xero matches
 
 on:
-  workflow_dispatch: # wird alle 30 Minuten von cron-job.org ausgelöst (siehe README)
-  schedule:
-    - cron: '23,53 * * * *' # Rückfallebene – GitHub startet geplante Läufe oft nur alle paar Stunden
+  # wird alle 30 Minuten von cron-job.org ausgelöst (siehe README) – der GitHub-Zeitplan
+  # kam oft nur alle paar Stunden und wird nach 60 Tagen ohne Commits abgeschaltet
+  workflow_dispatch:
 
 concurrency:
   group: sync-xero
