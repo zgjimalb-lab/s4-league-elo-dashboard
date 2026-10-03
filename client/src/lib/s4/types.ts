@@ -26,6 +26,8 @@ export interface PlayerLine {
   defense?: number;
   defenseAssists?: number;
   tags?: string[];
+  /** von Hand ergänzt, weil die API den Spieler nicht führt – zählt für Ergebnis und ELO, die Werte sind Platzhalter */
+  addedManually?: boolean;
 }
 
 export interface StoredMatch {

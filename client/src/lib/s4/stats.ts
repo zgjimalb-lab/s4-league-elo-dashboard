@@ -65,19 +65,21 @@ export function playerStats(matches: Match[]): PlayerStats[] {
 
   return Array.from(byPlayer, ([name, games]) => {
     const results = games.map(({ match, line }) => resultOf(match, line));
+    // von Hand ergänzte Zeilen haben keine echten Werte – sie zählen nur für Siege, Niederlagen und Serien
+    const statGames = games.filter(({ line }) => !line.addedManually);
     const sum = (pick: (l: PlayerLine) => number | undefined) =>
-      games.reduce((total, { line }) => total + (pick(line) ?? 0), 0);
+      statGames.reduce((total, { line }) => total + (pick(line) ?? 0), 0);
     const teamSum = (pick: (l: PlayerLine) => number) =>
-      games.reduce(
+      statGames.reduce(
         (total, { match, line }) =>
           total + match.players.filter((p) => p.team === line.team).reduce((s, p) => s + pick(p), 0),
         0,
       );
-    const minutes = games.reduce(
+    const minutes = statGames.reduce(
       (total, { match, line }) => total + (line.playtime ?? match.durationSec ?? 0) / 60,
       0,
     );
-    const detailedGames = games.filter(({ line }) => line.kills !== undefined);
+    const detailedGames = statGames.filter(({ line }) => line.kills !== undefined);
     const detailedSum = (pick: (l: PlayerLine) => number | undefined) =>
       detailedGames.reduce((total, { line }) => total + (pick(line) ?? 0), 0);
 
@@ -92,6 +94,7 @@ export function playerStats(matches: Match[]): PlayerStats[] {
     for (let i = results.length - 1; i >= 0 && results[i] === last; i--) streakLength++;
 
     const n = games.length;
+    const statN = statGames.length;
     const goals = sum((l) => l.goals);
     const damage = sum((l) => l.damage);
     const score = sum((l) => l.score);
@@ -112,7 +115,7 @@ export function playerStats(matches: Match[]): PlayerStats[] {
       damage,
       score,
       mvps: games.filter(({ match }) => mvpsOf(match).includes(name)).length,
-      perGame: { goals: ratio(goals, n), assists: ratio(assists, n), damage: ratio(damage, n), score: ratio(score, n) },
+      perGame: { goals: ratio(goals, statN), assists: ratio(assists, statN), damage: ratio(damage, statN), score: ratio(score, statN) },
       perMinute: { goals: ratio(goals, minutes), damage: ratio(damage, minutes), score: ratio(score, minutes) },
       goalShare: ratio(goals, teamSum((p) => p.goals)),
       damageShare: ratio(damage, teamSum((p) => p.damage)),

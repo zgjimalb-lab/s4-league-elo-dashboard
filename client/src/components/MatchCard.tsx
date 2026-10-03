@@ -84,11 +84,19 @@ export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEn
                               {mvps.includes(p.name) && <Star className="size-3.5 fill-current text-[#c98500]" aria-label="MVP (höchster Score)" />}
                             </span>
                           </td>
-                          <td className="py-1 text-right tabular-nums">{p.goals}</td>
-                          <td className="py-1 text-right tabular-nums">{p.assists}</td>
-                          {detailed && <td className="py-1 text-right tabular-nums">{p.kills ?? '–'}/{p.deaths ?? '–'}</td>}
-                          <td className="py-1 text-right tabular-nums">{fmtInt(p.damage)}</td>
-                          <td className="py-1 text-right tabular-nums">{p.score}</td>
+                          {p.addedManually ? (
+                            <td colSpan={detailed ? 5 : 4} className="py-1 text-right text-xs text-muted-foreground" title="Fehlt in der Xero API, von Hand ergänzt">
+                              keine Werte
+                            </td>
+                          ) : (
+                            <>
+                              <td className="py-1 text-right tabular-nums">{p.goals}</td>
+                              <td className="py-1 text-right tabular-nums">{p.assists}</td>
+                              {detailed && <td className="py-1 text-right tabular-nums">{p.kills ?? '–'}/{p.deaths ?? '–'}</td>}
+                              <td className="py-1 text-right tabular-nums">{fmtInt(p.damage)}</td>
+                              <td className="py-1 text-right tabular-nums">{p.score}</td>
+                            </>
+                          )}
                           <td className="py-1 text-right">
                             {change ? <Delta value={change.delta}>{fmtSigned(change.delta)}</Delta> : '–'}
                           </td>

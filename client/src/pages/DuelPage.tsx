@@ -14,8 +14,10 @@ const COMPARE: { label: string; value: (l: PlayerLine) => number; format: (v: nu
   { label: 'Ø Punkte', value: (l) => l.score, format: fmt1 },
 ];
 
-const average = (matches: Match[], name: string, pick: (l: PlayerLine) => number) =>
-  matches.reduce((sum, m) => sum + pick(lineOf(m, name)!), 0) / (matches.length || 1);
+const average = (matches: Match[], name: string, pick: (l: PlayerLine) => number) => {
+  const lines = matches.map((m) => lineOf(m, name)!).filter((l) => !l.addedManually);
+  return lines.reduce((sum, l) => sum + pick(l), 0) / (lines.length || 1);
+};
 
 export default function DuelPage() {
   const { matches, players } = useScope();

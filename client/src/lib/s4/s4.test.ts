@@ -206,6 +206,16 @@ describe('Statistiken', () => {
     expect(h2h.against).toMatchObject({ games: 1, wins: 0, losses: 1 });
     expect(h2h.together).toMatchObject({ games: 2, wins: 2 });
   });
+
+  it('zählt von Hand ergänzte Spieler nur fürs Ergebnis', () => {
+    const extra = match([['a', 'b'], ['c', 'd']], 0, {}, (n) =>
+      n === 'a' ? { playtime: null, goals: 0, damage: 0, score: 0, addedManually: true } : {},
+    );
+    const withExtra = playerStats(prepareMatches([...stored, extra]).matches).find((s) => s.name === 'a')!;
+    expect(withExtra).toMatchObject({ games: 4, wins: 3 });
+    expect(withExtra.perGame).toEqual(a.perGame);
+    expect(withExtra.goalShare).toBeCloseTo(a.goalShare);
+  });
 });
 
 describe('data/matches.json', () => {
