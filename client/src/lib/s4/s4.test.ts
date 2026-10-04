@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { computeElo, eloSummary, winnerChance } from './elo';
-import { eloDeltas, eveningOf, groupEvenings } from './evenings';
+import { eloDeltas, eveningOf, groupEvenings, syncTimeOf } from './evenings';
 import { roleOf, roleStats } from './roles';
 import { classify, prepareMatches } from './rules';
 import { duoStats, headToHead, lineupStats, playerStats } from './stats';
@@ -130,6 +130,12 @@ describe('Spielabende', () => {
     expect(eveningOf(at('2026-09-28T01:20:00+02:00', '2026-09-28'))).toBe('2026-09-27');
     expect(eveningOf(at('2026-09-28T19:00:00+02:00', '2026-09-28'))).toBe('2026-09-28');
     expect(eveningOf(at(undefined, '2025-12-18'))).toBe('2025-12-18');
+  });
+
+  it('zeigt die Sync-Uhrzeit erst, seit der Sync alle 30 Minuten läuft', () => {
+    expect(syncTimeOf(at('2026-10-04T21:31:07+02:00', '2026-10-04'))).toBe('21:31');
+    expect(syncTimeOf(at('2026-10-03T01:46:13+02:00', '2026-10-03'))).toBeNull();
+    expect(syncTimeOf(at(undefined, '2025-12-18'))).toBeNull();
   });
 
   it('gruppiert neueste zuerst und summiert die ELO pro Abend', () => {

@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { Delta, PlayerName } from '@/components/Bits';
 import { fmtDate, fmtDuration, fmtInt, fmtPct, fmtSigned } from '@/lib/format';
 import { UPSET_CHANCE, winnerChance, type EloEntry } from '@/lib/s4/elo';
+import { syncTimeOf } from '@/lib/s4/evenings';
 import { useScope } from '@/lib/s4/scope';
 import { mvpsOf } from '@/lib/s4/stats';
 import type { Match } from '@/lib/s4/types';
@@ -16,6 +17,7 @@ export function useEloByMatch(): Map<string, EloEntry> {
 
 export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEntry; highlight?: string }) {
   const mvps = mvpsOf(match);
+  const syncTime = syncTimeOf(match);
   const detailed = match.players.some((p) => p.kills !== undefined);
   const chance = elo && winnerChance(elo);
   const upset = chance !== null && chance !== undefined && chance < UPSET_CHANCE;
@@ -25,7 +27,11 @@ export function MatchCard({ match, elo, highlight }: { match: Match; elo?: EloEn
       <header className="flex flex-wrap items-center justify-between gap-2 border-b border-border px-4 py-2.5 text-sm">
         <span className="text-muted-foreground">
           <span className="font-medium text-foreground">#{match.number}</span> ·{' '}
-          {match.dateEstimated ? <span title="Datum geschätzt – das genaue Spieldatum ist nicht bekannt">ca. {fmtDate(match.date)}</span> : fmtDate(match.date)} · {match.mode} · Season{' '}
+          {match.dateEstimated ? <span title="Datum geschätzt – das genaue Spieldatum ist nicht bekannt">ca. {fmtDate(match.date)}</span> : fmtDate(match.date)}
+          {syncTime && (
+            <span title={`Vom Sync um ${syncTime} Uhr erfasst – das Match endete in der halben Stunde davor`}>, bis {syncTime} Uhr</span>
+          )}{' '}
+          · {match.mode} · Season{' '}
           {match.season}
           {match.map && ` · ${match.map}`} · {fmtDuration(match.durationSec)}
         </span>

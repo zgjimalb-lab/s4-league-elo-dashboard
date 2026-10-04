@@ -16,7 +16,8 @@ Xero API ──(alle 30 Min., GitHub Action)──> data/matches.json ──(Com
 - Gespeichert werden alle **Touchdown-Matches, in denen nur Gruppenmitglieder spielen**.
   Die API hält nur die letzten ~200 Matches vor und liefert kein Datum – deshalb ist
   `data/matches.json` das dauerhafte Archiv (chronologisch, als Datum gilt der Tag, an dem
-  der Sync das Match zuerst gesehen hat). Bei Altdaten aus der API ohne passenden Screenshot
+  der Sync das Match zuerst gesehen hat). Seit dem 03.10.2026 läuft der Sync verlässlich alle
+  30 Minuten – ab dann zeigt die Match-Karte auch die Uhrzeit des Syncs („bis 21:30 Uhr“). Bei Altdaten aus der API ohne passenden Screenshot
   ist das Datum geschätzt (Datum des vorherigen Matches, auf der Seite als „ca.“ markiert).
 - Die Historie von Nov./Dez. 2025 stammt aus der alten Screenshot-Auswertung
   (`data/legacy/`). Wo möglich wurde sie durch exakte API-Daten ersetzt
