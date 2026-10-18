@@ -15,12 +15,5 @@
     "Nebus": "Nebus.",
     "Darkstar": "-Darkstar",
     "BicKD4ckEnergy": "BickD4ckEnergy"
-  },
-  "accountSwaps": [
-    {
-      "reason": "Mit getauschten Accounts gespielt: BickD4ckEnergy auf -Darkstar, ZeroO auf Aferdita",
-      "dates": ["2026-10-17", "2026-10-18"],
-      "names": {"-Darkstar": "BickD4ckEnergy", "Aferdita": "ZeroO"}
-    }
-  ]
+  }
 }

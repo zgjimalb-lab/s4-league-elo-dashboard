@@ -16,7 +16,7 @@ import sys
 from datetime import timedelta
 
 from matchstore import (
-    ROOT, apply_account_swaps, assign_dates, from_xero, is_group_match, load_matches, load_players,
+    ROOT, assign_dates, from_xero, is_group_match, load_matches, load_players,
     merge_orders, now_local, save_matches,
 )
 from xero import XeroClient, load_env_file
@@ -65,7 +65,6 @@ def main() -> int:
     merged = [by_id[uid] for uid in order]
     # Ein Match ist beim Sync bis zu einer Stunde alt – kurz nach Mitternacht gehört es noch zum Vortag
     assign_dates(merged, (now - timedelta(hours=1)).date().isoformat())
-    apply_account_swaps([by_id[uid] for uid in new_ids], load_players().get("accountSwaps", []))
     save_matches(merged)
 
     print(f"✓ {len(new_ids)} neue Matches ({len(merged)} gespeichert):")

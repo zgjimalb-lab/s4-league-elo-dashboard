@@ -156,23 +156,6 @@ def merge_orders(chains: list[list[str]], priority: dict[str, float] | None = No
     return order
 
 
-def apply_account_swaps(matches: list[dict], swaps: list[dict]) -> None:
-    """
-    Benennt Spieler um, die an bestimmten Tagen auf fremden Accounts gespielt haben
-    (`accountSwaps` in data/players.json). Braucht gesetzte Daten; mehrfach anwendbar.
-    """
-    for swap in swaps:
-        for match in matches:
-            if match["date"] not in swap["dates"]:
-                continue
-            renamed = [swap["names"].get(p["name"], p["name"]) for p in match["players"]]
-            if len(set(renamed)) < len(renamed):
-                print(f"  ⚠ {match['id']}: Account-Tausch ergäbe doppelte Namen – nicht umbenannt")
-                continue
-            for player, name in zip(match["players"], renamed):
-                player["name"] = name
-
-
 def assign_dates(ordered: list[dict], today: str | None) -> None:
     """
     Setzt das Datum für Matches ohne Datum (die API liefert keins):
