@@ -1,0 +1,5299 @@
+{
+  "generatedAt": "2026-10-18",
+  "season": 2,
+  "seasonRange": {
+    "from": "2026-09-25",
+    "to": "2026-10-18",
+    "matches": 90
+  },
+  "rules": {
+    "minGamesForAnalysis": 10,
+    "minGamesForTeammateOrOpponent": 5,
+    "ranksAmong": [
+      "ZeroO",
+      "BickD4ckEnergy",
+      "Malena",
+      "Nebus.",
+      "Kesny",
+      "-Darkstar",
+      "Aferdita",
+      "Troniix"
+    ],
+    "dataNotes": [
+      "Nur Touchdown, gleich große Teams ab 2v2, nur Gruppenmitglieder, Spieler unter 50 % Spielzeit (Nachzügler/Leaver) werden nicht gewertet; das Match zählt für die übrigen, wenn gleich große Teams bleiben.",
+      "apiDetails (Kills, Deaths, K/D, Defense, Offense, Rebounds) fehlen bei den alten Screenshot-Matches – games-Feld beachten, aber in den Texten nicht erwähnen.",
+      "Defense, Offense und Rebounds zählt Xero ohne Dokumentation (Punkte oder Anzahl unklar) – nur relativ zur Liga deuten, siehe PROMPT.md.",
+      "MVP (mvpRatePct, matchMvpHighestScore) = höchster Score im Match.",
+      "Die Teams werden zufällig gebildet; Synergie = Winrate zusammen minus Durchschnitt der beiden Einzel-Winrates.",
+      "ELO: Start 1500, K = 32, individuell gegen den ELO-Schnitt des Gegnerteams, kein Reset zwischen Seasons.",
+      "Daten einiger Matches sind geschätzt (API liefert kein Datum); die Reihenfolge stimmt aber."
+    ]
+  },
+  "groupAverageSeason": {
+    "winrate": 47.9,
+    "touchdownsPerGame": 2.76,
+    "tdAssistsPerGame": 0.56,
+    "damagePerGame": 2505.85,
+    "pointsPerGame": 138.27,
+    "pointsPerMinute": 8.78,
+    "touchdownShare": 33.5,
+    "damageShare": 33.6,
+    "mvpRate": 16.3,
+    "kd": 0.34,
+    "killsPerGame": 6.91,
+    "deathsPerGame": 21.08,
+    "defensePerGame": 8.65,
+    "offensePerGame": 1.57,
+    "reboundsPerGame": 13.52
+  },
+  "players": [
+    {
+      "name": "ZeroO",
+      "season": {
+        "games": 90,
+        "wins": 38,
+        "losses": 52,
+        "winratePct": 42.2,
+        "perGame": {
+          "touchdowns": 4.62,
+          "tdAssists": 0.42,
+          "damage": 2197,
+          "points": 154.5
+        },
+        "perMinute": {
+          "touchdowns": 0.31,
+          "damage": 147,
+          "points": 10.33
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 58.1,
+          "damage": 33.8
+        },
+        "mvpRatePct": 23.3,
+        "bestWinStreak": 4,
+        "apiDetails": {
+          "games": 90,
+          "killsPerGame": 4.72,
+          "deathsPerGame": 21.74,
+          "kd": 0.22,
+          "defensePerGame": 8.77,
+          "offensePerGame": 1.27,
+          "reboundsPerGame": 17.83
+        },
+        "elo": {
+          "start": 1561,
+          "end": 1424,
+          "peak": 1585,
+          "low": 1424,
+          "change": -137,
+          "lastTen": -108
+        }
+      },
+      "career": {
+        "games": 285,
+        "wins": 146,
+        "losses": 139,
+        "winratePct": 51.2,
+        "perGame": {
+          "touchdowns": 4.55,
+          "tdAssists": 0.56,
+          "damage": 2154,
+          "points": 149.7
+        },
+        "perMinute": {
+          "touchdowns": 0.32,
+          "damage": 150,
+          "points": 10.43
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 54.7,
+          "damage": 38.2
+        },
+        "mvpRatePct": 24.9,
+        "bestWinStreak": 9,
+        "apiDetails": {
+          "games": 247,
+          "killsPerGame": 4.43,
+          "deathsPerGame": 19.81,
+          "kd": 0.22,
+          "defensePerGame": 8.14,
+          "offensePerGame": 1.38,
+          "reboundsPerGame": 16.94
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1424,
+          "peak": 1622,
+          "low": 1424,
+          "change": -76,
+          "lastTen": -108
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 42.2,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 4.62,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.42,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 2197.46,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 154.49,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 10.33,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 58.1,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 33.8,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 23.3,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.22,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 4.72,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 21.74,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 8.77,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 1.27,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 17.83,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 30,
+          "wins": 15,
+          "winratePct": 50,
+          "modeMixPct": {
+            "2v2": 33.3,
+            "3v3": 56.7,
+            "4v4": 10
+          },
+          "touchdownsPerGame": 4.07,
+          "pointsPerGame": 165.3,
+          "damagePerGame": 2590
+        },
+        "middle": {
+          "games": 30,
+          "wins": 14,
+          "winratePct": 46.7,
+          "modeMixPct": {
+            "2v2": 40,
+            "3v3": 60
+          },
+          "touchdownsPerGame": 4.73,
+          "pointsPerGame": 152.5,
+          "damagePerGame": 1998
+        },
+        "late": {
+          "games": 30,
+          "wins": 9,
+          "winratePct": 30,
+          "modeMixPct": {
+            "2v2": 86.7,
+            "3v3": 13.3
+          },
+          "touchdownsPerGame": 5.07,
+          "pointsPerGame": 145.7,
+          "damagePerGame": 2004
+        },
+        "last20": {
+          "games": 20,
+          "wins": 5,
+          "winratePct": 25,
+          "modeMixPct": {
+            "2v2": 95,
+            "3v3": 5
+          },
+          "touchdownsPerGame": 5.15,
+          "pointsPerGame": 138.3,
+          "damagePerGame": 1899
+        }
+      },
+      "byMode": {
+        "3v3": {
+          "games": 39,
+          "wins": 17,
+          "losses": 22,
+          "winratePct": 43.6,
+          "perGame": {
+            "touchdowns": 4.15,
+            "tdAssists": 0.54,
+            "damage": 2504,
+            "points": 164
+          },
+          "perMinute": {
+            "touchdowns": 0.24,
+            "damage": 147,
+            "points": 9.62
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 52.3,
+            "damage": 28.6
+          },
+          "mvpRatePct": 23.1,
+          "bestWinStreak": 3,
+          "apiDetails": {
+            "games": 39,
+            "killsPerGame": 5.59,
+            "deathsPerGame": 27.69,
+            "kd": 0.2,
+            "defensePerGame": 9.56,
+            "offensePerGame": 1.28,
+            "reboundsPerGame": 19.97
+          },
+          "elo": {
+            "start": 1607,
+            "end": 1491,
+            "peak": 1622,
+            "low": 1479,
+            "change": -116,
+            "lastTen": -28
+          }
+        },
+        "4v4": {
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winratePct": 33.3,
+          "perGame": {
+            "touchdowns": 1.67,
+            "tdAssists": 1.33,
+            "damage": 4226,
+            "points": 215.7
+          },
+          "perMinute": {
+            "touchdowns": 0.07,
+            "damage": 174,
+            "points": 8.87
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 22.7,
+            "damage": 25.5
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 1,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 19,
+            "deathsPerGame": 40,
+            "kd": 0.48,
+            "defensePerGame": 14.67,
+            "offensePerGame": 2,
+            "reboundsPerGame": 24.67
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1483,
+            "peak": 1516,
+            "low": 1483,
+            "change": -17,
+            "lastTen": -17
+          }
+        },
+        "2v2": {
+          "games": 48,
+          "wins": 20,
+          "losses": 28,
+          "winratePct": 41.7,
+          "perGame": {
+            "touchdowns": 5.19,
+            "tdAssists": 0.27,
+            "damage": 1822,
+            "points": 142.9
+          },
+          "perMinute": {
+            "touchdowns": 0.41,
+            "damage": 144,
+            "points": 11.29
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 64.8,
+            "damage": 45.1
+          },
+          "mvpRatePct": 25,
+          "bestWinStreak": 4,
+          "apiDetails": {
+            "games": 48,
+            "killsPerGame": 3.13,
+            "deathsPerGame": 15.77,
+            "kd": 0.2,
+            "defensePerGame": 7.75,
+            "offensePerGame": 1.21,
+            "reboundsPerGame": 15.67
+          },
+          "elo": {
+            "start": 1548,
+            "end": 1437,
+            "peak": 1583,
+            "low": 1437,
+            "change": -111,
+            "lastTen": -118
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 48.4,
+        "pointsCoefficientOfVariationPct": 31.3,
+        "touchdownsStdDev": 2.38,
+        "gamesWithZeroTouchdownsPct": 3.3,
+        "gamesWith6PlusTouchdownsPct": 37.8
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 33,
+          "wins": 12,
+          "winratePct": 36.4
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 28,
+          "wins": 12,
+          "winratePct": 42.9
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 43.3,
+        "gamesAsTeamTopTouchdownScorer": 67,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 43.6,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 55,
+        "matchMvpHighestScore": 21
+      },
+      "streaks": {
+        "bestWinStreak": 4,
+        "worstLossStreak": 10,
+        "current": {
+          "result": "L",
+          "length": 10
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 36,
+          "wins": 10,
+          "winratePct": 27.8
+        },
+        "asFavorite": {
+          "games": 20,
+          "wins": 12,
+          "winratePct": 60
+        },
+        "winsAboveExpected": -4.4
+      },
+      "fumbiConversion": {
+        "games": 90,
+        "rebounds": 1605,
+        "touchdowns": 416,
+        "touchdownsPerReboundPct": 25.9
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 4,
+          "goodSide": "über Median",
+          "gamesGood": 44,
+          "winrateGood": 61.4,
+          "gamesBad": 46,
+          "winrateBad": 23.9,
+          "deltaPts": 37.5
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 29,
+          "winrateGood": 55.2,
+          "gamesBad": 61,
+          "winrateBad": 36.1,
+          "deltaPts": 19.1
+        },
+        "damage": {
+          "ownMedian": 2086,
+          "goodSide": "über Median",
+          "gamesGood": 45,
+          "winrateGood": 46.7,
+          "gamesBad": 45,
+          "winrateBad": 37.8,
+          "deltaPts": 8.9
+        },
+        "kills": {
+          "ownMedian": 4,
+          "goodSide": "über Median",
+          "gamesGood": 42,
+          "winrateGood": 47.6,
+          "gamesBad": 48,
+          "winrateBad": 37.5,
+          "deltaPts": 10.1
+        },
+        "deaths": {
+          "ownMedian": 19.5,
+          "goodSide": "unter Median",
+          "gamesGood": 45,
+          "winrateGood": 44.4,
+          "gamesBad": 45,
+          "winrateBad": 40,
+          "deltaPts": 4.4
+        },
+        "rebounds": {
+          "ownMedian": 17,
+          "goodSide": "über Median",
+          "gamesGood": 43,
+          "winrateGood": 58.1,
+          "gamesBad": 47,
+          "winrateBad": 27.7,
+          "deltaPts": 30.4
+        },
+        "defense": {
+          "ownMedian": 8,
+          "goodSide": "über Median",
+          "gamesGood": 37,
+          "winrateGood": 37.8,
+          "gamesBad": 53,
+          "winrateBad": 45.3,
+          "deltaPts": -7.5
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 38,
+          "touchdownsPerGame": 5.79,
+          "damagePerGame": 2165,
+          "touchdownSharePct": 57.9,
+          "deathsPerGame": 20.42
+        },
+        "losses": {
+          "games": 52,
+          "touchdownsPerGame": 3.77,
+          "damagePerGame": 2221,
+          "touchdownSharePct": 60.2,
+          "deathsPerGame": 22.71
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 36,
+          "touchdownsPerGame": 4.42,
+          "pointsPerGame": 145.3,
+          "damagePerGame": 2071
+        },
+        "even": {
+          "games": 34,
+          "touchdownsPerGame": 5.21,
+          "pointsPerGame": 160.7,
+          "damagePerGame": 2110
+        },
+        "asFavorite": {
+          "games": 20,
+          "touchdownsPerGame": 4,
+          "pointsPerGame": 160.6,
+          "damagePerGame": 2573
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": null,
+        "perMate": []
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -0.42
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 36,
+          "wins": 15,
+          "winratePct": 41.7,
+          "touchdownsPerGame": 4.86,
+          "pointsPerMinute": 9.8
+        },
+        "speedrun": {
+          "games": 54,
+          "wins": 23,
+          "winratePct": 42.6,
+          "touchdownsPerGame": 4.46,
+          "pointsPerMinute": 10.94
+        }
+      },
+      "teammates": [
+        {
+          "with": "Aferdita",
+          "games": 7,
+          "wins": 5,
+          "winratePct": 71.4,
+          "synergyPct": 19.1
+        },
+        {
+          "with": "Malena",
+          "games": 18,
+          "wins": 11,
+          "winratePct": 61.1,
+          "synergyPct": 8.2
+        },
+        {
+          "with": "Nebus.",
+          "games": 26,
+          "wins": 16,
+          "winratePct": 61.5,
+          "synergyPct": 7.1
+        },
+        {
+          "with": "-Darkstar",
+          "games": 24,
+          "wins": 9,
+          "winratePct": 37.5,
+          "synergyPct": -7.6
+        },
+        {
+          "with": "Troniix",
+          "games": 6,
+          "wins": 1,
+          "winratePct": 16.7,
+          "synergyPct": -12.8
+        },
+        {
+          "with": "BickD4ckEnergy",
+          "games": 35,
+          "wins": 10,
+          "winratePct": 28.6,
+          "synergyPct": -13.5
+        },
+        {
+          "with": "Kesny",
+          "games": 19,
+          "wins": 5,
+          "winratePct": 26.3,
+          "synergyPct": -15.6
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Nebus.",
+          "games": 40,
+          "wins": 12,
+          "winratePct": 30
+        },
+        {
+          "against": "Malena",
+          "games": 59,
+          "wins": 21,
+          "winratePct": 35.6
+        },
+        {
+          "against": "-Darkstar",
+          "games": 24,
+          "wins": 10,
+          "winratePct": 41.7
+        },
+        {
+          "against": "Aferdita",
+          "games": 9,
+          "wins": 4,
+          "winratePct": 44.4
+        },
+        {
+          "against": "BickD4ckEnergy",
+          "games": 46,
+          "wins": 22,
+          "winratePct": 47.8
+        },
+        {
+          "against": "Kesny",
+          "games": 41,
+          "wins": 21,
+          "winratePct": 51.2
+        },
+        {
+          "against": "Troniix",
+          "games": 6,
+          "wins": 5,
+          "winratePct": 83.3
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 203,
+          "date": "2026-09-26",
+          "mode": "4v4",
+          "touchdowns": 3,
+          "points": 253,
+          "damage": 4885,
+          "result": "L"
+        },
+        "mostTouchdowns": {
+          "match": 219,
+          "date": "2026-09-29",
+          "mode": "2v2",
+          "touchdowns": 9,
+          "points": 214,
+          "damage": 2603,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "BickD4ckEnergy",
+      "season": {
+        "games": 81,
+        "wins": 34,
+        "losses": 47,
+        "winratePct": 42,
+        "perGame": {
+          "touchdowns": 1.89,
+          "tdAssists": 0.86,
+          "damage": 2078,
+          "points": 116.4
+        },
+        "perMinute": {
+          "touchdowns": 0.13,
+          "damage": 138,
+          "points": 7.75
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 24.7,
+          "damage": 33.6
+        },
+        "mvpRatePct": 2.5,
+        "bestWinStreak": 4,
+        "apiDetails": {
+          "games": 81,
+          "killsPerGame": 5.22,
+          "deathsPerGame": 23.73,
+          "kd": 0.22,
+          "defensePerGame": 6.85,
+          "offensePerGame": 1.27,
+          "reboundsPerGame": 13.42
+        },
+        "elo": {
+          "start": 1440,
+          "end": 1447,
+          "peak": 1548,
+          "low": 1408,
+          "change": 7,
+          "lastTen": -36
+        }
+      },
+      "career": {
+        "games": 102,
+        "wins": 39,
+        "losses": 63,
+        "winratePct": 38.2,
+        "perGame": {
+          "touchdowns": 2.05,
+          "tdAssists": 0.74,
+          "damage": 1920,
+          "points": 110.5
+        },
+        "perMinute": {
+          "touchdowns": 0.15,
+          "damage": 136,
+          "points": 7.83
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 28.2,
+          "damage": 34.1
+        },
+        "mvpRatePct": 3.9,
+        "bestWinStreak": 4,
+        "apiDetails": {
+          "games": 102,
+          "killsPerGame": 4.61,
+          "deathsPerGame": 21.93,
+          "kd": 0.21,
+          "defensePerGame": 6.34,
+          "offensePerGame": 1.22,
+          "reboundsPerGame": 12.63
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1447,
+          "peak": 1548,
+          "low": 1408,
+          "change": -53,
+          "lastTen": -36
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 42,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 1.89,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.86,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 2078.49,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 116.38,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 7.75,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 24.7,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 33.6,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 2.5,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.22,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 5.22,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 23.73,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 6.85,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 1.27,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 13.42,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 27,
+          "wins": 14,
+          "winratePct": 51.9,
+          "modeMixPct": {
+            "2v2": 25.9,
+            "3v3": 63,
+            "4v4": 11.1
+          },
+          "touchdownsPerGame": 1.22,
+          "pointsPerGame": 115.2,
+          "damagePerGame": 2396
+        },
+        "middle": {
+          "games": 27,
+          "wins": 11,
+          "winratePct": 40.7,
+          "modeMixPct": {
+            "2v2": 48.1,
+            "3v3": 51.9
+          },
+          "touchdownsPerGame": 1.96,
+          "pointsPerGame": 119.6,
+          "damagePerGame": 2017
+        },
+        "late": {
+          "games": 27,
+          "wins": 9,
+          "winratePct": 33.3,
+          "modeMixPct": {
+            "2v2": 88.9,
+            "3v3": 11.1
+          },
+          "touchdownsPerGame": 2.48,
+          "pointsPerGame": 114.3,
+          "damagePerGame": 1823
+        },
+        "last20": {
+          "games": 20,
+          "wins": 6,
+          "winratePct": 30,
+          "modeMixPct": {
+            "2v2": 95,
+            "3v3": 5
+          },
+          "touchdownsPerGame": 1.95,
+          "pointsPerGame": 101.1,
+          "damagePerGame": 1632
+        }
+      },
+      "byMode": {
+        "3v3": {
+          "games": 34,
+          "wins": 17,
+          "losses": 17,
+          "winratePct": 50,
+          "perGame": {
+            "touchdowns": 1.26,
+            "tdAssists": 0.71,
+            "damage": 2494,
+            "points": 121.9
+          },
+          "perMinute": {
+            "touchdowns": 0.07,
+            "damage": 146,
+            "points": 7.13
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 16,
+            "damage": 28.8
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 4,
+          "apiDetails": {
+            "games": 34,
+            "killsPerGame": 7.5,
+            "deathsPerGame": 27.71,
+            "kd": 0.27,
+            "defensePerGame": 7.71,
+            "offensePerGame": 1.35,
+            "reboundsPerGame": 12.62
+          },
+          "elo": {
+            "start": 1472,
+            "end": 1512,
+            "peak": 1542,
+            "low": 1457,
+            "change": 40,
+            "lastTen": -30
+          }
+        },
+        "4v4": {
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winratePct": 33.3,
+          "perGame": {
+            "touchdowns": 1.33,
+            "tdAssists": 0.33,
+            "damage": 3706,
+            "points": 161.3
+          },
+          "perMinute": {
+            "touchdowns": 0.05,
+            "damage": 152,
+            "points": 6.63
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 18.2,
+            "damage": 22.6
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 1,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 15,
+            "deathsPerGame": 34.33,
+            "kd": 0.44,
+            "defensePerGame": 13.67,
+            "offensePerGame": 1,
+            "reboundsPerGame": 11.67
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1486,
+            "peak": 1500,
+            "low": 1469,
+            "change": -14,
+            "lastTen": -14
+          }
+        },
+        "2v2": {
+          "games": 44,
+          "wins": 16,
+          "losses": 28,
+          "winratePct": 36.4,
+          "perGame": {
+            "touchdowns": 2.41,
+            "tdAssists": 1.02,
+            "damage": 1647,
+            "points": 109.1
+          },
+          "perMinute": {
+            "touchdowns": 0.19,
+            "damage": 129,
+            "points": 8.53
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 32.1,
+            "damage": 46
+          },
+          "mvpRatePct": 4.5,
+          "bestWinStreak": 5,
+          "apiDetails": {
+            "games": 44,
+            "killsPerGame": 2.8,
+            "deathsPerGame": 19.93,
+            "kd": 0.14,
+            "defensePerGame": 5.73,
+            "offensePerGame": 1.23,
+            "reboundsPerGame": 14.16
+          },
+          "elo": {
+            "start": 1458,
+            "end": 1429,
+            "peak": 1547,
+            "low": 1409,
+            "change": -29,
+            "lastTen": -29
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 39.5,
+        "pointsCoefficientOfVariationPct": 33.9,
+        "touchdownsStdDev": 1.67,
+        "gamesWithZeroTouchdownsPct": 23.5,
+        "gamesWith6PlusTouchdownsPct": 3.7
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 32,
+          "wins": 20,
+          "winratePct": 62.5
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 23,
+          "wins": 7,
+          "winratePct": 30.4
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 31.3,
+        "gamesAsTeamTopTouchdownScorer": 16,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 22.2,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 9,
+        "matchMvpHighestScore": 2
+      },
+      "streaks": {
+        "bestWinStreak": 4,
+        "worstLossStreak": 5,
+        "current": {
+          "result": "L",
+          "length": 3
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 37,
+          "wins": 10,
+          "winratePct": 27
+        },
+        "asFavorite": {
+          "games": 16,
+          "wins": 9,
+          "winratePct": 56.3
+        },
+        "winsAboveExpected": -3.8
+      },
+      "fumbiConversion": {
+        "games": 81,
+        "rebounds": 1087,
+        "touchdowns": 153,
+        "touchdownsPerReboundPct": 14.1
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 23,
+          "winrateGood": 47.8,
+          "gamesBad": 58,
+          "winrateBad": 39.7,
+          "deltaPts": 8.1
+        },
+        "tdAssists": {
+          "ownMedian": 1,
+          "goodSide": "über Median",
+          "gamesGood": 20,
+          "winrateGood": 65,
+          "gamesBad": 61,
+          "winrateBad": 34.4,
+          "deltaPts": 30.6
+        },
+        "damage": {
+          "ownMedian": 1955,
+          "goodSide": "über Median",
+          "gamesGood": 40,
+          "winrateGood": 50,
+          "gamesBad": 41,
+          "winrateBad": 34.1,
+          "deltaPts": 15.9
+        },
+        "kills": {
+          "ownMedian": 4,
+          "goodSide": "über Median",
+          "gamesGood": 40,
+          "winrateGood": 52.5,
+          "gamesBad": 41,
+          "winrateBad": 31.7,
+          "deltaPts": 20.8
+        },
+        "deaths": {
+          "ownMedian": 21,
+          "goodSide": "unter Median",
+          "gamesGood": 36,
+          "winrateGood": 41.7,
+          "gamesBad": 45,
+          "winrateBad": 42.2,
+          "deltaPts": -0.5
+        },
+        "rebounds": {
+          "ownMedian": 14,
+          "goodSide": "über Median",
+          "gamesGood": 37,
+          "winrateGood": 48.6,
+          "gamesBad": 44,
+          "winrateBad": 36.4,
+          "deltaPts": 12.2
+        },
+        "defense": {
+          "ownMedian": 6,
+          "goodSide": "über Median",
+          "gamesGood": 36,
+          "winrateGood": 38.9,
+          "gamesBad": 45,
+          "winrateBad": 44.4,
+          "deltaPts": -5.5
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 34,
+          "touchdownsPerGame": 2.26,
+          "damagePerGame": 2194,
+          "touchdownSharePct": 22.7,
+          "deathsPerGame": 25.29
+        },
+        "losses": {
+          "games": 47,
+          "touchdownsPerGame": 1.62,
+          "damagePerGame": 1995,
+          "touchdownSharePct": 26.3,
+          "deathsPerGame": 22.6
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 37,
+          "touchdownsPerGame": 1.95,
+          "pointsPerGame": 111.7,
+          "damagePerGame": 2000
+        },
+        "even": {
+          "games": 28,
+          "touchdownsPerGame": 2,
+          "pointsPerGame": 120.6,
+          "damagePerGame": 2003
+        },
+        "asFavorite": {
+          "games": 16,
+          "touchdownsPerGame": 1.56,
+          "pointsPerGame": 119.8,
+          "damagePerGame": 2392
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -11.9,
+        "perMate": [
+          {
+            "mate": "-Darkstar",
+            "gamesWith": 10,
+            "winrateWith": 50,
+            "gamesWithout": 7,
+            "winrateWithout": 28.6,
+            "deltaPts": 21.4
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 28,
+            "winrateWith": 60.7,
+            "gamesWithout": 7,
+            "winrateWithout": 42.9,
+            "deltaPts": 17.8
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 28,
+            "winrateWith": 57.1,
+            "gamesWithout": 9,
+            "winrateWithout": 77.8,
+            "deltaPts": -20.7
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 35,
+            "winrateWith": 28.6,
+            "gamesWithout": 9,
+            "winrateWithout": 66.7,
+            "deltaPts": -38.1
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -1.09
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 34,
+          "wins": 18,
+          "winratePct": 52.9,
+          "touchdownsPerGame": 1.85,
+          "pointsPerMinute": 7.43
+        },
+        "speedrun": {
+          "games": 47,
+          "wins": 16,
+          "winratePct": 34,
+          "touchdownsPerGame": 1.91,
+          "pointsPerMinute": 8.14
+        }
+      },
+      "teammates": [
+        {
+          "with": "Malena",
+          "games": 28,
+          "wins": 17,
+          "winratePct": 60.7,
+          "synergyPct": 7.9
+        },
+        {
+          "with": "-Darkstar",
+          "games": 10,
+          "wins": 5,
+          "winratePct": 50,
+          "synergyPct": 5.1
+        },
+        {
+          "with": "Nebus.",
+          "games": 28,
+          "wins": 16,
+          "winratePct": 57.1,
+          "synergyPct": 2.8
+        },
+        {
+          "with": "ZeroO",
+          "games": 35,
+          "wins": 10,
+          "winratePct": 28.6,
+          "synergyPct": -13.5
+        },
+        {
+          "with": "Kesny",
+          "games": 15,
+          "wins": 4,
+          "winratePct": 26.7,
+          "synergyPct": -15.2
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Nebus.",
+          "games": 29,
+          "wins": 8,
+          "winratePct": 27.6
+        },
+        {
+          "against": "Malena",
+          "games": 42,
+          "wins": 13,
+          "winratePct": 31
+        },
+        {
+          "against": "Aferdita",
+          "games": 8,
+          "wins": 3,
+          "winratePct": 37.5
+        },
+        {
+          "against": "-Darkstar",
+          "games": 31,
+          "wins": 15,
+          "winratePct": 48.4
+        },
+        {
+          "against": "Kesny",
+          "games": 42,
+          "wins": 21,
+          "winratePct": 50
+        },
+        {
+          "against": "ZeroO",
+          "games": 46,
+          "wins": 24,
+          "winratePct": 52.2
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 261,
+          "date": "2026-10-12",
+          "mode": "3v3",
+          "touchdowns": 4,
+          "points": 207,
+          "damage": 3219,
+          "result": "W"
+        },
+        "mostTouchdowns": {
+          "match": 235,
+          "date": "2026-10-04",
+          "mode": "2v2",
+          "touchdowns": 8,
+          "points": 151,
+          "damage": 1584,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "Malena",
+      "season": {
+        "games": 77,
+        "wins": 49,
+        "losses": 28,
+        "winratePct": 63.6,
+        "perGame": {
+          "touchdowns": 4.84,
+          "tdAssists": 0.34,
+          "damage": 2264,
+          "points": 156.1
+        },
+        "perMinute": {
+          "touchdowns": 0.33,
+          "damage": 153,
+          "points": 10.56
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 55.4,
+          "damage": 34.9
+        },
+        "mvpRatePct": 28.6,
+        "bestWinStreak": 8,
+        "apiDetails": {
+          "games": 77,
+          "killsPerGame": 5.19,
+          "deathsPerGame": 19.61,
+          "kd": 0.26,
+          "defensePerGame": 8.79,
+          "offensePerGame": 1.77,
+          "reboundsPerGame": 16.21
+        },
+        "elo": {
+          "start": 1600,
+          "end": 1623,
+          "peak": 1674,
+          "low": 1548,
+          "change": 23,
+          "lastTen": 44
+        }
+      },
+      "career": {
+        "games": 267,
+        "wins": 156,
+        "losses": 111,
+        "winratePct": 58.4,
+        "perGame": {
+          "touchdowns": 5.13,
+          "tdAssists": 0.37,
+          "damage": 2224,
+          "points": 157.1
+        },
+        "perMinute": {
+          "touchdowns": 0.36,
+          "damage": 154,
+          "points": 10.91
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 59.7,
+          "damage": 40
+        },
+        "mvpRatePct": 33.3,
+        "bestWinStreak": 8,
+        "apiDetails": {
+          "games": 224,
+          "killsPerGame": 4.97,
+          "deathsPerGame": 18.77,
+          "kd": 0.26,
+          "defensePerGame": 8.63,
+          "offensePerGame": 1.7,
+          "reboundsPerGame": 16.52
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1623,
+          "peak": 1674,
+          "low": 1418,
+          "change": 123,
+          "lastTen": 44
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 63.6,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 4.84,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.34,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 2263.52,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 156.12,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 10.56,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 55.4,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 34.9,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 28.6,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.26,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 5.19,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 19.61,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 8.79,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 1.77,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 16.21,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 25,
+          "wins": 17,
+          "winratePct": 68,
+          "modeMixPct": {
+            "2v2": 20,
+            "3v3": 68,
+            "4v4": 12
+          },
+          "touchdownsPerGame": 4.8,
+          "pointsPerGame": 169,
+          "damagePerGame": 2508
+        },
+        "middle": {
+          "games": 26,
+          "wins": 14,
+          "winratePct": 53.8,
+          "modeMixPct": {
+            "2v2": 50,
+            "3v3": 50
+          },
+          "touchdownsPerGame": 4.73,
+          "pointsPerGame": 148.3,
+          "damagePerGame": 2134
+        },
+        "late": {
+          "games": 26,
+          "wins": 18,
+          "winratePct": 69.2,
+          "modeMixPct": {
+            "2v2": 73.1,
+            "3v3": 26.9
+          },
+          "touchdownsPerGame": 5,
+          "pointsPerGame": 151.5,
+          "damagePerGame": 2159
+        },
+        "last20": {
+          "games": 20,
+          "wins": 15,
+          "winratePct": 75,
+          "modeMixPct": {
+            "2v2": 95,
+            "3v3": 5
+          },
+          "touchdownsPerGame": 5.4,
+          "pointsPerGame": 139.4,
+          "damagePerGame": 1768
+        }
+      },
+      "byMode": {
+        "3v3": {
+          "games": 37,
+          "wins": 24,
+          "losses": 13,
+          "winratePct": 64.9,
+          "perGame": {
+            "touchdowns": 4.08,
+            "tdAssists": 0.54,
+            "damage": 2673,
+            "points": 166.5
+          },
+          "perMinute": {
+            "touchdowns": 0.24,
+            "damage": 160,
+            "points": 9.94
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 46,
+            "damage": 31.2
+          },
+          "mvpRatePct": 21.6,
+          "bestWinStreak": 7,
+          "apiDetails": {
+            "games": 37,
+            "killsPerGame": 7.32,
+            "deathsPerGame": 23.89,
+            "kd": 0.31,
+            "defensePerGame": 9.76,
+            "offensePerGame": 2.08,
+            "reboundsPerGame": 17.7
+          },
+          "elo": {
+            "start": 1538,
+            "end": 1586,
+            "peak": 1651,
+            "low": 1524,
+            "change": 48,
+            "lastTen": 12
+          }
+        },
+        "4v4": {
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winratePct": 66.7,
+          "perGame": {
+            "touchdowns": 3,
+            "tdAssists": 0.33,
+            "damage": 3903,
+            "points": 203
+          },
+          "perMinute": {
+            "touchdowns": 0.12,
+            "damage": 160,
+            "points": 8.35
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 36,
+            "damage": 25.8
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 2,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 13.67,
+            "deathsPerGame": 35,
+            "kd": 0.39,
+            "defensePerGame": 16.67,
+            "offensePerGame": 1.33,
+            "reboundsPerGame": 20.67
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1517,
+            "peak": 1517,
+            "low": 1484,
+            "change": 17,
+            "lastTen": 17
+          }
+        },
+        "2v2": {
+          "games": 37,
+          "wins": 23,
+          "losses": 14,
+          "winratePct": 62.2,
+          "perGame": {
+            "touchdowns": 5.76,
+            "tdAssists": 0.14,
+            "damage": 1721,
+            "points": 141.9
+          },
+          "perMinute": {
+            "touchdowns": 0.48,
+            "damage": 143,
+            "points": 11.79
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 66.6,
+            "damage": 46.3
+          },
+          "mvpRatePct": 37.8,
+          "bestWinStreak": 5,
+          "apiDetails": {
+            "games": 37,
+            "killsPerGame": 2.38,
+            "deathsPerGame": 14.08,
+            "kd": 0.17,
+            "defensePerGame": 7.19,
+            "offensePerGame": 1.49,
+            "reboundsPerGame": 14.35
+          },
+          "elo": {
+            "start": 1572,
+            "end": 1617,
+            "peak": 1627,
+            "low": 1525,
+            "change": 45,
+            "lastTen": 45
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 46.1,
+        "pointsCoefficientOfVariationPct": 29.5,
+        "touchdownsStdDev": 2.14,
+        "gamesWithZeroTouchdownsPct": 0,
+        "gamesWith6PlusTouchdownsPct": 36.4
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 26,
+          "wins": 14,
+          "winratePct": 53.8
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 25,
+          "wins": 17,
+          "winratePct": 68
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 62.5,
+        "gamesAsTeamTopTouchdownScorer": 56,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 56.4,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 39,
+        "matchMvpHighestScore": 22
+      },
+      "streaks": {
+        "bestWinStreak": 8,
+        "worstLossStreak": 3,
+        "current": {
+          "result": "W",
+          "length": 3
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 7,
+          "wins": 4,
+          "winratePct": 57.1
+        },
+        "asFavorite": {
+          "games": 43,
+          "wins": 32,
+          "winratePct": 74.4
+        },
+        "winsAboveExpected": 5.9
+      },
+      "fumbiConversion": {
+        "games": 77,
+        "rebounds": 1248,
+        "touchdowns": 373,
+        "touchdownsPerReboundPct": 29.9
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 28,
+          "winrateGood": 78.6,
+          "gamesBad": 49,
+          "winrateBad": 55.1,
+          "deltaPts": 23.5
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 21,
+          "winrateGood": 76.2,
+          "gamesBad": 56,
+          "winrateBad": 58.9,
+          "deltaPts": 17.3
+        },
+        "damage": {
+          "ownMedian": 2070,
+          "goodSide": "über Median",
+          "gamesGood": 38,
+          "winrateGood": 60.5,
+          "gamesBad": 39,
+          "winrateBad": 66.7,
+          "deltaPts": -6.2
+        },
+        "kills": {
+          "ownMedian": 4,
+          "goodSide": "über Median",
+          "gamesGood": 31,
+          "winrateGood": 61.3,
+          "gamesBad": 46,
+          "winrateBad": 65.2,
+          "deltaPts": -3.9
+        },
+        "deaths": {
+          "ownMedian": 17,
+          "goodSide": "unter Median",
+          "gamesGood": 36,
+          "winrateGood": 75,
+          "gamesBad": 41,
+          "winrateBad": 53.7,
+          "deltaPts": 21.3
+        },
+        "rebounds": {
+          "ownMedian": 15,
+          "goodSide": "über Median",
+          "gamesGood": 37,
+          "winrateGood": 62.2,
+          "gamesBad": 40,
+          "winrateBad": 65,
+          "deltaPts": -2.8
+        },
+        "defense": {
+          "ownMedian": 8,
+          "goodSide": "über Median",
+          "gamesGood": 30,
+          "winrateGood": 66.7,
+          "gamesBad": 47,
+          "winrateBad": 61.7,
+          "deltaPts": 5
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 49,
+          "touchdownsPerGame": 5.43,
+          "damagePerGame": 2270,
+          "touchdownSharePct": 54.3,
+          "deathsPerGame": 18.35
+        },
+        "losses": {
+          "games": 28,
+          "touchdownsPerGame": 3.82,
+          "damagePerGame": 2253,
+          "touchdownSharePct": 61.1,
+          "deathsPerGame": 21.82
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 7,
+          "touchdownsPerGame": 4.29,
+          "pointsPerGame": 196,
+          "damagePerGame": 3348
+        },
+        "even": {
+          "games": 27,
+          "touchdownsPerGame": 5,
+          "pointsPerGame": 158.5,
+          "damagePerGame": 2227
+        },
+        "asFavorite": {
+          "games": 43,
+          "touchdownsPerGame": 4.84,
+          "pointsPerGame": 148.1,
+          "damagePerGame": 2110
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 15.1,
+        "perMate": [
+          {
+            "mate": "BickD4ckEnergy",
+            "gamesWith": 28,
+            "winrateWith": 60.7,
+            "gamesWithout": 11,
+            "winrateWithout": 36.4,
+            "deltaPts": 24.3
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 27,
+            "winrateWith": 81.5,
+            "gamesWithout": 8,
+            "winrateWithout": 62.5,
+            "deltaPts": 19
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 18,
+            "winrateWith": 61.1,
+            "gamesWithout": 13,
+            "winrateWithout": 46.2,
+            "deltaPts": 14.9
+          },
+          {
+            "mate": "-Darkstar",
+            "gamesWith": 11,
+            "winrateWith": 63.6,
+            "gamesWithout": 9,
+            "winrateWithout": 55.6,
+            "deltaPts": 8
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 23,
+            "winrateWith": 56.5,
+            "gamesWithout": 13,
+            "winrateWithout": 53.8,
+            "deltaPts": 2.7
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 1.31
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 29,
+          "wins": 18,
+          "winratePct": 62.1,
+          "touchdownsPerGame": 4.66,
+          "pointsPerMinute": 9.79
+        },
+        "speedrun": {
+          "games": 48,
+          "wins": 31,
+          "winratePct": 64.6,
+          "touchdownsPerGame": 4.96,
+          "pointsPerMinute": 11.37
+        }
+      },
+      "teammates": [
+        {
+          "with": "Nebus.",
+          "games": 27,
+          "wins": 22,
+          "winratePct": 81.5,
+          "synergyPct": 16.3
+        },
+        {
+          "with": "ZeroO",
+          "games": 18,
+          "wins": 11,
+          "winratePct": 61.1,
+          "synergyPct": 8.2
+        },
+        {
+          "with": "BickD4ckEnergy",
+          "games": 28,
+          "wins": 17,
+          "winratePct": 60.7,
+          "synergyPct": 7.9
+        },
+        {
+          "with": "-Darkstar",
+          "games": 11,
+          "wins": 7,
+          "winratePct": 63.6,
+          "synergyPct": 7.9
+        },
+        {
+          "with": "Kesny",
+          "games": 23,
+          "wins": 13,
+          "winratePct": 56.5,
+          "synergyPct": 3.9
+        },
+        {
+          "with": "Aferdita",
+          "games": 9,
+          "wins": 6,
+          "winratePct": 66.7,
+          "synergyPct": 3.6
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Aferdita",
+          "games": 5,
+          "wins": 2,
+          "winratePct": 40
+        },
+        {
+          "against": "Nebus.",
+          "games": 31,
+          "wins": 14,
+          "winratePct": 45.2
+        },
+        {
+          "against": "-Darkstar",
+          "games": 28,
+          "wins": 17,
+          "winratePct": 60.7
+        },
+        {
+          "against": "ZeroO",
+          "games": 59,
+          "wins": 38,
+          "winratePct": 64.4
+        },
+        {
+          "against": "BickD4ckEnergy",
+          "games": 42,
+          "wins": 29,
+          "winratePct": 69
+        },
+        {
+          "against": "Kesny",
+          "games": 24,
+          "wins": 19,
+          "winratePct": 79.2
+        },
+        {
+          "against": "Troniix",
+          "games": 8,
+          "wins": 7,
+          "winratePct": 87.5
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 208,
+          "date": "2026-09-27",
+          "mode": "3v3",
+          "touchdowns": 6,
+          "points": 287,
+          "damage": 4708,
+          "result": "W"
+        },
+        "mostTouchdowns": {
+          "match": 277,
+          "date": "2026-10-17",
+          "mode": "2v2",
+          "touchdowns": 10,
+          "points": 170,
+          "damage": 1263,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "Nebus.",
+      "season": {
+        "games": 66,
+        "wins": 44,
+        "losses": 22,
+        "winratePct": 66.7,
+        "perGame": {
+          "touchdowns": 2.64,
+          "tdAssists": 0.58,
+          "damage": 4130,
+          "points": 188.4
+        },
+        "perMinute": {
+          "touchdowns": 0.16,
+          "damage": 254,
+          "points": 11.61
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 29.5,
+          "damage": 51.8
+        },
+        "mvpRatePct": 50,
+        "bestWinStreak": 9,
+        "apiDetails": {
+          "games": 66,
+          "killsPerGame": 10.26,
+          "deathsPerGame": 16.11,
+          "kd": 0.64,
+          "defensePerGame": 14.62,
+          "offensePerGame": 3.2,
+          "reboundsPerGame": 12.55
+        },
+        "elo": {
+          "start": 1652,
+          "end": 1699,
+          "peak": 1699,
+          "low": 1576,
+          "change": 47,
+          "lastTen": 57
+        }
+      },
+      "career": {
+        "games": 247,
+        "wins": 162,
+        "losses": 85,
+        "winratePct": 65.6,
+        "perGame": {
+          "touchdowns": 3.08,
+          "tdAssists": 0.4,
+          "damage": 3148,
+          "points": 159
+        },
+        "perMinute": {
+          "touchdowns": 0.21,
+          "damage": 214,
+          "points": 10.81
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 34.6,
+          "damage": 49.9
+        },
+        "mvpRatePct": 38.5,
+        "bestWinStreak": 9,
+        "apiDetails": {
+          "games": 205,
+          "killsPerGame": 7.5,
+          "deathsPerGame": 14.94,
+          "kd": 0.5,
+          "defensePerGame": 12.28,
+          "offensePerGame": 2.52,
+          "reboundsPerGame": 12.38
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1699,
+          "peak": 1699,
+          "low": 1484,
+          "change": 199,
+          "lastTen": 57
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 66.7,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 2.64,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.58,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 4129.59,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 188.38,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 11.61,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 29.5,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 51.8,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 50,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.64,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 10.26,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 16.11,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 14.62,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 3.2,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 12.55,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 22,
+          "wins": 13,
+          "winratePct": 59.1,
+          "modeMixPct": {
+            "2v2": 31.8,
+            "3v3": 54.5,
+            "4v4": 13.6
+          },
+          "touchdownsPerGame": 2.64,
+          "pointsPerGame": 217.7,
+          "damagePerGame": 4996
+        },
+        "middle": {
+          "games": 22,
+          "wins": 14,
+          "winratePct": 63.6,
+          "modeMixPct": {
+            "2v2": 50,
+            "3v3": 50
+          },
+          "touchdownsPerGame": 2.59,
+          "pointsPerGame": 162.1,
+          "damagePerGame": 3435
+        },
+        "late": {
+          "games": 22,
+          "wins": 17,
+          "winratePct": 77.3,
+          "modeMixPct": {
+            "2v2": 50,
+            "3v3": 50
+          },
+          "touchdownsPerGame": 2.68,
+          "pointsPerGame": 185.4,
+          "damagePerGame": 3958
+        },
+        "last20": {
+          "games": 20,
+          "wins": 15,
+          "winratePct": 75,
+          "modeMixPct": {
+            "2v2": 50,
+            "3v3": 50
+          },
+          "touchdownsPerGame": 2.55,
+          "pointsPerGame": 184.6,
+          "damagePerGame": 3959
+        }
+      },
+      "byMode": {
+        "3v3": {
+          "games": 34,
+          "wins": 21,
+          "losses": 13,
+          "winratePct": 61.8,
+          "perGame": {
+            "touchdowns": 2.21,
+            "tdAssists": 0.68,
+            "damage": 4464,
+            "points": 199
+          },
+          "perMinute": {
+            "touchdowns": 0.12,
+            "damage": 250,
+            "points": 11.14
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 25.7,
+            "damage": 46.4
+          },
+          "mvpRatePct": 47.1,
+          "bestWinStreak": 5,
+          "apiDetails": {
+            "games": 34,
+            "killsPerGame": 12.53,
+            "deathsPerGame": 20.21,
+            "kd": 0.62,
+            "defensePerGame": 15.85,
+            "offensePerGame": 3.29,
+            "reboundsPerGame": 13.71
+          },
+          "elo": {
+            "start": 1628,
+            "end": 1594,
+            "peak": 1657,
+            "low": 1574,
+            "change": -34,
+            "lastTen": -38
+          }
+        },
+        "4v4": {
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winratePct": 66.7,
+          "perGame": {
+            "touchdowns": 2,
+            "tdAssists": 1,
+            "damage": 7250,
+            "points": 288.7
+          },
+          "perMinute": {
+            "touchdowns": 0.08,
+            "damage": 298,
+            "points": 11.87
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 25,
+            "damage": 42.7
+          },
+          "mvpRatePct": 100,
+          "bestWinStreak": 1,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 24.33,
+            "deathsPerGame": 27,
+            "kd": 0.9,
+            "defensePerGame": 21.33,
+            "offensePerGame": 3.67,
+            "reboundsPerGame": 15
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1515,
+            "peak": 1516,
+            "low": 1499,
+            "change": 15,
+            "lastTen": 15
+          }
+        },
+        "2v2": {
+          "games": 29,
+          "wins": 21,
+          "losses": 8,
+          "winratePct": 72.4,
+          "perGame": {
+            "touchdowns": 3.21,
+            "tdAssists": 0.41,
+            "damage": 3415,
+            "points": 165.5
+          },
+          "perMinute": {
+            "touchdowns": 0.24,
+            "damage": 254,
+            "points": 12.29
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 34.1,
+            "damage": 66.9
+          },
+          "mvpRatePct": 48.3,
+          "bestWinStreak": 12,
+          "apiDetails": {
+            "games": 29,
+            "killsPerGame": 6.14,
+            "deathsPerGame": 10.17,
+            "kd": 0.6,
+            "defensePerGame": 12.48,
+            "offensePerGame": 3.03,
+            "reboundsPerGame": 10.93
+          },
+          "elo": {
+            "start": 1644,
+            "end": 1704,
+            "peak": 1704,
+            "low": 1590,
+            "change": 60,
+            "lastTen": 88
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 56.8,
+        "pointsCoefficientOfVariationPct": 30.2,
+        "touchdownsStdDev": 1.81,
+        "gamesWithZeroTouchdownsPct": 9.1,
+        "gamesWith6PlusTouchdownsPct": 9.1
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 23,
+          "wins": 14,
+          "winratePct": 60.9
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 20,
+          "wins": 16,
+          "winratePct": 80
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 62.5,
+        "gamesAsTeamTopTouchdownScorer": 16,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 54.5,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 11,
+        "matchMvpHighestScore": 33
+      },
+      "streaks": {
+        "bestWinStreak": 9,
+        "worstLossStreak": 5,
+        "current": {
+          "result": "W",
+          "length": 9
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 5,
+          "wins": 1,
+          "winratePct": 20
+        },
+        "asFavorite": {
+          "games": 35,
+          "wins": 24,
+          "winratePct": 68.6
+        },
+        "winsAboveExpected": 6.8
+      },
+      "fumbiConversion": {
+        "games": 66,
+        "rebounds": 828,
+        "touchdowns": 174,
+        "touchdownsPerReboundPct": 21
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 29,
+          "winrateGood": 79.3,
+          "gamesBad": 37,
+          "winrateBad": 56.8,
+          "deltaPts": 22.5
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 31,
+          "winrateGood": 61.3,
+          "gamesBad": 35,
+          "winrateBad": 71.4,
+          "deltaPts": -10.1
+        },
+        "damage": {
+          "ownMedian": 3758,
+          "goodSide": "über Median",
+          "gamesGood": 33,
+          "winrateGood": 57.6,
+          "gamesBad": 33,
+          "winrateBad": 75.8,
+          "deltaPts": -18.2
+        },
+        "kills": {
+          "ownMedian": 10,
+          "goodSide": "über Median",
+          "gamesGood": 27,
+          "winrateGood": 59.3,
+          "gamesBad": 39,
+          "winrateBad": 71.8,
+          "deltaPts": -12.5
+        },
+        "deaths": {
+          "ownMedian": 15,
+          "goodSide": "unter Median",
+          "gamesGood": 32,
+          "winrateGood": 75,
+          "gamesBad": 34,
+          "winrateBad": 58.8,
+          "deltaPts": 16.2
+        },
+        "rebounds": {
+          "ownMedian": 12.5,
+          "goodSide": "über Median",
+          "gamesGood": 33,
+          "winrateGood": 60.6,
+          "gamesBad": 33,
+          "winrateBad": 72.7,
+          "deltaPts": -12.1
+        },
+        "defense": {
+          "ownMedian": 14,
+          "goodSide": "über Median",
+          "gamesGood": 30,
+          "winrateGood": 63.3,
+          "gamesBad": 36,
+          "winrateBad": 69.4,
+          "deltaPts": -6.1
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 44,
+          "touchdownsPerGame": 3,
+          "damagePerGame": 3983,
+          "touchdownSharePct": 30.2,
+          "deathsPerGame": 15.05
+        },
+        "losses": {
+          "games": 22,
+          "touchdownsPerGame": 1.91,
+          "damagePerGame": 4423,
+          "touchdownSharePct": 29.5,
+          "deathsPerGame": 18.23
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 5,
+          "touchdownsPerGame": 3.4,
+          "pointsPerGame": 220.4,
+          "damagePerGame": 4649
+        },
+        "even": {
+          "games": 26,
+          "touchdownsPerGame": 2.54,
+          "pointsPerGame": 190.2,
+          "damagePerGame": 4206
+        },
+        "asFavorite": {
+          "games": 35,
+          "touchdownsPerGame": 2.6,
+          "pointsPerGame": 182.4,
+          "damagePerGame": 3999
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 13.1,
+        "perMate": [
+          {
+            "mate": "-Darkstar",
+            "gamesWith": 5,
+            "winrateWith": 100,
+            "gamesWithout": 11,
+            "winrateWithout": 54.5,
+            "deltaPts": 45.5
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 26,
+            "winrateWith": 61.5,
+            "gamesWithout": 24,
+            "winrateWithout": 41.7,
+            "deltaPts": 19.8
+          },
+          {
+            "mate": "BickD4ckEnergy",
+            "gamesWith": 28,
+            "winrateWith": 57.1,
+            "gamesWithout": 24,
+            "winrateWithout": 41.7,
+            "deltaPts": 15.4
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 27,
+            "winrateWith": 81.5,
+            "gamesWithout": 19,
+            "winrateWithout": 68.4,
+            "deltaPts": 13.1
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 12,
+            "winrateWith": 41.7,
+            "gamesWithout": 21,
+            "winrateWithout": 61.9,
+            "deltaPts": -20.2
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 1.53
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 32,
+          "wins": 19,
+          "winratePct": 59.4,
+          "touchdownsPerGame": 2.34,
+          "pointsPerMinute": 11.32
+        },
+        "speedrun": {
+          "games": 34,
+          "wins": 25,
+          "winratePct": 73.5,
+          "touchdownsPerGame": 2.91,
+          "pointsPerMinute": 12.06
+        }
+      },
+      "teammates": [
+        {
+          "with": "-Darkstar",
+          "games": 5,
+          "wins": 5,
+          "winratePct": 100,
+          "synergyPct": 42.7
+        },
+        {
+          "with": "Malena",
+          "games": 27,
+          "wins": 22,
+          "winratePct": 81.5,
+          "synergyPct": 16.3
+        },
+        {
+          "with": "ZeroO",
+          "games": 26,
+          "wins": 16,
+          "winratePct": 61.5,
+          "synergyPct": 7.1
+        },
+        {
+          "with": "BickD4ckEnergy",
+          "games": 28,
+          "wins": 16,
+          "winratePct": 57.1,
+          "synergyPct": 2.8
+        },
+        {
+          "with": "Kesny",
+          "games": 12,
+          "wins": 5,
+          "winratePct": 41.7,
+          "synergyPct": -12.5
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Aferdita",
+          "games": 10,
+          "wins": 4,
+          "winratePct": 40
+        },
+        {
+          "against": "Malena",
+          "games": 31,
+          "wins": 17,
+          "winratePct": 54.8
+        },
+        {
+          "against": "-Darkstar",
+          "games": 32,
+          "wins": 20,
+          "winratePct": 62.5
+        },
+        {
+          "against": "ZeroO",
+          "games": 40,
+          "wins": 28,
+          "winratePct": 70
+        },
+        {
+          "against": "BickD4ckEnergy",
+          "games": 29,
+          "wins": 21,
+          "winratePct": 72.4
+        },
+        {
+          "against": "Kesny",
+          "games": 27,
+          "wins": 20,
+          "winratePct": 74.1
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 203,
+          "date": "2026-09-26",
+          "mode": "4v4",
+          "touchdowns": 2,
+          "points": 330,
+          "damage": 8711,
+          "result": "L"
+        },
+        "mostTouchdowns": {
+          "match": 286,
+          "date": "2026-10-18",
+          "mode": "2v2",
+          "touchdowns": 8,
+          "points": 244,
+          "damage": 3624,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "Kesny",
+      "season": {
+        "games": 60,
+        "wins": 25,
+        "losses": 35,
+        "winratePct": 41.7,
+        "perGame": {
+          "touchdowns": 3.22,
+          "tdAssists": 0.73,
+          "damage": 2549,
+          "points": 150.4
+        },
+        "perMinute": {
+          "touchdowns": 0.2,
+          "damage": 160,
+          "points": 9.43
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 40,
+          "damage": 34.3
+        },
+        "mvpRatePct": 11.7,
+        "bestWinStreak": 4,
+        "apiDetails": {
+          "games": 60,
+          "killsPerGame": 7.68,
+          "deathsPerGame": 24.3,
+          "kd": 0.32,
+          "defensePerGame": 7.52,
+          "offensePerGame": 1.97,
+          "reboundsPerGame": 16.13
+        },
+        "elo": {
+          "start": 1478,
+          "end": 1495,
+          "peak": 1538,
+          "low": 1404,
+          "change": 17,
+          "lastTen": -20
+        }
+      },
+      "career": {
+        "games": 185,
+        "wins": 70,
+        "losses": 115,
+        "winratePct": 37.8,
+        "perGame": {
+          "touchdowns": 3.44,
+          "tdAssists": 0.78,
+          "damage": 2230,
+          "points": 147.5
+        },
+        "perMinute": {
+          "touchdowns": 0.22,
+          "damage": 143,
+          "points": 9.45
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 42.8,
+          "damage": 33.8
+        },
+        "mvpRatePct": 12.4,
+        "bestWinStreak": 4,
+        "apiDetails": {
+          "games": 150,
+          "killsPerGame": 6.45,
+          "deathsPerGame": 23.82,
+          "kd": 0.27,
+          "defensePerGame": 7.53,
+          "offensePerGame": 2.16,
+          "reboundsPerGame": 17.99
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1495,
+          "peak": 1538,
+          "low": 1363,
+          "change": -5,
+          "lastTen": -20
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 41.7,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 3.22,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.73,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 2548.77,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 150.4,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 9.43,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 40,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 34.3,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 11.7,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.32,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 7.68,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 24.3,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 7.52,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 1.97,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 16.13,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 20,
+          "wins": 5,
+          "winratePct": 25,
+          "modeMixPct": {
+            "2v2": 20,
+            "3v3": 65,
+            "4v4": 15
+          },
+          "touchdownsPerGame": 3,
+          "pointsPerGame": 168.8,
+          "damagePerGame": 3188
+        },
+        "middle": {
+          "games": 20,
+          "wins": 11,
+          "winratePct": 55,
+          "modeMixPct": {
+            "2v2": 5,
+            "3v3": 95
+          },
+          "touchdownsPerGame": 3,
+          "pointsPerGame": 144.8,
+          "damagePerGame": 2399
+        },
+        "late": {
+          "games": 20,
+          "wins": 9,
+          "winratePct": 45,
+          "modeMixPct": {
+            "2v2": 85,
+            "3v3": 15
+          },
+          "touchdownsPerGame": 3.65,
+          "pointsPerGame": 137.7,
+          "damagePerGame": 2059
+        },
+        "last20": {
+          "games": 20,
+          "wins": 9,
+          "winratePct": 45,
+          "modeMixPct": {
+            "2v2": 85,
+            "3v3": 15
+          },
+          "touchdownsPerGame": 3.65,
+          "pointsPerGame": 137.7,
+          "damagePerGame": 2059
+        }
+      },
+      "byMode": {
+        "3v3": {
+          "games": 35,
+          "wins": 13,
+          "losses": 22,
+          "winratePct": 37.1,
+          "perGame": {
+            "touchdowns": 2.57,
+            "tdAssists": 0.74,
+            "damage": 2806,
+            "points": 152.7
+          },
+          "perMinute": {
+            "touchdowns": 0.15,
+            "damage": 163,
+            "points": 8.86
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 33.3,
+            "damage": 31.9
+          },
+          "mvpRatePct": 8.6,
+          "bestWinStreak": 4,
+          "apiDetails": {
+            "games": 35,
+            "killsPerGame": 9.03,
+            "deathsPerGame": 27.14,
+            "kd": 0.33,
+            "defensePerGame": 7.86,
+            "offensePerGame": 2.17,
+            "reboundsPerGame": 16.2
+          },
+          "elo": {
+            "start": 1491,
+            "end": 1479,
+            "peak": 1492,
+            "low": 1403,
+            "change": -12,
+            "lastTen": 37
+          }
+        },
+        "4v4": {
+          "games": 3,
+          "wins": 1,
+          "losses": 2,
+          "winratePct": 33.3,
+          "perGame": {
+            "touchdowns": 2,
+            "tdAssists": 0.33,
+            "damage": 4631,
+            "points": 201.7
+          },
+          "perMinute": {
+            "touchdowns": 0.08,
+            "damage": 190,
+            "points": 8.29
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 26.1,
+            "damage": 31.5
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 1,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 20.33,
+            "deathsPerGame": 39.33,
+            "kd": 0.52,
+            "defensePerGame": 10.33,
+            "offensePerGame": 1.33,
+            "reboundsPerGame": 15.67
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1485,
+            "peak": 1501,
+            "low": 1484,
+            "change": -15,
+            "lastTen": -15
+          }
+        },
+        "2v2": {
+          "games": 22,
+          "wins": 11,
+          "losses": 11,
+          "winratePct": 50,
+          "perGame": {
+            "touchdowns": 4.41,
+            "tdAssists": 0.77,
+            "damage": 1856,
+            "points": 139.8
+          },
+          "perMinute": {
+            "touchdowns": 0.34,
+            "damage": 145,
+            "points": 10.93
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 51.3,
+            "damage": 43.7
+          },
+          "mvpRatePct": 18.2,
+          "bestWinStreak": 3,
+          "apiDetails": {
+            "games": 22,
+            "killsPerGame": 3.82,
+            "deathsPerGame": 17.73,
+            "kd": 0.22,
+            "defensePerGame": 6.59,
+            "offensePerGame": 1.73,
+            "reboundsPerGame": 16.09
+          },
+          "elo": {
+            "start": 1425,
+            "end": 1476,
+            "peak": 1504,
+            "low": 1425,
+            "change": 51,
+            "lastTen": -12
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 44.2,
+        "pointsCoefficientOfVariationPct": 29.4,
+        "touchdownsStdDev": 2.24,
+        "gamesWithZeroTouchdownsPct": 10,
+        "gamesWith6PlusTouchdownsPct": 23.3
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 24,
+          "wins": 8,
+          "winratePct": 33.3
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 18,
+          "wins": 9,
+          "winratePct": 50
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 41.4,
+        "gamesAsTeamTopTouchdownScorer": 29,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 42.1,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 19,
+        "matchMvpHighestScore": 7
+      },
+      "streaks": {
+        "bestWinStreak": 4,
+        "worstLossStreak": 5,
+        "current": {
+          "result": "W",
+          "length": 2
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 26,
+          "wins": 8,
+          "winratePct": 30.8
+        },
+        "asFavorite": {
+          "games": 16,
+          "wins": 10,
+          "winratePct": 62.5
+        },
+        "winsAboveExpected": -3.9
+      },
+      "fumbiConversion": {
+        "games": 60,
+        "rebounds": 968,
+        "touchdowns": 193,
+        "touchdownsPerReboundPct": 19.9
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 3,
+          "goodSide": "über Median",
+          "gamesGood": 25,
+          "winrateGood": 52,
+          "gamesBad": 35,
+          "winrateBad": 34.3,
+          "deltaPts": 17.7
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 29,
+          "winrateGood": 51.7,
+          "gamesBad": 31,
+          "winrateBad": 32.3,
+          "deltaPts": 19.4
+        },
+        "damage": {
+          "ownMedian": 2286,
+          "goodSide": "über Median",
+          "gamesGood": 30,
+          "winrateGood": 26.7,
+          "gamesBad": 30,
+          "winrateBad": 56.7,
+          "deltaPts": -30
+        },
+        "kills": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 28,
+          "winrateGood": 35.7,
+          "gamesBad": 32,
+          "winrateBad": 46.9,
+          "deltaPts": -11.2
+        },
+        "deaths": {
+          "ownMedian": 22.5,
+          "goodSide": "unter Median",
+          "gamesGood": 30,
+          "winrateGood": 50,
+          "gamesBad": 30,
+          "winrateBad": 33.3,
+          "deltaPts": 16.7
+        },
+        "rebounds": {
+          "ownMedian": 15,
+          "goodSide": "über Median",
+          "gamesGood": 26,
+          "winrateGood": 30.8,
+          "gamesBad": 34,
+          "winrateBad": 50,
+          "deltaPts": -19.2
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 29,
+          "winrateGood": 37.9,
+          "gamesBad": 31,
+          "winrateBad": 45.2,
+          "deltaPts": -7.3
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 25,
+          "touchdownsPerGame": 3.8,
+          "damagePerGame": 2232,
+          "touchdownSharePct": 38,
+          "deathsPerGame": 22.12
+        },
+        "losses": {
+          "games": 35,
+          "touchdownsPerGame": 2.8,
+          "damagePerGame": 2775,
+          "touchdownSharePct": 39.4,
+          "deathsPerGame": 25.86
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 26,
+          "touchdownsPerGame": 2.46,
+          "pointsPerGame": 152.1,
+          "damagePerGame": 2891
+        },
+        "even": {
+          "games": 18,
+          "touchdownsPerGame": 3.39,
+          "pointsPerGame": 158.3,
+          "damagePerGame": 2675
+        },
+        "asFavorite": {
+          "games": 16,
+          "touchdownsPerGame": 4.25,
+          "pointsPerGame": 138.8,
+          "damagePerGame": 1851
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -13.5,
+        "perMate": [
+          {
+            "mate": "Malena",
+            "gamesWith": 23,
+            "winrateWith": 56.5,
+            "gamesWithout": 30,
+            "winrateWithout": 56.7,
+            "deltaPts": -0.2
+          },
+          {
+            "mate": "BickD4ckEnergy",
+            "gamesWith": 15,
+            "winrateWith": 26.7,
+            "gamesWithout": 24,
+            "winrateWithout": 37.5,
+            "deltaPts": -10.8
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 19,
+            "winrateWith": 26.3,
+            "gamesWithout": 30,
+            "winrateWithout": 40,
+            "deltaPts": -13.7
+          },
+          {
+            "mate": "-Darkstar",
+            "gamesWith": 27,
+            "winrateWith": 40.7,
+            "gamesWithout": 5,
+            "winrateWithout": 60,
+            "deltaPts": -19.3
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 12,
+            "winrateWith": 41.7,
+            "gamesWithout": 27,
+            "winrateWithout": 70.4,
+            "deltaPts": -28.7
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -0.25
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 30,
+          "wins": 11,
+          "winratePct": 36.7,
+          "touchdownsPerGame": 3.3,
+          "pointsPerMinute": 9.04
+        },
+        "speedrun": {
+          "games": 30,
+          "wins": 14,
+          "winratePct": 46.7,
+          "touchdownsPerGame": 3.13,
+          "pointsPerMinute": 10.11
+        }
+      },
+      "teammates": [
+        {
+          "with": "Malena",
+          "games": 23,
+          "wins": 13,
+          "winratePct": 56.5,
+          "synergyPct": 3.9
+        },
+        {
+          "with": "-Darkstar",
+          "games": 27,
+          "wins": 11,
+          "winratePct": 40.7,
+          "synergyPct": -4.1
+        },
+        {
+          "with": "Nebus.",
+          "games": 12,
+          "wins": 5,
+          "winratePct": 41.7,
+          "synergyPct": -12.5
+        },
+        {
+          "with": "BickD4ckEnergy",
+          "games": 15,
+          "wins": 4,
+          "winratePct": 26.7,
+          "synergyPct": -15.2
+        },
+        {
+          "with": "ZeroO",
+          "games": 19,
+          "wins": 5,
+          "winratePct": 26.3,
+          "synergyPct": -15.6
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Aferdita",
+          "games": 5,
+          "wins": 0,
+          "winratePct": 0
+        },
+        {
+          "against": "Malena",
+          "games": 24,
+          "wins": 5,
+          "winratePct": 20.8
+        },
+        {
+          "against": "Nebus.",
+          "games": 27,
+          "wins": 7,
+          "winratePct": 25.9
+        },
+        {
+          "against": "-Darkstar",
+          "games": 16,
+          "wins": 7,
+          "winratePct": 43.8
+        },
+        {
+          "against": "ZeroO",
+          "games": 41,
+          "wins": 20,
+          "winratePct": 48.8
+        },
+        {
+          "against": "BickD4ckEnergy",
+          "games": 42,
+          "wins": 21,
+          "winratePct": 50
+        },
+        {
+          "against": "Troniix",
+          "games": 6,
+          "wins": 5,
+          "winratePct": 83.3
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 208,
+          "date": "2026-09-27",
+          "mode": "3v3",
+          "touchdowns": 3,
+          "points": 263,
+          "damage": 5744,
+          "result": "L"
+        },
+        "mostTouchdowns": {
+          "match": 264,
+          "date": "2026-10-14",
+          "mode": "2v2",
+          "touchdowns": 9,
+          "points": 199,
+          "damage": 1710,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "-Darkstar",
+      "season": {
+        "games": 48,
+        "wins": 23,
+        "losses": 25,
+        "winratePct": 47.9,
+        "perGame": {
+          "touchdowns": 2.6,
+          "tdAssists": 0.62,
+          "damage": 3086,
+          "points": 158.7
+        },
+        "perMinute": {
+          "touchdowns": 0.15,
+          "damage": 179,
+          "points": 9.19
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 33.1,
+          "damage": 36.1
+        },
+        "mvpRatePct": 14.6,
+        "bestWinStreak": 3,
+        "apiDetails": {
+          "games": 47,
+          "killsPerGame": 10.17,
+          "deathsPerGame": 18.94,
+          "kd": 0.54,
+          "defensePerGame": 10.74,
+          "offensePerGame": 1.94,
+          "reboundsPerGame": 14.11
+        },
+        "elo": {
+          "start": 1507,
+          "end": 1531,
+          "peak": 1579,
+          "low": 1451,
+          "change": 24,
+          "lastTen": -10
+        }
+      },
+      "career": {
+        "games": 55,
+        "wins": 26,
+        "losses": 29,
+        "winratePct": 47.3,
+        "perGame": {
+          "touchdowns": 2.65,
+          "tdAssists": 0.57,
+          "damage": 2922,
+          "points": 152.6
+        },
+        "perMinute": {
+          "touchdowns": 0.16,
+          "damage": 178,
+          "points": 9.31
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 35,
+          "damage": 36.5
+        },
+        "mvpRatePct": 14.5,
+        "bestWinStreak": 3,
+        "apiDetails": {
+          "games": 54,
+          "killsPerGame": 9.33,
+          "deathsPerGame": 18.04,
+          "kd": 0.52,
+          "defensePerGame": 10.02,
+          "offensePerGame": 2,
+          "reboundsPerGame": 13.65
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1531,
+          "peak": 1579,
+          "low": 1451,
+          "change": 31,
+          "lastTen": -10
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 47.9,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 2.6,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.62,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 3085.51,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 158.72,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 9.19,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 33.1,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 36.1,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 14.6,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.54,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 10.17,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 18.94,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 10.74,
+          "rank": 2,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 1.94,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 14.11,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 16,
+          "wins": 8,
+          "winratePct": 50,
+          "modeMixPct": {
+            "2v2": 6.3,
+            "3v3": 75,
+            "4v4": 18.8
+          },
+          "touchdownsPerGame": 3.19,
+          "pointsPerGame": 167.4,
+          "damagePerGame": 2736
+        },
+        "middle": {
+          "games": 16,
+          "wins": 7,
+          "winratePct": 43.8,
+          "modeMixPct": {
+            "3v3": 100
+          },
+          "touchdownsPerGame": 2.13,
+          "pointsPerGame": 142.6,
+          "damagePerGame": 2990
+        },
+        "late": {
+          "games": 16,
+          "wins": 8,
+          "winratePct": 50,
+          "modeMixPct": {
+            "2v2": 43.8,
+            "3v3": 56.3
+          },
+          "touchdownsPerGame": 2.31,
+          "pointsPerGame": 156.3,
+          "damagePerGame": 3338
+        },
+        "last20": {
+          "games": 20,
+          "wins": 11,
+          "winratePct": 55,
+          "modeMixPct": {
+            "2v2": 35,
+            "3v3": 65
+          },
+          "touchdownsPerGame": 2.25,
+          "pointsPerGame": 152.3,
+          "damagePerGame": 3261
+        }
+      },
+      "byMode": {
+        "3v3": {
+          "games": 37,
+          "wins": 16,
+          "losses": 21,
+          "winratePct": 43.2,
+          "perGame": {
+            "touchdowns": 2.17,
+            "tdAssists": 0.67,
+            "damage": 3285,
+            "points": 159.7
+          },
+          "perMinute": {
+            "touchdowns": 0.12,
+            "damage": 188,
+            "points": 9.15
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 28.7,
+            "damage": 36.6
+          },
+          "mvpRatePct": 10.8,
+          "bestWinStreak": 2,
+          "apiDetails": {
+            "games": 36,
+            "killsPerGame": 11.39,
+            "deathsPerGame": 18.83,
+            "kd": 0.6,
+            "defensePerGame": 11.75,
+            "offensePerGame": 1.81,
+            "reboundsPerGame": 13.17
+          },
+          "elo": {
+            "start": 1503,
+            "end": 1515,
+            "peak": 1545,
+            "low": 1429,
+            "change": 12,
+            "lastTen": 11
+          }
+        },
+        "4v4": {
+          "games": 3,
+          "wins": 2,
+          "losses": 1,
+          "winratePct": 66.7,
+          "perGame": {
+            "touchdowns": 4,
+            "tdAssists": 0.67,
+            "damage": 2841,
+            "points": 202.7
+          },
+          "perMinute": {
+            "touchdowns": 0.16,
+            "damage": 117,
+            "points": 8.33
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 48,
+            "damage": 18.5
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 2,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 8.33,
+            "deathsPerGame": 40,
+            "kd": 0.21,
+            "defensePerGame": 7.67,
+            "offensePerGame": 4.67,
+            "reboundsPerGame": 31.67
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1514,
+            "peak": 1531,
+            "low": 1500,
+            "change": 14,
+            "lastTen": 14
+          }
+        },
+        "2v2": {
+          "games": 8,
+          "wins": 5,
+          "losses": 3,
+          "winratePct": 62.5,
+          "perGame": {
+            "touchdowns": 4,
+            "tdAssists": 0.38,
+            "damage": 2281,
+            "points": 137.8
+          },
+          "perMinute": {
+            "touchdowns": 0.29,
+            "damage": 165,
+            "points": 9.96
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 44.4,
+            "damage": 56.7
+          },
+          "mvpRatePct": 37.5,
+          "bestWinStreak": 3,
+          "apiDetails": {
+            "games": 8,
+            "killsPerGame": 5.38,
+            "deathsPerGame": 11.5,
+            "kd": 0.47,
+            "defensePerGame": 7.38,
+            "offensePerGame": 1.5,
+            "reboundsPerGame": 11.75
+          },
+          "elo": {
+            "start": 1503,
+            "end": 1534,
+            "peak": 1564,
+            "low": 1503,
+            "change": 31,
+            "lastTen": 31
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 49.9,
+        "pointsCoefficientOfVariationPct": 32.1,
+        "touchdownsStdDev": 2.38,
+        "gamesWithZeroTouchdownsPct": 22.9,
+        "gamesWith6PlusTouchdownsPct": 14.6
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 20,
+          "wins": 11,
+          "winratePct": 55
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 15,
+          "wins": 5,
+          "winratePct": 33.3
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 50,
+        "gamesAsTeamTopTouchdownScorer": 16,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 85.7,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 7,
+        "matchMvpHighestScore": 7
+      },
+      "streaks": {
+        "bestWinStreak": 3,
+        "worstLossStreak": 6,
+        "current": {
+          "result": "L",
+          "length": 1
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 24,
+          "wins": 10,
+          "winratePct": 41.7
+        },
+        "asFavorite": {
+          "games": 6,
+          "wins": 5,
+          "winratePct": 83.3
+        },
+        "winsAboveExpected": 1.2
+      },
+      "fumbiConversion": {
+        "games": 47,
+        "rebounds": 663,
+        "touchdowns": 122,
+        "touchdownsPerReboundPct": 18.4
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 22,
+          "winrateGood": 63.6,
+          "gamesBad": 26,
+          "winrateBad": 34.6,
+          "deltaPts": 29
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 23,
+          "winrateGood": 52.2,
+          "gamesBad": 25,
+          "winrateBad": 44,
+          "deltaPts": 8.2
+        },
+        "damage": {
+          "ownMedian": 2808,
+          "goodSide": "über Median",
+          "gamesGood": 24,
+          "winrateGood": 50,
+          "gamesBad": 24,
+          "winrateBad": 45.8,
+          "deltaPts": 4.2
+        },
+        "kills": {
+          "ownMedian": 9,
+          "goodSide": "über Median",
+          "gamesGood": 21,
+          "winrateGood": 52.4,
+          "gamesBad": 26,
+          "winrateBad": 46.2,
+          "deltaPts": 6.2
+        },
+        "deaths": {
+          "ownMedian": 17,
+          "goodSide": "unter Median",
+          "gamesGood": 23,
+          "winrateGood": 52.2,
+          "gamesBad": 24,
+          "winrateBad": 45.8,
+          "deltaPts": 6.4
+        },
+        "rebounds": {
+          "ownMedian": 11,
+          "goodSide": "über Median",
+          "gamesGood": 22,
+          "winrateGood": 54.5,
+          "gamesBad": 25,
+          "winrateBad": 44,
+          "deltaPts": 10.5
+        },
+        "defense": {
+          "ownMedian": 10,
+          "goodSide": "über Median",
+          "gamesGood": 21,
+          "winrateGood": 47.6,
+          "gamesBad": 26,
+          "winrateBad": 50,
+          "deltaPts": -2.4
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 23,
+          "touchdownsPerGame": 3.48,
+          "damagePerGame": 3146,
+          "touchdownSharePct": 35.7,
+          "deathsPerGame": 19.3
+        },
+        "losses": {
+          "games": 25,
+          "touchdownsPerGame": 1.68,
+          "damagePerGame": 2906,
+          "touchdownSharePct": 25.9,
+          "deathsPerGame": 18.58
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 24,
+          "touchdownsPerGame": 2.46,
+          "pointsPerGame": 142.9,
+          "damagePerGame": 2745
+        },
+        "even": {
+          "games": 18,
+          "touchdownsPerGame": 2.61,
+          "pointsPerGame": 162.1,
+          "damagePerGame": 3211
+        },
+        "asFavorite": {
+          "games": 6,
+          "touchdownsPerGame": 2.67,
+          "pointsPerGame": 185.5,
+          "damagePerGame": 3556
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 4.4,
+        "perMate": [
+          {
+            "mate": "Aferdita",
+            "gamesWith": 7,
+            "winrateWith": 71.4,
+            "gamesWithout": 6,
+            "winrateWithout": 33.3,
+            "deltaPts": 38.1
+          },
+          {
+            "mate": "Nebus.",
+            "gamesWith": 5,
+            "winrateWith": 100,
+            "gamesWithout": 29,
+            "winrateWithout": 65.5,
+            "deltaPts": 34.5
+          },
+          {
+            "mate": "BickD4ckEnergy",
+            "gamesWith": 10,
+            "winrateWith": 50,
+            "gamesWithout": 40,
+            "winrateWithout": 35,
+            "deltaPts": 15
+          },
+          {
+            "mate": "Kesny",
+            "gamesWith": 27,
+            "winrateWith": 40.7,
+            "gamesWithout": 17,
+            "winrateWithout": 41.2,
+            "deltaPts": -0.5
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 11,
+            "winrateWith": 63.6,
+            "gamesWithout": 38,
+            "winrateWithout": 65.8,
+            "deltaPts": -2.2
+          },
+          {
+            "mate": "ZeroO",
+            "gamesWith": 24,
+            "winrateWith": 37.5,
+            "gamesWithout": 42,
+            "winrateWithout": 45.2,
+            "deltaPts": -7.7
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -0.83
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 28,
+          "wins": 14,
+          "winratePct": 50,
+          "touchdownsPerGame": 2.25,
+          "pointsPerMinute": 8.82
+        },
+        "speedrun": {
+          "games": 20,
+          "wins": 9,
+          "winratePct": 45,
+          "touchdownsPerGame": 2.95,
+          "pointsPerMinute": 9.77
+        }
+      },
+      "teammates": [
+        {
+          "with": "Nebus.",
+          "games": 5,
+          "wins": 5,
+          "winratePct": 100,
+          "synergyPct": 42.7
+        },
+        {
+          "with": "Aferdita",
+          "games": 7,
+          "wins": 5,
+          "winratePct": 71.4,
+          "synergyPct": 16.2
+        },
+        {
+          "with": "Malena",
+          "games": 11,
+          "wins": 7,
+          "winratePct": 63.6,
+          "synergyPct": 7.9
+        },
+        {
+          "with": "BickD4ckEnergy",
+          "games": 10,
+          "wins": 5,
+          "winratePct": 50,
+          "synergyPct": 5.1
+        },
+        {
+          "with": "Kesny",
+          "games": 27,
+          "wins": 11,
+          "winratePct": 40.7,
+          "synergyPct": -4.1
+        },
+        {
+          "with": "ZeroO",
+          "games": 24,
+          "wins": 9,
+          "winratePct": 37.5,
+          "synergyPct": -7.6
+        },
+        {
+          "with": "Troniix",
+          "games": 7,
+          "wins": 1,
+          "winratePct": 14.3,
+          "synergyPct": -18
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Nebus.",
+          "games": 32,
+          "wins": 12,
+          "winratePct": 37.5
+        },
+        {
+          "against": "Malena",
+          "games": 28,
+          "wins": 11,
+          "winratePct": 39.3
+        },
+        {
+          "against": "BickD4ckEnergy",
+          "games": 31,
+          "wins": 16,
+          "winratePct": 51.6
+        },
+        {
+          "against": "Kesny",
+          "games": 16,
+          "wins": 9,
+          "winratePct": 56.3
+        },
+        {
+          "against": "ZeroO",
+          "games": 24,
+          "wins": 14,
+          "winratePct": 58.3
+        },
+        {
+          "against": "Troniix",
+          "games": 5,
+          "wins": 4,
+          "winratePct": 80
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 203,
+          "date": "2026-09-26",
+          "mode": "4v4",
+          "touchdowns": 7,
+          "points": 277,
+          "damage": 3285,
+          "result": "W"
+        },
+        "mostTouchdowns": {
+          "match": 246,
+          "date": "2026-10-04",
+          "mode": "3v3",
+          "touchdowns": 9,
+          "points": 191,
+          "damage": 1638,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "Aferdita",
+      "season": {
+        "games": 16,
+        "wins": 10,
+        "losses": 6,
+        "winratePct": 62.5,
+        "perGame": {
+          "touchdowns": 2.25,
+          "tdAssists": 0.94,
+          "damage": 1962,
+          "points": 117.8
+        },
+        "perMinute": {
+          "touchdowns": 0.14,
+          "damage": 123,
+          "points": 7.39
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 26.9,
+          "damage": 23.4
+        },
+        "mvpRatePct": 0,
+        "bestWinStreak": 5,
+        "apiDetails": {
+          "games": 16,
+          "killsPerGame": 6,
+          "deathsPerGame": 24.75,
+          "kd": 0.24,
+          "defensePerGame": 6.81,
+          "offensePerGame": 0.69,
+          "reboundsPerGame": 14
+        },
+        "elo": {
+          "start": 1471,
+          "end": 1538,
+          "peak": 1550,
+          "low": 1471,
+          "change": 67,
+          "lastTen": 3
+        }
+      },
+      "career": {
+        "games": 101,
+        "wins": 50,
+        "losses": 51,
+        "winratePct": 49.5,
+        "perGame": {
+          "touchdowns": 2.33,
+          "tdAssists": 0.64,
+          "damage": 1790,
+          "points": 112.6
+        },
+        "perMinute": {
+          "touchdowns": 0.15,
+          "damage": 114,
+          "points": 7.2
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 28.5,
+          "damage": 26.9
+        },
+        "mvpRatePct": 2,
+        "bestWinStreak": 7,
+        "apiDetails": {
+          "games": 86,
+          "killsPerGame": 4.22,
+          "deathsPerGame": 24.1,
+          "kd": 0.18,
+          "defensePerGame": 7.15,
+          "offensePerGame": 1.12,
+          "reboundsPerGame": 14.59
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1538,
+          "peak": 1590,
+          "low": 1439,
+          "change": 38,
+          "lastTen": 3
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 62.5,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 2.25,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0.94,
+          "rank": 1,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 1962.31,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 117.81,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 7.39,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 26.9,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 23.4,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 0,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.24,
+          "rank": 6,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 6,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 24.75,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 6.81,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 0.69,
+          "rank": 7,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 14,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 5,
+          "wins": 5,
+          "winratePct": 100,
+          "modeMixPct": {
+            "3v3": 40,
+            "4v4": 60
+          },
+          "touchdownsPerGame": 2,
+          "pointsPerGame": 130,
+          "damagePerGame": 2210
+        },
+        "middle": {
+          "games": 5,
+          "wins": 2,
+          "winratePct": 40,
+          "modeMixPct": {
+            "2v2": 40,
+            "3v3": 60
+          },
+          "touchdownsPerGame": 2.4,
+          "pointsPerGame": 107,
+          "damagePerGame": 1752
+        },
+        "late": {
+          "games": 6,
+          "wins": 3,
+          "winratePct": 50,
+          "modeMixPct": {
+            "2v2": 33.3,
+            "3v3": 66.7
+          },
+          "touchdownsPerGame": 2.33,
+          "pointsPerGame": 116.7,
+          "damagePerGame": 1931
+        },
+        "last20": {
+          "games": 16,
+          "wins": 10,
+          "winratePct": 62.5,
+          "modeMixPct": {
+            "2v2": 25,
+            "3v3": 56.3,
+            "4v4": 18.8
+          },
+          "touchdownsPerGame": 2.25,
+          "pointsPerGame": 117.8,
+          "damagePerGame": 1962
+        }
+      },
+      "byMode": {
+        "4v4": {
+          "games": 3,
+          "wins": 3,
+          "losses": 0,
+          "winratePct": 100,
+          "perGame": {
+            "touchdowns": 1.67,
+            "tdAssists": 1.33,
+            "damage": 2412,
+            "points": 141.7
+          },
+          "perMinute": {
+            "touchdowns": 0.08,
+            "damage": 110,
+            "points": 6.46
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 18.5,
+            "damage": 15.3
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 3,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 11.33,
+            "deathsPerGame": 34.33,
+            "kd": 0.33,
+            "defensePerGame": 8.33,
+            "offensePerGame": 1.67,
+            "reboundsPerGame": 18
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1546,
+            "peak": 1546,
+            "low": 1500,
+            "change": 46,
+            "lastTen": 46
+          }
+        },
+        "3v3": {
+          "games": 9,
+          "wins": 7,
+          "losses": 2,
+          "winratePct": 77.8,
+          "perGame": {
+            "touchdowns": 2.67,
+            "tdAssists": 1.11,
+            "damage": 2093,
+            "points": 129.2
+          },
+          "perMinute": {
+            "touchdowns": 0.16,
+            "damage": 127,
+            "points": 7.86
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 29.6,
+            "damage": 25
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 3,
+          "apiDetails": {
+            "games": 9,
+            "killsPerGame": 5.89,
+            "deathsPerGame": 27.67,
+            "kd": 0.21,
+            "defensePerGame": 7,
+            "offensePerGame": 0.44,
+            "reboundsPerGame": 15.67
+          },
+          "elo": {
+            "start": 1462,
+            "end": 1550,
+            "peak": 1550,
+            "low": 1462,
+            "change": 88,
+            "lastTen": 88
+          }
+        },
+        "2v2": {
+          "games": 4,
+          "wins": 0,
+          "losses": 4,
+          "winratePct": 0,
+          "perGame": {
+            "touchdowns": 1.75,
+            "tdAssists": 0.25,
+            "damage": 1331,
+            "points": 74.3
+          },
+          "perMinute": {
+            "touchdowns": 0.17,
+            "damage": 129,
+            "points": 7.18
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 26.9,
+            "damage": 45.9
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 0,
+          "apiDetails": {
+            "games": 4,
+            "killsPerGame": 2.25,
+            "deathsPerGame": 11,
+            "kd": 0.2,
+            "defensePerGame": 5.25,
+            "offensePerGame": 0.5,
+            "reboundsPerGame": 7.25
+          },
+          "elo": {
+            "start": 1483,
+            "end": 1434,
+            "peak": 1483,
+            "low": 1434,
+            "change": -49,
+            "lastTen": -49
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 39,
+        "pointsCoefficientOfVariationPct": 33.1,
+        "touchdownsStdDev": 1.39,
+        "gamesWithZeroTouchdownsPct": 12.5,
+        "gamesWith6PlusTouchdownsPct": 0
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 4,
+          "wins": 3,
+          "winratePct": 75
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 6,
+          "wins": 4,
+          "winratePct": 66.7
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 75,
+        "gamesAsTeamTopTouchdownScorer": 4,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": 0,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 1,
+        "matchMvpHighestScore": 0
+      },
+      "streaks": {
+        "bestWinStreak": 5,
+        "worstLossStreak": 3,
+        "current": {
+          "result": "W",
+          "length": 2
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 2,
+          "wins": 2,
+          "winratePct": 100
+        },
+        "asFavorite": {
+          "games": 7,
+          "wins": 6,
+          "winratePct": 85.7
+        },
+        "winsAboveExpected": 1.6
+      },
+      "fumbiConversion": {
+        "games": 16,
+        "rebounds": 224,
+        "touchdowns": 36,
+        "touchdownsPerReboundPct": 16.1
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 2,
+          "goodSide": "über Median",
+          "gamesGood": 7,
+          "winrateGood": 85.7,
+          "gamesBad": 9,
+          "winrateBad": 44.4,
+          "deltaPts": 41.3
+        },
+        "tdAssists": {
+          "ownMedian": 0.5,
+          "goodSide": "über Median",
+          "gamesGood": 8,
+          "winrateGood": 75,
+          "gamesBad": 8,
+          "winrateBad": 50,
+          "deltaPts": 25
+        },
+        "damage": {
+          "ownMedian": 1835,
+          "goodSide": "über Median",
+          "gamesGood": 8,
+          "winrateGood": 62.5,
+          "gamesBad": 8,
+          "winrateBad": 62.5,
+          "deltaPts": 0
+        },
+        "kills": {
+          "ownMedian": 5,
+          "goodSide": "über Median",
+          "gamesGood": 6,
+          "winrateGood": 83.3,
+          "gamesBad": 10,
+          "winrateBad": 50,
+          "deltaPts": 33.3
+        },
+        "deaths": {
+          "ownMedian": 22.5,
+          "goodSide": "unter Median",
+          "gamesGood": 8,
+          "winrateGood": 50,
+          "gamesBad": 8,
+          "winrateBad": 75,
+          "deltaPts": -25
+        },
+        "rebounds": {
+          "ownMedian": 13,
+          "goodSide": "über Median",
+          "gamesGood": 8,
+          "winrateGood": 87.5,
+          "gamesBad": 8,
+          "winrateBad": 37.5,
+          "deltaPts": 50
+        },
+        "defense": {
+          "ownMedian": 7,
+          "goodSide": "über Median",
+          "gamesGood": 7,
+          "winrateGood": 71.4,
+          "gamesBad": 9,
+          "winrateBad": 55.6,
+          "deltaPts": 15.8
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 10,
+          "touchdownsPerGame": 2.6,
+          "damagePerGame": 2076,
+          "touchdownSharePct": 26.3,
+          "deathsPerGame": 26.9
+        },
+        "losses": {
+          "games": 6,
+          "touchdownsPerGame": 1.67,
+          "damagePerGame": 1773,
+          "touchdownSharePct": 25.1,
+          "deathsPerGame": 21.17
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 2,
+          "touchdownsPerGame": 3.5,
+          "pointsPerGame": 157.5,
+          "damagePerGame": 2409
+        },
+        "even": {
+          "games": 7,
+          "touchdownsPerGame": 1.57,
+          "pointsPerGame": 109.9,
+          "damagePerGame": 2014
+        },
+        "asFavorite": {
+          "games": 7,
+          "touchdownsPerGame": 2.57,
+          "pointsPerGame": 114.4,
+          "damagePerGame": 1783
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": 17.7,
+        "perMate": [
+          {
+            "mate": "ZeroO",
+            "gamesWith": 7,
+            "winrateWith": 71.4,
+            "gamesWithout": 74,
+            "winrateWithout": 39.2,
+            "deltaPts": 32.2
+          },
+          {
+            "mate": "-Darkstar",
+            "gamesWith": 7,
+            "winrateWith": 71.4,
+            "gamesWithout": 38,
+            "winrateWithout": 47.4,
+            "deltaPts": 24
+          },
+          {
+            "mate": "Malena",
+            "gamesWith": 9,
+            "winrateWith": 66.7,
+            "gamesWithout": 63,
+            "winrateWithout": 65.1,
+            "deltaPts": 1.6
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": 1.19
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 6,
+          "wins": 4,
+          "winratePct": 66.7,
+          "touchdownsPerGame": 2.17,
+          "pointsPerMinute": 6.87
+        },
+        "speedrun": {
+          "games": 10,
+          "wins": 6,
+          "winratePct": 60,
+          "touchdownsPerGame": 2.3,
+          "pointsPerMinute": 7.95
+        }
+      },
+      "teammates": [
+        {
+          "with": "ZeroO",
+          "games": 7,
+          "wins": 5,
+          "winratePct": 71.4,
+          "synergyPct": 19.1
+        },
+        {
+          "with": "-Darkstar",
+          "games": 7,
+          "wins": 5,
+          "winratePct": 71.4,
+          "synergyPct": 16.2
+        },
+        {
+          "with": "Malena",
+          "games": 9,
+          "wins": 6,
+          "winratePct": 66.7,
+          "synergyPct": 3.6
+        }
+      ],
+      "opponents": [
+        {
+          "against": "ZeroO",
+          "games": 9,
+          "wins": 5,
+          "winratePct": 55.6
+        },
+        {
+          "against": "Malena",
+          "games": 5,
+          "wins": 3,
+          "winratePct": 60
+        },
+        {
+          "against": "Nebus.",
+          "games": 10,
+          "wins": 6,
+          "winratePct": 60
+        },
+        {
+          "against": "BickD4ckEnergy",
+          "games": 8,
+          "wins": 5,
+          "winratePct": 62.5
+        },
+        {
+          "against": "Troniix",
+          "games": 7,
+          "wins": 6,
+          "winratePct": 85.7
+        },
+        {
+          "against": "Kesny",
+          "games": 5,
+          "wins": 5,
+          "winratePct": 100
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 270,
+          "date": "2026-10-14",
+          "mode": "3v3",
+          "touchdowns": 5,
+          "points": 208,
+          "damage": 3286,
+          "result": "W"
+        },
+        "mostTouchdowns": {
+          "match": 270,
+          "date": "2026-10-14",
+          "mode": "3v3",
+          "touchdowns": 5,
+          "points": 208,
+          "damage": 3286,
+          "result": "W"
+        }
+      }
+    },
+    {
+      "name": "Troniix",
+      "season": {
+        "games": 12,
+        "wins": 2,
+        "losses": 10,
+        "winratePct": 16.7,
+        "perGame": {
+          "touchdowns": 0,
+          "tdAssists": 0,
+          "damage": 1781,
+          "points": 63.8
+        },
+        "perMinute": {
+          "touchdowns": 0,
+          "damage": 111,
+          "points": 3.99
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 0,
+          "damage": 20.6
+        },
+        "mvpRatePct": 0,
+        "bestWinStreak": 1,
+        "apiDetails": {
+          "games": 12,
+          "killsPerGame": 6,
+          "deathsPerGame": 19.5,
+          "kd": 0.31,
+          "defensePerGame": 5.08,
+          "offensePerGame": 0.5,
+          "reboundsPerGame": 3.92
+        },
+        "elo": {
+          "start": 1374,
+          "end": 1333,
+          "peak": 1374,
+          "low": 1333,
+          "change": -41,
+          "lastTen": -23
+        }
+      },
+      "career": {
+        "games": 29,
+        "wins": 5,
+        "losses": 24,
+        "winratePct": 17.2,
+        "perGame": {
+          "touchdowns": 0.1,
+          "tdAssists": 0.31,
+          "damage": 2033,
+          "points": 77
+        },
+        "perMinute": {
+          "touchdowns": 0.01,
+          "damage": 120,
+          "points": 4.55
+        },
+        "shareOfTeamPct": {
+          "touchdowns": 1.8,
+          "damage": 26.7
+        },
+        "mvpRatePct": 0,
+        "bestWinStreak": 2,
+        "apiDetails": {
+          "games": 29,
+          "killsPerGame": 5.9,
+          "deathsPerGame": 20.31,
+          "kd": 0.29,
+          "defensePerGame": 6.07,
+          "offensePerGame": 0.62,
+          "reboundsPerGame": 5.34
+        },
+        "elo": {
+          "start": 1500,
+          "end": 1333,
+          "peak": 1520,
+          "low": 1333,
+          "change": -167,
+          "lastTen": -23
+        }
+      },
+      "groupComparisonSeason": {
+        "winrate": {
+          "value": 16.7,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 45.1
+        },
+        "touchdownsPerGame": {
+          "value": 0,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 2.62
+        },
+        "tdAssistsPerGame": {
+          "value": 0,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 0.6
+        },
+        "damagePerGame": {
+          "value": 1781.17,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 2230.49
+        },
+        "pointsPerGame": {
+          "value": 63.83,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 152.44
+        },
+        "pointsPerMinute": {
+          "value": 3.99,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 9.31
+        },
+        "touchdownShare": {
+          "value": 0,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 31.3
+        },
+        "damageShare": {
+          "value": 20.6,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 34.1
+        },
+        "mvpRate": {
+          "value": 0,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 13.1
+        },
+        "kd": {
+          "value": 0.31,
+          "rank": 4,
+          "of": 8,
+          "groupMedian": 0.29
+        },
+        "killsPerGame": {
+          "value": 6,
+          "rank": 5,
+          "of": 8,
+          "groupMedian": 6
+        },
+        "deathsPerGame": {
+          "value": 19.5,
+          "rank": 3,
+          "of": 8,
+          "groupMedian": 20.68
+        },
+        "defensePerGame": {
+          "value": 5.08,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 8.14
+        },
+        "offensePerGame": {
+          "value": 0.5,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 1.52
+        },
+        "reboundsPerGame": {
+          "value": 3.92,
+          "rank": 8,
+          "of": 8,
+          "groupMedian": 14.05
+        }
+      },
+      "trendWithinSeason": {
+        "note": "Season-Matches des Spielers in drei gleich große Abschnitte geteilt (früh → spät)",
+        "early": {
+          "games": 4,
+          "wins": 1,
+          "winratePct": 25,
+          "modeMixPct": {
+            "3v3": 25,
+            "4v4": 75
+          },
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 82.8,
+          "damagePerGame": 2380
+        },
+        "middle": {
+          "games": 4,
+          "wins": 0,
+          "winratePct": 0,
+          "modeMixPct": {
+            "3v3": 100
+          },
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 50.5,
+          "damagePerGame": 1483
+        },
+        "late": {
+          "games": 4,
+          "wins": 1,
+          "winratePct": 25,
+          "modeMixPct": {
+            "3v3": 100
+          },
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 58.3,
+          "damagePerGame": 1481
+        },
+        "last20": {
+          "games": 12,
+          "wins": 2,
+          "winratePct": 16.7,
+          "modeMixPct": {
+            "3v3": 75,
+            "4v4": 25
+          },
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 63.8,
+          "damagePerGame": 1781
+        }
+      },
+      "byMode": {
+        "4v4": {
+          "games": 3,
+          "wins": 0,
+          "losses": 3,
+          "winratePct": 0,
+          "perGame": {
+            "touchdowns": 0,
+            "tdAssists": 0,
+            "damage": 2731,
+            "points": 94
+          },
+          "perMinute": {
+            "touchdowns": 0,
+            "damage": 112,
+            "points": 3.86
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 0,
+            "damage": 17.1
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 0,
+          "apiDetails": {
+            "games": 3,
+            "killsPerGame": 9,
+            "deathsPerGame": 31,
+            "kd": 0.29,
+            "defensePerGame": 7.33,
+            "offensePerGame": 0.33,
+            "reboundsPerGame": 4.67
+          },
+          "elo": {
+            "start": 1500,
+            "end": 1454,
+            "peak": 1500,
+            "low": 1454,
+            "change": -46,
+            "lastTen": -46
+          }
+        },
+        "3v3": {
+          "games": 9,
+          "wins": 2,
+          "losses": 7,
+          "winratePct": 22.2,
+          "perGame": {
+            "touchdowns": 0,
+            "tdAssists": 0,
+            "damage": 1465,
+            "points": 53.8
+          },
+          "perMinute": {
+            "touchdowns": 0,
+            "damage": 111,
+            "points": 4.07
+          },
+          "shareOfTeamPct": {
+            "touchdowns": 0,
+            "damage": 23.6
+          },
+          "mvpRatePct": 0,
+          "bestWinStreak": 1,
+          "apiDetails": {
+            "games": 9,
+            "killsPerGame": 5,
+            "deathsPerGame": 15.67,
+            "kd": 0.32,
+            "defensePerGame": 4.33,
+            "offensePerGame": 0.56,
+            "reboundsPerGame": 3.67
+          },
+          "elo": {
+            "start": 1376,
+            "end": 1351,
+            "peak": 1398,
+            "low": 1351,
+            "change": -25,
+            "lastTen": -25
+          }
+        }
+      },
+      "consistency": {
+        "pointsStdDev": 34.2,
+        "pointsCoefficientOfVariationPct": 53.5,
+        "touchdownsStdDev": 0,
+        "gamesWithZeroTouchdownsPct": 100,
+        "gamesWith6PlusTouchdownsPct": 0
+      },
+      "clutch": {
+        "closeGames": {
+          "note": "Endstand mit höchstens 2 Touchdowns Unterschied",
+          "games": 4,
+          "wins": 1,
+          "winratePct": 25
+        },
+        "blowouts": {
+          "note": "mindestens 5 Touchdowns Unterschied",
+          "games": 5,
+          "wins": 0,
+          "winratePct": 0
+        }
+      },
+      "teamRole": {
+        "winrateWhenTeamTopTouchdownScorerPct": 0,
+        "gamesAsTeamTopTouchdownScorer": 1,
+        "winrateWhenMoreThanHalfOfTeamTouchdownsPct": null,
+        "gamesWithMoreThanHalfOfTeamTouchdowns": 0,
+        "matchMvpHighestScore": 0
+      },
+      "streaks": {
+        "bestWinStreak": 1,
+        "worstLossStreak": 4,
+        "current": {
+          "result": "L",
+          "length": 3
+        }
+      },
+      "underdog": {
+        "note": "Außenseiter = laut ELO-Schnitt beider Teams höchstens 45 % Siegchance; Favorit = mindestens 55.00000000000001 %",
+        "asUnderdog": {
+          "games": 7,
+          "wins": 1,
+          "winratePct": 14.3
+        },
+        "asFavorite": {
+          "games": 1,
+          "wins": 0,
+          "winratePct": 0
+        },
+        "winsAboveExpected": -3.4
+      },
+      "fumbiConversion": {
+        "games": 12,
+        "rebounds": 47,
+        "touchdowns": 0,
+        "touchdownsPerReboundPct": 0
+      },
+      "winFactors": {
+        "note": "Winrate, wenn die eigene Kennzahl besser bzw. schlechter als der eigene Median ist (deaths: weniger ist besser). deltaPts = Unterschied in Winrate-Punkten – der größte Wert ist der Siegfaktor.",
+        "touchdowns": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 0,
+          "winrateGood": null,
+          "gamesBad": 12,
+          "winrateBad": 16.7,
+          "deltaPts": -16.7
+        },
+        "tdAssists": {
+          "ownMedian": 0,
+          "goodSide": "über Median",
+          "gamesGood": 0,
+          "winrateGood": null,
+          "gamesBad": 12,
+          "winrateBad": 16.7,
+          "deltaPts": -16.7
+        },
+        "damage": {
+          "ownMedian": 1611,
+          "goodSide": "über Median",
+          "gamesGood": 6,
+          "winrateGood": 16.7,
+          "gamesBad": 6,
+          "winrateBad": 16.7,
+          "deltaPts": 0
+        },
+        "kills": {
+          "ownMedian": 6,
+          "goodSide": "über Median",
+          "gamesGood": 5,
+          "winrateGood": 40,
+          "gamesBad": 7,
+          "winrateBad": 0,
+          "deltaPts": 40
+        },
+        "deaths": {
+          "ownMedian": 16.5,
+          "goodSide": "unter Median",
+          "gamesGood": 6,
+          "winrateGood": 16.7,
+          "gamesBad": 6,
+          "winrateBad": 16.7,
+          "deltaPts": 0
+        },
+        "rebounds": {
+          "ownMedian": 3.5,
+          "goodSide": "über Median",
+          "gamesGood": 6,
+          "winrateGood": 16.7,
+          "gamesBad": 6,
+          "winrateBad": 16.7,
+          "deltaPts": 0
+        },
+        "defense": {
+          "ownMedian": 4,
+          "goodSide": "über Median",
+          "gamesGood": 6,
+          "winrateGood": 33.3,
+          "gamesBad": 6,
+          "winrateBad": 0,
+          "deltaPts": 33.3
+        }
+      },
+      "winsVsLosses": {
+        "wins": {
+          "games": 2,
+          "touchdownsPerGame": 0,
+          "damagePerGame": 1700,
+          "touchdownSharePct": 0,
+          "deathsPerGame": 23
+        },
+        "losses": {
+          "games": 10,
+          "touchdownsPerGame": 0,
+          "damagePerGame": 1797,
+          "touchdownSharePct": 0,
+          "deathsPerGame": 18.8
+        }
+      },
+      "bigGame": {
+        "note": "Eigener Output als Underdog (≤ 45 % Siegchance), in ausgeglichenen Spielen und als Favorit (≥ 55 %)",
+        "asUnderdog": {
+          "games": 7,
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 65.3,
+          "damagePerGame": 1905
+        },
+        "even": {
+          "games": 4,
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 70.3,
+          "damagePerGame": 1853
+        },
+        "asFavorite": {
+          "games": 1,
+          "touchdownsPerGame": 0,
+          "pointsPerGame": 28,
+          "damagePerGame": 630
+        }
+      },
+      "teammateEffect": {
+        "note": "Winrate der Mitspieler mit diesem Spieler im Team vs. in ihren Spielen ohne ihn (je ≥ 5 Spiele); weightedDeltaPts = nach gemeinsamen Spielen gewichteter Schnitt",
+        "weightedDeltaPts": -30.4,
+        "perMate": [
+          {
+            "mate": "ZeroO",
+            "gamesWith": 6,
+            "winrateWith": 16.7,
+            "gamesWithout": 78,
+            "winrateWithout": 41,
+            "deltaPts": -24.3
+          },
+          {
+            "mate": "-Darkstar",
+            "gamesWith": 7,
+            "winrateWith": 14.3,
+            "gamesWithout": 36,
+            "winrateWithout": 50,
+            "deltaPts": -35.7
+          }
+        ]
+      },
+      "plusMinus": {
+        "note": "durchschnittliche Touchdown-Differenz des eigenen Teams pro Spiel",
+        "value": -3.33
+      },
+      "matchLength": {
+        "note": "Marathon = über 15 Minuten, Speedrun = höchstens 15 Minuten",
+        "marathon": {
+          "games": 5,
+          "wins": 1,
+          "winratePct": 20,
+          "touchdownsPerGame": 0,
+          "pointsPerMinute": 4.29
+        },
+        "speedrun": {
+          "games": 7,
+          "wins": 1,
+          "winratePct": 14.3,
+          "touchdownsPerGame": 0,
+          "pointsPerMinute": 3.54
+        }
+      },
+      "teammates": [
+        {
+          "with": "ZeroO",
+          "games": 6,
+          "wins": 1,
+          "winratePct": 16.7,
+          "synergyPct": -12.8
+        },
+        {
+          "with": "-Darkstar",
+          "games": 7,
+          "wins": 1,
+          "winratePct": 14.3,
+          "synergyPct": -18
+        }
+      ],
+      "opponents": [
+        {
+          "against": "Malena",
+          "games": 8,
+          "wins": 1,
+          "winratePct": 12.5
+        },
+        {
+          "against": "Aferdita",
+          "games": 7,
+          "wins": 1,
+          "winratePct": 14.3
+        },
+        {
+          "against": "ZeroO",
+          "games": 6,
+          "wins": 1,
+          "winratePct": 16.7
+        },
+        {
+          "against": "Kesny",
+          "games": 6,
+          "wins": 1,
+          "winratePct": 16.7
+        },
+        {
+          "against": "-Darkstar",
+          "games": 5,
+          "wins": 1,
+          "winratePct": 20
+        }
+      ],
+      "bestGames": {
+        "mostPoints": {
+          "match": 225,
+          "date": "2026-10-03",
+          "mode": "3v3",
+          "touchdowns": 0,
+          "points": 123,
+          "damage": 3460,
+          "result": "L"
+        },
+        "mostTouchdowns": {
+          "match": 202,
+          "date": "2026-09-25",
+          "mode": "4v4",
+          "touchdowns": 0,
+          "points": 87,
+          "damage": 2661,
+          "result": "L"
+        }
+      }
+    }
+  ],
+  "notAnalysed": []
+}

@@ -4,6 +4,7 @@ import { Delta, Empty, Form, PlayerName, RoleBadge, Section, StatTile } from '@/
 import { EloChart } from '@/components/charts';
 import { MatchCard, useEloByMatch } from '@/components/MatchCard';
 import { PlayerAnalysis } from '@/components/PlayerAnalysis';
+import { PlayerArticle } from '@/components/PlayerArticle';
 import { PlayerSelect } from '@/components/PlayerSelect';
 import { SortableTable, type Column } from '@/components/SortableTable';
 import { fmt1, fmt2, fmtInt, fmtPct, fmtSigned, fmtSignedPct } from '@/lib/format';
@@ -171,6 +172,8 @@ export default function PlayerPage() {
           <EloChart entries={elo.filter((e) => e.changes.has(player.name))} players={[player.name]} height={280} />
         </Section>
       )}
+
+      <PlayerArticle player={player.name} season={season} />
 
       <PlayerAnalysis player={player.name} season={season} />
 

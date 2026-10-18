@@ -3,6 +3,7 @@
  *
  *   pnpm analysis:dossier            # letzte Season
  *   pnpm analysis:dossier --season 2
+ *   pnpm analysis:dossier --season 2 --min-games 10   # auch Spieler mit weniger Spielen
  *
  * Nutzt dieselbe Rechenlogik wie das Dashboard (client/src/lib/s4), damit alle
  * Zahlen im Dossier exakt zu dem passen, was auf der Seite steht.
@@ -13,7 +14,6 @@ import { prepareMatches } from '../client/src/lib/s4/rules';
 import { duoStats, headToHead, lineOf, mvpsOf, playerStats, resultOf, type PlayerStats } from '../client/src/lib/s4/stats';
 import type { Match, PlayerLine, StoredMatch } from '../client/src/lib/s4/types';
 
-const MIN_GAMES = 15;
 const MIN_PAIR_GAMES = 5;
 const CLOSE_MARGIN = 2; // knappes Spiel: höchstens 2 Touchdowns Unterschied
 const UNDERDOG_MAX_WIN_CHANCE = 0.45; // Außenseiter: laut ELO höchstens 45 % Siegchance
@@ -26,6 +26,8 @@ const { matches: all } = prepareMatches(stored);
 
 const seasonArg = process.argv.indexOf('--season');
 const season = seasonArg > 0 ? Number(process.argv[seasonArg + 1]) : Math.max(...all.map((m) => m.season));
+const minGamesArg = process.argv.indexOf('--min-games');
+const MIN_GAMES = minGamesArg > 0 ? Number(process.argv[minGamesArg + 1]) : 15;
 const seasonMatches = all.filter((m) => m.season === season);
 if (!seasonMatches.length) throw new Error(`Season ${season} hat keine Matches`);
 
