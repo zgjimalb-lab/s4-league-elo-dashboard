@@ -7,24 +7,26 @@ export const MIN_TEAM_SIZE = 2;
 /** Spielpause in Tagen, nach der eine neue Season beginnt. */
 export const SEASON_GAP_DAYS = 90;
 
-export type ExclusionReason = 'uneven' | 'size' | 'leaver' | 'no-winner';
+export type ExclusionReason = 'manual' | 'uneven' | 'size' | 'leaver' | 'no-winner';
 
 export const EXCLUSION_LABELS: Record<ExclusionReason, string> = {
   uneven: 'Ungleiche Teams (z.B. 3v2)',
   size: '1v1 oder leeres Team',
   leaver: 'Nach Abzug von Spielern unter 50 % Spielzeit ungleiche Teams',
   'no-winner': 'Kein Sieger',
+  manual: 'Von Hand ausgenommen',
 };
 
 /**
  * Entscheidet, ob ein Match für die Statistik zählt, und mit welchen Spielern:
  * Spieler mit weniger als MIN_PLAYTIME_SHARE der Spielzeit (Nachzügler, Leaver) werden nicht
  * gewertet, ebenso Spieler in `benchedManually`. Das Match zählt für die übrigen, wenn dann gleich große Teams ab 2v2 übrig bleiben.
- * Gespeichert werden ohnehin nur Touchdown-Matches der Gruppe.
+ * Matches mit `excludedManually` zählen gar nicht. Gespeichert werden ohnehin nur Touchdown-Matches der Gruppe.
  */
 export function classify(
   match: StoredMatch,
 ): { mode: Mode; players: PlayerLine[]; benched: string[] } | { excluded: ExclusionReason } {
+  if (match.excludedManually) return { excluded: 'manual' };
   const duration = match.durationSec;
   const isShort = (p: PlayerLine) =>
     Boolean(duration && p.playtime !== null && p.playtime < duration * MIN_PLAYTIME_SHARE) ||

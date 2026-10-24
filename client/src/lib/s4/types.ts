@@ -47,6 +47,8 @@ export interface StoredMatch {
   players: PlayerLine[];
   /** von Hand nicht gewertete Spieler, z.B. Nachzügler, denen die API zu viel Spielzeit meldet */
   benchedManually?: string[];
+  /** von Hand komplett ausgenommen (bleibt im Archiv, damit der Sync es nicht neu einträgt) */
+  excludedManually?: boolean;
 }
 
 /** Teamgröße, z.B. '2v2', '3v3', '4v4' */

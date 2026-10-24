@@ -57,6 +57,9 @@ describe('classify', () => {
     const manual = match([['a', 'b', 'x'], ['c', 'd']], 0, { benchedManually: ['x'] });
     expect(classify(manual)).toMatchObject({ mode: '2v2', benched: ['x'] });
   });
+  it('schließt von Hand ausgenommene Matches komplett aus', () => {
+    expect(classify(match([['a', 'b'], ['c', 'd']], 0, { excludedManually: true }))).toEqual({ excluded: 'manual' });
+  });
   it('alte Sheet-Matches ohne Spielzeit zählen', () => {
     expect(classify(match([['a', 'b'], ['c', 'd']], 1, {}, () => ({ playtime: null })))).toMatchObject({ mode: '2v2' });
   });
