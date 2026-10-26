@@ -1,320 +1,345 @@
 {
   "season": 2,
-  "createdAt": "2026-10-18",
-  "range": { "from": "2026-09-25", "to": "2026-10-18", "matches": 90, "upToMatch": 290 },
+  "createdAt": "2026-10-26",
+  "range": { "from": "2026-09-25", "to": "2026-10-26", "matches": 130, "upToMatch": 330 },
   "players": {
     "Nebus.": {
-      "headline": "Final-Boss-Modus: Das Upgrade, mit dem keiner gerechnet hat",
-      "dek": "In Season 1 hattest du schon die beste Winrate der Liga. In Season 2 legst du in fast jeder Kampf-Kennzahl noch einmal ein Drittel drauf, stehst bei 9 Siegen in Folge und hältst mit 1.699 den höchsten ELO-Wert, den diese Liga je gesehen hat.",
+      "headline": "Die Krone wackelt, der Thron steht noch",
+      "dek": "Immer noch die beste Winrate der Liga (64,0 %), immer noch Platz 1 in 11 von 15 Kennzahlen. Aber seit dem ELO-Rekord von 1.699 am 18.10. ging es 73 Punkte runter, und in der ELO ist ZeroO vorbeigezogen.",
       "sections": [
         {
-          "heading": "Elf von fünfzehn",
+          "heading": "Elf von fünfzehn, auch nach 100 Spielen",
           "paragraphs": [
-            "Man muss die Tabelle nicht lange anschauen: Bei 11 von 15 Kennzahlen stehst du auf Platz 1. Winrate (66,7 %), Damage (4.130 pro Spiel), Punkte (188,4), Punkte pro Minute (11,61), Anteil am Team-Damage (51,8 %), MVP-Rate, K/D (0,64), Kills (10,26), die wenigsten Deaths (16,11), Defense und Offense. Vor dir liegt jemand nur bei Touchdowns (Platz 4), TD-Assists (Platz 5), TD-Anteil (Platz 5) und Rebounds (Platz 7).",
-            "Die MVP-Rate ist die Zahl, die am meisten erzählt: 33 MVPs in 66 Spielen, also jedes zweite Spiel. Der Median der Liga liegt bei 13,1 %. Im 2v2 machst du allein 66,6 % des Damage deines Teams."
+            "Die Tabelle nach 100 Spielen sieht aus wie die nach 66: Bei 11 von 15 Kennzahlen stehst du auf Platz 1. Winrate (64,0 %), Damage (3.817 pro Spiel), Punkte (172,0), Punkte pro Minute (10,89), Anteil am Team-Damage (46,3 %), MVP-Rate (39,0 %), K/D (0,60), Kills (10,14), die wenigsten Deaths (16,89), Defense und Offense. Vor dir liegen andere nur bei Touchdowns (Platz 4), TD-Assists (Platz 4), TD-Anteil (Platz 5) und Rebounds (Platz 7).",
+            "39 MVPs in 100 Spielen, der Median der Liga liegt bei 12,3 %. Und die ELO-Rechnung unterschätzt dich weiterhin: 8,7 Siege mehr, als sie vorhersagt, so viele wie bei niemandem sonst. Als Underdog bist du in der ganzen Season nur 9-mal reingegangen."
           ]
         },
         {
-          "heading": "Kein Zufall, sondern ein echter Sprung",
+          "heading": "Der Sprung aus Season 1 hält",
           "paragraphs": [
-            "Die naheliegende Erklärung für 2.790 → 4.130 Damage pro Spiel (+48 %) wäre: In Season 2 wird mehr 3v3 gespielt, und im 3v3 gibt es für alle mehr Damage. Das trägt aber nicht. Pro Minute gerechnet und nach Modus getrennt gehst du im 2v2 von 194 auf 254 Damage, im 3v3 von 201 auf 250. Die ganze Liga legt im selben Zeitraum nur um rund 5 % zu (2v2: 150 → 158, 3v3: 162 → 169). Bei dir sind es +31 % und +24 %.",
-            "Bei den Kills dasselbe Bild: im 2v2 von 3,25 auf 4,56 Kills pro 10 Minuten, im 3v3 von 5,53 auf 7,01. Und das nicht auf Kosten der Deaths: Im 2v2 gehst du mit 10,17 pro Spiel genauso oft down wie in Season 1 (10,26), holst aber 6,14 statt 3,95 Kills. Dazu kommen die Rekorde: Das höchste Damage in einem einzelnen Spiel gehört im 2v2 (5.801), im 3v3 (7.294) und im 4v4 (8.711) dir, über beide Seasons gerechnet."
+            "Die Frage aus der letzten Zwischenbilanz war, ob das Damage-Plus nur am höheren 3v3-Anteil liegt. Nach 100 Spielen ist die Antwort dieselbe: nein. Pro Minute und nach Modus getrennt gehst du im 2v2 von 194 auf 250 Damage, im 3v3 von 201 auf 235. Die Liga legt im selben Zeitraum nur leicht zu (2v2: 150 → 157, 3v3: 163 → 170). Bei den Kills dasselbe: im 2v2 von 3,25 auf 4,47 pro 10 Minuten, im 3v3 von 5,53 auf 6,60.",
+            "Die Damage-Rekorde gehören über beide Seasons weiterhin dir: 5.801 im 2v2, 7.294 im 3v3, 8.711 im 4v4. Im 4v4, das seit dem 18.10. an vollen Abenden gespielt wird, stehst du bei 9 von 14 und machst 16,64 Kills pro Spiel."
           ]
         },
         {
-          "heading": "Das Paradox: Weniger Damage, mehr Siege",
+          "heading": "Die Woche nach dem Rekord",
           "paragraphs": [
-            "Jetzt wird es spannend. Liegt dein Damage über deinem eigenen Median von 3.758, gewinnst du nur 57,6 %. Liegt es darunter, sind es 75,8 %. In Niederlagen machst du im Schnitt 4.423 Damage, in Siegen 3.983. Das 4v4 mit deinen 8.711 Damage ging 5:8 verloren. Die Zahlen sehen eher so aus: Wenn du 4.000+ raushauen musst, brennt die Hütte. In den Siegen ist der Job früher erledigt.",
-            "Woran deine Siege wirklich hängen, sind deine eigenen Touchdowns: Bei mehr als 2 TDs gewinnst du 79,3 %, sonst 56,8 %. In Siegen sind es 3,0 TDs pro Spiel, in Niederlagen 1,91. Auch die TD-Assists sind von 0,34 auf 0,58 gestiegen. Du bleibst Backer, aber einer, der den Fumbi immer öfter selbst ein Stück weit trägt."
+            "Seit dem Rekord-Abend läuft es zäher: 20 von 34 Spielen gewonnen, ELO von 1.699 auf 1.626. Das sind immer noch 58,8 %, aber der Output ist gesunken. Vor dem 18.10. hast du 4.130 Damage pro Spiel gemacht, seitdem 3.211. Und das, obwohl seitdem fast nur 3v3 und 4v4 gespielt wird (32 deiner 34 Spiele), wo es für alle mehr Damage gibt. Die Touchdowns sind von 2,64 auf 1,71 pro Spiel gefallen, die Rebounds von 12,55 auf 9,68.",
+            "Der Knick kam am Abend des 18.10.: 1 von 5 im 4v4 mit -Darkstar, Troniix und ZeroO. Danach 6 von 6 am 19.10., 4 von 7 am 20.10. und 6 von 12 am 23.10. Aktuell stehst du bei 3 Siegen in Folge."
+          ]
+        },
+        {
+          "heading": "Woran deine Siege hängen",
+          "paragraphs": [
+            "Das Damage-Paradox aus der ersten Zwischenbilanz ist schwächer geworden, aber noch da: Liegt dein Damage über deinem Median von 3.624, gewinnst du 61,2 %, darunter 66,7 %. In Niederlagen machst du im Schnitt 3.958 Damage, in Siegen 3.738. Wenn du 4.000+ raushauen musst, ist das Spiel meistens schon unangenehm.",
+            "Eindeutiger sind die eigenen Touchdowns: Ab 3 gewinnst du 79,5 % (39 Spiele), darunter 54,1 %. Alle 6 Spiele mit 6 oder mehr Touchdowns hast du gewonnen. Die TD-Assists spielen dagegen kaum eine Rolle (65,9 % mit, 62,7 % ohne)."
           ]
         },
         {
           "heading": "Das Duo, das fast nie verliert",
           "paragraphs": [
-            "Malena + Nebus. ist die stabilste Konstante der Liga: 41 von 50 in Season 1, 22 von 27 in Season 2. Über beide Seasons zusammen 63 von 77, also 81,8 %. Im 2v2 sind es sogar 33 von 38, in Season 2 mit einem Schnitt von 9,9 : 5,8 Touchdowns. Dazu das 3v3-Trio mit BickD4ckEnergy: 7 von 8.",
-            "Fast genauso viel sagt, was du mit anderen machst. ZeroO gewinnt mit dir im Team 61,5 % (26 Spiele), in Spielen ohne dich in der Lobby nur 41,7 %. ZeroO macht neben dir 5,77 Touchdowns pro Spiel, mehr als mit jedem anderen Mitspieler, während du selbst nur 1,88 machst. Du räumst den Weg frei, ZeroO trägt den Ball rein. Bei BickD4ckEnergy ist es ähnlich: 57,1 % mit dir, 41,7 % ohne dich. Die einzige Kombi, die nicht zündet, ist die mit Kesny: 5 von 12."
+            "Malena + Nebus. bleibt das Duo der Liga: 26 von 32 in Season 2, 41 von 50 in Season 1, zusammen 67 von 82 (81,7 %). Im 2v2 sind es 9 von 10 mit einem Schnitt von 9,9 : 5,8 Touchdowns. Dazu das 3v3-Trio mit BickD4ckEnergy (7 von 8) und das 4v4 mit BickD4ckEnergy, Kesny und ZeroO: 6 von 6.",
+            "Neben dir punkten die Runner. ZeroO macht mit dir im Team 5,24 Touchdowns pro Spiel und gewinnt 64,8 % (54 Spiele), in Spielen ohne dich nur 53,3 %. Du selbst machst daneben 1,74. BickD4ckEnergy gewinnt mit dir 59,5 %, ohne dich 50,0 %. Die Aufstellung, die nicht zündet: das 3v3 mit BickD4ckEnergy und Kesny, 2 von 10."
           ]
         },
         {
-          "heading": "Wer dich schlagen will",
+          "heading": "Ausblick: Wer dich schlagen will",
           "paragraphs": [
-            "Gegen ZeroO gewinnst du 70 % der Duelle, gegen BickD4ckEnergy 72,4 %, gegen Kesny 74,1 %. Nur Malena hält es mit 17 von 31 (54,8 % für dich) halbwegs offen. Eine positive Bilanz gegen dich hat nur Aferdita: 6 von 10, bei wenigen Spielen."
-          ]
-        },
-        {
-          "heading": "Ausblick",
-          "paragraphs": [
-            "Die ELO-Rechnung erwartet ohnehin viel von dir, und trotzdem hast du 6,8 Siege mehr geholt, als sie vorhersagt. Das ist der beste Wert der Liga. Nur 5 von 66 Spielen bist du überhaupt als Underdog reingegangen.",
-            "Wer den Lauf stoppen will, muss das Spiel lang machen. In Matches über 15 Minuten gewinnst du 59,4 %, in kürzeren 73,5 %. Und im 3v3 bist du verwundbarer: 61,8 % Winrate (Season 1: 68,3 %), 3v3-ELO in dieser Season 1.628 → 1.594. Im 2v2 dagegen 72,4 % und eine 2v2-ELO von 1.704. Die aktuelle Serie von 9 Siegen kam fast komplett an den letzten beiden Abenden zustande, 8 der 9 Spiele am 17. und 18.10."
+            "Eine positive Bilanz gegen dich hat niemand. Gegen BickD4ckEnergy gewinnst du 68,1 %, gegen Kesny 65,2 %, gegen -Darkstar 64,3 %, gegen ZeroO 63,0 %. Am engsten sind Malena (33 von 58 für dich, 56,9 %) und Aferdita (11 von 21 für dich).",
+            "Die ELO-Spitze ist trotzdem weg: ZeroO steht bei 1.693, du bei 1.626. Dein Rekord von 1.699 ist aber weiterhin der höchste Wert, den die Liga je gesehen hat. Wer dich schlagen will, macht das Spiel lang: Über 15 Minuten gewinnst du 57,4 %, in kürzeren Matches 69,8 %. Und im 3v3 (61,8 %) bist du verwundbarer als im 2v2 (67,7 %). Die 3v3-ELO ist in dieser Season von 1.628 auf 1.600 gefallen, die 2v2-ELO steht bei 1.657."
           ]
         }
       ]
     },
     "Malena": {
-      "headline": "Weniger Solo, mehr Siege: Die Season, in der Malena teilen lernt",
-      "dek": "Die meisten Touchdowns der Liga (4,84 pro Spiel), Winrate von 56,3 % auf 63,6 % gesteigert, Platz 2 in der ELO hinter Nebus. Und seit dem 07.12.2025 in 114 Spielen in Folge mindestens ein Touchdown.",
+      "headline": "Die TD-Maschine läuft, nur die Lobby hat gewechselt",
+      "dek": "58,3 % Winrate, Platz 2 hinter Nebus., und seit dem 07.12.2025 in 152 Spielen in Folge mindestens ein Touchdown. Seit dem 18.10. wird aber fast nur noch 3v3 und 4v4 gespielt, und dort kostet dich die Season gerade ELO: 1.623 → 1.528.",
       "sections": [
         {
-          "heading": "Die TD-Maschine läuft einfach",
+          "heading": "152 Spiele in Folge",
           "paragraphs": [
-            "4,84 Touchdowns pro Spiel, Platz 1, der Median der Liga liegt bei 2,62. In 36,4 % deiner Spiele machst du 6 oder mehr. Und in Season 2 gab es kein einziges Spiel ohne Touchdown. Das schafft sonst niemand: ZeroO hat 3,3 % solcher Spiele, Nebus. 9,1 %, BickD4ckEnergy 23,5 %. Über deine ganze Karriere gibt es genau ein Spiel ohne TD, am 07.12.2025. Seitdem hast du in 114 Spielen in Folge getroffen.",
-            "Der Höhepunkt kam am 17.10.: ein 10:8 im 2v2, bei dem alle 10 Touchdowns deines Teams von dir waren. Und deine 22 MVPs dieser Season kamen alle in Siegen. Kein einziger MVP in einer Niederlage. Wenn du das Spiel trägst, gewinnt dein Team auch."
+            "4,43 Touchdowns pro Spiel, Platz 2 hinter ZeroO (4,69), der Median der Liga liegt bei 2,14. In 115 Spielen dieser Season gab es kein einziges ohne Touchdown. ZeroO hat 4,6 % solcher Spiele, Nebus. 13,0 %, Kesny 16,2 %. Über die ganze Karriere gibt es genau ein Spiel ohne TD, am 07.12.2025. Seitdem hast du in 152 Spielen in Folge getroffen.",
+            "Und die MVPs: 27 in dieser Season, alle in Siegen. Auch nach 115 Spielen kein einziger MVP in einer Niederlage. Wenn du das Spiel trägst, gewinnt dein Team. Der Höhepunkt bleibt das 10:8 im 2v2 am 17.10., bei dem alle 10 Touchdowns deines Teams von dir kamen."
           ]
         },
         {
-          "heading": "Der 3v3-Sprung",
+          "heading": "Der Modus hat gewechselt",
           "paragraphs": [
-            "Die größte Veränderung zu Season 1 steckt im 3v3. Damals 51,7 % Winrate, jetzt 64,9 % in 37 Spielen. Gleichzeitig ist dein Anteil an den Team-Touchdowns im 3v3 von 59,4 % auf 46,5 % gefallen, die Touchdowns von 4,85 auf 4,08 pro Spiel, und die TD-Assists sind von 0,45 auf 0,54 gestiegen. Du machst im 3v3 weniger selbst und gewinnst deutlich öfter. Die 3v3-ELO ist in dieser Season von 1.538 auf 1.586 gestiegen, Peak 1.651.",
-            "Im 2v2 bleibt dagegen alles beim Alten, nur noch extremer: 68,7 % der Team-Touchdowns (Season 1: 63,7 %), 5,76 TDs pro Spiel und 62,2 % Winrate (Season 1: 58,5 %). Ein Muster gilt aber in beiden Modi: In Niederlagen liegt dein TD-Anteil bei 61,1 %, in Siegen bei 54,3 %. Je mehr du allein machen musst, desto eher kippt das Spiel."
+            "Seit dem 18.10. hast du 38 Spiele gemacht, 37 davon im 3v3 oder 4v4. Die Bilanz: 18 Siege, ELO von 1.623 auf 1.528, der Tiefpunkt der Season lag am 25.10. bei 1.514. Im 2v2 stehst du dagegen bei 63,2 % (24 von 38) und hältst mit 1.628 die zweithöchste 2v2-ELO der Liga hinter Nebus. (1.657). Dort machst du 5,71 Touchdowns pro Spiel und 65,8 % der Team-Touchdowns.",
+            "Im 3v3 steht es 37 von 63 (58,7 %), immer noch besser als in Season 1 (51,7 %), aber die letzten 26 Spiele dort brachten nur 13 Siege. Im 4v4 sind es 6 von 14, die 4v4-ELO steht bei 1.464. Am 19.10. hast du alle 6 Spiele im 4v4 mit -Darkstar, Aferdita und Troniix verloren, 5 davon als Underdog."
           ]
         },
         {
-          "heading": "Zwei Runner, ein Fumbi",
+          "heading": "Weniger Solo im 3v3",
           "paragraphs": [
-            "Mit wem du spielst, sieht man direkt an deinen Touchdowns. Neben BickD4ckEnergy machst du 5,46 pro Spiel (17 von 28 gewonnen), neben Nebus. 5,11 (22 von 27), neben ZeroO nur 3,56 (11 von 18). Der Grund liegt auf der Hand: ZeroO ist selbst ein Runner, ihr teilt euch den Ball. In Season 1 war das Duo mit ZeroO noch eins der besten der Liga (35 von 46, 76,1 %), jetzt sind es 61,1 %.",
-            "Andere profitieren dafür von dir. BickD4ckEnergy gewinnt mit dir im Team 60,7 %, in Spielen ohne dich in der Lobby nur 36,4 %. Mit Kesny lief es in Season 1 schlecht (13 von 36), jetzt seid ihr bei 13 von 23 (56,5 %)."
+            "Die größte Veränderung zu Season 1 steckt im 3v3: Dein Anteil an den Team-Touchdowns ist von 58,0 % auf 45,4 % gefallen, die Touchdowns von 4,85 auf 3,78 pro Spiel, und trotzdem ist die Winrate gestiegen. Ein Muster gilt in allen Modi: In Niederlagen liegt dein TD-Anteil bei 58,2 %, in Siegen bei 51,3 %. Machst du mehr als die Hälfte der Team-Touchdowns, gewinnst du 48,2 %, sonst 67,8 %.",
+            "Am stärksten hängen deine Siege an den Deaths: Mit weniger als 19 gewinnst du 74,1 %, sonst 44,3 %. Beim Damage gibt es so gut wie keinen Unterschied (Siege 2.313, Niederlagen 2.435)."
           ]
         },
         {
-          "heading": "Unkaputtbar",
+          "heading": "Zwei Runner, ein Fumbi – jetzt mit Happy End",
           "paragraphs": [
-            "Deine längste Lose-Streak in dieser Season: 3 Spiele. Bei allen anderen mit 40 und mehr Spielen ist sie länger, nämlich 5 bei Nebus., BickD4ckEnergy und Kesny, 6 bei -Darkstar, 10 bei ZeroO. Nach zwei Niederlagen in Folge hast du das nächste Spiel 6 von 6 Mal gewonnen, bei wenigen Spielen. Und je später der Abend, desto gefährlicher wirst du. In den ersten drei Spielen eines Abends gewinnst du 58 %, ab dem achten 8 von 12 mit 5,92 Touchdowns im Schnitt.",
-            "Was über Sieg und Niederlage entscheidet, sind bei dir eher die Deaths als das Damage. Mit weniger als 17 Deaths gewinnst du 75 %, sonst 53,7 %. Beim Damage gibt es so gut wie keinen Unterschied (Siege 2.270, Niederlagen 2.253)."
+            "In der letzten Zwischenbilanz war das Duo mit ZeroO ein Fragezeichen: 11 von 18. Inzwischen sind es 22 von 30 (73,3 %), +18 Synergie, und das 3v3-Trio mit -Darkstar steht bei 6 von 8. Ihr teilt euch weiterhin den Ball (du machst neben ZeroO 3,60 Touchdowns, neben BickD4ckEnergy 4,93), aber es funktioniert. ZeroO gewinnt in Spielen ohne dich in der Lobby nur 40,0 %.",
+            "Mit Nebus. bleibt es das Duo der Liga (26 von 32), mit BickD4ckEnergy sind es 25 von 43 (58,1 %). Wo es hakt: mit Kesny 19 von 38, mit -Darkstar 13 von 30, mit Aferdita 10 von 23. Das 3v3 mit Aferdita und Kesny hat alle 3 Spiele am 25.10. verloren, bei wenigen Spielen."
           ]
         },
         {
-          "heading": "Ausblick: Nur Nebus. steht noch im Weg",
+          "heading": "Ausblick: Nebus. bleibt die Hürde",
           "paragraphs": [
-            "Gegen fast alle hast du eine klare Bilanz: 19 von 24 gegen Kesny (79,2 %), 29 von 42 gegen BickD4ckEnergy, 38 von 59 gegen ZeroO. Gegen ZeroO war es in Season 1 mit 50,4 % noch ein offenes Duell. Bleibt eine Lücke: Gegen Nebus. gewinnst du nur 14 von 31 (45,2 %), und in der ELO liegst du mit 1.623 genau 76 Punkte dahinter. Dein Season-Peak lag bei 1.674. Dein Team geht fast immer als Favorit ins Spiel (43 von 77), Underdog warst du nur 7-mal. Trotzdem hast du 5,9 Siege mehr geholt, als die ELO vorhersagt. Das ist Platz 2 hinter Nebus."
+            "Gegen fast alle hast du eine positive Bilanz: 30 von 46 gegen Kesny (65,2 %), 29 von 47 gegen -Darkstar, 39 von 65 gegen BickD4ckEnergy, 45 von 85 gegen ZeroO. Gegen Nebus. sind es nur 25 von 58 (43,1 %), in Season 1 waren es 42,1 %. Zwei Seasons, dieselbe Lücke.",
+            "Die ELO-Rechnung erwartet viel von dir, und trotzdem hast du 5,2 Siege mehr geholt, als sie vorhersagt, Platz 2 hinter Nebus. Die längste Lose-Streak ist inzwischen auf 6 gewachsen, in der letzten Zwischenbilanz waren es 3. Der Hebel steht in deinen Zahlen: Mit mehr als 4 Touchdowns gewinnst du 76,4 %, mit 4 oder weniger 41,7 %. Seit dem 18.10. liegst du bei 3,58 Touchdowns pro Spiel, davor waren es 4,84."
           ]
         }
       ]
     },
     "ZeroO": {
-      "headline": "Volle Leistung, leere Bilanz: Was in ZeroOs Season 2 schiefläuft",
-      "dek": "Mehr Touchdowns als in Season 1, die meisten Rebounds der Liga, der höchste Anteil an den Team-Touchdowns. Und trotzdem: Winrate von 55,4 % auf 42,2 %, ELO von 1.561 auf 1.424, aktuell 10 Niederlagen in Folge. Eine Spurensuche.",
+      "headline": "Von 11 Niederlagen in Folge auf Platz 1 der ELO",
+      "dek": "Am 18.10. stand die ELO bei 1.402, die Lose-Streak bei 11. Seit dem 19.10.: 29 Siege aus 35 Spielen, 22 von 26 im 3v3 und eine ELO von 1.693. Das ist Platz 1 der Liga und der höchste Wert deiner Karriere. Die größte Wende dieser Season.",
       "sections": [
         {
-          "heading": "Am Output liegt es nicht",
+          "heading": "Der Tiefpunkt",
           "paragraphs": [
-            "4,62 Touchdowns pro Spiel, Platz 2 hinter Malena und sogar etwas mehr als in Season 1 (4,52). 17,83 Rebounds pro Spiel, Platz 1, der Median liegt bei 14,05. 58,1 % der Team-Touchdowns, auch das Platz 1. Dazu Platz 3 bei der MVP-Rate (23,3 %) und bei den Punkten pro Minute (10,33). Im 2v2 sind es sogar 5,19 TDs pro Spiel (Season 1: 4,78), und in 37,8 % deiner Spiele machst du 6 oder mehr.",
-            "Wer nur die Scoreboards anschaut, sieht keinen Leistungsabfall. Die Ursachen liegen woanders."
+            "Zur Erinnerung, wo die letzte Zwischenbilanz stand: Winrate 42,2 %, ELO von 1.561 auf 1.424 gefallen, 10 Niederlagen in Folge. 8 davon am Abend des 17.10. auf Aferditas Account, weil ihr die Accounts getauscht hattet, 6 davon gegen Malena + Nebus. Am Abend des 18.10. kam im 4v4 die elfte dazu, nach dem Abend stand die ELO bei 1.402.",
+            "Schon damals lag es nicht am Output, und daran hat sich nichts geändert: 4,69 Touchdowns pro Spiel (Platz 1, Median 2,14), 17,78 Rebounds (Platz 1, Median 12,91), 57,4 % der Team-Touchdowns (Platz 1), 30,0 % MVP-Rate (Platz 2). Geändert haben sich die Ergebnisse."
           ]
         },
         {
-          "heading": "Mehr Solo als je zuvor",
+          "heading": "Die Wende im 3v3",
           "paragraphs": [
-            "Schon in Season 1 hatte deine Bilanz eine Pointe: Wenn du mehr als die Hälfte der Team-Touchdowns gemacht hast, hast du seltener gewonnen. In Season 2 machst du das noch öfter. Im 2v2 ist dein TD-Anteil von 56,7 % auf 64,4 % gestiegen, deine TD-Assists im 2v2 von 0,61 auf 0,27 gefallen. In den 55 Spielen mit mehr als der Hälfte der Team-Touchdowns gewinnst du 43,6 %. In Niederlagen liegt dein Anteil bei 60,2 %, in Siegen bei 57,9 %.",
-            "Der stärkste Hinweis kommt von den TD-Assists: In den 29 Spielen mit mindestens einer Vorlage gewinnst du 55,2 %, in den 61 ohne nur 36,1 %. In Season 1 waren es 67,5 % gegen 47,0 %, das Muster ist also nicht neu. Und noch ein Detail: Stoppst du mehr Angriffe als sonst (Defense über 8), gewinnst du nur 37,8 %, sonst 45,3 %. Wenn ZeroO hinten aushelfen muss, steht es meistens schon schlecht.",
-            "Wichtig ist aber die Unterscheidung: Viele Touchdowns sind gut für dich. Mit mehr als 4 gewinnst du 61,4 %, mit 4 oder weniger nur 23,9 %. Deine Touchdowns sind Gold – solange nicht nur du welche machst."
+            "Los ging es am 19.10. mit 6 von 6 im 4v4 neben BickD4ckEnergy, Kesny und Nebus. Seitdem kam fast alles im 3v3: 22 von 26, vorher stand es dort 17 von 39. Dabei machst du im 3v3 jetzt mehr selbst, nicht weniger: 5,62 Touchdowns pro Spiel statt 4,15, 59,1 % der Team-Touchdowns statt 52,3 %, 15 MVPs in 26 Spielen. Dein Team gewinnt diese Spiele im Schnitt mit 4,08 Touchdowns Vorsprung, vorher stand es im Schnitt −0,15.",
+            "Die 3v3-ELO ist in dieser Season von 1.607 auf 1.674 gestiegen, der höchste 3v3-Wert der Liga vor Nebus. (1.600). Und die engen Spiele kippen wieder für dich: Alle 6 knappen Spiele seit dem 18.10. hast du gewonnen, davor waren es 12 von 33."
           ]
         },
         {
-          "heading": "Die Teamauslosung meint es nicht gut",
+          "heading": "Die These aus der letzten Zwischenbilanz",
           "paragraphs": [
-            "Du warst in allen 90 Spielen dieser Season dabei, und dein häufigster Mitspieler war BickD4ckEnergy: 35 Spiele. Zusammen habt ihr 10 davon gewonnen (28,6 %), mit einem Schnitt von 7,1 : 9,4 im 2v2. Das Verrückte: Ohne BickD4ckEnergy im Team gewinnst du 28 von 55 (50,9 %). BickD4ckEnergy gewinnt gegen dich 24 von 46 (52,2 %). Jeder für sich ist solide, zusammen läuft es nicht. Ein Teil davon ist Pech bei der Auslosung: 10 dieser Spiele waren im 2v2 gegen Malena + Nebus., also gegen das stärkste Duo der Liga. Davon habt ihr eins gewonnen, ein 10:9 am 04.10. Auch das 3v3-Trio mit -Darkstar und Kesny steht bei 1 von 9.",
-            "Das Gegenbeispiel ist Nebus.: Mit Nebus. im Team gewinnst du 16 von 26 (61,5 %) und machst 5,77 Touchdowns pro Spiel, so viele wie mit keinem anderen. Im 2v2 steht ihr bei 8 von 11. Wenn neben dir jemand den Weg freiräumt, funktioniert dein Spiel immer noch.",
-            "Die Auslosung hat auch dazu geführt, dass du viel öfter Underdog bist: in 36 von 90 Spielen (40 %), in Season 1 waren es 43 von 195 (22 %). Als Underdog gewinnst du 27,8 %. Weil deine ELO fällt, wirst du noch öfter als Außenseiter eingestuft, und so zieht sich die Kurve selbst nach unten."
+            "Vor einer Woche stand hier: Je mehr Solo, desto weniger Siege. Das hat sich gedreht. Machst du mehr als die Hälfte der Team-Touchdowns, gewinnst du jetzt 54,4 % (79 Spiele), sonst 49,0 %. Mit 6 oder mehr Touchdowns gewinnst du 77,8 %, darunter 34,2 %. Deine eigenen Touchdowns sind dein stärkster Siegfaktor.",
+            "Was geblieben ist: die TD-Assists. In den 48 Spielen mit mindestens einer Vorlage gewinnst du 70,8 %, in den 82 ohne nur 41,5 %. Der Abstand ist sogar größer geworden (vorher 55,2 % gegen 36,1 %), und seit dem 18.10. sind die TD-Assists von 0,42 auf 0,57 pro Spiel gestiegen. Dazu die Rebounds: Mit mehr als 17 gewinnst du 68,8 %, sonst 36,4 %. Viel Fumbi in der Hand ist bei dir ein gutes Zeichen."
           ]
         },
         {
-          "heading": "Die Serie und der geliehene Account",
+          "heading": "Das 2v2 bleibt die Baustelle",
           "paragraphs": [
-            "Die aktuelle Serie von 10 Niederlagen gehört zur Wahrheit, aber auch der Kontext: 8 dieser 10 Spiele waren am 17. und 18.10. auf Aferditas Account, weil ihr die Accounts getauscht hattet. 6 davon gegen Malena + Nebus., 3 gingen mit 9:10 verloren. Ohne diese Tausch-Spiele stehst du in Season 2 bei 38 von 82 (46,3 %), im 2v2 bei genau 50 %.",
-            "Trotzdem fällt etwas auf, das nichts mit dem Account zu tun hat: die knappen Spiele. In Season 1 hast du 43 von 76 Spielen mit höchstens 2 TDs Unterschied gewonnen (56,6 %). In Season 2 sind es nur 12 von 33 (36,4 %). Damals warst du in engen Spielen clutch, jetzt kippen sie öfter gegen dich als für dich."
+            "Die Wende hat einen Modus ausgelassen: Im 2v2 stehst du bei 21 von 51 (41,2 %), die 2v2-ELO ist in dieser Season von 1.548 auf 1.432 gefallen. Seit dem 18.10. gab es allerdings nur 3 Spiele im 2v2. Der Hauptgrund ist bekannt: BickD4ckEnergy + ZeroO steht im 2v2 bei 7 von 26, mit einem Schnitt von 7,1 : 9,4. 10 dieser Spiele waren gegen Malena + Nebus., eins davon habt ihr gewonnen.",
+            "Wie sehr das am Modus hängt, zeigt dieselbe Paarung im 3v3 und 4v4: Dort gewinnt ihr zusammen 17 von 24. Mit Nebus. im Team gewinnst du 35 von 54 (64,8 %) und machst 5,24 Touchdowns pro Spiel, mit Malena 22 von 30 (73,3 %, in der letzten Zwischenbilanz noch 11 von 18). Die einzige Kombi, die gar nicht läuft: mit Troniix 2 von 11."
           ]
         },
         {
           "heading": "Ausblick",
           "paragraphs": [
-            "Dein Season-Peak war am ersten Abend (1.585, 25.09.), seitdem geht es bergab. Die 2v2-ELO hat in dieser Season 111 Punkte verloren. Der Weg zurück steht schon in deinen eigenen Zahlen: In Spielen mit TD-Assist gewinnst du 55,2 %, ohne nur 36,1 %. Wenn du den Fumbi öfter weitergibst, statt ihn selbst bis ins Tor zu tragen, entlastest du dich und kommst wieder an die Werte aus Season 1 heran. Und mit Nebus. im Team gewinnst du schon jetzt."
+            "Du warst in allen 130 Spielen dieser Season dabei, und aktuell stehst du bei 8 Siegen in Folge, der Abend des 25.10. ging mit 5 von 5 an dich. Am 18.10. sah dich die ELO-Rechnung noch 4,4 Siege unter Erwartung, jetzt stehst du 3,8 darüber.",
+            "Bis zum Liga-Rekord fehlen 6 Punkte: Nebus. stand am 18.10. bei 1.699. Wer dich noch aufhält, steht in der Bilanz: Gegen Nebus. gewinnst du 17 von 46 (37,0 %), gegen Malena 40 von 85 (47,1 %). Gegen alle anderen Stammspieler stehst du über 50 %."
           ]
         }
       ]
     },
     "BickD4ckEnergy": {
-      "headline": "Vom Runner zum Vorbereiter – und plötzlich wird gewonnen",
-      "dek": "Season 1: 21 Spiele, 5 Siege. Season 2: 81 Spiele, die zweitmeisten der Liga, und 42,0 % Winrate. Dabei sind die Touchdowns gesunken. Die Geschichte eines Rollenwechsels, der funktioniert – außer neben ZeroO.",
+      "headline": "Der Vorbereiter mit dem 4v4-Gen",
+      "dek": "Season 1: 5 Siege in 21 Spielen. Season 2: 55 von 119, die meisten TD-Assists der Liga und seit dem 18.10. eine ELO von 1.447 auf 1.552, Platz 3 der Liga. Im 4v4 hast du 11 von 14 Spielen gewonnen.",
       "sections": [
         {
-          "heading": "Der Rollenwechsel",
+          "heading": "Der Rollenwechsel trägt",
           "paragraphs": [
-            "In Season 1 hast du 45,9 % der Team-Touchdowns gemacht, in Season 2 sind es 24,7 %. Die Touchdowns sind von 2,67 auf 1,89 pro Spiel gefallen, die TD-Assists von 0,24 auf 0,86 gestiegen. Unter allen mit 40 oder mehr Spielen ist das der Bestwert, nur Aferdita liegt in 16 Spielen darüber. Ein TD-Assist heißt: Du hast den Fumbi getragen, bevor jemand anderes ihn reingemacht hat.",
-            "Genau daran hängen deine Siege. Mit mehr als einem TD-Assist gewinnst du 65 % (20 Spiele), sonst 34,4 %. Das ist mit Abstand dein stärkster Siegfaktor. Ob du selbst mehr Touchdowns machst als sonst, verändert die Winrate dagegen kaum (47,8 % gegen 39,7 %).",
-            "Am deutlichsten sieht man das im 3v3: 50 % Winrate (17 von 34) bei nur 1,26 Touchdowns pro Spiel. In 35,3 % deiner 3v3-Spiele hast du keinen einzigen Touchdown gemacht, und trotzdem stehst du dort bei ausgeglichener Bilanz. Im 2v2 sind es 36,4 %. Übrigens: Deine Kills pro Spiel sind von 2,24 auf 5,22 gestiegen, aber das liegt vor allem am höheren 3v3-Anteil. Pro Minute im 2v2 hat sich bei den Kills kaum etwas verändert (2,14 → 2,19 pro 10 Minuten)."
+            "In Season 1 hast du 45,9 % der Team-Touchdowns gemacht, in Season 2 sind es 24,1 %. Die Touchdowns sind von 2,67 auf 1,84 pro Spiel gefallen, die TD-Assists von 0,24 auf 0,85 gestiegen. Das ist Platz 1 der Liga, der Median liegt bei 0,48. Ein TD-Assist heißt: Du hast den Fumbi getragen, bevor jemand anderes ihn reingemacht hat.",
+            "Genau daran hängen deine Siege, nach 119 Spielen noch deutlicher als nach 81: Mit 2 oder mehr TD-Assists gewinnst du 73,1 % (26 Spiele), sonst 38,7 %. Mit mehr als 5 Kills sind es 63,6 %, sonst 31,3 %. Ob du selbst mehr Touchdowns machst als sonst, ändert dagegen wenig (52,9 % gegen 43,5 %)."
           ]
         },
         {
-          "heading": "Clutch in knappen Spielen",
+          "heading": "4v4: Hier wird gewonnen",
           "paragraphs": [
-            "Spiele mit höchstens 2 TDs Unterschied gewinnst du 20 von 32 Mal, also 62,5 %. Unter allen mit mindestens 20 knappen Spielen ist das der beste Wert der Liga, vor Nebus. (60,9 %), -Darkstar (55 %) und Malena (53,8 %). Bei deutlichen Ergebnissen mit 5 oder mehr TDs Unterschied steht es dagegen 7 zu 16 gegen dich.",
-            "Dasselbe zeigt die Spieldauer: Matches über 15 Minuten gewinnst du 18 von 34 (52,9 %), kürzere nur 16 von 47 (34 %). Je länger und enger es wird, desto besser für dich. Und in deinen Siegen bist du im Schnitt öfter down (25,3 Deaths) als in deinen Niederlagen (22,6). Wer sich für den Fumbi opfert, bist meistens du."
+            "Seit dem 18.10. wird an vollen Abenden 4v4 gespielt, und das ist dein Modus: 11 von 14, die 4v4-ELO steht bei 1.600, gleichauf mit Kesny an der Spitze. Du machst dort 11,57 Kills und 3.119 Damage pro Spiel bei nur 1,50 Touchdowns. Die Aufstellung mit Kesny, Nebus. und ZeroO hat alle 6 Spiele gewonnen, die mit Aferdita, Kesny und Malena 4 von 5.",
+            "Im 3v3 stehst du bei 28 von 60 (46,7 %), im 2v2 bei 16 von 45 (35,6 %). Die 3v3-ELO ist in dieser Season von 1.472 auf 1.531 gestiegen, die 2v2-ELO von 1.458 auf 1.417 gefallen. Insgesamt ging es von 1.440 auf 1.552, der Peak lag am 19.10. bei 1.577."
+          ]
+        },
+        {
+          "heading": "Lang und eng ist dein Spiel",
+          "paragraphs": [
+            "Spiele mit höchstens 2 TDs Unterschied gewinnst du 22 von 38 (57,9 %). Unter allen mit mindestens 20 knappen Spielen liegt nur Nebus. darüber (63,0 %). Matches über 15 Minuten gewinnst du 56,9 %, kürzere nur 38,2 %. Deutliche Ergebnisse mit 5 oder mehr TDs Unterschied stehen dagegen 19 zu 28 gegen dich.",
+            "Und in deinen Siegen bist du öfter down (24,4 Deaths) als in deinen Niederlagen (22,4). Wer sich für den Fumbi opfert, bist meistens du."
           ]
         },
         {
           "heading": "Die Mitspieler-Lotterie",
           "paragraphs": [
-            "Mit Malena im Team gewinnst du 17 von 28 (60,7 %), und Malena macht neben dir 5,46 Touchdowns pro Spiel, mehr als mit jedem anderen Mitspieler. Mit Nebus. im Team sind es 16 von 28. Das 3v3-Trio BickD4ckEnergy + Malena + Nebus. steht bei 7 von 8. Wenn vorne jemand abschließt, ist deine Vorarbeit Gold wert.",
-            "Und dann ist da ZeroO, das in jedem deiner 81 Spiele dabei war. Zusammen habt ihr 10 von 35 gewonnen (28,6 %), gegen ZeroO gewinnst du 24 von 46 (52,2 %, Season 1: 2 von 10). Auf dem Papier passen ein Runner und ein Vorbereiter perfekt zusammen. Bisher fehlt euch vor allem das Glück bei der Auslosung: 10 eurer Spiele waren im 2v2 gegen Malena + Nebus., davon habt ihr eins gewonnen."
+            "Mit Malena gewinnst du 25 von 43 (58,1 %), und Malena macht neben dir 4,93 Touchdowns pro Spiel. Mit Nebus. sind es 25 von 42, das 3v3-Trio mit beiden steht bei 7 von 8. Wenn vorne jemand abschließt, ist deine Vorarbeit Gold wert. Mit Aferdita stehst du bei 5 von 6, bei wenigen Spielen.",
+            "Und ZeroO, dein häufigster Mitspieler: 24 von 50 zusammen, sauber nach Modus getrennt. Im 2v2 sind es 7 von 26 (Ø 7,1 : 9,4, davon 10 Spiele gegen Malena + Nebus. mit einem Sieg), im 3v3 und 4v4 17 von 24. Gegen ZeroO gewinnst du 31 von 69 (44,9 %). Die Aufstellung, die nicht läuft: das 3v3 mit Kesny und Nebus., 2 von 10."
           ]
         },
         {
-          "heading": "Anlaufzeit und Nehmerqualitäten",
+          "heading": "Anlaufzeit",
           "paragraphs": [
-            "Deine ersten drei Spiele eines Abends gewinnst du 37,5 %, die Spiele 4 bis 7 genau 50 %. Du brauchst ein paar Runden zum Warmwerden. Tilt kennst du dagegen nicht: Nach zwei Niederlagen in Folge gewinnst du das nächste Spiel 52,9 % (17 Spiele), öfter als nach einem Sieg (40,7 %).",
-            "Am 17. und 18.10. hast du auf -Darkstars Account gespielt: 2 von 8 Spielen gewonnen, aber mit 2,75 Touchdowns im Schnitt, mehr als dein 2v2-Schnitt in dieser Season (2,41). Dein bestes Spiel nach Touchdowns war ein 2v2 am 04.10. mit 8 TDs."
+            "Die ersten drei Spiele eines Abends gewinnst du 41,2 %, die Spiele 4 bis 7 genau 56,0 %, danach 33,3 % (18 Spiele). Du brauchst ein paar Runden zum Warmwerden, nach dem siebten lässt es wieder nach. Tilt kennst du nicht: Nach zwei Niederlagen in Folge gewinnst du das nächste Spiel 51,4 % (35 Spiele), etwas öfter als nach einem Sieg (48,1 %).",
+            "Die beste Phase der Season kam direkt nach der letzten Zwischenbilanz: 9 Siege in Folge am 18. und 19.10., davon 6 von 6 am 19.10. Aktuell stehst du wieder bei 5 Siegen in Folge, der Abend des 25.10. ging komplett an dich."
           ]
         },
         {
           "heading": "Ausblick",
           "paragraphs": [
-            "Die ELO ist von 1.440 auf 1.447 nur leicht gestiegen, aber dazwischen lag ein Peak von 1.548. Du warst in 37 Spielen Underdog, so oft wie niemand sonst, und hast trotzdem 27 % davon gewonnen. Dass die Formkurve zuletzt nach unten zeigt (spätes Drittel: 33,3 %), liegt vor allem daran, dass zuletzt fast nur 2v2 gespielt wurde. Der Hebel steht in deinen eigenen Zahlen: Mit 2 oder mehr TD-Assists gewinnst du fast doppelt so oft. Bleib bei der Rolle, sie funktioniert."
+            "Mit 1.552 stehst du in der ELO auf Platz 3 hinter ZeroO und Nebus., vor Malena (1.528). Underdog warst du 45-mal, so oft wie niemand sonst, und hast 28,9 % davon gewonnen. Der Hebel bleibt derselbe: Mit 2 oder mehr TD-Assists gewinnst du fast doppelt so oft. Und die Reserve liegt im 2v2, wo du bei 35,6 % stehst."
           ]
         }
       ]
     },
     "Kesny": {
-      "headline": "Das 2v2-Comeback – und die Frage, ob Nebus. in der Lobby ist",
-      "dek": "Season 1: 36,0 % in 125 Spielen. Season 2: 41,7 % in 60. Im 2v2 von 31,3 % auf 50 % gesteigert, die K/D von 0,24 auf 0,32 (Platz 3). Und eine Abhängigkeit, die man in keiner Tabelle sieht.",
+      "headline": "Elf Siege am Stück – und dann kam das 3v3 zurück",
+      "dek": "44,4 % Winrate nach 36,0 % in Season 1. Vom 18. bis zum 20.10. 11 Siege in Folge und mit 1.638 die beste ELO deiner Karriere. Seitdem 7 von 26 und aktuell 5 Niederlagen in Folge. Eine Season mit zwei Gesichtern, und beide hängen am Modus.",
       "sections": [
         {
-          "heading": "2v2: Vom Sorgenkind zur Stärke",
+          "heading": "Die Serie",
           "paragraphs": [
-            "Die beste Nachricht dieser Season steht im 2v2. In Season 1 hast du dort nur 21 von 67 Spielen gewonnen (31,3 %), jetzt sind es 11 von 22 (50 %). Das liegt nicht an Glück, das sieht man an jeder Kennzahl pro Minute: 3,45 statt 3,13 Touchdowns pro 10 Minuten, 2,98 statt 2,12 Kills, 145 statt 126 Damage. Die 2v2-ELO ist in dieser Season von 1.425 auf 1.476 gestiegen. Am 14.10. hast du in einem 2v2 9 Touchdowns gemacht und an dem Abend 5 von 10 Spielen gewonnen.",
-            "Im 3v3 ging es dagegen leicht zurück, von 41,4 % auf 37,1 %. Die letzten 10 Spiele dort haben dir aber wieder 37 ELO-Punkte gebracht."
+            "Am Abend des 18.10. ging es los, am 20.10. war Schluss: 11 Siege in Folge, die längste Win-Streak der Season, länger als die 9 von Nebus. und BickD4ckEnergy. Die ELO stieg auf 1.638, den höchsten Wert deiner Karriere. 9 dieser 11 Spiele waren 4v4, die anderen beiden 2v2 mit -Darkstar, beide als Underdog.",
+            "Im 4v4 stehst du insgesamt bei 11 von 14, die 4v4-ELO bei 1.600, gleichauf mit BickD4ckEnergy an der Spitze. Du machst dort 16,86 Kills pro Spiel bei einer K/D von 0,54, im 4v4 liegt nur Nebus. darüber (0,71). Die Aufstellung mit BickD4ckEnergy, Nebus. und ZeroO: 6 von 6."
           ]
         },
         {
-          "heading": "Wenn viel Damage ein schlechtes Zeichen ist",
+          "heading": "Und dann das 3v3",
           "paragraphs": [
-            "Bei den meisten Spielern heißt mehr Damage mehr Siege. Bei dir ist es umgekehrt, und zwar deutlich: Liegt dein Damage über deinem eigenen Median von 2.286, gewinnst du 26,7 %. Liegt es darunter, 56,7 %. In Niederlagen machst du 2.775 Damage, in Siegen 2.232. Bei den Rebounds dasselbe: Mit mehr als 15 gewinnst du 30,8 %, sonst 50 %.",
-            "Die Erklärung findest du, wenn du nach Stärke der Teams trennst. Als Favorit machst du 4,25 Touchdowns bei 1.851 Damage, als Underdog 2,46 Touchdowns bei 2.891 Damage. In guten Teams bist du Runner, in schwachen kämpfst du im Mittelfeld um jeden losen Fumbi. Wie sehr das zählt, zeigen die Touchdowns: Mit mehr als 3 gewinnst du 52 %, sonst 34,3 %. Mit mindestens einem TD-Assist 51,7 %, sonst 32,3 %."
+            "Seit der Serie hast du 26 Spiele gemacht, alle im 3v3, und 7 davon gewonnen. Die ELO fiel von 1.638 auf 1.471, aktuell stehst du bei 5 Niederlagen in Folge, der Abend des 25.10. ging mit 0 von 5 aus. In dieser Season stehst du im 3v3 bei 20 von 61 (32,8 %, Season 1: 41,4 %), die 3v3-ELO ist von 1.491 auf 1.415 gefallen, der niedrigste Wert unter allen mit mehr als 40 Spielen.",
+            "Im 3v3 sind deine Touchdowns von 2,95 auf 2,10 pro Spiel gefallen, die Rebounds von 21,43 auf 14,43. Die Kampfwerte sind dagegen gestiegen: 5,24 statt 4,34 Kills pro 10 Minuten, 166 statt 142 Damage pro Minute. Im 3v3 kämpfst du mehr und trägst weniger."
           ]
         },
         {
-          "heading": "Die Nebus.-Frage",
+          "heading": "2v2: Das Comeback hält",
           "paragraphs": [
-            "Jetzt zur Zahl, die man in keiner Tabelle sieht. In Lobbys ganz ohne Nebus. gewinnst du 13 von 21 Spielen (61,9 %). Gegen Nebus. sind es 7 von 27 (25,9 %), und auch mit Nebus. im Team nur 5 von 12. In Season 1 war es gegen Nebus. mit 24,6 % fast genauso. Zwei Seasons, dasselbe Bild.",
-            "Malena ist die zweite Nemesis: 5 von 24 gegen Malena gewonnen (20,8 %, Season 1: 36 %). Mit Malena im Team läuft es dagegen besser als je zuvor: 13 von 23 (56,5 %), in Season 1 waren es nur 36,1 %.",
-            "Ein Duo, das schon in Season 1 nicht funktioniert hat: Kesny + ZeroO. Über beide Seasons 25 von 71 (35,2 %), im 2v2 in Season 1 sogar nur 2 von 18. Dein häufigster Mitspieler in Season 2 ist -Darkstar mit 11 von 27 gewonnen. Das 3v3-Trio mit -Darkstar und ZeroO steht bei 1 von 9. Gegen ZeroO hast du dich dafür von 33,8 % auf 48,8 % verbessert."
+            "Die gute Nachricht aus der letzten Zwischenbilanz hat gehalten: Im 2v2 stehst du bei 13 von 24 (54,2 %), in Season 1 waren es 21 von 67 (31,3 %). Pro 10 Minuten 3,50 statt 3,13 Touchdowns und 3,02 statt 2,12 Kills. Die 2v2-ELO ist in dieser Season von 1.425 auf 1.515 gestiegen, mit -Darkstar im 2v2 steht es 6 von 9. Dein bestes Spiel bleibt das 10:5 im 2v2 am 14.10. mit 9 Touchdowns."
           ]
         },
         {
-          "heading": "Knappe Spiele bleiben die Baustelle",
+          "heading": "Woran deine Siege hängen",
           "paragraphs": [
-            "Spiele mit höchstens 2 TDs Unterschied gewinnst du 8 von 24 (33,3 %). Das ist der niedrigste Wert unter allen mit mindestens 20 knappen Spielen, und in Season 1 war es mit 32,8 % fast derselbe. Ein Muster, kein Zufall.",
-            "Dafür kannst du Upsets: Von den 3 Spielen, in denen die ELO deinem Team höchstens 35 % gegeben hat, hast du 2 gewonnen, bei wenigen Spielen. Und noch etwas zum Ablauf eines Abends: Die ersten drei Spiele gewinnst du 50 %, die Spiele 4 bis 7 nur 27 %."
+            "Am deutlichsten an den TD-Assists: Mit mindestens einer Vorlage gewinnst du 56,4 % (55 Spiele), ohne nur 29,5 %. Bei den eigenen Touchdowns: Mit mehr als 4 sind es 68,4 %, sonst 38,8 %. Bei den TD-Assists bist du mit 0,79 pro Spiel Platz 2 der Liga, nur BickD4ckEnergy hat mehr.",
+            "Das Damage-Paradox aus der letzten Zwischenbilanz ist fast verschwunden (42,9 % über, 46,0 % unter deinem Median). Geblieben ist das bei den Rebounds: Mit mehr als 14 gewinnst du nur 36,4 %, sonst 50,9 %. Wenn du viele lose Fumbis einsammeln musst, sieht es fürs Team meistens nicht gut aus."
+          ]
+        },
+        {
+          "heading": "Knappe Spiele und die Nebus.-Frage",
+          "paragraphs": [
+            "Spiele mit höchstens 2 TDs Unterschied gewinnst du 9 von 29 (31,0 %). Das ist der niedrigste Wert unter allen mit mindestens 20 knappen Spielen, in Season 1 waren es 32,8 %. Zwei Seasons, dasselbe Muster. Upsets kannst du trotzdem: Von den 3 Spielen mit höchstens 35 % Siegchance hast du 2 gewonnen, bei wenigen Spielen.",
+            "Die Nebus.-Frage hat sich entspannt. Gegen Nebus. gewinnst du 16 von 46 (34,8 %, Season 1: 24,6 %), mit Nebus. im Team 15 von 27. Gegen Malena sind es ebenfalls 16 von 46. Gegen ZeroO hast du dich von 33,8 % in Season 1 auf 42,0 % verbessert. Die Aufstellungen, die nicht laufen: das 3v3 mit BickD4ckEnergy und Nebus. (2 von 10) und das mit -Darkstar und ZeroO (1 von 9)."
           ]
         },
         {
           "heading": "Ausblick",
           "paragraphs": [
-            "Den Tiefpunkt hattest du am 29.09. mit einer ELO von 1.404. Seitdem ging es um 91 Punkte nach oben auf 1.495, der Peak lag bei 1.538. Kills (7,68 pro Spiel) und Offense (Platz 2) zeigen, dass du im Kampf um den Runner viel mehr bewirkst als in Season 1. Der nächste Schritt steht in den knappen Spielen: Kommst du da nur auf 50 %, wären das in dieser Season 4 Siege mehr gewesen."
+            "Die Season-Kurve: Tief am 29.09. bei 1.404, Karriere-Peak am 20.10. bei 1.638, jetzt 1.471. Kills (8,44 pro Spiel, Platz 3) und Offense (Platz 2) zeigen, dass du im Kampf mehr bewirkst als in Season 1. Der Hebel steht im 3v3: Kämst du dort auf deine 2v2-Winrate von 54,2 %, wären das in dieser Season 13 Siege mehr gewesen."
           ]
         }
       ]
     },
     "-Darkstar": {
-      "headline": "Neu dabei – und direkt mit Nebus.-Zahlen",
-      "dek": "7 Spiele in Season 1, 48 in Season 2. Im 3v3 hat nach K/D, Kills und Damage nur Nebus. bessere Werte. Die Winrate von 47,9 % hängt an einer einzigen Zahl: deinen eigenen Touchdowns.",
+      "headline": "Die beste 3v3-K/D der Liga – und Abende, die zu lang werden",
+      "dek": "88 Spiele, 43,2 % Winrate. Nach Damage, K/D, Kills, Deaths und Defense nur hinter Nebus., im 3v3 sogar mit der besten K/D der Liga. Aber ab dem vierten Spiel eines Abends kippt die Bilanz, und seit dem 18.10. sind die Touchdowns mehr als halbiert.",
       "sections": [
         {
-          "heading": "Platz 2 hinter Nebus. – überall",
+          "heading": "Platz 2 hinter Nebus. – und im 3v3 vorne",
           "paragraphs": [
-            "Auf dem Papier ist die Season klar: Platz 2 bei K/D (0,54), Kills (10,17 pro Spiel), Damage (3.086), Punkten (158,7), Defense und bei den wenigsten Deaths (18,94). Jedes Mal liegt nur Nebus. vor dir.",
-            "Eine Einschränkung gehört dazu: 37 deiner 48 Spiele waren 3v3, das sind 77 % und mehr als bei allen anderen. Im 3v3 gibt es für alle mehr Kills und mehr Damage. Der faire Vergleich ist deshalb der im 3v3 selbst, und da bleibt es dabei. Deine K/D liegt dort bei 0,60, Nebus. hat 0,62, alle anderen höchstens 0,33. Du machst 6,52 Kills pro 10 Minuten bei einem Liga-Schnitt von 5,02 und 186 Damage pro Minute bei einem Schnitt von 169. Nach nur 7 Spielen in Season 1 ist das ein Einstand, der sich sehen lassen kann."
+            "Platz 2 bei Damage (2.955 pro Spiel), K/D (0,58), Kills (9,89), den wenigsten Deaths (17,10) und Defense. Jedes Mal liegt nur Nebus. vor dir. Der Median der Liga liegt bei 0,32 K/D und 7,24 Kills.",
+            "63 deiner 88 Spiele waren 3v3, und im 3v3 gibt es für alle mehr Kills als im 2v2. Der faire Vergleich ist deshalb der im 3v3 selbst, und da bist du inzwischen vorne: K/D 0,66, Nebus. 0,57, alle anderen höchstens 0,34. Dazu 6,55 Kills pro 10 Minuten bei einem Liga-Schnitt von 4,96 und 187 Damage pro Minute bei einem Schnitt von 170."
           ]
         },
         {
           "heading": "Deine Touchdowns entscheiden",
           "paragraphs": [
-            "Im Kampf bist du fast immer gleich stark: in Siegen 3.146 Damage, in Niederlagen 2.906, die Deaths sind praktisch gleich (19,3 gegen 18,6). Den großen Unterschied machen die Touchdowns. In Siegen sind es 3,48 pro Spiel, in Niederlagen 1,68. Mit mehr als 2 Touchdowns gewinnst du 63,6 %, sonst 34,6 %. In 22,9 % deiner Spiele hast du keinen gemacht.",
-            "Und hier bist du das Gegenteil von ZeroO und Malena: Machst du mehr als die Hälfte der Team-Touchdowns, hast du 6 von 7 dieser Spiele gewonnen (bei wenigen Spielen). Dein TD-Anteil liegt in Siegen bei 35,7 %, in Niederlagen bei 25,9 %. Wenn -Darkstar zum Runner wird, gewinnt das Team. Bisher nimmst du den Fumbi aber eher selten auf: 31,5 % der Team-Rebounds, das ist weniger als dein Anteil bei Kills oder Damage."
+            "Im Kampf bist du in Siegen und Niederlagen gleich stark: 2.912 gegen 2.929 Damage, 16,7 gegen 17,4 Deaths. Den Unterschied machen die Touchdowns, 2,74 pro Spiel in Siegen, 1,32 in Niederlagen. Mit 3 oder mehr gewinnst du 64,3 %, sonst 33,3 %, mit 6 oder mehr 8 von 9. Und wenn du zum Runner wirst, gewinnt das Team: Machst du mehr als die Hälfte der Team-Touchdowns, gewinnst du 8 von 13.",
+            "Genau das passiert aber seltener. Seit dem 18.10. sind deine Touchdowns von 2,54 auf 1,20 pro Spiel gefallen, die Rebounds von 13,81 auf 8,88. In 34,1 % deiner Spiele hast du inzwischen keinen Touchdown gemacht, in der letzten Zwischenbilanz waren es 22,9 %. Und noch ein Detail: Stoppst du mehr Angriffe als sonst (Defense über 9), gewinnst du nur 32,5 %, sonst 52,1 %. Viel Defense heißt bei dir: Das Team steht unter Druck."
           ]
         },
         {
           "heading": "Stark am Anfang des Abends",
           "paragraphs": [
-            "Die ersten drei Spiele eines Abends gewinnst du 15 von 23 Mal (65 %) mit 3,0 Touchdowns im Schnitt. In den Spielen 4 bis 7 sind es 7 von 21 (33 %) mit 2,52 Touchdowns, danach 1 von 4. Mit der Länge der Matches hat das nichts zu tun, denn Spiele über 15 Minuten gewinnst du sogar etwas öfter (50 %) als kürzere (45 %). Es ist eher der Abend, der lang wird.",
-            "Als Underdog bist du stark: Die Hälfte deiner Spiele (24 von 48) bist du als Außenseiter reingegangen und hast 10 davon gewonnen. Von den 4 Spielen mit höchstens 35 % Siegchance laut ELO hast du 2 gewonnen. Die Kehrseite: 10 deutliche Niederlagen mit 5 oder mehr TDs Unterschied, 4 davon mit 8 oder mehr."
+            "Die ersten drei Spiele eines Abends gewinnst du 25 von 42 (59,5 %) mit 2,36 Touchdowns im Schnitt. In den Spielen 4 bis 7 sind es 11 von 37 (29,7 %) mit 1,78, ab dem achten 2 von 9 mit 0,56 Touchdowns. Mit 40 Spielen mehr ist das Muster aus der letzten Zwischenbilanz noch deutlicher geworden. An der Matchdauer liegt es nicht: Über 15 Minuten gewinnst du 46,7 %, kürzere 39,5 %."
+          ]
+        },
+        {
+          "heading": "Die schwere Woche nach dem 18.10.",
+          "paragraphs": [
+            "Seit der letzten Zwischenbilanz: 15 von 40, eine Lose-Streak von 9 Spielen und am Abend des 20.10. der Tiefpunkt der Season mit 1.409 ELO. Ein großer Teil davon ist das 4v4: 3 von 14, die 4v4-ELO steht bei 1.400. Die Aufstellung mit Aferdita, Malena und Troniix hat alle 6 Spiele am 19.10. verloren, die mit Nebus., Troniix und ZeroO am 18.10. 1 von 5. Mit Troniix im Team steht es insgesamt 2 von 18.",
+            "Vom Tiefpunkt ging es wieder hoch: 3 von 4 am 21.10., 6 von 12 am 23.10., 3 von 5 am 25.10., die ELO steht wieder bei 1.508. Im 2v2 bist du ohnehin stark: 7 von 11, 2v2-ELO 1.550, mit Kesny im 2v2 6 von 9."
           ]
         },
         {
           "heading": "Mitspieler",
           "paragraphs": [
-            "Die Auslosung hat dich vor allem mit Kesny (27 Spiele, 11 Siege) und ZeroO (24 Spiele, 9 Siege) zusammengebracht. Im 3v3-Trio mit beiden steht es 1 von 9. Mit Nebus. dagegen 5 von 5, mit Malena 7 von 11, mit Aferdita 5 von 7, alles bei wenigen Spielen. Gegen ZeroO gewinnst du 14 von 24 (58,3 %).",
-            "Dein auffälligstes Spiel war das 4v4 am 26.09. mit 7 Touchdowns und 277 Punkten. Dasselbe Spiel, in dem Nebus. 8.711 Damage gemacht hat und trotzdem 5:8 gegen dich verloren hat."
+            "Mit ZeroO gewinnst du 20 von 41, und es kommt sehr auf den Dritten an: mit Malena 6 von 8, mit Nebus. 5 von 6, mit Kesny 1 von 9. Mit Kesny insgesamt 14 von 38 (36,8 %), mit Nebus. 9 von 15. Gegen ZeroO gewinnst du nur noch 18 von 47 (38,3 %), in der letzten Zwischenbilanz waren es 14 von 24.",
+            "Dein auffälligstes Spiel bleibt das 4v4 am 26.09. mit 7 Touchdowns und 277 Punkten, ein 8:5 im selben Spiel, in dem Nebus. 8.711 Damage gemacht hat. Die meisten Touchdowns hattest du am 04.10. mit 9 beim 10:5 im 3v3, den meisten Damage am 11.10. mit 5.863."
           ]
         },
         {
           "heading": "Ausblick",
           "paragraphs": [
-            "Die ELO ist von 1.507 auf 1.531 gestiegen, der Peak lag bei 1.579. Die Kampfwerte sind schon auf Top-2-Niveau. Was fehlt, ist der Fumbi: Mit mehr als 2 Touchdowns gewinnst du fast doppelt so oft. Mehr Rebounds wären der direkte Weg dahin, denn wer den Fumbi aufnimmt, darf ihn auch tragen."
+            "Die ELO steht bei 1.508 (Start 1.507, Peak 1.579 am 14.10.). Die Kampfwerte sind auf Top-2-Niveau, was fehlt, ist der Fumbi: Mit 3 oder mehr Touchdowns gewinnst du fast doppelt so oft, und genau die sind seit dem 18.10. eingebrochen. Mehr Rebounds wären der direkte Weg dahin, denn wer den Fumbi aufnimmt, darf ihn auch tragen. Und die wichtigen Spiele gehören an den Anfang des Abends."
           ]
         }
       ]
     },
     "Aferdita": {
-      "headline": "Wenig gespielt, viel gewonnen – ganz ohne MVP",
-      "dek": "16 Spiele, 10 Siege, 62,5 % Winrate (Season 1: 47,1 %). Die ELO ist um 67 Punkte gestiegen. Kein einziger MVP, aber die meisten TD-Assists der Liga. Alles bei wenigen Spielen, aber mit einem klaren Muster.",
+      "headline": "Erst 14 von 21, dann 0 von 11",
+      "dek": "32 Spiele, 14 Siege, 43,8 % Winrate (Season 1: 47,1 %). Der starke Start ist durch 11 Niederlagen in Folge aufgebraucht, die ELO von 1.573 auf 1.425 gefallen. Alles bei wenigen Spielen, aber mit Mustern, die schon in der letzten Zwischenbilanz zu sehen waren.",
       "sections": [
+        {
+          "heading": "Zwei Hälften",
+          "paragraphs": [
+            "Bis einschließlich des Abends am 18.10. stand es 14 von 21, an diesem Abend selbst 4 von 5 im 4v4 mit BickD4ckEnergy, Kesny und Malena. Danach kam nichts mehr: 0 von 6 im 4v4 am 19.10., 0 von 5 im 3v3 am 25.10. Elf Niederlagen in Folge, die ELO fiel vom Season-Peak 1.573 auf 1.425.",
+            "Ganz ohne Kontext ist das nicht: Am 19.10. hast du alle 6 Spiele mit -Darkstar, Malena und Troniix gespielt, und von den 11 Spielen der Serie bist du 9 als Underdog angegangen. Vorher warst du in der ganzen Season nur 2-mal Underdog und hast beide gewonnen."
+          ]
+        },
         {
           "heading": "Siegen ohne Scoreboard",
           "paragraphs": [
-            "Von 47,1 % auf 62,5 % ist der zweitgrößte Winrate-Sprung der Liga, nach BickD4ckEnergy. Dabei stehst du nie oben im Scoreboard: 0 MVPs in 16 Spielen, Damage-Anteil 23,4 % (Platz 7). Dafür hast du die meisten TD-Assists der Liga (0,94 pro Spiel, Season 1: 0,59). Du trägst den Fumbi, und jemand anderes vollendet.",
-            "Die Touchdowns sind mit 2,25 pro Spiel fast gleich geblieben (Season 1: 2,34). Gestiegen sind die Kills, von 3,81 auf 6,0 pro Spiel. Das liegt zum Teil daran, dass du jetzt fast nur noch 3v3 und 4v4 spielst. Aber auch im 3v3 allein gehst du von 2,69 auf 3,58 Kills pro 10 Minuten, das sind ein Drittel mehr. Die K/D liegt bei 0,24 statt 0,16."
+            "0 MVPs in 32 Spielen, Damage-Anteil 22,3 % (Platz 7). Dafür Platz 3 bei den TD-Assists (0,66 pro Spiel, Median 0,48). Genau daran hängen deine Siege: Mit mindestens einer Vorlage gewinnst du 9 von 13, ohne nur 5 von 19. In Siegen sind es 1,07 TD-Assists pro Spiel, in Niederlagen 0,33.",
+            "Seit dem 18.10. sind die TD-Assists von 0,94 auf 0,38 pro Spiel gefallen, die Touchdowns von 2,25 auf 1,13. Die Kills sind dagegen gestiegen (6,00 → 7,50), das liegt aber am 4v4, wo es für alle mehr Kills gibt."
           ]
         },
         {
-          "heading": "Ein 3v3- und 4v4-Spezialist",
+          "heading": "Mittendrin",
           "paragraphs": [
-            "Im 3v3 hast du 7 von 9 Spielen gewonnen, im 4v4 alle 3. Im 3v3 sind die Touchdowns von 1,9 auf 2,67 pro Spiel gestiegen, auf die Zeit gerechnet von 1,05 auf 1,62 pro 10 Minuten. Die 3v3-ELO ist in dieser Season von 1.462 auf 1.550 gestiegen. Im 2v2 dagegen 0 von 4. Bei so wenigen Spielen ist das mehr Hinweis als Urteil.",
-            "Bei dir hängt an den Deaths etwas Überraschendes: Du hast die meisten der Liga (24,75 pro Spiel), und in deinen Siegen sind es mehr (26,9) als in den Niederlagen (21,2). Wenn du oft down gehst, bist du mittendrin in den Fights um den Fumbi. Und genau dann gewinnt dein Team."
+            "Du hast die meisten Deaths der Liga (25,75 pro Spiel), und in deinen Siegen sind es mehr (27,2) als in den Niederlagen (24,6). Dazu passen die Rebounds: Mit mehr als 12 gewinnst du 9 von 14, sonst 5 von 18. Wenn du mitten in den Fights um den Fumbi steckst, läuft es. Und wie bei anderen auch: Die ersten drei Spiele eines Abends gewinnst du 52,4 %, die Spiele 4 bis 7 nur 27,3 %."
           ]
         },
         {
-          "heading": "Mitspieler, die mit dir gewinnen",
+          "heading": "Mitspieler und Nebus.",
           "paragraphs": [
-            "ZeroO hat mit dir im Team 5 von 7 Spielen gewonnen. In Spielen ohne dich in der Lobby sind es nur 39,2 %. Bei -Darkstar ist es dasselbe: 5 von 7 mit dir, ohne dich 47,4 %. Und eine Zahl, die sonst niemand hat: Gegen Nebus. hast du 6 von 10 Duellen gewonnen. Alle anderen Stammspieler liegen gegen Nebus. unter 50 %, Malena mit 45,2 % am höchsten. In Season 1 hattest du gegen Nebus. nur 33,3 %.",
-            "Dazu 5 von 5 gegen Kesny und 6 von 7 gegen Troniix. Dein bestes Spiel war das 3v3 am 14.10. mit 5 Touchdowns und 208 Punkten."
+            "Mit Nebus. im Team hast du alle 4 Spiele gewonnen, in Lobbys ohne Nebus. keins von 7. Mit BickD4ckEnergy stehst du bei 5 von 6, mit ZeroO bei 5 von 7, mit -Darkstar bei 5 von 15, mit Troniix bei 0 von 6. Alles bei wenigen Spielen.",
+            "Gegen Nebus. hast du die beste Bilanz der Liga: 10 von 21 (47,6 %), vor Malena (43,1 %). In Season 1 waren es 33,3 %. In der letzten Zwischenbilanz stand es sogar 6 von 10 für dich."
           ]
         },
         {
           "heading": "Mit Vorbehalt",
           "paragraphs": [
-            "16 Spiele sind wenig, und jede Zahl hier kann sich mit ein paar Abenden noch drehen. Die Spiele am 17. und 18.10. auf deinem Account hat ZeroO gespielt, sie zählen hier nicht für dich. Dein letztes Spiel war am 14.10. Die ELO steht bei 1.538, dein Bestwert aus Season 1 (1.590) ist also noch in Reichweite. Wenn du so weitermachst wie bisher, fehlt nur eins: mehr Spiele."
+            "32 Spiele sind wenig, und der Bruch kam an nur zwei Abenden. Im 3v3 stehst du bei 7 von 14, im 4v4 ebenfalls bei 7 von 14, im 2v2 bei 0 von 4. Die 3v3-ELO war am Peak bei 1.550, jetzt 1.476. Dein bestes Spiel bleibt das 10:8 im 3v3 am 14.10. mit 5 Touchdowns und 208 Punkten. Der Weg zurück steht in deinen eigenen Zahlen: Mit einer Vorlage gewinnst du mehr als doppelt so oft wie ohne."
           ]
         }
       ]
     },
     "Troniix": {
-      "headline": "Kämpfen kannst du – jetzt fehlt nur noch der Fumbi",
-      "dek": "12 Spiele, 2 Siege. 0 Touchdowns in Season 2. Das sieht jeder. Was keiner sieht: Im 3v3 ist deine K/D höher als die von Malena, BickD4ckEnergy und ZeroO.",
+      "headline": "Endlich: Der erste Touchdown seit November 2025",
+      "dek": "23 Spiele, 3 Siege. Am 19.10. kam im 4v4 der erste Touchdown seit dem 15.11.2025. Die K/D ist die drittbeste der Liga, und trotzdem verliert dein Team im Schnitt mit vier Touchdowns Unterschied. Eine Spurensuche.",
       "sections": [
         {
-          "heading": "Die Zahl, die alle sehen",
+          "heading": "Der Touchdown",
           "paragraphs": [
-            "Season 2: 12 Spiele, 0 Touchdowns, 0 TD-Assists. Season 1: 17 Spiele, 3 Touchdowns, alle an einem Abend, dem 15.11.2025. Die Winrate liegt mit 16,7 % fast genau auf dem Wert aus Season 1 (17,6 %), die ELO ist von 1.374 auf 1.333 gesunken.",
-            "Der Grund steckt in einer anderen Zahl: Mit 3,92 Rebounds pro Spiel nimmst du den Fumbi so selten auf wie niemand sonst. Der Median der Liga liegt bei 14,05, und von allen Rebounds deines Teams kommen nur 10,3 % von dir. Weil im Touchdown die meisten Punkte über den Fumbi kommen, landest du bei 3,99 Punkten pro Minute (Median 9,31)."
+            "19.10., 4v4, 7:10 verloren, aber mit einem Touchdown von dir. Der erste seit dem 15.11.2025, nach 30 Spielen ohne. In Season 1 waren es 3 Touchdowns in 17 Spielen, alle an diesem einen Abend im November.",
+            "Die Bilanz bleibt trotzdem hart: 3 Siege in 23 Spielen (13,0 %, Season 1: 17,6 %), aktuell 9 Niederlagen in Folge, die ELO von 1.374 auf 1.287 gefallen. Seit dem 18.10. hast du nur 4v4 gespielt, dort stehst du insgesamt bei 1 von 14."
           ]
         },
         {
           "heading": "Die Zahl, die keiner sieht",
           "paragraphs": [
-            "Schaut man sich nur die Fights an, sieht es ganz anders aus. Du spielst nur 3v3 und 4v4, also der faire Vergleich im 3v3: Dort liegt deine K/D bei 0,32. Malena hat 0,31, BickD4ckEnergy 0,27, Aferdita 0,21, ZeroO 0,20. Höher liegen nur Nebus., -Darkstar und Kesny.",
-            "Ganz ehrlich ist aber auch das: Du stirbst wenig, weil du auch selten angreifst. Mit 3,79 Kills pro 10 Minuten liegst du im 3v3 unter dem Liga-Schnitt von 5,02 und ähnlich wie in Season 1 (3,83). Du überlebst die Fights, du entscheidest sie noch nicht. Dein stärkstes Spiel war das 3v3 am 03.10. mit 3.460 Damage und 123 Punkten."
+            "Mit 0,39 hast du die drittbeste K/D der Liga, nur Nebus. und -Darkstar liegen darüber. Ganz fair ist der Vergleich nicht, denn du spielst nur 3v3 und 4v4, wo es mehr Kills gibt. Aber auch im 4v4 allein liegt deine K/D (0,42) vor -Darkstar (0,41) und Aferdita (0,29) und fast gleichauf mit BickD4ckEnergy (0,44).",
+            "Mit 4,99 Kills pro 10 Minuten im 4v4 liegst du allerdings unter dem Liga-Schnitt von 6,64. Du überlebst die Fights, du entscheidest sie noch nicht. In deinen drei Siegen hast du im Schnitt 10,0 Kills gemacht, in den Niederlagen 7,4."
           ]
         },
         {
           "heading": "Warum das Team leidet",
           "paragraphs": [
-            "Im 3v3 trägt den Fumbi, wer ihn aufnimmt, und wenn jemand im Team das kaum macht, müssen die anderen beiden alles allein laufen. Im Schnitt verliert dein Team mit 3,33 Touchdowns Unterschied. Mit -Darkstar im Team steht es 1 von 7, Ø 5,9 : 9,7, mit ZeroO 1 von 6. Dabei sind beide sonst in fast jedem Spiel an den Touchdowns beteiligt. Deine zwei Siege kamen in Spielen, in denen du mehr als 6 Kills gemacht hast. Bei wenigen Spielen, aber ein Hinweis: Wenn du die Fights gewinnst, gewinnt auch das Team."
+            "Mit 3,17 Rebounds pro Spiel nimmst du den Fumbi so selten auf wie niemand sonst, der Median liegt bei 12,91. Von allen Rebounds deines Teams kommen nur 8,0 % von dir. Weil im Touchdown die meisten Punkte über den Fumbi kommen, landest du bei 4,09 Punkten pro Minute (Median 8,98).",
+            "Im 4v4 heißt das: Drei Mitspieler müssen das Tragen allein übernehmen. Mit -Darkstar im Team steht es 2 von 18, mit ZeroO 2 von 11, mit Malena 1 von 10, mit Aferdita 0 von 6. Dein Team verliert im Schnitt mit 4,09 Touchdowns Unterschied."
           ]
         },
         {
           "heading": "Der Plan",
           "paragraphs": [
-            "Zwei messbare Ziele aus deinen eigenen Zahlen. Erstens: Defense von 5,08 auf den Liga-Median von 8,14. Defense heißt, den gegnerischen Runner oder dessen Begleitschutz auszuschalten. Deine K/D zeigt, dass du Fights überlebst, also richte sie auf den Runner. Zweitens: Rebounds von 3,9 auf mindestens 7, also die Hälfte des Medians. Jedes Aufnehmen bringt 2 Punkte, und der Weg zum ersten Touchdown seit dem 15.11.2025 beginnt damit, den Fumbi überhaupt in die Hand zu nehmen."
+            "Zwei messbare Ziele aus deinen eigenen Zahlen. Erstens: Defense von 4,70 auf den Liga-Median von 8,00. Defense heißt, den gegnerischen Runner oder dessen Begleitschutz auszuschalten, und alle drei Siege kamen in Spielen mit mehr Defense als dein Median (bei wenigen Spielen). Zweitens: Rebounds von 3,17 auf mindestens 6,5, also die Hälfte des Medians. Der 19.10. hat gezeigt, wie es geht: Wer den Fumbi aufnimmt, kann ihn auch reintragen."
           ]
         }
       ]
