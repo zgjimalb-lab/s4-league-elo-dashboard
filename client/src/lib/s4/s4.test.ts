@@ -5,6 +5,7 @@ import { eloDeltas, eveningOf, groupEvenings, syncTimeOf } from './evenings';
 import { roleOf, roleStats } from './roles';
 import { classify, prepareMatches } from './rules';
 import { duoStats, headToHead, lineupStats, playerStats } from './stats';
+import { teamChances } from './teams';
 import type { PlayerLine, StoredMatch, TeamIndex } from './types';
 
 let counter = 0;
@@ -224,6 +225,26 @@ describe('Statistiken', () => {
     expect(withExtra).toMatchObject({ games: 4, wins: 3 });
     expect(withExtra.perGame).toEqual(a.perGame);
     expect(withExtra.goalShare).toBeCloseTo(a.goalShare);
+  });
+});
+
+describe('teamChances', () => {
+  const ratings = new Map([['a', 1700], ['b', 1600], ['c', 1500], ['d', 1400]]);
+  const { matches } = prepareMatches([match([['a', 'd'], ['b', 'c']], 0), match([['a', 'd'], ['b', 'c']], 1)]);
+
+  it('listet alle Teams, stärkstes zuerst, mit Bilanz', () => {
+    const teams = teamChances(['d', 'c', 'b', 'a'], ratings, 2, matches);
+    expect(teams.map((t) => t.players.join())).toEqual(['a,b', 'a,c', 'a,d', 'b,c', 'b,d', 'c,d']);
+    // a + d (Schnitt 1550) gegen b + c (Schnitt 1550): ausgeglichen
+    expect(teams.find((t) => t.key === 'a + d')!.chance).toBeCloseTo(0.5);
+    expect(teams.find((t) => t.key === 'a + d')!.record).toMatchObject({ games: 2, wins: 1 });
+    expect(teams.find((t) => t.key === 'a + b')!.record).toBeNull();
+    // jedes Team und sein Gegner ergänzen sich zu 100 %
+    expect(teams[0].chance + teams[5].chance).toBeCloseTo(1);
+  });
+
+  it('gibt nichts zurück, wenn nicht genug Spieler da sind', () => {
+    expect(teamChances(['a', 'b', 'c'], ratings, 2, matches)).toEqual([]);
   });
 });
 

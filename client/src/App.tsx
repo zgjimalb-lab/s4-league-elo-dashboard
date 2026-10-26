@@ -11,6 +11,7 @@ import Leaderboard from '@/pages/Leaderboard';
 import MatchesPage from '@/pages/MatchesPage';
 import NotFound from '@/pages/NotFound';
 import PlayerPage from '@/pages/PlayerPage';
+import TeamsPage from '@/pages/TeamsPage';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/abende" component={EveningsPage} />
               <Route path="/duell" component={DuelPage} />
               <Route path="/duos" component={DuosPage} />
+              <Route path="/teams" component={TeamsPage} />
               <Route component={NotFound} />
             </Switch>
           </Layout>

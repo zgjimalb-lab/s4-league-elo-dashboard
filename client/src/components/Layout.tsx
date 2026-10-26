@@ -14,6 +14,7 @@ const NAV = [
   { href: '/abende', label: 'Spielabende' },
   { href: '/duell', label: 'Head-to-Head' },
   { href: '/duos', label: 'Duos & Teams' },
+  { href: '/teams', label: 'Teamchancen' },
 ];
 
 /** Link, der die aktuellen Filter (Season, Modus) mitnimmt. */
@@ -26,7 +27,10 @@ export function ScopedLink({ href, className, children }: { href: string; classN
   );
 }
 
-function FilterBar() {
+/** Seiten mit eigener Modus-Auswahl */
+const OWN_MODE_PICKER = ['/teams'];
+
+function FilterBar({ showMode }: { showMode: boolean }) {
   const { season, mode, setFilter } = useScope();
   return (
     <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -49,25 +53,27 @@ function FilterBar() {
           </ToggleGroupItem>
         </ToggleGroup>
       </div>
-      <div className="flex items-center gap-2">
-        <span className="text-sm text-muted-foreground">Modus</span>
-        <ToggleGroup
-          type="single"
-          variant="outline"
-          size="sm"
-          value={mode}
-          onValueChange={(v) => v && setFilter({ mode: v as ModeFilter })}
-        >
-          <ToggleGroupItem value="all" className="px-3">
-            Alle
-          </ToggleGroupItem>
-          {MODES.map((m) => (
-            <ToggleGroupItem key={m} value={m} className="px-3">
-              {m}
+      {showMode && (
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-muted-foreground">Modus</span>
+          <ToggleGroup
+            type="single"
+            variant="outline"
+            size="sm"
+            value={mode}
+            onValueChange={(v) => v && setFilter({ mode: v as ModeFilter })}
+          >
+            <ToggleGroupItem value="all" className="px-3">
+              Alle
             </ToggleGroupItem>
-          ))}
-        </ToggleGroup>
-      </div>
+            {MODES.map((m) => (
+              <ToggleGroupItem key={m} value={m} className="px-3">
+                {m}
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </div>
+      )}
     </div>
   );
 }
@@ -103,7 +109,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         </div>
       </header>
       <div className="container space-y-6 py-6">
-        <FilterBar />
+        <FilterBar showMode={!OWN_MODE_PICKER.includes(location)} />
         <main className="space-y-6">{children}</main>
       </div>
     </div>

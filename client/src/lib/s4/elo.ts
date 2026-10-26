@@ -19,7 +19,7 @@ export interface EloEntry {
 /** Unter dieser Siegchance gilt ein Sieg als Überraschung. */
 export const UPSET_CHANCE = 0.35;
 
-const expectedScore = (own: number, opponent: number) => 1 / (1 + 10 ** ((opponent - own) / 400));
+export const expectedScore = (own: number, opponent: number) => 1 / (1 + 10 ** ((opponent - own) / 400));
 
 export interface EloTimeline {
   entries: EloEntry[];
