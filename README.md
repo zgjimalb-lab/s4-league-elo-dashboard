@@ -56,7 +56,7 @@ Kausalität) und das Ausgabeformat. Analysiert werden Spieler ab 15 Spielen in d
 `data/players.json`:
 
 - `group` – wer mitgezählt wird. Neue Freunde hier eintragen, dann werden ihre Matches ab
-  dem nächsten Sync erfasst. Die ersten 8 Namen bekommen feste Farben, alle weiteren sind grau.
+  dem nächsten Sync erfasst. Die ersten 11 Namen bekommen feste Farben, alle weiteren sind grau.
 - `aliases` – Schreibvarianten aus der alten Screenshot-Auswertung.
 
 ## Einrichtung
